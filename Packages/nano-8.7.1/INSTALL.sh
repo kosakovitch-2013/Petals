@@ -9,14 +9,15 @@ if [ ! -f configure ] && [ -f configure.ac ]; then
     fi
 fi
 
-if [ ! -f configure ] && [ -f configure.ac ]; then
-    echo "Error: configure not found and configure.ac missing"
-    exit 1
-fi
+touch aclocal.m4 Makefile.in configure configure.ac Makefile.am 2>/dev/null || true
 
-if [ -f configure ]; then
-    touch configure.ac aclocal.m4 Makefile.am 2>/dev/null || true
-    ./configure --prefix=/usr/local
+if [ ! -f Makefile ]; then
+    if [ -f configure ]; then
+        ./configure --prefix=/usr/local
+    else
+        echo "Error: no configure found"
+        exit 1
+    fi
 fi
 
 make -j$(nproc)
