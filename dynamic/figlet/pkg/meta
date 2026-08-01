@@ -1,0 +1,5 @@
+name=figlet
+version=2.2.5
+arch=x86_64
+desc="ASCII art text banners"
+deps=
