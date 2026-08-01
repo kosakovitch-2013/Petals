@@ -1,0 +1,5 @@
+name=linit
+version=0.1
+arch=x86_64
+desc="Lavender init system"
+deps=
