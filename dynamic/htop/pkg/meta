@@ -1,5 +1,5 @@
 name=htop
 version=3.3.0
 arch=x86_64
-desc="CLI Process Viewer"
+desc="CLI process viewer"
 deps=ncurses
