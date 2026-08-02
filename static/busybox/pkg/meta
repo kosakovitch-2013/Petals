@@ -1,0 +1,5 @@
+name=busybox
+version=1.36.1
+arch=x86_64
+desc="Minimal Shell and System mainteance tool for userspace"
+deps=

@@ -2,3 +2,4 @@ fastfetch 2.35.0 static/fastfetch-2.35.0-x86_64.petal
 htop 3.3.0 dynamic/htop-3.3.0-x86_64.petal
 linit 0.1 dynamic/linit-0.1-x86_64.petal
 figlet 2.2.5 dynamic/figlet-2.2.5-x86_64.petal
+busybox 1.36.1 static/busybox-1.36.1-x86_64.petal
