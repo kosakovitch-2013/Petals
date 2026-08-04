@@ -1,0 +1,5 @@
+name=coreutils
+version=9.4
+arch=x86_64
+desc="GNU core utilities"
+deps=glibc
