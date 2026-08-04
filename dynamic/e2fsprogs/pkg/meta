@@ -1,0 +1,5 @@
+name=e2fsprogs
+version=1.47.1
+arch=x86_64
+desc="Ext2/3/4 filesystem utilities"
+deps=glibc
