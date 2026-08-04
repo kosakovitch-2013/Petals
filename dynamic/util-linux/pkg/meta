@@ -1,0 +1,5 @@
+name=util-linux
+version=2.40
+arch=x86_64
+desc="Miscellaneous system utilities"
+deps=glibc
