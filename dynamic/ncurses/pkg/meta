@@ -1,0 +1,5 @@
+name=ncurses
+version=6.5
+arch=x86_64
+desc="Terminal handling library"
+deps=glibc
