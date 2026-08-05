@@ -1,0 +1,5 @@
+name=base
+version=0.1
+arch=any
+desc="Lavender base system"
+deps=busybox bash linit coreutils util-linux e2fsprogs ncurses

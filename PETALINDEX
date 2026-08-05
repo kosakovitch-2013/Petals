@@ -9,3 +9,4 @@ coreutils 9.4 dynamic/coreutils-9.4-x86_64.petal
 util-linux 2.40 dynamic/util-linux-2.40-x86_64.petal
 e2fsprogs 1.47.1 dynamic/e2fsprogs-1.47.1-x86_64.petal
 ncurses 6.5 dynamic/ncurses-6.5-x86_64.petal
+base 0.1 meta/base-0.1-any.petal
