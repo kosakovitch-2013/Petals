@@ -10,3 +10,4 @@ util-linux 2.40 dynamic/util-linux-2.40-x86_64.petal
 e2fsprogs 1.47.1 dynamic/e2fsprogs-1.47.1-x86_64.petal
 ncurses 6.5 dynamic/ncurses-6.5-x86_64.petal
 base 0.1 meta/base-0.1-any.petal
+linux 7.0.10 dynamic/linux-7.0.10-x86_64.petal
