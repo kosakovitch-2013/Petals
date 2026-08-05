@@ -1,5 +1,0 @@
-name=sudo
-version=1.9.16p2
-arch=x86_64
-desc="Execute commands as super user"
-deps=glibc
