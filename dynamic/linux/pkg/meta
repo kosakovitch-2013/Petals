@@ -1,0 +1,5 @@
+name=linux
+version=7.0.10
+arch=x86_64
+desc="Linux kernel"
+deps=
