@@ -1,0 +1,5 @@
+name=libx11
+version=1.8.10
+arch=x86_64
+desc="X11 client library"
+deps=xorg-headers xtrans libxcb libxau libxdmcp
