@@ -17,3 +17,4 @@ libxdmcp 1.1.5 dynamic/libxdmcp-1.1.5-x86_64.petal
 libxcb 1.17.0 dynamic/libxcb-1.17.0-x86_64.petal
 xtrans 1.5.0 dynamic/xtrans-1.5.0-any.petal
 libx11 1.8.10 dynamic/libx11-1.8.10-x86_64.petal
+xorg-server 21.1.14 dynamic/xorg-server-21.1.14-x86_64.petal
