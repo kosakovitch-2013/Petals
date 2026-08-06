@@ -1,0 +1,5 @@
+name=dwm
+version=6.5
+arch=x86_64
+desc="Dynamic window manager"
+deps=libx11 libxft libxinerama
