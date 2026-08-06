@@ -1,0 +1,5 @@
+name=libxcb
+version=1.17.0
+arch=x86_64
+desc="X C Binding library"
+deps=xorg-headers libxau libxdmcp
