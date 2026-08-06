@@ -19,3 +19,4 @@ xtrans 1.5.0 dynamic/xtrans-1.5.0-any.petal
 libx11 1.8.10 dynamic/libx11-1.8.10-x86_64.petal
 xorg-server 21.1.14 dynamic/xorg-server-21.1.14-x86_64.petal
 tinywm 1.0 dynamic/tinywm-1.0-x86_64.petal
+xterm 397 dynamic/xterm-397-x86_64.petal
