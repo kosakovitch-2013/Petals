@@ -1,5 +1,5 @@
 name=xterm
-version=397
+version=410
 arch=x86_64
 desc="X terminal emulator"
-deps=libx11 libxcb
+deps=libx11 libxcb libxft
