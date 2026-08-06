@@ -1,0 +1,5 @@
+name=tinywm
+version=1.0
+arch=x86_64
+desc="Tiniest window manager"
+deps=libx11
