@@ -1,0 +1,5 @@
+name=xterm
+version=397
+arch=x86_64
+desc="X terminal emulator"
+deps=libx11 libxcb
