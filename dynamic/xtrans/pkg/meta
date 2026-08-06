@@ -1,0 +1,5 @@
+name=xtrans
+version=1.5.0
+arch=any
+desc="X transport library headers"
+deps=xorg-headers
