@@ -12,3 +12,4 @@ base 0.1 meta/base-0.1-any.petal
 linux 7.0.10 dynamic/linux-7.0.10-x86_64.petal
 nano 9.2 dynamic/nano-9.2-x86_64.petal
 xorg-headers 2024.1 dynamic/xorg-headers-2024.1-any.petal
+libxau 1.0.11 dynamic/libxau-1.0.11-x86_64.petal

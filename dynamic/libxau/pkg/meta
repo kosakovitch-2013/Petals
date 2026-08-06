@@ -1,0 +1,5 @@
+name=libxau
+version=1.0.11
+arch=x86_64
+desc="X Authorization library"
+deps=xorg-headers
