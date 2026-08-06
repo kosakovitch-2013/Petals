@@ -1,0 +1,5 @@
+name=xorg-headers
+version=2024.1
+arch=any
+desc="X.org protocol headers"
+deps=
