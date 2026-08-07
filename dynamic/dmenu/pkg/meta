@@ -1,0 +1,5 @@
+name=dmenu
+version=5.3
+arch=x86_64
+desc="Dynamic menu for dwm"
+deps=libx11 libxft libxinerama
