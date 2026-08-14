@@ -23,3 +23,4 @@ xterm 410 dynamic/xterm-410-x86_64.petal
 dwm 6.5 dynamic/dwm-6.5-x86_64.petal
 st 0.9.2 dynamic/st-0.9.2-x86_64.petal
 dmenu 5.3 dynamic/dmenu-5.3-x86_64.petal
+openssh 10.0p1 dynamic/openssh-10.0p1-x86_64.petal
