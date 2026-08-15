@@ -1,0 +1,5 @@
+name=make
+version=4.4.1
+arch=x86_64
+desc="GNU Make build tool"
+deps=glibc
