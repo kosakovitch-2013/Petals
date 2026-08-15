@@ -1,0 +1,5 @@
+name=tcc
+version=mob
+arch=x86_64
+desc="Tiny C Compiler"
+deps=
