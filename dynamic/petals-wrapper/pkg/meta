@@ -1,0 +1,5 @@
+name=petals-wrapper
+version=0.1
+arch=any
+desc="Configurable syntax wrapper for Petals"
+deps=petals

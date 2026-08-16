@@ -1,0 +1,28 @@
+#!/bin/sh
+# Petals wrapper - designed for customization
+
+# this is wrapper designed for customization
+
+config="$HOME/.petalsrc"
+[ -f "$config" ] && . "$config"
+
+: ${install:=install}
+: ${remove:=remove}
+: ${list:=list}
+
+case "$1" in
+    "$install")
+        shift
+        petals -Inst "$@"
+        ;;
+    "$remove")
+        shift
+        petals -Rem "$@"
+        ;;
+    "$list")
+        petals -List
+        ;;
+    *)
+        petals "$@"
+        ;;
+esac
