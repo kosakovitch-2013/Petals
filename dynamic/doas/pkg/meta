@@ -1,0 +1,5 @@
+name=doas
+version=6.8.2
+arch=x86_64
+desc="Execute commands as another user"
+deps=

@@ -27,3 +27,4 @@ openssh 10.0p1 dynamic/openssh-10.0p1-x86_64.petal
 tcc mob dynamic/tcc-mob-x86_64.petal
 make 4.4.1 dynamic/make-4.4.1-x86_64.petal
 petals-wrapper 0.1 dynamic/petals-wrapper-0.1-any.petal
+doas 6.8.2 dynamic/doas-6.8.2-x86_64.petal
