@@ -1,0 +1,5 @@
+name=openssl
+version=3.3.1
+arch=x86_64
+desc="OpenSSL crypto and TLS library"
+deps=glibc
