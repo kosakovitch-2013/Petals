@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-resize" type="topic" xml:lang="te">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-title"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Praveen Illa</mal:name>
+      <mal:email>mail2ipn@gmail.com</mal:email>
+      <mal:years>2014</mal:years>
+    </mal:credit>
+  </info>
+  <title>Text Size</title>
+  <p>You can use the following methods to resize the text in the MATE Terminal window:</p>
+  <list style="itemizedlist">
+    <item>
+      <p>To increase the size of the text, choose <guiseq><gui style="guimenu">View</gui><gui style="guimenuitem">Zoom In</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>To decrease the size of the text, choose <guiseq><gui style="guimenu">View</gui><gui style="guimenuitem">Zoom Out</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>To view the text at actual size, choose <guiseq><gui style="guimenu">View</gui><gui style="guimenuitem">Normal Size</gui></guiseq>. </p>
+    </item>
+  </list>
+</page>

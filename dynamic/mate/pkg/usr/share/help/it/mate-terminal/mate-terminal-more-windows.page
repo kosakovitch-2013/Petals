@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-more-windows" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+  </info>
+  <title>Lavorare con più Terminali</title>
+  <p><app>MATE Terminal</app> possiede la caratteritica delle schede per permettere di aprire più terminali nella stessa finestra. Ciascun terminale verrà aperto in una scheda separata. Fare clic sulla scheda approrpiata per mostrare quel terminale nella finestra. Ciascuna scheda costituisce un sottoprocesso indipendente, sarà quindi possibile svolgere compiti differenti in ciascun scheda. È possibile applicare un profilo a ciascuna scheda terminale aperta nella finestra. </p>
+  <p>La barra del titolo della finestra del ternminale mostrerà il nome del profilo corrente, o il nome specificato dal profilo attuale.  mostra <app>MATE Terminal</app> con quattro schede, in questo caso ciascuna di esse ha un suo profilo differente. Sulla barra del titolo compare il nome del profilo Profile 1, della scheda attiva.</p>
+  <figure style="figure">
+    <figure style="screenshot">
+      <media type="image" src="figures/mate-terminal-tabbed.png"/>
+    </figure>
+  </figure>
+  <p>Si veda per informazioni su come aprire una nuova scheda terminale.</p>
+</page>

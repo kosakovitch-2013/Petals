@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-encoding" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-reset"/>
+  </info>
+  <title>文字エンコードを変更するには</title>
+  <p><gui style="guisubmenu">文字エンコードの設定</gui>メニューに表示される文字エンコード一覧を変更するには、次の手順を実行します。</p>
+  <p><guiseq><gui style="guimenu">端末</gui><gui style="guisubmenu">文字コードの設定</gui><gui style="guimenuitem">追加 または 削除</gui></guiseq> を選択します。エンコードを <gui style="guisubmenu">文字コードの設定</gui>メニューに追加するには、<gui style="guilabel">使用可能なエンコード</gui>リストボックスでエンコードを選択し、右矢印ボタンをクリックします。<gui style="guisubmenu">文字コーディングの設定</gui>メニューからエンコーディングを削除するには、<gui style="guilabel">メニューに表示するエンコーディング</gui>リストボックスでエンコーディングを選択し、左矢印ボタンをクリックします。<gui style="guibutton">閉じる</gui>をクリックして、<gui style="guilabel">端末のエンコーディングの追加と削除</gui>ダイアログを閉じます。</p>
+</page>

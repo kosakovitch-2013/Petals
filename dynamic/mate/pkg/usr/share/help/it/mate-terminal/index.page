@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="index" type="guide" xml:lang="it">
+  <info>
+    <credit type="copyright">
+      <name>Progetto Documentazione di MATE</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Paul Cutler</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Christian Persch</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Sun Microsystems</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Miguel de Icaza</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Michael Zucchi</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Alexander Kirillov</name>
+      <years/>
+    </credit>
+    <credit type="publisher">
+      <name>Progetto Documentazione di MATE</name>
+    </credit>
+    <credit type="author">
+      <name>Team Documentazione di MATE</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>MATE DESKTOP</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Team Documentazione GNOME Sun</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>Sun Microsystems</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Miguel de Icaza</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>Progetto Documentazione di GNOME</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Michael Zucchi</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>Progetto Documentazione di GNOME</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Alexander Kirillov</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>Progetto Documentazione di GNOME</orgname>
+      </affiliation>
+    </credit>
+    <credit type="publisher">
+      <name>Progetto Documentazione di GNOME</name>
+    </credit>
+    <releaseinfo xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">Questo manuale descrive la versione 1.22 di MATE Terminal</releaseinfo>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>applicatione per il terminale</desc>
+  </info>
+
+  <title>MATE Terminal</title>
+  <links type="topic"/>
+  <section id="get-started" style="2column">
+    <title>Per iniziare</title>
+    <p>Le sezioni che seguono descrivono come avviare <app>MATE Terminal</app>.</p>
+  </section>
+  <section id="usage" style="2column">
+    <title>Utilizzo</title>
+  </section>
+  <section id="prefs" style="2column">
+    <title>Preferenze</title>
+    <p>Per configurare <app>MATE Terminal</app>, selezionare <guiseq><gui style="guimenu">Modifica</gui><gui style="guimenuitem">Profilo Corrente</gui></guiseq>. Per configurare un altro profilo che è stato impostato da voi, selezionare <guiseq><gui style="guimenu">Modifica</gui><gui style="guimenuitem">Profili</gui></guiseq>, selezionare il profilo che si vuole modificare, quindi premere <gui style="guibutton">Modifica</gui>.</p>
+    <p>La finestra di dialogo <gui style="guilabel">Preferenze del profilo</gui> contiene le seguenti sezioni a schede che è possibile utilizzare per configurare <app>MATE Terminal</app>:</p>
+  </section>
+</page>

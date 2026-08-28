@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license xmlns="http://projectmallard.org/1.0/" href="https://www.gnu.org/licenses/old-licenses/fdl-1.1.txt">
+
+  <p>This work is licensed under a
+  <link href="help:fdl">GNU Free
+  Documentation License Version 1.1</link> or any later version.</p>
+
+	<p>
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this
+	  <link href="https://www.gnu.org/licenses/old-licenses/fdl-1.1.txt">link</link>.
+         </p>
+         <p> This manual is part of a collection of GNOME manuals
+          distributed under the GFDL.  If you want to distribute this
+          manual separately from the collection, you can do so by
+          adding a copy of the license to the manual, as described in
+          section 6 of the license.
+	</p>
+
+	<p>
+	  Many of the names used by companies to distinguish their
+	  products and services are claimed as trademarks. Where those
+	  names appear in any GNOME documentation, and the members of
+	  the GNOME Documentation Project are made aware of those
+	  trademarks, then the names are in capital letters or initial
+	  capital letters.
+	</p>
+
+	<p>
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+	</p>
+	<list>
+		<item>
+		  <p>BELGE OLDUĞU GİBİ, AÇIK VEYA ZIMNİ HİÇBİR TÜRLÜ GARANTİ OLMADAN SUNULMUŞTUR, Kİ BUNA SINIRLAMA OLMAKSIZIN BELGE VEYA BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN BELLİ BİR AMACA UYGUN OLMALARI, KUSURDAN ARINMIŞ OLMALARI VEYA HAK İHLALİNDE BULUNMAMALARI GARANTİLERİ OLMAMASI DA DAHİLDİR. BELGE VE BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN KALİTESİ, DOĞRULUĞU VE PERFORMANSINA İLİŞKİN TÜM RİSK SİZE AİTTİR. HERHANGİ BİR BELGE VEYA BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMÜNÜN KUSURLU OLMASI HALİNDE, GEREKLİ SERVİS, ONARIM VE DÜZELTMENİN ÜCRETİNİ SİZ ÜSTLENİRSİNİZ (İLK YAZAR, HAZIRLAYAN VEYA HERHANGİ BİR KATILIMCI DEĞİL). BU GARANTİ REDDİ BU LİSANSIN TEMEL BİR PARÇASINI OLUŞTURMAKTADIR. HERHANGİ BİR BELGENİN VEYA BELGENİN DEĞİŞTİRİLMİŞ BİR SÜRÜMÜNÜN KULLANIMINA SADECE BU GARANTİ REDDİ ALTINDA İZİN VERİLMİŞTİR; VE</p>
+		</item>
+		<item>
+		  <p>HİÇBİR KOŞULDA VE HİÇBİR YASAL TEORİDE, Kİ BU TAZMİNAT YÜKÜMLÜLÜĞÜ (İHMAK DE DAHİL), KONTRATO VEYA BAŞKA BİR ŞEKİLİ DE İÇERİR, BELGEYİ VE BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMLERİNİ İLK YAZAN, YAZAR, HERHANGİ BİR KATKIDA BULUNAN, DAĞITAN VEYA BU TARAFLARIN HERHANGİ BİR TEDARİKÇİSİ HERHANGİ DOĞRUDAN, DOLAYLI, ÖZEL, ARIZİ  ZARARLARDAN HERHANGİ BİR KİŞİ SORUMLU DEĞİLDİR, Kİ BUNA BU TÜR KAYIPLAR HAKKINDA BU TARFAFIN BİLGİLENDİRİLMİŞ OLMASI GEREKSE BİLE SINIRLANMAMIŞ OLMAK ÜZERE ŞEREFİYE KAYBI, İŞ DURMASI, BİLGİSAYAR BOZULMASI VE YANLIŞ ÇALIŞMASI VEYA BELGENİN VE BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN KULLANIMINDAN VEYA KULLANIMIYLA İLİŞKİLİ TÜM KAYIPLAR DAHİLDİR.</p>
+		</item>
+	  </list>
+</license>

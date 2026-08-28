@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-tabs" type="topic" xml:lang="es-MX">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-contents"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luis Armando Medina A.</mal:name>
+      <mal:email>contacto@luisarmandomedina.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.gnome.org</mal:email>
+      <mal:years>2003-2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pablo Gonzalo del Campo</mal:name>
+      <mal:email>pablodc@bigfoot.com</mal:email>
+      <mal:years>2000-2004</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Carlos Perelló Marín</mal:name>
+      <mal:email>carlos@gnome-db.org</mal:email>
+      <mal:years>2000, 2002</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ismael Olea</mal:name>
+      <mal:email>ismael@olea.org</mal:email>
+      <mal:years>2001</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge Carrasquilla Soares</mal:name>
+      <mal:email>jorge@conectiva.com.br</mal:email>
+      <mal:years>2000</mal:years>
+    </mal:credit>
+  </info>
+  <title>Modifying a Terminal Window</title>
+  <terms style="variablelist">
+    <item>
+      <title>To hide the menubar:</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">View</gui><gui style="guimenuitem">Show Menubar</gui></guiseq>.  </p>
+    </item>
+    <item>
+      <title>To show a hidden menubar:</title>
+      <p>
+                  Right-click on the terminal window, then choose <gui style="guimenuitem">Show Menubar</gui> from the popup menu.  </p>
+    </item>
+    <item>
+      <title>To display the <app>MATE Terminal</app> window in full-screen mode:</title>
+      <p>Choose <guiseq><gui style="guimenu">View</gui><gui style="guimenuitem">Full Screen</gui></guiseq>. Full-screen mode displays the text in a window that fills the full screen. The window does not contain a window frame or titlebar. To exit from this mode, choose <guiseq><gui style="guimenu">View</gui><gui style="guimenuitem">Full Screen</gui></guiseq> again.</p>
+    </item>
+    <item>
+      <title>To change the appearance of the terminal window:</title>
+      <p>
+                  See  for information about the options that you can choose in the <gui style="guilabel">Editing Profile</gui> dialog to change the appearance of the terminal window. For example, you can change the background color, or the location of the scrollbar.  </p>
+    </item>
+  </terms>
+</page>

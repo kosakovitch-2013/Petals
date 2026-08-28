@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license xmlns="http://projectmallard.org/1.0/" href="https://www.gnu.org/licenses/old-licenses/fdl-1.1.txt">
+
+  <p>Questo lavoro è rilasciato sotto la <link href="help:fdl">GNU Free Documentation License Version 1.1</link> o una qualsiasi versione successiva </p>
+
+	<p>È concesso il permesso di copiare, distribuire e/o modificare questo documento in base ai termini della GNU Free Documentation License (GFDL), Versione 1.1 o una qualsiasi versione successiva pubblicata dalla Free Software Foundation senza sezioni invarianti, senza testi di copertina e nessun testo di retro copertina. Qui <link href="https://www.gnu.org/licenses/old-licenses/fdl-1.1.txt">collegamento</link> è possibile trovare una copia del GFDL .</p>
+         <p>Questo manuale è parte di una collezione di manuali GNOME distribuiti sotto la licenza GFDL. Se si vuole distribuire questo manuale separatamente dalla collezione, potete farlo aggiungendo una copia della licenza al manuale, come descritto nella sezione 6 della licenza.</p>
+
+	<p>Molti dei nomi utilizzati dalle compagnie per distinguere i loro prodotti e servizi sono rivendicati come marchi registrati. Laddove questi nomi appaiono in un documento GNOME, e i membri del Progetto Documentazione di GNOME sono avvertiti di quei marchi registrati, quei nomi appaiono in lettere maiuscole o con la lettera iniziale maiuscola.</p>
+
+	<p>
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+	</p>
+	<list>
+		<item>
+		  <p>IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO, ESPLICITE O IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO PRESENTARE QUALUNQUE TIPO DI DIFETTO, IL COSTO DI EVENTUALI INTERVENTI DI ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E</p>
+		</item>
+		<item>
+		  <p>IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI.</p>
+		</item>
+	  </list>
+</license>

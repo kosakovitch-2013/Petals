@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="index" type="guide" xml:lang="sr">
+  <info>
+    <credit type="copyright">
+      <name>Пројекат Мејтове документације</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Пол Катлер</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Christian Persch</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Сан Микросистеми</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Miguel de Icaza</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Michael Zucchi</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Александер Кирилов</name>
+      <years/>
+    </credit>
+    <credit type="publisher">
+      <name>Пројекат Мејтове документације</name>
+    </credit>
+    <credit type="author">
+      <name>Тим Мејтове документације</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>MATE DESKTOP</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Тим Sun Гномове документације</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>Сан Микросистеми</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Miguel de Icaza</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>Пројекат Гномове документације</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Michael Zucchi</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>Пројекат Гномове документације</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Александер Кирилов</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>Пројекат Гномове документације</orgname>
+      </affiliation>
+    </credit>
+    <credit type="publisher">
+      <name>Пројекат Гномове документације</name>
+    </credit>
+    <releaseinfo xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">Ово упутство је написано за Мејтов терминал 1.22.</releaseinfo>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>
+		terminal application
+		</desc>
+  </info>
+
+  <title>Мејтов терминал</title>
+  <links type="topic"/>
+  <section id="get-started" style="2column">
+    <title>Први кораци</title>
+    <p>
+		The following sections describe how to start <app>MATE Terminal</app>. 
+	</p>
+  </section>
+  <section id="usage" style="2column">
+    <title>Употреба</title>
+  </section>
+  <section id="prefs" style="2column">
+    <title>Поставке</title>
+    <p>
+	To configure <app>MATE Terminal</app>, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Current Profile</gui></guiseq>. To configure another profile that you set up choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Profiles</gui></guiseq>, select the profile you want to edit, then click <gui style="guibutton">Edit</gui>.  </p>
+    <p>
+	The <gui style="guilabel">Editing Profile</gui> dialog contains the following tabbed sections that you can use to configure <app>MATE Terminal</app>: </p>
+  </section>
+</page>

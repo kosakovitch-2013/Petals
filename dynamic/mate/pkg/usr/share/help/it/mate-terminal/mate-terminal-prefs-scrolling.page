@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-scrolling" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-compatibility"/>
+  </info>
+  <title>Scorrimento</title>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guilabel">La barra di scorrimento è</gui></title>
+      <p>Utilizzare questa lista per specificare la posizione della barra di scorrimento sulla finestra del terminale</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Scorri indietro ... linee</gui></title>
+      <p>Utilizzare questa casella per specificare il numero di righe di testo che si possono esplorare utilizzando la barra di scorrimento laterale. Ad esempio, se si specifica 100, si potranno visualizzare solo le ultime 100 linee di testo mostrate nel terminale.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Scorri se c'è output</gui></title>
+      <p>Selezionare questa opzione per consentire di scorrere l'output sul terminale mentre il terminale continua a mostrare nuovo output da un comando.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Scorri premendo un tasto</gui></title>
+      <p>Selezionare questa opzione per abilitare lo scorrimento verso il basso alla pressione di un qualsiasi tasto della tastiera fino al prompt dei comandi. Questa azione si applica solo se si è risaliti nella cronologia visualizzata nel terminale e si vuole ritornare al prompt dei comandi.</p>
+    </item>
+  </terms>
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-scrolling" type="topic" xml:lang="ru">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-compatibility"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  </info>
+  <title>Прокрутка</title>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <gui style="guilabel">Scrollbar is</gui>
+      </title>
+      <p>Воспользуйтесь этим раскрывающимся списком для указания положения полосы прокрутки в окне терминала.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scrollback ... lines</gui>
+      </title>
+      <p>Воспользуйтесь этим счётчиком для указания количества строк, которые можно прокрутить назад в окне терминала. Например, если указать 100, то прокрутить назад будет можно 100 последних показанных в терминале строк.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scroll on output</gui>
+      </title>
+      <p>Выберите этот параметр для включения прокрутки при выводе в терминале, когда терминал продолжает отображать выходные данные от команды.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scroll on keystroke</gui>
+      </title>
+      <p>Выберите этот параметр, чтобы включить в окне терминала прокрутку до командной строки при нажатии любой клавиши на клавиатуре. Это действие применяется только в том случае, если пользователь промотал текст вверх и ему требуется вернуться к командной строке.</p>
+    </item>
+  </terms>
+</page>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-reset" type="topic" xml:lang="sr">
+  <info>
+    <link type="guide" xref="index#usage"/>
+  </info>
+  <title>Да опоравите терминал</title>
+  <p>Овај одељак даје неке савете ако имате проблема са терминалима</p>
+  <terms style="variablelist">
+    <item>
+      <title>Да повратите стање терминала:</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">Terminal</gui><gui style="guimenuitem">Reset</gui></guiseq>. 
+                </p>
+    </item>
+  </terms>
+  <terms style="variablelist">
+    <item>
+      <title>Да повратите терминал и очистите екран:</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">Terminal</gui><gui style="guimenuitem">Reset and Clear</gui></guiseq>.  </p>
+    </item>
+  </terms>
+</page>

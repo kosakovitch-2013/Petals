@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-to-start" type="topic" xml:lang="fr">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-first-start"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Renardias</mal:name>
+      <mal:email>vincent@ldsol.com</mal:email>
+      <mal:years>1998-2000.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Joaquim Fellmann</mal:name>
+      <mal:email>joaquim@hrnet.fr</mal:email>
+      <mal:years>2000.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Merlet</mal:name>
+      <mal:email>redfox@redfoxcenter.org</mal:email>
+      <mal:years>2000-2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Fergeau</mal:name>
+      <mal:email>teuf@users.sourceforge.net</mal:email>
+      <mal:years>2002-2003.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sun G11n</mal:name>
+      <mal:email>gnome_int_l10n@ireland.sun.com</mal:email>
+      <mal:years>2002.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Robert-André Mauchin</mal:name>
+      <mal:email>zebob.m@pengzone.org</mal:email>
+      <mal:years>2006-2008.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stéphane Raimbault</mal:name>
+      <mal:email>stephane.raimbault@gmail.com</mal:email>
+      <mal:years>2007.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yannick Tailliez</mal:name>
+      <mal:email>ytdispatch-libre@yahoo.com</mal:email>
+      <mal:years>2008.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2008-2010.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard dot b at bbox dot fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  </info>
+  <title>Starting MATE Terminal</title>
+  <p>
+          You can start <app>MATE Terminal</app> in the following ways: 
+        </p>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guimenu">Applications</gui> menu</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">Accessories</gui><gui style="guimenuitem">Terminal</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>En ligne de commande</title>
+      <p>
+                  Execute the following command: <cmd>mate-terminal</cmd>
+                </p>
+      <p>
+                  You can use command line options to modify the way in which you run <app>MATE Terminal</app>. To view the command line options, execute the following command: <cmd>mate-terminal --help</cmd>
+                </p>
+    </item>
+  </terms>
+</page>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-effects" type="topic" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-scrolling"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christopher Meng</mal:name>
+      <mal:email>i@cicku.me</mal:email>
+      <mal:years>2012-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ravix</mal:name>
+      <mal:email>dr.neemous@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dianjin Wang</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Cravix</mal:name>
+      <mal:email>dr.neemous@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>nyanyh</mal:name>
+      <mal:email>rebuilty@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>liulitchi</mal:name>
+      <mal:email>xingzuo88@qq.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>玉堂白鹤</mal:name>
+      <mal:email>yjwork@qq.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mingye Wang</mal:name>
+      <mal:email>arthur200126@gmail.com</mal:email>
+      <mal:years>2015-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>白铭骢</mal:name>
+      <mal:email>jeffbai@aosc.xyz</mal:email>
+      <mal:years>2015-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>刘子兴</mal:name>
+      <mal:email>liushuyu@aosc.xyz</mal:email>
+      <mal:years>2015-2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>特效</title>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <gui style="guilabel">Background</gui>
+      </title>
+      <p>
+                  Select a background for the terminal window. The options are as follows: 
+                </p>
+      <list style="itemizedlist">
+        <item>
+          <p>
+            <gui style="guilabel">Solid color</gui>
+          </p>
+          <p>
+                        Select this option to use the background color that is specified in the <gui style="guilabel">Colors</gui> tabbed section as the background color for the terminal.
+                     </p>
+        </item>
+        <item>
+          <p>
+            <gui style="guilabel">Background image</gui>
+          </p>
+          <p>
+                        Select this option to use an image file as the background for the terminal. Use the <gui style="guilabel">Image file</gui> drop-down combination box to specify the location and name of the image file. Alternatively, click <gui style="guibutton">Browse</gui> to search for and select the image file. 
+                     </p>
+          <p>Select the <gui style="guilabel">Background image scrolls</gui> option to enable the background image to scroll with the text when you scroll through the terminal. If you do not select this option, the background image remains fixed on the terminal background and only the text scrolls. This option is only enabled if you select the <gui style="guilabel">Background image</gui> option.  </p>
+        </item>
+        <item>
+          <p>
+            <gui style="guilabel">Transparent background</gui>
+          </p>
+          <p>
+                        Select this option to use a transparent background for the terminal. 
+                     </p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Shade transparent or image background</gui>
+      </title>
+      <p>
+                  Use this slider to shade or dim the background of the terminal. This option is only enabled if you select the <gui style="guilabel">Background image</gui> or <gui style="guilabel">Transparent background</gui> options. 
+                </p>
+    </item>
+  </terms>
+</page>

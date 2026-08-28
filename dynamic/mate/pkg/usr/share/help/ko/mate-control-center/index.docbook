@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY VERSION "1.10.1">
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY app "<application>MATE Control Center</application>">
+<!ENTITY appname "MATE Control Center">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file.
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<article id="index" lang="ko">
+  
+  <articleinfo>
+    <abstract role="description">
+      <para lang="en">
+        The MATE Control Center provides a central place for the user to setup their MATE experience. It can let you configure anything from the behavior of your window borders to the default font type.
+      </para>
+    </abstract>
+    <title lang="en">MATE Control Center Manual</title>
+    <authorgroup>
+      <author><firstname>MATE 문서화 프로젝트</firstname> <surname/> <affiliation> <orgname>MATE 데스크톱</orgname> </affiliation></author>
+      <author lang="en">
+	<firstname>Kevin</firstname><surname>Breit</surname>
+      </author>
+    </authorgroup>
+    <copyright><year>2015-2021</year> <holder>MATE 문서화 프로젝트</holder></copyright>
+    <copyright lang="en">
+      <year>2001, 2002</year>
+      <holder>Ximian, Inc.</holder>
+    </copyright>
+
+    <publisher role="maintainer">
+      <publishername>MATE 문서화 프로젝트</publishername>
+    </publisher>
+    <publisher>
+      <publishername>GNOME 문서화 프로젝트</publishername>
+    </publisher>
+    
+    <revhistory>
+      <revision><revnumber>2.15</revnumber> <date>July 2015</date> <firstname>MATE 문서화 프로젝트</firstname> <surname/></revision>
+      <revision><revnumber>2.14</revnumber> <date>3월 2006</date></revision> 
+    </revhistory>
+
+     <legalnotice id="legalnotice">
+	<para lang="en">
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this <ulink type="help" url="help:fdl">link</ulink> or in the file COPYING-DOCS
+	  distributed with this manual.
+         </para>
+         <para>본 설명서는 GFDL에 따라 배포된 MATE 설명서 컬렉션의 일부입니다. 본 설명서를 컬렉션과 별도로 배포하려는 경우에는 라이센스 조항 6에 따라 라이센스 사본을 설명서에 추가하면 됩니다.</para>
+
+	<para>기업의 제품과 서비스를 식별하기 위해 사용된 많은 이름은 상표로 간주됩니다. MATE 문서에 사용된 이름과 MATE 문서화 프로젝트의 구성원은 해당 상표로, 모두 대문자로 표시되거나 첫 글자가 대문자로 표시되어 있습니다.</para>
+
+	<para>문서의 문서 및 수정된 버전은 gnu 자유 문서 라이센스의 조건에 따라 제공되며, 다음 사항을 더 잘 이해하고 있습니다: <orderedlist>
+		<listitem>
+		  <para>문서는 "있는 그대로"로 제공되며 상품성, 특정 목적에의 적합성 또는 준수에 대한 보증을 비롯한 일체의 명시적 또는 암시적인 보증을 제한 없이 부인합니다. 문서 및 수정판의 품질, 정확성 및 성능에 대한 책임은 전적으로 사용자에게 있습니다. 문서 또는 수정판에 대한 오류를 입증하려면 사용자(원저작자, 저작자 또는 배포자 아님)는 필요한 서비스, 수리 및 수정 비용을 부담해야 합니다. 본 보증 부인은 라이센스의 필수 부분에 해당합니다. 본 보증 부인을 따르지 않는 모든 문서나 수정판은 사용할 수 없습니다.</para>
+		</listitem>
+		<listitem>
+		  <para>또한 불법 행위(부주의 포함), 계약 또는 직접, 간접, 특별, 부수적 및 파생적인 모든 손해(영업권 손실, 작업 중지, 컴퓨터 오류 및 고장 또는 본 문서나 수정판의 사용으로 인해 발생하거나 관련된 기타 모든 손실 및 이러한 손실 가능성에 대해 미리 공지한 경우에도 제한되지 않음)에 대해서는 어떠한 상황이나 법률적인 이론 하에서도 본 문서 또는 수정판의 저작자, 원저자, 모든 배포자 또는 공급자는 책임을 지지 않습니다.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+ <!-- This file contains link to license for the
+   documentation (GNU FDL), and other legal stuff such as "NO
+   WARRANTY" statement. Please do not change any of this. -->
+
+    <releaseinfo lang="en">
+      This manual describes version 1.10.1 of the MATE Control Center.
+    </releaseinfo>
+
+    <legalnotice>
+        <title>피드백</title>
+        <para lang="en">To report a bug or make a suggestion regarding the <application>MATE Control Center</application> application or this manual, follow the directions in the
+        <ulink url="help:mate-user-guide/feedback" type="help">MATE Feedback Page</ulink>.
+      </para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+  
+  <sect1 id="intro">
+    <title>소개</title>
+    <para lang="en">
+      The <application>MATE Control Center</application> provides a single window from which to launch all preference tools.
+    </para>
+    <note><para lang="en">
+      For help on using preference tools, see the <ulink type="help" url="help:mate-user-guide/prefs">User Guide</ulink>.
+    </para></note>
+
+<!-- ============= To Start Control Center  ============================ -->
+    <sect2 id="mate-control-center-to-start">
+      <title lang="en">To Start MATE Control Center</title>
+      <para lang="en">You can start <application>MATE Control Center</application> in the following ways:</para>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guimenu>System</guimenu> menu</term>
+          <listitem>
+            <para lang="en">
+              Choose <menuchoice><guimenu>Control Center</guimenu></menuchoice> menu item.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>명령 행</term>
+          <listitem>
+            <para lang="en">
+              Execute the following command: <command>mate-control-center</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+  </sect1>
+  
+  <sect1 id="matecc-interface">
+    <title>사용법</title>
+    <para lang="en">
+      The <application>MATE Control Center</application> window lists all preference tools installed on your system in groups.
+    </para>
+    <tip><para lang="en">
+      From the left pane, you can quickly access to a preference tool by selecting its group first, or type any keyword in the filter box. You can also access to common tasks, such as <guilabel>Change Theme</guilabel>, and <guilabel>Set Preferred Applications</guilabel>.
+    </para></tip>
+    <para lang="en">
+      To open a preference tool, just click on it.
+    </para>
+    <tip><para lang="en">The preference tool description is shown on mouse hover.</para></tip>
+  </sect1>
+</article>

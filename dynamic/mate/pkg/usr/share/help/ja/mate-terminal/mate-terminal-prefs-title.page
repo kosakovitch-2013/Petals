@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-title" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-colors"/>
+  </info>
+  <title>タイトルとコマンド</title>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guilabel">初期のタイトル</gui></title>
+      <p>このテキストボックスを使用して、プロファイルを使用する端末の最初の見出しを指定します。現在の端末から起動した新しい端末には、新しく最初の見出しが付きます。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">端末からコマンドで指定しようとした場合</gui></title>
+      <p>このドロップダウンリストを使用して、動的に設定される見出しを指定します。つまり、端末で実行されるコマンドによって実行される端末の見出しのことです。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">ログインシェルとしてコマンドを実行する</gui></title>
+      <p>端末内で現在実行されているコマンドを強制的にログインシェルとして実行するには、このオプションを選択します。コマンドがシェルでない場合、この設定は影響しません。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">コマンドを実行した時にログイン記録を更新する</gui></title>
+      <p>新しいシェルを開いたときに、ログイン記録に新しいエントリを挿入するには、このオプションを選択します。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">シェルの代わりにコマンドを実行する</gui></title>
+      <p>通常のシェル以外で、指定したコマンドを端末で起動するには、このオプションを選択します。<gui style="guilabel">カスタムコマンド</gui>テキストボックスでそのコマンドを指定します。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">コマンドの実行が完了した後</gui></title>
+      <p>コマンドの実行が完了した後に実行される操作を指定するには、このドロップダウンリストを使用します。</p>
+    </item>
+  </terms>
+</page>

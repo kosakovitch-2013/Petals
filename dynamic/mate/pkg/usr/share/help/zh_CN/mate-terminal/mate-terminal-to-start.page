@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-to-start" type="topic" xml:lang="zh-CN">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-first-start"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christopher Meng</mal:name>
+      <mal:email>i@cicku.me</mal:email>
+      <mal:years>2012-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ravix</mal:name>
+      <mal:email>dr.neemous@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dianjin Wang</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Cravix</mal:name>
+      <mal:email>dr.neemous@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>nyanyh</mal:name>
+      <mal:email>rebuilty@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>liulitchi</mal:name>
+      <mal:email>xingzuo88@qq.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>玉堂白鹤</mal:name>
+      <mal:email>yjwork@qq.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mingye Wang</mal:name>
+      <mal:email>arthur200126@gmail.com</mal:email>
+      <mal:years>2015-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>白铭骢</mal:name>
+      <mal:email>jeffbai@aosc.xyz</mal:email>
+      <mal:years>2015-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>刘子兴</mal:name>
+      <mal:email>liushuyu@aosc.xyz</mal:email>
+      <mal:years>2015-2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Starting MATE Terminal</title>
+  <p>
+          You can start <app>MATE Terminal</app> in the following ways: 
+        </p>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guimenu">Applications</gui> menu</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">Accessories</gui><gui style="guimenuitem">Terminal</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>命令行</title>
+      <p>
+                  Execute the following command: <cmd>mate-terminal</cmd>
+                </p>
+      <p>
+                  You can use command line options to modify the way in which you run <app>MATE Terminal</app>. To view the command line options, execute the following command: <cmd>mate-terminal --help</cmd>
+                </p>
+    </item>
+  </terms>
+</page>

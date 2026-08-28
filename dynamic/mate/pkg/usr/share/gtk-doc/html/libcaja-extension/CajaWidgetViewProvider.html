@@ -1,0 +1,485 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CajaWidgetViewProvider: Caja Extension Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets Vsnapshot">
+<link rel="home" href="index.html" title="Caja Extension Reference Manual">
+<link rel="up" href="ch01.html" title="Extension Interfaces">
+<link rel="prev" href="CajaMenuItem.html" title="CajaMenuItem">
+<link rel="next" href="CajaPropertyPageProvider.html" title="CajaPropertyPageProvider">
+<meta name="generator" content="GTK-Doc V1.33.1 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#CajaWidgetViewProvider.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#CajaWidgetViewProvider.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_prerequisites">  <span class="dim">|</span> 
+                  <a href="#CajaWidgetViewProvider.prerequisites" class="shortcut">Prerequisites</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="CajaMenuItem.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="CajaPropertyPageProvider.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="CajaWidgetViewProvider"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="CajaWidgetViewProvider.top_of_page"></a>CajaWidgetViewProvider</span></h2>
+<p>CajaWidgetViewProvider — Interface to provide widgets view.</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="CajaWidgetViewProvider.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_proto_type">
+<col class="functions_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gboolean</span>
+</td>
+<td class="function_name">
+<a class="link" href="CajaWidgetViewProvider.html#caja-widget-view-provider-supports-uri" title="caja_widget_view_provider_supports_uri ()">caja_widget_view_provider_supports_uri</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">GtkWidget</span> *
+</td>
+<td class="function_name">
+<a class="link" href="CajaWidgetViewProvider.html#caja-widget-view-provider-get-widget" title="caja_widget_view_provider_get_widget ()">caja_widget_view_provider_get_widget</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="CajaWidgetViewProvider.html#caja-widget-view-provider-set-location" title="caja_widget_view_provider_set_location ()">caja_widget_view_provider_set_location</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="CajaWidgetViewProvider.html#caja-widget-view-provider-set-window" title="caja_widget_view_provider_set_window ()">caja_widget_view_provider_set_window</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="CajaWidgetViewProvider.html#caja-widget-view-provider-add-file" title="caja_widget_view_provider_add_file ()">caja_widget_view_provider_add_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">gchar</span> *
+</td>
+<td class="function_name">
+<a class="link" href="CajaWidgetViewProvider.html#caja-widget-view-provider-get-first-visible-file" title="caja_widget_view_provider_get_first_visible_file ()">caja_widget_view_provider_get_first_visible_file</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">guint</span>
+</td>
+<td class="function_name">
+<a class="link" href="CajaWidgetViewProvider.html#caja-widget-view-provider-get-item-count" title="caja_widget_view_provider_get_item_count ()">caja_widget_view_provider_get_item_count</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="CajaWidgetViewProvider.html#caja-widget-view-provider-clear" title="caja_widget_view_provider_clear ()">caja_widget_view_provider_clear</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="CajaWidgetViewProvider.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="other_proto_type">
+<col class="other_proto_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="CajaWidgetViewProvider.html#CajaWidgetViewProvider-struct" title="CajaWidgetViewProvider">CajaWidgetViewProvider</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="CajaWidgetViewProvider.html#CajaWidgetViewProviderIface" title="struct CajaWidgetViewProviderIface">CajaWidgetViewProviderIface</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="CajaWidgetViewProvider.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    GInterface
+    <span class="lineart">╰──</span> CajaWidgetViewProvider
+</pre>
+</div>
+<div class="refsect1">
+<a name="CajaWidgetViewProvider.prerequisites"></a><h2>Prerequisites</h2>
+<p>
+CajaWidgetViewProvider requires
+ GObject.</p>
+</div>
+<div class="refsect1">
+<a name="CajaWidgetViewProvider.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;libcaja-extension/caja-widget-view-provider.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="CajaWidgetViewProvider.description"></a><h2>Description</h2>
+<p><a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a> allows extension to provide widgets view
+in the file manager.</p>
+</div>
+<div class="refsect1">
+<a name="CajaWidgetViewProvider.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="caja-widget-view-provider-supports-uri"></a><h3>caja_widget_view_provider_supports_uri ()</h3>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>
+caja_widget_view_provider_supports_uri
+                               (<em class="parameter"><code><a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a> *provider</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *uri</code></em>,
+                                <em class="parameter"><code><span class="type">GFileType</span> file_type</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *mime_type</code></em>);</pre>
+<p>Whether this widget view works for the uri.</p>
+<div class="refsect3">
+<a name="caja-widget-view-provider-supports-uri.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>provider</p></td>
+<td class="parameter_description"><p>a <a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>the location to visit.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file_type</p></td>
+<td class="parameter_description"><p>The <span class="type">GFileType</span> for the uri</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>mime_type</p></td>
+<td class="parameter_description"><p>The mimetype for the uri</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="caja-widget-view-provider-supports-uri.returns"></a><h4>Returns</h4>
+<p> True to use custom widget view, False to ignore, and caja use normal view.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="caja-widget-view-provider-get-widget"></a><h3>caja_widget_view_provider_get_widget ()</h3>
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *
+caja_widget_view_provider_get_widget (<em class="parameter"><code><a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a> *provider</code></em>);</pre>
+<p>Return a <span class="type">GtkWidget</span> to show the current location content.</p>
+<div class="refsect3">
+<a name="caja-widget-view-provider-get-widget.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>provider</p></td>
+<td class="parameter_description"><p>a <a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="caja-widget-view-provider-get-widget.returns"></a><h4>Returns</h4>
+<p> The <span class="type">GtkWidget</span> used to show the contents.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="caja-widget-view-provider-set-location"></a><h3>caja_widget_view_provider_set_location ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+caja_widget_view_provider_set_location
+                               (<em class="parameter"><code><a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a> *provider</code></em>,
+                                <em class="parameter"><code>const <span class="type">char</span> *location</code></em>);</pre>
+<p>Set the location of this <a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a>.</p>
+<div class="refsect3">
+<a name="caja-widget-view-provider-set-location.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>provider</p></td>
+<td class="parameter_description"><p>a <a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>uri</p></td>
+<td class="parameter_description"><p>the URI of the location</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="caja-widget-view-provider-set-window"></a><h3>caja_widget_view_provider_set_window ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+caja_widget_view_provider_set_window (<em class="parameter"><code><a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a> *provider</code></em>,
+                                      <em class="parameter"><code><span class="type">GtkWindow</span> *window</code></em>);</pre>
+<p>Set parent <span class="type">GtkWindow</span> of this <a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a>.</p>
+<div class="refsect3">
+<a name="caja-widget-view-provider-set-window.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>provider</p></td>
+<td class="parameter_description"><p>a <a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>window</p></td>
+<td class="parameter_description"><p>parent <span class="type">GtkWindow</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="caja-widget-view-provider-add-file"></a><h3>caja_widget_view_provider_add_file ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+caja_widget_view_provider_add_file (<em class="parameter"><code><a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a> *provider</code></em>,
+                                    <em class="parameter"><code><a class="link" href="CajaFileInfo.html#CajaFile" title="CajaFile"><span class="type">CajaFile</span></a> *file</code></em>,
+                                    <em class="parameter"><code><a class="link" href="CajaFileInfo.html#CajaFile" title="CajaFile"><span class="type">CajaFile</span></a> *directory</code></em>);</pre>
+<p>Add a file of this location into the widget view.</p>
+<div class="refsect3">
+<a name="caja-widget-view-provider-add-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>provider</p></td>
+<td class="parameter_description"><p>a <a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>file</p></td>
+<td class="parameter_description"><p>add a <a class="link" href="CajaFileInfo.html#CajaFile" title="CajaFile"><span class="type">CajaFile</span></a> into the widget view.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>directory</p></td>
+<td class="parameter_description"><p>the directory of the file.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="caja-widget-view-provider-get-first-visible-file"></a><h3>caja_widget_view_provider_get_first_visible_file ()</h3>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *
+caja_widget_view_provider_get_first_visible_file
+                               (<em class="parameter"><code><a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a> *provider</code></em>);</pre>
+<p>Return the first visible file. When use start visit the location, the caja's status is waiting, until
+get the first visible file.</p>
+<div class="refsect3">
+<a name="caja-widget-view-provider-get-first-visible-file.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>provider</p></td>
+<td class="parameter_description"><p>a <a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="caja-widget-view-provider-get-first-visible-file.returns"></a><h4>Returns</h4>
+<p> the first visible file.</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="caja-widget-view-provider-get-item-count"></a><h3>caja_widget_view_provider_get_item_count ()</h3>
+<pre class="programlisting"><span class="returnvalue">guint</span>
+caja_widget_view_provider_get_item_count
+                               (<em class="parameter"><code><a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a> *provider</code></em>);</pre>
+<div class="refsect3">
+<a name="caja-widget-view-provider-get-item-count.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>provider</p></td>
+<td class="parameter_description"><p>a <a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="caja-widget-view-provider-get-item-count.returns"></a><h4>Returns</h4>
+<p> The item count of this <a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a></p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="caja-widget-view-provider-clear"></a><h3>caja_widget_view_provider_clear ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+caja_widget_view_provider_clear (<em class="parameter"><code><a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a> *provider</code></em>);</pre>
+<p>Clear the content of this widget view.</p>
+<div class="refsect3">
+<a name="caja-widget-view-provider-clear.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>provider</p></td>
+<td class="parameter_description"><p>a <a class="link" href="CajaWidgetViewProvider.html" title="CajaWidgetViewProvider"><span class="type">CajaWidgetViewProvider</span></a></p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="CajaWidgetViewProvider.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="CajaWidgetViewProvider-struct"></a><h3>CajaWidgetViewProvider</h3>
+<pre class="programlisting">typedef struct _CajaWidgetViewProvider CajaWidgetViewProvider;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="CajaWidgetViewProviderIface"></a><h3>struct CajaWidgetViewProviderIface</h3>
+<pre class="programlisting">struct CajaWidgetViewProviderIface {
+    GTypeInterface g_iface;
+
+    gboolean  (*supports_uri)   (CajaWidgetViewProvider *provider,
+                                 const char *uri,
+                                 GFileType file_type,
+                                 const char *mime_type);
+    GtkWidget* (*get_widget)     (CajaWidgetViewProvider *provider);
+    void       (*add_file)       (CajaWidgetViewProvider *provider, CajaFile *file, CajaFile *directory);
+    void       (*set_location)   (CajaWidgetViewProvider *provider, const char *location);
+    void       (*set_window)     (CajaWidgetViewProvider *provider, GtkWindow *window);
+    guint      (*get_item_count) (CajaWidgetViewProvider *provider);
+    gchar*     (*get_first_visible_file) (CajaWidgetViewProvider *provider);
+    void       (*clear)          (CajaWidgetViewProvider *provider);
+};
+</pre>
+<p>Interface for extensions to provide widgets view for content.</p>
+<div class="refsect3">
+<a name="CajaWidgetViewProviderIface.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="struct_members_name">
+<col class="struct_members_description">
+<col width="200px" class="struct_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="CajaWidgetViewProviderIface.supports-uri"></a>supports_uri</code></em> ()</p></td>
+<td class="struct_member_description"><p>Whether this extension works for this uri</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="CajaWidgetViewProviderIface.get-widget"></a>get_widget</code></em> ()</p></td>
+<td class="struct_member_description"><p>Returns a <span class="type">GtkWidget</span>.
+See <a class="link" href="CajaWidgetViewProvider.html#caja-widget-view-provider-get-widget" title="caja_widget_view_provider_get_widget ()"><code class="function">caja_widget_view_provider_get_widget()</code></a> for details.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="CajaWidgetViewProviderIface.add-file"></a>add_file</code></em> ()</p></td>
+<td class="struct_member_description"><p>Adds a file to this widget view.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="CajaWidgetViewProviderIface.set-location"></a>set_location</code></em> ()</p></td>
+<td class="struct_member_description"><p>Set location to this widget view.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="CajaWidgetViewProviderIface.set-window"></a>set_window</code></em> ()</p></td>
+<td class="struct_member_description"><p>Set the main window to this widget view.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="CajaWidgetViewProviderIface.get-item-count"></a>get_item_count</code></em> ()</p></td>
+<td class="struct_member_description"><p>Return the item count of this widget view.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="CajaWidgetViewProviderIface.get-first-visible-file"></a>get_first_visible_file</code></em> ()</p></td>
+<td class="struct_member_description"><p>Return the first visible file from this widget view.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+<tr>
+<td class="struct_member_name"><p><em class="structfield"><code><a name="CajaWidgetViewProviderIface.clear"></a>clear</code></em> ()</p></td>
+<td class="struct_member_description"><p>Clear items in this widget view.</p></td>
+<td class="struct_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.33.1</div>
+</body>
+</html>

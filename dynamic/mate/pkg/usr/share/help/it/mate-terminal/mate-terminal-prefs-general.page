@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-general" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-title"/>
+  </info>
+  <title>Generale</title>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guilabel">Nome del Profilo</gui></title>
+      <p>Utilizzare questa casella di testo per specificare il nome del profilo corrente.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Utilizza il font a larghezza fissa di sistema</gui></title>
+      <p>Selezionare questa opzione per utilizzare il carattere a spaziatura fissa standard che è impostato nella scheda <gui style="guilabel">Font</gui> della sezione <app>Aspetto</app> dello strumento preferenze.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Font</gui></title>
+      <p>Fare clic su questo pulsante per selezionare il font e la sua dimensione per il terminale. Questo pulsante è attivo solo se l'opzione <gui style="guilabel">Usa il carattere del terminale di sistema</gui> è deselezionato.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Consenti il testo in grassetto</gui></title>
+      <p>Selezionare questa opzione per abilitare il terminale a mostrare testo in grassetto.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Mostra la barra dei menù nei nuovi terminali</gui></title>
+      <p>Selezionare questa voce per mostrare la barra dei menù nelle nuove finestre di terminale.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Campanella del terminale</gui></title>
+      <p>Selezionare questa opzione per attivare l'avviso del terminale.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Caratteri selezionabili come parola</gui></title>
+      <p>Utilizzare questo campo di testo per specificare i caratteri o i gruppi di caratteri che <app>MATE Terminal</app> considera essere parole quando si seleziona il testo per parole. Vedere per maggiori informazioni su come selezionare il testo per parole.</p>
+    </item>
+  </terms>
+</page>

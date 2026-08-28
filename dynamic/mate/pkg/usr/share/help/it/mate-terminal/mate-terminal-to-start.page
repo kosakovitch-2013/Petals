@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-to-start" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-first-start"/>
+  </info>
+  <title>Avviare MATE Terminal</title>
+  <p>È possibile avviare <app>MATE Terminal</app> nei seguenti modi:</p>
+  <terms style="variablelist">
+    <item>
+      <title>Menù <gui style="guimenu">Applicazioni</gui></title>
+      <p>Selezionare <guiseq><gui style="guimenu">Accessori</gui><gui style="guimenuitem">Terminale</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>Riga di comando</title>
+      <p>Eseguire il seguente comando: <cmd>mate-terminal</cmd></p>
+      <p>È possibile utilizzare opzioni da riga di comando per modificare il modo in cui si esegue <app>MATE Terminal</app>. Per vedere l'elenco delle opzioni  da riga di comando, eseguire il seguente comando: <cmd>mate-terminal --help</cmd>.</p>
+    </item>
+  </terms>
+</page>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-compatibility" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+  </info>
+  <title>互換性</title>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guilabel">BackSpace キーが生成するキーコード</gui></title>
+      <p>ドロップダウンリストを使用して、<key>Backspace</key>キーで実行したい機能を選択します。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Delete キーが生成するキーコード</gui></title>
+      <p>ドロップダウンリストを使用して、<key>Delete</key> キーで実行する機能を選択します。</p>
+    </item>
+    <item>
+      <title><gui style="guibutton">互換性のオプションを既定に戻す</gui></title>
+      <p>このボタンをクリックすると、<gui style="guilabel">互換性</gui>タブの項目にあるオプションが既定の設定に戻ります。</p>
+    </item>
+  </terms>
+</page>

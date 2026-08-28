@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-title" type="topic" xml:lang="ms">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-colors"/>
+  </info>
+  <title>Tajuk dan Perintah</title>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <gui style="guilabel">Initial title</gui>
+      </title>
+      <p>Guna kotak teks ini untuk menyatakan tajuk awal terminal yang menggunakan profil. Terminal baharu yang dimulakan daripada terminal semasa mempunyai tajuk awalan baharu.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When terminal commands set their own titles</gui>
+      </title>
+      <p>Guna senarai tarik-turun ini untuk nyatakan bagaimana hendak mengendalikan tajuk ditetapkan secara dinamik, iaitu tajuk terminal ditetapkan oleh perintah yang dijalankan dalam terminal.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run command as a login shell</gui>
+      </title>
+      <p>Pilih pilihan ini untuk memaksa perintah ketika ini berjalan di dalam terminal yang juga dijalankan sebagai shell daftar masuk. Jika perintah bukan shell, maka tetapan tidak memberi apa-apa kesan.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Update login records when command is launched</gui>
+      </title>
+      <p>Pilih pilihan ini untuk menyisip satu masukan baharu ke dalam rekod daftar masuk ketika satu shell baharu dibuka.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run a custom command instead of my shell</gui>
+      </title>
+      <p>
+                  Select this option to run a specified command, other than the normal shell, in the terminal. Specify the custom command in the <gui style="guilabel">Custom command</gui> text box. 
+                </p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When command exits</gui>
+      </title>
+      <p>Guna senarai tarik-turun ini untuk menyatakan apakah tindakan yang perlu dibuat ketika perintah tamat.</p>
+    </item>
+  </terms>
+</page>

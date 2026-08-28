@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-contents" type="topic" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-shortcuts"/>
+  </info>
+  <title>Arbejde med indholdet af terminalvinduer</title>
+  <terms style="variablelist">
+    <item>
+      <title>For at rulle igennem tidligere kommandoer og resultater:</title>
+      <p>Udfør en af de følgende handlinger:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Brug rullebjælken, som normalt vises til højre i terminalvinduet.</p>
+        </item>
+        <item>
+          <p>
+                        Press the <keyseq><key>Shift</key><key>Page Up</key></keyseq>, <keyseq><key>Shift</key><key>Page Down</key></keyseq>, <keyseq><key>Shift</key><key>Home</key></keyseq>, or <keyseq><key>Shift</key><key>End</key></keyseq> keys.  </p>
+        </item>
+      </list>
+      <p>
+                  The number of lines that you can scroll back to in the terminal window is determined by the <gui style="guilabel">Scrollback</gui> setting in the <gui style="guilabel">Scrolling</gui> tabbed section of the <gui style="guilabel">Editing Profile</gui> dialog.  You can also scroll up or down one line at a time by pressing <keyseq><key>Control</key><key>Shift</key><key>Up</key></keyseq> or <keyseq><key>Control</key><key>Shift</key><key>Down</key></keyseq>. </p>
+    </item>
+    <item>
+      <title>For at vælge og kopiere tekst</title>
+      <p>Du kan vælge tekst i enhver af de følgende måder:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>For at vælge et tegn ad gangen, klik på det første tegn, du ønsker at vælge og træk musen til det sidste tegn, du ønsker at vælge.</p>
+        </item>
+        <item>
+          <p>For at vælge et ord ad gangen, klik på det første ord, du ønsker at vælge og træk musen til det sidste ord, du ønsker at vælge. Symboler vælges individuelt.</p>
+        </item>
+        <item>
+          <p>For at vælge en linje ad gangen, klik tre gange på den første linje, som du ønsker at vælge og træk musen til den sidste linje, du ønsker at vælge.</p>
+        </item>
+      </list>
+      <p>
+                  These actions select all text between the first and last items. For all text selections, <app>MATE Terminal</app> copies the selected text into the clipboard when you release the mouse button. To explicitly copy the selected text, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Copy</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>For at indsætte tekst i en terminal:</title>
+      <p>Hvis du tidligere kopierede tekst ind i udklipsholderen, så kan du indsætte teksten i en terminal ved at udføre en af de følgende handlinger:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>For at indsætte tekst som du kun kopierede med markering, brug et midterklik på kommandoprompten. Hvis du ikke har den midterste knap på din mus, så se X-serverdokumentationen for information om hvordan du emulerer denne knap.</p>
+        </item>
+        <item>
+          <p>
+                        To paste text that you explicitly copied, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Paste</gui></guiseq>. </p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title>For at trække et filnavn ind i et terminalvindue:</title>
+      <p>Du kan trække et filnavn til en terminal fra et andet program såsom en filhåndtering. Terminalen viser stien og det fulde navn på filen.</p>
+    </item>
+    <item>
+      <title>For at tilgå en henvisning:</title>
+      <p>For at tilgå en Uniform Resource Locator (URL) som vises i en terminal, udfør de følgende trin:</p>
+      <p> 
+                      
+                        
+                          Move the mouse over the URL until the URL is underlined.  
+                      
+                      
+                        
+                          Right-click on the URL to open a popup menu.  
+                      
+                      
+                        
+                          Choose <gui style="guimenuitem">Open Link</gui> to start a link application and display the file located at the URL.  
+                      
+                  </p>
+    </item>
+  </terms>
+</page>

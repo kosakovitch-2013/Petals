@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-colors" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-effects"/>
+  </info>
+  <title>色</title>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guilabel">前景と背景</gui></title>
+      <p><gui style="guilabel">システムのテーマ色を使用する</gui>オプションを選択してください。<app>外観</app>設定ツールの<gui style="guilabel">テーマ</gui>タブで選択した MATE デスクトップテーマで指定した色を使用します。</p>
+      <p><gui style="guilabel">組み込みのスキーム</gui>・ドロップダウンリストを使用して、端末の前景色と背景色を指定します。<app>MATE 端末</app>では、次の前景色と背景色の組み合わせをサポートします。</p>
+      <list style="itemizedlist">
+        <item>
+          <p><gui style="guilabel">明るい黄色地に黒文字</gui></p>
+        </item>
+        <item>
+          <p><gui style="guilabel">白地に黒文字</gui></p>
+        </item>
+        <item>
+          <p><gui style="guilabel">黒地に灰色文字</gui></p>
+        </item>
+        <item>
+          <p><gui style="guilabel">黒地に緑文字</gui></p>
+        </item>
+        <item>
+          <p><gui style="guilabel">黒地に白文字</gui></p>
+        </item>
+        <item>
+          <p><gui style="guilabel">カスタム</gui></p>
+          <p>このオプションを使用すると、選択した色のスキームにない色を選択できます。</p>
+        </item>
+      </list>
+      <p>前景色と背景色の実際の表示は、選択した配色（カラースキーム）によって異なります。例えば、<gui style="guilabel">黒地に白文字</gui>と <gui style="guilabel">Linux コンソール</gui>配色を選択した場合、アプリケーションは前景色と背景色を黒地に淡灰色文字で表示します。<gui style="guilabel">ビルトイン・ドロップダウンリスト</gui>は、<gui style="guilabel">システムのテーマ色を使用する</gui>オプションが選択されていない場合にのみ有効になります。</p>
+      <p>
+                  Click on the <gui style="guibutton">Text colour</gui> button to display the <gui style="guilabel">Choose terminal text colour</gui> dialog. Use the color wheel or the spin boxes to customize the color that you want to use as the text color, then click <gui style="guibutton">OK</gui>. The <gui style="guibutton">Text colour</gui> button is only enabled if the <gui style="guilabel">Use colours from system theme</gui> option is unselected.
+                </p>
+      <p><gui style="guibutton">背景色</gui>ボタンをクリックして、<gui style="guilabel">端末の背景色の選択</gui>ダイアログを表示します。色相環またはスピンボックスを使用して、背景色として使用する色をカスタマイズし、<gui style="guibutton">OK</gui> をクリックします。<gui style="guibutton">背景色</gui>ボタンは、<gui style="guilabel">システムのテーマ色を使用する</gui>オプションが選択されていない場合にだけ利用可能です。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">パレット</gui></title>
+      <p>端末エミュレーションでは、テキストの描画で一度に16色しか使用できません。カラーパレットは、これら16色を指定します。端末で実行されるアプリケーションは、インデックス番号を利用して、このパレットから色を指定します。</p>
+      <p><gui style="guilabel">組み込みのスキーム</gui>ドロップダウンリストを使用して、プリセットされたカラースキームを選択します。下のカラーパレットと端末ウィンドウの内容の両方が更新され、スキームが表示されます。</p>
+      <p><gui style="guilabel">カラーパレット</gui>を使用して、カスタム・カラーパレットの16の既定色をカスタマイズします。色をカスタマイズするには、その色をクリックして<gui style="guilabel">パレット色の選択</gui>ダイアログを表示します。色相環またはスピンボックスを使用して色をカスタマイズし、<gui style="guibutton">OK</gui>をクリックします。</p>
+    </item>
+  </terms>
+</page>

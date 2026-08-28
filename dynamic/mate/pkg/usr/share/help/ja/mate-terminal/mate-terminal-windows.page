@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-windows" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-manage-profiles"/>
+  </info>
+  <title>端末を開く／端末を閉じる</title>
+  <terms style="variablelist">
+    <item>
+      <title>新しい端末ウィンドウを開くには</title>
+      <p><guiseq><gui style="guimenu">ファイル</gui><gui style="guimenuitem">端末を開く</gui></guiseq>を選択します。</p>
+      <p>新しい端末は、親端末からアプリケーション設定と既定のシェルを継承します。</p>
+    </item>
+    <item>
+      <title>端末ウィンドウを閉じるには</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">File</gui><gui style="guimenuitem">Close Window</gui></guiseq>.  </p>
+      <p>この操作は、端末およびそれから開いたすべてのサブプロセスを閉じます。最後の端末ウィンドウを閉じると、<app>MATE 端末</app>アプリケーションは終了します。</p>
+    </item>
+    <item>
+      <title>新しいタブ付き端末をウィンドウに追加するには</title>
+      <p><guiseq><gui style="guimenu">ファイル</gui><gui style="guisubmenu">タブを開く</gui><gui style="guimenuitem">既定</gui></guiseq>を選択します。あるいは、サブメニューがない場合には<guiseq><gui style="guimenu">ファイル</gui><gui style="guimenuitem">タブを開く</gui></guiseq>だけを選択します。</p>
+    </item>
+    <item>
+      <title>タブ付き端末を表示するには</title>
+      <p>表示したいタブ付き端末のタブをクリックするか、または<gui style="guimenu">タブ</gui>メニューからタブの見出しを選択します。</p>
+      <p>あるいは、<guiseq><gui style="guimenu">タブ</gui><gui style="guimenuitem">次のタブへ</gui></guiseq>または<guiseq><gui style="guimenu">タブ</gui><gui style="guimenuitem">前のタブへ</gui></guiseq>を選択して、タブ間を移動できます。</p>
+    </item>
+    <item>
+      <title>タブ付き端末を閉じるには</title>
+      <p>閉じたいタブ端末を表示します。<guiseq><gui style="guimenu">ファイル</gui><gui style="guimenuitem">タブを閉じる</gui></guiseq>を選択します。</p>
+    </item>
+  </terms>
+</page>

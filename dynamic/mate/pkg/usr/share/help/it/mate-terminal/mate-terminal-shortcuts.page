@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-shortcuts" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-resize"/>
+  </info>
+  <title>Visualizzare le impostazioni delle scorciatoie da tastiera</title>
+  <p>Per visualizzare le impostazioni delle scorciatoie da tastiera che sono definite per <app>MATE Terminal</app>, selezionare <guiseq><gui style="guimenu">Modifica</gui><gui style="guimenuitem">Scorciatoie da Tastiera</gui></guiseq>.  La finestra di dialogo <gui style="guilabel">Scorciatoie da Tastiera</gui> contiene i seguenti oggetti: </p>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guilabel">Disabilita tutti i tasti di accesso ai menù (come Alt+f per aprire il menù File)</gui></title>
+      <p>Deselezionare questa opzione per disabilitare i tasti di accesso concepiti per permettere di utilizzare la tastiera al posto del mouse per selezionare un oggetto del menù. In un menù o in un'opzione di dialogo, ciascun tasto di accesso è definito da una lettera sottolineata. In alcuni casi, per eseguire un'azione, occorre tenere premuto il tasto <key>Alt</key> in combinazione con il tasto di accesso.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Disabilitare il tasto scorciatoia per i menù (F10 per default)</gui></title>
+      <p>Deselezionare questa opzione per disabilitare la combinazione di tasti scorciatoia definita per accedere ai menù di <app>MATE Terminal</app>. Il tasto predefinito come scorciatoia di accesso ai menù è <key>F10</key>.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Tasti Scorciatoia</gui></title>
+      <p>La sezione <gui style="guilabel">Tasti Scorciatoia</gui> della finestra di dialogo elenca i tasti scorciatoia definiti per ciascun oggetto dei menù.</p>
+      <note style="note">
+        <p>Non tutti i tasti, come ad esempio <key>Tab</key>, possono essere impiegati come scorciatoie.</p>
+      </note>
+    </item>
+  </terms>
+</page>

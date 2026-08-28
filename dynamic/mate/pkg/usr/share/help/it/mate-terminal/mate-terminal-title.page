@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-title" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-encoding"/>
+  </info>
+  <title>Modificare il titolo di un Terminale</title>
+  <p>Per cambiare il titolo al terminale attualmente visualizzato, procedere come segue:</p>
+  <p>Selezionare<guiseq><gui style="guimenu">Terminal</gui><gui style="guimenuitem">Imposta Titolo</gui></guiseq>. Inserire il nuovo titolo nel campo di testo <gui style="guilabel">Titolo</gui>. <app>MATE Terminal</app> applicherà le modifiche immediatamente. Fare clic su <gui style="guibutton">Chiudi</gui> per chiudere la finestra di dialogo <gui style="guilabel">Imposta il Titolo</gui>.</p>
+</page>

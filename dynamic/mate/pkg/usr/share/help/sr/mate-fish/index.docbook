@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "1.10.1">
+<!ENTITY manrevision "2.6">
+<!ENTITY date "July 2015">
+<!ENTITY applet "Fish">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://wiki.mate-desktop.org/dev-doc:doc-team-guide
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+
+-->
+<article id="index" lang="sr">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Упутство Рибе</title>
+	 <copyright><year>2015-2021</year> <holder>Пројекат Мејтове документације</holder></copyright>
+	 <copyright><year>2009</year> <holder>Пол Катлер</holder></copyright>
+	 <copyright><year>2002</year> <year>2003</year> <holder>Sun Microsystems</holder></copyright>
+	 <copyright><year>2000</year> <holder>Телса Гвин</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer">
+		<publishername>Пројекат Мејтове документације</publishername>
+	 </publisher>
+	 <publisher role="maintainer">
+		<publishername>Пројекат Гномове документације</publishername>
+	 </publisher>
+
+  <legalnotice id="legalnotice">
+	<para lang="en">
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this <ulink type="help" url="help:fdl">link</ulink> or in the file COPYING-DOCS
+	  distributed with this manual.
+         </para>
+         <para>Ово упутство је део скупа Мејтових докумената објављених под GFDL. Уколико желите да расподељујете ово упутство одвојено од скупа, то можете урадити додавањем примерка лиценце документу, како је описано у одељку 6 саме лиценце.</para>
+
+	<para>Многи називи које компаније користе у циљу препознатљивости својих производа и услуга представљају робне марке. Када (уколико) се такви називи појављују (спомињу) у било којем Мејтовом документу, а чланови пројекта Мејтове документације имају сазнања о томе, тада су називи исписани великим словима или са великим почетним словима.</para>
+
+	<para>ОВАЈ ДОКУМЕНТ И ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СУ ДОСТУПНЕ ПОД УСЛОВИМА ГНУОВЕ СЛОБОДНЕ ДОКУМЕНТАЦИОНЕ ДОЗВОЛЕ УЗ ДОДАТНО РАЗУМЕВАЊЕ ДА: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ ЈЕ ДОСТУПАН СА СВИМ СВОЈИМ ДОБРИМ И ЛОШИМ СТРАНАМА БЕЗ БИЛО КАКВОГ ЈАМСТВА, БИЛО ОНО ИЗРЕЧЕНО ИЛИ НЕ, УКЉУЧУЈУЋИ БЕЗ ОГРАНИЧЕЊА, ЈАМСТВО ДА ЈЕ ОВАЈ ДОКУМЕНТ ИЛИ ЊЕГОВА ИЗМЕЊЕНА ВЕРЗИЈА БЕЗ НЕДОСТАТАКА, СПРЕМАН ЗА ТРЖИШТЕ, СВРСИСХОДАН И НЕ НАРУШАВА ЗАКОНСКЕ НОРМЕ. ЦЕЛОКУПАН РИЗИК КОЈИ СЕ ОДНОСИ НА КВАЛИТЕТ, ТАЧНОСТ И ДОМЕТ (УЧИНАК) ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ СНОСИ КОРИСНИК. УКОЛИКО СЕ У БИЛО КОЈЕМ ДОКУМЕНТУ ИЛИ ЊЕГОВОЈ ИЗМЕЊЕНОЈ ВЕРЗИЈИ ПОЈАВИ НЕДОСТАТАК (ГРЕШКА) БИЛО КОЈЕ ВРСТЕ, КОРИСНИК (А НЕ АУТОР ИЗВОРНЕ ВЕРЗИЈЕ, БИЛО КОЈИ ДРУГИ АУТОР ИЛИ САРАДНИК) СНОСИ СВЕ ТРОШКОВЕ НЕОПХОДНОГ СЕРВИСИРАЊА, ПОПРАВКЕ ИЛИ ИСПРАВКЕ. ОВО ОГРАНИЧЕЊЕ ЈАМСТВА ПРЕДСТАВЉА САСТАВНИ ДЕО ОВЕ ДОЗВОЛЕ. УПОТРЕБА БИЛО КОЈЕГ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ НИЈЕ ДОЗВОЉЕНА ОСИМ ПОД УСЛОВИМА ОВОГ ОГРАНИЧЕЊА ЈАМСТВА; И</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПОД КАКВИМ ОКОЛНОСТИМА ИЛИ ЗАКОНУ, БИЛО ЗБОГ КРШЕЊА (ИЛИ НЕМАРА) УГОВОРА, ИЛИ НА БИЛО КОЈИ ДРУГИ НАЧИН, АУТОР (ПРВОБИТНЕ ВЕРЗИЈЕ), САРАДНИК ИЛИ ИСПОРУЧИВАЛАЦ ДОКУМЕНТА ИЛИ ЊЕГОВЕ ИЗМЕЊЕНЕ ВЕРЗИЈЕ, НИТИ ДОБАВЉАЧ БИЛО КОЈЕ ОД НАВЕДЕНИХ СТРАНА НЕЋЕ СНОСИТИ МАТЕРИЈАЛНУ ОДГОВОРНОСТ ЗА НАСТАЛА ДИРЕКТНА, ИНДИРЕКТНА, ПОСЕБНА, СЛУЧАЈНА ИЛИ ТИМЕ НАСТАЛА ОШТЕЋЕЊА БИЛО КОЈЕ ВРСТЕ УКЉУЧУЈУЋИ, БЕЗ ОГРАНИЧЕЊА, ШТЕТУ НАНЕСЕНУ УГЛЕДУ ФИРМЕ, ПРЕСТАНКУ ПРОИЗВОДЊЕ, ОТКАЗИВАЊЕ РАДА РАЧУНАРА ИЛИ КВАРА КАО И ЗА СВЕ ОСТАЛЕ ШТЕТЕ ИЛИ ГУБИТКЕ НАСТАЛЕ УСЛЕД КОРИШЋЕЊА ДОКУМЕНТА И ЊЕГОВИХ ИЗМЕЊЕНИХ ВЕРЗИЈА ЧАК И АКО ЈЕ ОШТЕЋЕНА СТРАНА БИЛА ОБАВЕШТЕНА О МОГУЋНОСТИ НАСТАНКА ТЕ ШТЕТЕ.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+
+	 <authorgroup>
+		<author><firstname>Пројекат Мејтове документације</firstname> <surname/> <affiliation> <orgname>Пројекат Мејтове документације</orgname> </affiliation></author>
+		<author><firstname>Пол</firstname> <surname>Катлер</surname> <affiliation> <orgname>Пројекат Гномове документације</orgname> <address> <email>pcutler@gnome.org</email> </address> </affiliation></author>
+		<author><firstname>Sun</firstname> <surname>Тим Гномове документације</surname> <affiliation> <orgname>Sun Microsystems</orgname> <address/> </affiliation></author>
+		<author><firstname>Телса</firstname> <surname>Гвин</surname> <affiliation> <orgname>Пројекат Гномове документације</orgname> <address> <email>hobbit@aloss.ukuu.org.uk</email> </address> </affiliation></author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname>
+	     <surname>Translator 1</surname>
+	     <affiliation>
+	       <orgname>Latin Translation Team</orgname>
+	       <address> <email>translator@gnome.org</email> </address>
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+
+	<releaseinfo revision="1.10.1" role="review">
+	</releaseinfo>
+
+	 <revhistory>
+		<revision><revnumber>Упутство програмчета Рибе в2.6</revnumber> <date>јул 2015.</date> <revdescription>
+			 <para role="author">Тим документације Гнома</para>
+			 <para role="publisher">Пројекат Мејтове документације</para>
+		  </revdescription></revision>
+		<revision><revnumber>Упутство програмчета Рибе в2.5</revnumber> <date>јул 2015.</date> <revdescription>
+			 <para role="author">Тим Sun Гномове документације</para>
+			 <para role="publisher">Пројекат Гномове документације</para>
+		  </revdescription></revision>
+		<revision><revnumber>Упутство програмчета Рибе в2.4</revnumber> <date>јул 2015.</date> <revdescription>
+			 <para role="author">Тим Sun Гномове документације</para>
+			 <para role="publisher">Пројекат Гномове документације</para>
+		  </revdescription></revision>
+		<revision><revnumber>Упутство програмчета Рибе в2.2</revnumber> <date>јануар 2003.</date> <revdescription>
+			 <para role="author">Тим Sun Гномове документације</para>
+			 <para role="publisher">Пројекат Гномове документације</para>
+		  </revdescription></revision>
+		<revision><revnumber>Упутство програмчета Рибе в2.1</revnumber> <date>август 2002.</date> <revdescription>
+			 <para role="author">Тим Sun Гномове документације</para>
+			 <para role="publisher">Пројекат Гномове документације</para>
+		  </revdescription></revision>
+		<revision><revnumber>Упутство програмчета Рибе в2.0</revnumber> <date>мај 2002.</date> <revdescription>
+			 <para role="author">Тим Sun Гномове документације</para>
+			 <para role="publisher">Пројекат Гномове документације</para>
+		  </revdescription></revision>
+		<revision><revnumber>Упутство програмчета Рибе</revnumber> <date>2000.</date> <revdescription>
+			 <para role="author">Телса Гвин <email>hobbit@aloss.ukuu.org.uk</email></para>
+			 <para role="publisher">Пројекат Гномове документације</para>
+		  </revdescription></revision>
+	 </revhistory>
+	 <releaseinfo>Ово упутство је написано за Рибу 1.10.1.</releaseinfo>
+	 <legalnotice>
+		<title>Примедбе</title>
+		<para>Да пријавите грешку или учините предлог у вези програмчета рибе или овог упутства, пратите упутства са <ulink url="help:mate-user-guide/feedback" type="help">странице за примедбе о Мејту</ulink>.</para>
+
+	 </legalnotice>
+	 <abstract role="description">
+		<para>Програмче Рибе приказује анимирану слику на панелу и доноси вам срећу када кликнете на њу.</para>
+	 </abstract>
+  </articleinfo>
+  <indexterm><primary>Риба</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="fish-introduction">
+<title>Увод</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="fish-fig">
+		<title>Програмче Риба</title>
+		<screenshot>
+		  <mediaobject><imageobject><imagedata fileref="figures/fish_applet.png" format="PNG"/> </imageobject> <textobject> <phrase>Прикажите програмче Риба.</phrase> </textobject></mediaobject>
+		</screenshot>
+	 </figure>
+    <!-- ==== End of Figure ======================================= -->
+<para>Програмче <application>Риба</application> приказује анимирану рибу на панелу. Можете да прилагодите име рибе и програм који се покреће када се кликне на рибу на панелу. По основи, програм који се покрене када се кликне на рибу јесте <application>Срећа</application>, који приказује уобичајену насумичну шаљиву поруку из базе цитата.</para>
+
+
+
+
+<para>Можете да прилагодите приказану слику и наредбу која се покреће када се кликне на њу.</para>
+<sect2 id="fish-introduction-add">
+<title>Да додате Рибу на панел</title>
+  <para>Одрадите следеће кораке:</para>
+         <orderedlist>
+           <listitem>
+             <para>Кликните десним тастером миша на панел.</para>
+           </listitem>
+           <listitem>
+             <para>Изаберите <guimenuitem>Додај на панел</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Премакните доле на списку ставки у прозорчету <guilabel>Додај на панел</guilabel>, затим изаберите <guilabel>Риба</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Кликните <guibutton>Додај</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2></sect1>
+
+<sect1 id="fish-usage">
+<title>Употреба</title>
+<para>Кликните на програмче да прикажете прозорче <guilabel>Риба звана Ванда</guilabel>. Прозорче обично приказује колачиће среће. Можете да подесите програмче да наведете наредбу за извршавање када кликнете на програмче. Видите <xref linkend="fish-settings"/> за више информација.</para>
+</sect1>
+
+<!-- ============= Preferences  ================================ -->
+<sect1 id="fish-settings">
+<title>Поставке</title>
+<para>Да подесите <application>Рибу</application>, кликните десним тастером на програмче <application>Риба</application>, затим изаберите <guimenu>Поставке</guimenu>.</para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Име рибе</guilabel></term>
+<listitem>
+<para>Користите ово поље за текст да наведете име рибе.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Наредба за извршавање по притиску</guilabel></term>
+<listitem>
+<para>По основи, <application>Риба</application> покреће наредбу <literal>fortune</literal> када кликнете на програмче. Користите ово поље да наведете неку другу наредбу за извршавање.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Датотека</guilabel></term>
+<listitem>
+<para>Користите ово поље да изаберете слику за приказивање у програмчету. Можете да изаберете слику која иде уз програмче или личну слику.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Укупно кадрова у анимацији</guilabel></term>
+<listitem>
+<para>Користите ово поље да наведете број кадрова у анимацији.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Застој по кадру</guilabel></term>
+<listitem>
+<para>Користите ово поље да наведете застој у секундама између сваког кадра у анимацији.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Заокрени на усправним панелима</guilabel></term>
+<listitem>
+<para>Изаберите ову опцију да заокренете слику програмчета када додате програмче на усправни панел.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</article>

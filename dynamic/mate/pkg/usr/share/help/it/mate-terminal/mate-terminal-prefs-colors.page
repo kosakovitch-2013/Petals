@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-colors" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-effects"/>
+  </info>
+  <title>Colori</title>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guilabel">Primo piano e Sfondo</gui></title>
+      <p>Selezionare l'opzione <gui style="guilabel">Usa i colori del tema di sistema</gui> per utilizzare i colori che sono specificati nel tema del Desktop MATE selezionato nella scheda <gui style="guilabel">Tema</gui> della sezione <app>Aspetto</app> dello strumento preferenze.</p>
+      <p>Utilizzare l'elenco a tendina <gui style="guilabel">Schemi predefiniti</gui> per specificare i colori di primo piano e di sfondo per il terminale. <app>MATE Terminal</app> supporta le seguenti combinazioni per i colori di primo piano e dello sfondo:</p>
+      <list style="itemizedlist">
+        <item>
+          <p><gui style="guilabel">Nero su giallo chiaro</gui></p>
+        </item>
+        <item>
+          <p><gui style="guilabel">Nero su bianco</gui></p>
+        </item>
+        <item>
+          <p><gui style="guilabel">Grigio su nero</gui></p>
+        </item>
+        <item>
+          <p><gui style="guilabel">Verde su nero</gui></p>
+        </item>
+        <item>
+          <p><gui style="guilabel">Bianco su nero</gui></p>
+        </item>
+        <item>
+          <p><gui style="guilabel">Personalizza</gui></p>
+          <p>Questa opzione permette di selezionare colori che non sono nello schema di colori selezionato.</p>
+        </item>
+      </list>
+      <p>Il risultato della scelta dei colori può variare a seconda del tema di colori che si sceglie. Ad esempio, se si seleziona <gui style="guilabel">Bianco su nero</gui> e lo schema di colori <gui style="guilabel">Console Linux</gui>, l'applicazione mostra i colori di primo-piano e di sfondo come grigio chiaro su nero. L'elenco a tendina <gui style="guilabel">Schemi predefiniti</gui> è disponibile solo se l'opzione <gui style="guilabel">Usa i colori dal tema di sistema</gui> non è selezionata.</p>
+      <p>Fare click sul pulsante <gui style="guibutton">Colore del testo</gui> per mostrare la finestra di dialogo <gui style="guilabel">Scelta del colore del testo del terminale</gui>. Utilizzare la ruota dei colori o le caselle per personalizzare il colore che si desidera utilizzare come colore per il testo, quindi fare clic su <gui style="guibutton">Seleziona</gui>. Il pulsante <gui style="guibutton">Colore del testo</gui> è disponibile solo se l'opzione <gui style="guilabel">Usare i colori del tema di sistema</gui> è deselezionata.</p>
+      <p>Fare clic sul pulsante <gui style="guibutton">Colore dello sfondo</gui> per mostrare la finestra di dialogo <gui style="guilabel">Scegli il colore dello sfondo del terminale</gui>. Utilizzare la ruota dei colori o le caselle per personalizzare il colore che si desidera utilizzare come colore per lo sfondo, quindi fare clic su <gui style="guibutton">Seleziona</gui>. Il pulsante <gui style="guibutton">Colore dello sfondo</gui> è disponibile solo se l'opzione <gui style="guilabel">Usa i colori del tema di sistema</gui> è deselezionata.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Paletta</gui></title>
+      <p>L'emulazione del terminale può utilizzare solo 16 colori alla volta per disegnare il testo. La tavolozza colori specifica questi 16 colori. Le applicazioni che sono eseguite nel terminale utilizzano un numero indice per specificare un colore da questa tavolozza.</p>
+      <p>Utilizzare la lista a tendina <gui style="guilabel">Schemi predefiniti</gui> per selezionare uno schema di colori preimpostato. La tavolozza dei colori in basso ed il contenuto della finestra del terminale si aggiorneranno entrambe per mostrare lo schema selezionato.</p>
+      <p>Utilizzare la <gui style="guilabel">Tavolozza colori</gui> per personalizzare i 16 colori nella tavolozza colori personali. Per modificare un colore fare clic sul colore per mostrare la finestra di dialogo <gui style="guilabel">Tavolozza</gui>. Utilizzare la ruota dei colori o le caselle per personalizzare il colore, quindi fare clic su <gui style="guibutton">Seleziona</gui>.</p>
+    </item>
+  </terms>
+</page>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-tabs" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-contents"/>
+  </info>
+  <title>Modificare una finestra del Terminale</title>
+  <terms style="variablelist">
+    <item>
+      <title>Per nascondere la barra dei menu:</title>
+      <p>Selezionare <guiseq><gui style="guimenu">Visualizza</gui><gui style="guimenuitem">Mostra la barra dei menù</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>Per mostrare una barra dei menù nascosta:</title>
+      <p>Fare clic con il tasto destro del mouse sulla finestra del terminale e selezionare <gui style="guimenuitem">Mostra la barra dei menù</gui> dal menù a comparsa.</p>
+    </item>
+    <item>
+      <title>Per mostrare la finestra di <app>MATE Terminal</app> in modalità a schermo intero:</title>
+      <p>Selezionare <guiseq><gui style="guimenu">Visualizza</gui><gui style="guimenuitem">Schermo Intero</gui></guiseq>. La modalità a schermo intero mostra il testo in una finestra che riempie tutto lo schermo. La finestra non contiene bordi né barra del titolo. Per uscire dalla modalità schermo intero, selezionare <guiseq><gui style="guimenu">Visualizza</gui><gui style="guimenuitem">Schermo Intero</gui></guiseq> una seconda volta.</p>
+    </item>
+    <item>
+      <title>Per modificare l'aspetto della finestra del Terminale:</title>
+      <p>Vedere per le informazioni sulle opzioni che si possono scegliere nella finestra di dialogo <gui style="guilabel">Modifica profilo</gui> per modificare l'aspetto della finestra del terminale. È possibile ad esempio modificare il colore dello sfondo o la posizione della barra di scorrimento.</p>
+    </item>
+  </terms>
+</page>

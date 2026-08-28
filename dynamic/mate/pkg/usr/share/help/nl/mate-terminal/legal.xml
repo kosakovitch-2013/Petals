@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license xmlns="http://projectmallard.org/1.0/" href="https://www.gnu.org/licenses/old-licenses/fdl-1.1.txt">
+
+  <p>This work is licensed under a
+  <link href="help:fdl">GNU Free
+  Documentation License Version 1.1</link> or any later version.</p>
+
+	<p>
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this
+	  <link href="https://www.gnu.org/licenses/old-licenses/fdl-1.1.txt">link</link>.
+         </p>
+         <p> This manual is part of a collection of GNOME manuals
+          distributed under the GFDL.  If you want to distribute this
+          manual separately from the collection, you can do so by
+          adding a copy of the license to the manual, as described in
+          section 6 of the license.
+	</p>
+
+	<p>
+	  Many of the names used by companies to distinguish their
+	  products and services are claimed as trademarks. Where those
+	  names appear in any GNOME documentation, and the members of
+	  the GNOME Documentation Project are made aware of those
+	  trademarks, then the names are in capital letters or initial
+	  capital letters.
+	</p>
+
+	<p>
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+	</p>
+	<list>
+		<item>
+		  <p>HET DOCUMENT IS AANGEBODEN OP EEN "ZOALS HET IS" BASIS, ZONDER ENIGE VORM VAN GARANTIE, ZOWEL UITGESPROKEN ALS GEÏMPLICEERD, INCLUSIEF, ZONDER BEPERKINGEN, GARANTIES DAT HET DOCUMENT OF DE AANGEPASTE VERSIE VAN HET DOCUMENT VRIJ VERHANDELBARE GEBREKEN OF GESCHIKT IS VOOR EEN BEPAALD DOEL IS, OF GEEN INBREUK MAAKT. HET VOLLEDIGE RISICO BETREFFEND DE KWALITEIT, ACCURAATHEID, EN PRESTATIES VAN HET DOCUMENT OF DE AANGEPASTE VERSIE VAN HET DOCUMENT LIGT BIJ U. INDIEN HET DOCUMENT DEFECT BLIJKT TE ZIJN IN ENIGE VORM, U (NIET DE INITIËLE SCHRIJVER, AUTEUR OF ENIGE BIJDRAGER) ZAL DE KOSTEN KOSTEN VOOR ENIGE NODIGE SERVICE, REPARATIE OF CORRECTIE OP ZICH NEMEN. DEZE DISCLAIMER BETREFT DE GARANTIE IS EEN ESSENTIEEL ONDERDEEL VAN DEZE LICENTIE. GEEN ENKEL GEBRUIK VAN DIT DOCUMENT OF AANGEPASTE VERSIE VAN HET DOCUMENT IS TOEGESTAAN ALS VOLGT ZONDER DEZE DISCLAIMER; EN</p>
+		</item>
+		<item>
+		  <p>ONDER GEEN ENKELE OMSTANDIGHEDEN EN ONDER GEEN JURIDISCHE THEORIE, ZIJ HET WETTELIJK (INCLUSIEF NALATIGHEID), CONTRACT, OF ANDERZIJDS ZAL DE AUTEUR, INITIËLE AUTEUR, ENIGE BIJDRAGER VAN HET DOCUMENT OF DE AANPASTE VERSIE VAN HET DOCUMENT, NOCH ENIGE LEVERANCIER VAN EEN VAN DEZE PARTIJEN, AANSPRAKELIJK GEHOUDEN WORDEN DOOR ENIG PERSOON VOOR ENIGE DIRECTE, INDIRECTE, SPECIALE, INCIDENTELE, OF GEVOLG SCHADE IN ELKE VORM INCLUSIEF, ZONDER BEPERKING, SCHADE DOOR VERLIES VAN GOEDE WIL, WERK ONDERBREKING, COMPUTER FALEN OF STORING, OF ENIGE ANDERE VORM VAN SCHADE OF VERLIES ALS GEVOLGEN VAN HET GEBRUIKT VAN HET DOCUMENT EN DE AANGEPASTE VERSIES VAN HET DOCUMENT, ZELFS ALS ZO EEN PARTIJ GEÏNFORMEERD ZOU ZIJN OVER DE MOGELIJKHEID VAN ZULKE SCHADES.</p>
+		</item>
+	  </list>
+</license>

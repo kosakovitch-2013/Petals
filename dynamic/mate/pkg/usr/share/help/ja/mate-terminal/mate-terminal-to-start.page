@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-to-start" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-first-start"/>
+  </info>
+  <title>MATE 端末を始めるには</title>
+  <p>次の方法で<app>MATE 端末</app> を起動します。</p>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guimenu">アプリケーション</gui>・メニュー</title>
+      <p><guiseq><gui style="guimenu">アクセサリ</gui><gui style="guimenuitem">端末</gui></guiseq>を選択します。</p>
+    </item>
+    <item>
+      <title>コマンドライン</title>
+      <p>次のコマンドを実行します：<command>mate-terminal</command></p>
+      <p>コマンドラインのオプションを使用して、<app>MATE 端末</app>の起動方法を変更できます。コマンドライン・オプションを表示するには、次のコマンドを実行します。<cmd>mate-terminal--help</cmd></p>
+    </item>
+  </terms>
+</page>

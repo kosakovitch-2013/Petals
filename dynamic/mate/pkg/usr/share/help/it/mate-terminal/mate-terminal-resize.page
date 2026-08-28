@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-resize" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-title"/>
+  </info>
+  <title>Dimensione del testo</title>
+  <p>Per ridimensionare il testo in una finestra di MATE Terminal, si possono utilizzare i seguenti procedimenti:</p>
+  <list style="itemizedlist">
+    <item>
+      <p>Per aumentare le dimensioni del testo, slezionare <guiseq><gui style="guimenu">Visualizza</gui><gui style="guimenuitem">Aumenta ingrandimento</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Per ridurre le dimensioni del testo, slezionare <guiseq><gui style="guimenu">Visualizza</gui><gui style="guimenuitem">Riduci ingrandimento</gui></guiseq>.</p>
+    </item>
+    <item>
+      <p>Per vedere il testo alle dimensioni effettive, selezionare <guiseq><gui style="guimenu">Visualizza</gui><gui style="guimenuitem">Dimensione normale</gui></guiseq>.</p>
+    </item>
+  </list>
+</page>

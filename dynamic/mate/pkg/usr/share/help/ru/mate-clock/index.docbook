@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "1.10.1">
+<!ENTITY manrevision "2.8">
+<!ENTITY date "July 2015">
+<!ENTITY applet "Clock">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://wiki.mate-desktop.org/dev-doc:doc-team-guide
+  Template version: 2.0 beta
+  Template last modified Feb 11, 2002
+
+-->
+<!-- =============Document Header ============================= -->
+<article id="index" lang="ru">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Руководство по «Часам»</title>
+     <copyright><year>2015-2021</year> <holder>Проект документирования MATE</holder></copyright>
+	 <copyright><year>2009</year> <year>2010</year> <holder>Paul Cutler</holder></copyright>
+	 <copyright><year>2002</year> <year>2003</year> <year>2004</year> <holder>Sun Microsystems</holder></copyright>
+	 <copyright><year>2000</year><holder>Дэн Мует </holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+<!-- An address can be added to the publisher information.  If a role is
+     not specified, the publisher/author is the same for all versions of the
+     document.  -->
+	 <publisher role="maintainer">
+		<publishername>Проект документирования MATE</publishername>
+	 </publisher>
+	 <publisher>
+		<publishername>Проект документирования GNOME</publishername>
+	 </publisher>
+
+  <legalnotice id="legalnotice">
+	<para lang="en">
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this <ulink type="help" url="help:fdl">link</ulink> or in the file COPYING-DOCS
+	  distributed with this manual.
+         </para>
+         <para>Этот документ является частью документации MATE, распространяемой на условиях лицензии GFDL. Если вы хотите распространять этот документ отдельно от общей документации, вы должны приложить копию лицензии к документу, как написано в части 6 лицензии.</para>
+
+	<para>Некоторые имена и марки используются компаниями для обозначения их продуктов и услуг и являются торговыми марками. Там, где эти имена присутствуют в документации и где участники проекта документирования MATE знают об этом, имена выделяются заглавными буквами или начальной заглавной буквой.</para>
+
+	<para>ДОКУМЕНТ И ИЗМЕНЁННЫЕ ВЕРСИИ ДОКУМЕНТА ПРЕДОСТАВЛЯЮТСЯ ПРЕДОСТАВЛЯЮТСЯ ПО УСЛОВИЯМ ЛИЦЕНЗИИ БЕСПЛАТНОЙ ДОКУМЕНТАЦИИ GNU С ПОНИМАНИЕМ ЧТО: <orderedlist>
+		<listitem>
+		  <para>ДОКУМЕНТ РАСПРОСТРАНЯЕТСЯ «КАК ЕСТЬ», БЕЗ ВСЯКИХ ГАРАНТИЙ, ЯВНЫХ ИЛИ НЕЯВНЫХ, ВКЛЮЧАЯ, БЕЗ ОГРАНИЧЕНИЙ, ГАРАНТИИ ТОГО, ЧТО ДОКУМЕНТ ИЛИ ИЗМЕНЁННАЯ ВЕРСИЯ ДОКУМЕНТА СВОБОДНА ОТ ДЕФЕКТОВ, ПРИГОДНА К ПРОДАЖЕ, ПРИГОДНА К ИСПОЛЬЗОВАНИЮ В ОПРЕДЕЛЁННЫХ ЦЕЛЯХ ИЛИ НЕ НАРУШАЕТ ЗАКОНЫ. ВЕСЬ РИСК, КАСАЮЩИЙСЯ КАЧЕСТВА, ТОЧНОСТИ ИЛИ ПРАВИЛЬНОСТИ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА, ЛЕЖИТ НА ВАС. ЕСЛИ ДОКУМЕНТ ИЛИ ИЗМЕНЁННАЯ ВЕРСИЯ ДОКУМЕНТА ИМЕЕТ НЕДОСТАТКИ, ВЫ (А НЕ АВТОР ДОКУМЕНТА ИЛИ ЕГО ПОМОЩНИК) БЕРЁТЕ НА СЕБЯ СТОИМОСТЬ ЛЮБОЙ НЕОБХОДИМОЙ ДОРАБОТКИ, КОРРЕКЦИИ ИЛИ ВОССТАНОВЛЕНИЯ. ЭТОТ ОТКАЗ ОТ ГАРАНТИЙ СОСТАВЛЯЕТ ВАЖНУЮ ЧАСТЬ ЛИЦЕНЗИИ. НИКАКОЕ ИСПОЛЬЗОВАНИЕ ДОКУМЕНТА ИЛИ ИЗМЕНЁННОЙ ВЕРСИИ ДОКУМЕНТА НЕ ДОПУСКАЕТСЯ БЕЗ ДАННОГО ПРЕДУПРЕЖДЕНИЯ И</para>
+		</listitem>
+		<listitem>
+		  <para>НИ ПРИ КАКИХ ОБСТОЯТЕЛЬСТВАХ И НИ ПРИ КАКОМ ЗАКОННОМ СПОСОБЕ, НИ ПО КАКОМУ СОГЛАШЕНИЮ ИЛИ ДРУГОЙ ПРИЧИНЕ, АВТОР, СОЗДАТЕЛЬ, ПОМОЩНИКИ ИЛИ РАСПРОСТРАНИТЕЛИ ДОКУМЕНТА НЕ НЕСУТ ОТВЕТСТВЕННОСТЬ ЗА ПРЯМОЙ, КОСВЕННЫЙ, СПЕЦИАЛЬНЫЙ, СЛУЧАЙНЫЙ ИЛИ ПРЕДНАМЕРЕННЫЙ УЩЕРБ ЛЮБОГО СВОЙСТВА, ВКЛЮЧАЯ, БЕЗ ОГРАНИЧЕНИЯ, ПОТЕРЮ ЖЕЛАНИЯ, РАБОТОСПОСОБНОСТИ, КОМПЬЮТЕРНЫЕ СБОИ ИЛИ ПОЛОМКИ, ИЛИ ЛЮБОЙ ДРУГОЙ УЩЕРБ ИЛИ ПОТЕРИ, ВОЗНИКАЮЩИЕ ВСЛЕДСТВИЕ ИЛИ СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ ДОКУМЕНТА ИЛИ ИЗМЕНЁННЫХ ВЕРСИЙ ДОКУМЕНТА, ДАЖЕ ЕСЛИ СТОРОНА БЫЛА УВЕДОМЛЕНА О ВОЗМОЖНОСТИ ТАКОГО УЩЕРБА.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+<!-- This file  contains link to license for the documentation (GNU FDL), and
+     other legal stuff such as "NO WARRANTY" statement. Please do not change
+     any of this. -->
+
+	 <authorgroup>
+		<author role="maintainer"><firstname>Проект документирования MATE</firstname> <surname/> <affiliation><orgname>Рабочий стол MATE</orgname></affiliation></author>
+		<author><firstname>Paul </firstname> <surname> Cutler</surname> <affiliation> <orgname>Проект документирования GNOME</orgname> <address> <email>pcutler@gnome.org</email> </address> </affiliation></author>
+		<author><firstname>Sun </firstname> <surname>Microsystems</surname> <affiliation> <orgname>Проект документирования GNOME</orgname> <address/> </affiliation></author>
+		<author><firstname>Dan </firstname> <surname> Mueth</surname> <affiliation> <orgname>Проект документирования GNOME</orgname> <address> <email>d-mueth@uchicago.edu</email> </address> </affiliation></author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname>
+	     <surname>Translator 1</surname>
+	     <affiliation>
+	       <orgname>Latin Translation Team</orgname>
+	       <address> <email>translator@gnome.org</email> </address>
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+
+	 <releaseinfo revision="1.10.1" role="review">
+	 </releaseinfo>
+
+	 <revhistory>
+
+		<revision><revnumber>Руководство по апплету «Часы» V2.8</revnumber> <date>Июль 2015</date> <revdescription>
+			 <para role="author">Команда документирования MATE</para>
+			 <para role="publisher">Проект документирования MATE</para>
+		  </revdescription></revision>
+		<revision><revnumber>Руководство по апплету «Часы» V2.7;</revnumber> <date>Июль 2015</date> <revdescription>
+			 <para role="author">Paul Cutler</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Руководство по апплету «Часы» V2.6</revnumber> <date>Июль 2015</date> <revdescription>
+			 <para role="author">Paul Cutler</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Руководство по апплету «Часы» V2.5</revnumber> <date>Февраль 2004</date> <revdescription>
+			 <para role="author">Sun Microsystems</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Руководство по апплету «Часы» V2.4</revnumber> <date>Сентябрь 2003</date> <revdescription>
+			 <para role="author">Sun Microsystems</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Руководство по апплету «Часы» V2.3</revnumber> <date>Январь 2003</date> <revdescription>
+			 <para role="author">Sun Microsystems</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Руководство по апплету «Часы» V2.2</revnumber> <date>Август 2002</date> <revdescription>
+			 <para role="author">Sun Microsystems</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Руководство по апплету «Часы» V2.1</revnumber> <date>Июнь 2002</date> <revdescription>
+			 <para role="author">Sun Microsystems</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Руководство по апплету «Часы» V2.0</revnumber> <date>Март 2002</date> <revdescription>
+			 <para role="author">Sun Microsystems</para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Руководство по апплету «Часы»</revnumber> <date>Апрель 2000</date> <revdescription>
+			 <para role="author">Дэн Мует <email>d-mueth@uchicago.edu</email></para>
+			 <para role="publisher">Проект документирования GNOME</para>
+		  </revdescription></revision>
+	 </revhistory>
+	 <releaseinfo>В данном руководстве описывается версия 1.10.1 апплета «Часы».</releaseinfo>
+	 <legalnotice>
+		<title>Обратная связь</title>
+		<para>Чтобы сообщить об ошибке или внести предложение относительно апплета «Часы» или этого руководства, следуйте инструкциям на <ulink url="help:mate-user-guide/feedback" type="help">странице обратной связи MATE</ulink>.</para>
+
+	 </legalnotice>
+	 <abstract role="description">
+		<para>Апплет <application>Часы</application> показывает дату и время, а при нажатии на него открывает календарь.  <application>Часы</application> можно настроить так, чтобы они отображались в 12- или 24-часовом формате, а также показывали секунды.</para>
+	 </abstract>
+  </articleinfo>
+  <indexterm><primary>Часы</primary></indexterm>
+<!-- ============= Document Body ============================= -->
+
+<!-- ============= Introduction ============================== -->
+
+  <sect1 id="clock-introduction">
+	 <title>Введение</title>
+
+<!-- ==== Figure ============================================= -->
+	 <figure id="clock-fig">
+		<title>Апплет «Часы»</title>
+		<screenshot>
+		  <mediaobject><imageobject><imagedata fileref="figures/clock_applet.png" format="PNG"/> </imageobject> <textobject> <phrase>Показан апплет «Часы».</phrase> </textobject></mediaobject>
+		</screenshot>
+	 </figure>
+    <!-- ==== End of Figure ======================================= -->
+<para>Апплет <application>Часы</application> показывает дату и время, а при нажатии на него открывает календарь.  <application>Часы</application> можно настроить так, чтобы они отображались в 12- или 24-часовом формате, а также показывали секунды.</para>
+
+
+
+<sect2 id="clock-introduction-add">
+<title>Чтобы добавить часы на панель</title>
+  <para>Выполните следующие шаги:</para>
+         <orderedlist>
+           <listitem>
+             <para>Щёлкните правой кнопкой на панели.</para>
+           </listitem>
+           <listitem>
+             <para>Выберите <guimenuitem>Добавить на панель</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Прокрутите список элементов в диалоговом окне <guilabel>Добавить на панель</guilabel> и выберите <guilabel>Часы</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Нажмите <guibutton>Добавить</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2>
+</sect1>
+<!-- ================ Usage ================================ -->
+
+  <sect1 id="clock-usage">
+	 <title>Использование</title>
+
+	<sect2 id="clock-usage-calendar">
+	<title>Чтобы показать календарь</title>
+	<para>Щёлкните по апплету, чтобы открыть небольшой календарь, показывающий текущий месяц. Чтобы закрыть календарь, щёлкните ещё раз по той части апплета, которая находится на панели.</para>
+
+	<para>Вы можете изменить отображаемый в календаре месяц, используя стрелки с каждой стороны названия месяца и года.</para>
+
+	<para>Дважды щёлкните по дню месяца на календаре, чтобы запустить приложение <application>Evolution</application> для совместной работы.</para>
+	</sect2>
+
+	<sect2 id="clock-usage-copy">
+	<title>Вставка даты или времени в приложение</title>
+<para>Апплет <application>Часы</application> берет время от системных часов.</para>
+<para>Чтобы вставить дату или время из апплета <application>Часы</application> в выбранное вами приложение, выполните следующие действия:</para>
+	<orderedlist>
+		<listitem>
+			<para>Правой кнопкой мыши щёлкните по апплету <application>Часы</application>.</para>
+		</listitem>
+		<listitem>
+			<para>Выберите один из следующих пунктов во всплывающем меню апплета:</para>
+			<itemizedlist>
+				<listitem>
+					<para><guimenuitem>Копировать время</guimenuitem></para>
+				</listitem>
+				<listitem>
+					<para><guimenuitem>Копировать дату</guimenuitem></para>
+				</listitem>
+			</itemizedlist>
+		</listitem>
+		<listitem>
+			<para>Укажите место в своём приложении, куда вы хотите вставить скопированный элемент.</para>
+		</listitem>
+		<listitem>
+			<para>Выберите <menuchoice><guimenu>Правка</guimenu><guimenuitem>Вставить</guimenuitem> </menuchoice> или воспользуйтесь средней кнопкой мышки для вставки элемента.</para>
+		</listitem>
+		</orderedlist>
+	</sect2>
+
+</sect1>
+
+<!-- ============= Preferences ============================= -->
+
+<sect1 id="clock-settings">
+<title>Параметры апплета часов</title>
+	<para>Чтобы настроить апплет <application>Часы</application>, дважды щёлкните правой кнопкой мышки по апплету, затем выберите <guimenuitem>Параметры</guimenuitem>. Для изменения настроек вам будут предложены три вкладки: <guimenuitem>Общие</guimenuitem>, <guimenuitem>Расположения</guimenuitem> и <guimenuitem>Погода</guimenuitem>.</para>
+
+
+<sect2 id="generalprefs">
+	<title>Общие параметры</title>
+	<variablelist>
+		  <varlistentry>
+			 <term><guilabel>Формат часов</guilabel></term>
+			 <listitem>
+			 <para>Выберите один из следующих вариантов:</para>
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>12-часовой</guilabel></para>
+			 <para>Показ времени в формате a.m./p.m.</para>
+			 <note><para>Этот параметр не отображается, если язык вашего сеанса не использует 12-часовой формат времени.</para></note>
+			 </listitem>
+			 <listitem>
+			 <para><guilabel>24-часовой</guilabel></para>
+			 <para>Показ времени в формате от 00:00 до 24:00.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry>
+			 <term><guilabel>Показывать дату</guilabel></term>
+			 <listitem>
+			 <para>Выберите этот параметр, чтобы показывать в апплете дату.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry>
+			 <term><guilabel>Показывать секунды</guilabel></term>
+			 <listitem>
+			 <para>Выберите этот параметр, чтобы показывать в апплете секунды.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry>
+			 <term><guilabel>Показывать номера недель в календаре</guilabel></term>
+			 <listitem>
+			 <para>Выберите этот параметр, чтобы отображать в календаре номера недель.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry>
+			 <term><guilabel>Показывать погоду</guilabel></term>
+			 <listitem>
+			 <para>Выберите этот параметр, чтобы показывать текущий прогноз погоды для вашего местоположения. Погода будет отображаться в виде значка для солнечной, облачной, дождливой и т.д. погоды.</para>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry>
+			 <term><guilabel>Показывать температуру</guilabel></term>
+			 <listitem>
+			 <para>Выберите этот параметр, чтобы отображать температуру для вашего местоположения.</para>
+			 </listitem>
+		  </varlistentry>
+
+	</variablelist>
+
+</sect2>
+
+<sect2 id="locationprefs">
+	<title>Параметры расположения</title>
+
+	<variablelist>
+		  <varlistentry>
+			 <term><guilabel>Расположение</guilabel></term>
+			 <listitem>
+			 <para>Вы можете добавить одно или несколько мест и их время для отображения в «Часах». Чтобы добавить местоположение:</para>
+			 <itemizedlist>
+			 <listitem>
+			 <para>Нажмите <guilabel>Добавить</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para>Начните набирать название города, региона или страны, и по мере их ввода в раскрывающемся списке будут появляться найденные варианты. Выберите нужный вам вариант и значения в полях <guilabel>Часовой пояс</guilabel>, <guilabel>Широта</guilabel> и <guilabel>Долгота</guilabel> будут заполнены.</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+	</variablelist>
+
+</sect2>
+
+
+<sect2 id="weatherprefs">
+	<title>Параметры апплета «Сводка Погоды»</title>
+
+	<variablelist>
+		  <varlistentry>
+			 <term><guilabel>Погода</guilabel></term>
+			 <listitem>
+			 <para>Из вариантов, предложенных в раскрывающимся списке, вы можете выбрать в каких единицах будут отображаться значения температуры:</para>
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>F</guilabel> (по Фаренгейту)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>C</guilabel> (по Цельсию)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>K</guilabel> (Кльвин)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>По умолчанию</guilabel> (значения, принятые в вашем регионе).</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+		  <varlistentry>
+			 <term><guilabel>Единица скорости ветра</guilabel></term>
+			 <listitem>
+			 <para>Из вариантов, предложенных в раскрывающимся списке, вы можете выбрать в каких единицах будут отображаться значения скорости ветра:</para>
+			 <itemizedlist>
+			 <listitem>
+			 <para><guilabel>шкала Бофорта</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>узлы</guilabel></para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>mph</guilabel> (миль в час)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>km/h</guilabel> (километров в час)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>m/s</guilabel> (метров в секунду)</para>
+			</listitem>
+			 <listitem>
+			 <para><guilabel>По умолчанию</guilabel> (значения, принятые в вашем регионе).</para>
+			 </listitem>
+			 </itemizedlist>
+			 </listitem>
+		  </varlistentry>
+	</variablelist>
+
+</sect2>
+
+<sect2 id="clock-usage-adjust">
+    <title>Настройка системной даты или времени</title>
+    <para>Чтобы настроить системную дату и время, отображаемые апплетом <application>Часы</application>, выполните следующие действия:</para>
+    <orderedlist>
+        <listitem>
+            <para>Нажмите кнопку <guibutton>Параметры времени</guibutton> в диалоговом окне параметров.</para>
+        </listitem>
+        <listitem>
+            <para>Используйте диалоговое окно <guilabel>Дата и время</guilabel> для настроек даты и времени.</para>
+        </listitem>
+        <listitem>
+            <para>Нажмите кнопку <guibutton>Установить системное время</guibutton>, затем в диалоговом окне <application>mate-polkit</application> появится запрос на введение пароля администратора. Введите пароль администратора и нажмите кнопку <guibutton>Аутентификация</guibutton>.</para>
+        </listitem>
+    </orderedlist>
+</sect2>
+
+</sect1>
+
+</article>

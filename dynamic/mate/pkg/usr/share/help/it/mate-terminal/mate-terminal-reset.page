@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-reset" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#usage"/>
+  </info>
+  <title>Ripristinare il vostro Terminale</title>
+  <p>Questa sezione fornisce qualche suggerimento se si hanno problemi con i terminali.</p>
+  <terms style="variablelist">
+    <item>
+      <title>Per resettare lo stato del Terminale:</title>
+      <p>Selezionare <guiseq><gui style="guimenu">Terminale</gui><gui style="guimenuitem">Resetta</gui></guiseq>.</p>
+    </item>
+  </terms>
+  <terms style="variablelist">
+    <item>
+      <title>Per resettare il terminale e pulire lo schermo:</title>
+      <p>Selezionare <guiseq><gui style="guimenu">Terminale</gui><gui style="guimenuitem">Resetta e pulisci</gui></guiseq>.</p>
+    </item>
+  </terms>
+</page>

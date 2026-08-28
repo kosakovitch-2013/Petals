@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-title" type="topic" xml:lang="sr">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-colors"/>
+  </info>
+  <title>Наслов и наредба</title>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <gui style="guilabel">Initial title</gui>
+      </title>
+      <p>Користите овај оквир да одредите почетни наслов терминала који користи профил. Нови терминали који се покрену из текућег терминала имаће нови почетни наслов.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When terminal commands set their own titles</gui>
+      </title>
+      <p>Користите овај падајући списак да одредите како се ради са динамички постављеним насловима, тако је, наслове терминала које постављају наредбе покренуте у терминалу.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run command as a login shell</gui>
+      </title>
+      <p>Изаберите ову опцију да приморате да се наредба која тренутно ради у терминалу покрене као шкољка пријаве. Ако наредба није шкољка, поставка нема дејства.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Update login records when command is launched</gui>
+      </title>
+      <p>Изаберите ову опцију да уметнете нови унос у записима пријаве када се отвори нова шкољка.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run a custom command instead of my shell</gui>
+      </title>
+      <p>
+                  Select this option to run a specified command, other than the normal shell, in the terminal. Specify the custom command in the <gui style="guilabel">Custom command</gui> text box. 
+                </p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When command exits</gui>
+      </title>
+      <p>Користите овај падајући списак да наведете која ће се наредба обавити након извршења наредбе.</p>
+    </item>
+  </terms>
+</page>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="index" type="guide" xml:lang="zh-CN">
+  <info>
+    <credit type="copyright">
+      <name>MATE 文档项目</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Paul Cutler</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Christian Persch</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Sun Microsystems</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Miguel de Icaza</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Michael Zucchi</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Alexander Kirillov</name>
+      <years/>
+    </credit>
+    <credit type="publisher">
+      <name>MATE 文档项目</name>
+    </credit>
+    <credit type="author">
+      <name>MATE 文档团队</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>MATE DESKTOP</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Sun GNOME 开发团队</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>Sun Microsystems</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Miguel de Icaza</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>GNOME 文档项目</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Michael Zucchi</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>GNOME 文档项目</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Alexander Kirillov</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>GNOME 文档项目</orgname>
+      </affiliation>
+    </credit>
+    <credit type="publisher">
+      <name>GNOME 文档项目</name>
+    </credit>
+    <releaseinfo xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">This manual describes version 1.22 of MATE Terminal.</releaseinfo>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>
+		terminal application
+		</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christopher Meng</mal:name>
+      <mal:email>i@cicku.me</mal:email>
+      <mal:years>2012-2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>ravix</mal:name>
+      <mal:email>dr.neemous@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Dianjin Wang</mal:name>
+      <mal:email>1132321739qq@gmail.com</mal:email>
+      <mal:years>2012</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Cravix</mal:name>
+      <mal:email>dr.neemous@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>nyanyh</mal:name>
+      <mal:email>rebuilty@gmail.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>liulitchi</mal:name>
+      <mal:email>xingzuo88@qq.com</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>玉堂白鹤</mal:name>
+      <mal:email>yjwork@qq.com</mal:email>
+      <mal:years>2015</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Mingye Wang</mal:name>
+      <mal:email>arthur200126@gmail.com</mal:email>
+      <mal:years>2015-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>白铭骢</mal:name>
+      <mal:email>jeffbai@aosc.xyz</mal:email>
+      <mal:years>2015-2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>刘子兴</mal:name>
+      <mal:email>liushuyu@aosc.xyz</mal:email>
+      <mal:years>2015-2016</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>MATE 终端</title>
+  <links type="topic"/>
+  <section id="get-started" style="2column">
+    <title>入门</title>
+    <p>
+		The following sections describe how to start <app>MATE Terminal</app>. 
+	</p>
+  </section>
+  <section id="usage" style="2column">
+    <title>用法</title>
+  </section>
+  <section id="prefs" style="2column">
+    <title>首选项</title>
+    <p>
+	To configure <app>MATE Terminal</app>, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Current Profile</gui></guiseq>. To configure another profile that you set up choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Profiles</gui></guiseq>, select the profile you want to edit, then click <gui style="guibutton">Edit</gui>.  </p>
+    <p>
+	The <gui style="guilabel">Editing Profile</gui> dialog contains the following tabbed sections that you can use to configure <app>MATE Terminal</app>: </p>
+  </section>
+</page>

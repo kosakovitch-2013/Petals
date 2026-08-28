@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "1.10.1">
+<!ENTITY manrevision "2.6">
+<!ENTITY date "July 2015">
+<!ENTITY applet "Fish">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://wiki.mate-desktop.org/dev-doc:doc-team-guide
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+
+-->
+<article id="index" lang="cs">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Příručka appletu Ryba</title>
+	 <copyright><year>2015-2021</year> <holder>Projekt dokumentace MATE</holder></copyright>
+	 <copyright><year>2009</year> <holder>Paul Cutler</holder></copyright>
+	 <copyright><year>2002</year> <year>2003</year> <holder>Sun Microsystems</holder></copyright>
+	 <copyright><year>2000</year> <holder>Telsa Gwynne</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer">
+		<publishername>Dokumentační projekt MATE</publishername>
+	 </publisher>
+	 <publisher role="maintainer">
+		<publishername>Dokumentační projekt GNOME</publishername>
+	 </publisher>
+
+  <legalnotice id="legalnotice">
+	<para lang="en">
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this <ulink type="help" url="help:fdl">link</ulink> or in the file COPYING-DOCS
+	  distributed with this manual.
+         </para>
+         <para>Tato příručka je součástí sbírky příruček MATE šířených za podmínek licence GNU FDL. Pokud chcete tento dokument šířit odděleně od sbírky, musíte přiložit kopii licence dle popisu v oddíle 6 dané licence.</para>
+
+	<para>Mnoho užívaných jmen určených k zviditelnění produktů nebo služeb jsou ochranné známky. Na místech, kde jsou tato jména v dokumentaci užita a členové Dokumentačního projektu MATE jsou si vědomi skutečnosti, že se jedná o ochrannou známku, je takové jméno psáno velkými písmeny celé nebo s velkým písmenem na začátku.</para>
+
+	<para>DOKUMENT A JEHO UPRAVENÉ VERZE JSOU ŠÍŘENY V SOULADU SE ZNĚNÍM LICENCE GNU FREE DOCUMENTATION LICENSE S NÁSLEDUJÍCÍM USTANOVENÍM: <orderedlist>
+		<listitem>
+		  <para>DOKUMENT JE POSKYTOVÁN V PODOBĚ "JAK JE", BEZ ZÁRUKY JAKÉHOKOLIV DRUHU, NEPOSKYTUJÍ SE ANI ODVOZENÉ ZÁRUKY, ZÁRUKY, ŽE DOKUMENT, NEBO JEHO UPRAVENÁ VERZE, JE BEZCHYBNÝ, NEBO ZÁRUKY PRODEJNOSTI, VHODNOSTI PRO URČITÝ ÚČEL, NEBO NEPORUŠENOSTI. RIZIKO NEKVALITY, NEPŘESNOSTI A ŠPATNÉHO PROVEDENÍ DOKUMENTU, NEBO JEHO UPRAVENÉ VERZE, NESETE VY. POKUD JE TENTO DOKUMENT NEBO JEHO UPRAVENÁ VERZE VADNÁ V JAKÉMKOLIV SMYSLU, VY (NIKOLIV PŮVODCE, AUTOR NEBO JAKÝKOLIV PŘISPĚVATEL) PŘEBÍRÁTE ODPOVĚDNOST ZA JAKÉKOLIV NÁKLADY NA NUTNÉ ÚPRAVY, OPRAVY ČI SLUŽBY. TOTO PROHLÁŠENÍ O ZÁRUCE PŘEDSTAVUJE ZÁKLADNÍ SOUČÁST TÉTO LICENCE. BEZ TOHOTO PROHLÁŠENÍ NENÍ PODLE TÉTO DOHODY POVOLENO UŽÍVÁNÍ ANI ÚPRAVY TOHOTO DOKUMENTU; DÁLE</para>
+		</listitem>
+		<listitem>
+		  <para>UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL
+                       THEORY, WHETHER IN TORT (INCLUDING NEGLIGENCE),
+                       CONTRACT, OR OTHERWISE, SHALL THE AUTHOR,
+                       INITIAL WRITER, ANY CONTRIBUTOR, OR ANY
+                       DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION
+                       OF THE DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH
+                       PARTIES, BE LIABLE TO ANY PERSON FOR ANY
+                       DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR
+                       CONSEQUENTIAL DAMAGES OF ANY CHARACTER
+                       INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS
+                       OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR
+                       MALFUNCTION, OR ANY AND ALL OTHER DAMAGES OR
+                       LOSSES ARISING OUT OF OR RELATING TO USE OF THE
+                       DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT,
+                       EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF
+                       THE POSSIBILITY OF SUCH DAMAGES.
+		  </para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+
+	 <authorgroup>
+		<author><firstname>Dokumentační projekt MATE</firstname> <surname/> <affiliation> <orgname>Dokumentační projekt MATE</orgname> </affiliation></author>
+		<author><firstname>Paul</firstname> <surname>Cutler</surname> <affiliation> <orgname>Dokumentační projekt GNOME</orgname> <address> <email>pcutler@gnome.org</email> </address> </affiliation></author>
+		<author><firstname>Sun</firstname> <surname>Dokumentační tým GNOME</surname> <affiliation> <orgname>Sun Microsystems</orgname> <address/></affiliation></author>
+		<author><firstname>Telsa</firstname> <surname>Gwynne</surname> <affiliation> <orgname>Dokumentační projekt GNOME</orgname> <address> <email>hobbit@aloss.ukuu.org.uk</email> </address> </affiliation></author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname>
+	     <surname>Translator 1</surname>
+	     <affiliation>
+	       <orgname>Latin Translation Team</orgname>
+	       <address> <email>translator@gnome.org</email> </address>
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+
+	<releaseinfo revision="1.10.1" role="review">
+	</releaseinfo>
+
+	 <revhistory>
+		<revision><revnumber>Přiručka appletu Ryba verze 2.6</revnumber> <date>Červenec 2015</date> <revdescription>
+			 <para role="author">Dokumentační tým MATE</para>
+			 <para role="publisher">Dokumentační projekt MATE</para>
+		  </revdescription></revision>
+		<revision><revnumber>Přiručka appletu Ryba verze 2.5;</revnumber> <date>Červenec 2015</date> <revdescription>
+			 <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+			 <para role="publisher">Dokumentační projekt GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Přiručka appletu Ryba verze 2.4</revnumber> <date>Červenec 2015</date> <revdescription>
+			 <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+			 <para role="publisher">Dokumentační projekt GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Přiručka appletu Ryba verze 2.2</revnumber> <date>Leden 2003</date> <revdescription>
+			 <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+			 <para role="publisher">Dokumentační projekt GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Přiručka appletu Ryba verze 2.1</revnumber> <date>Srpen 2002</date> <revdescription>
+			 <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+			 <para role="publisher">Dokumentační projekt GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Přiručka appletu Ryba verze 2.0</revnumber> <date>Květen 2002</date> <revdescription>
+			 <para role="author">Dokumentační tým GNOME společnosti Sun</para>
+			 <para role="publisher">Dokumentační projekt GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Přiručka appletu Ryba</revnumber> <date>2000</date> <revdescription>
+			 <para role="author">Telsa Gwynne <email>hobbit@aloss.ukuu.org.uk</email></para>
+			 <para role="publisher">Dokumentační projekt GNOME</para>
+		  </revdescription></revision>
+	 </revhistory>
+	 <releaseinfo>Tato příručka popisuje applet Ryba ve verzi 1.10.1.</releaseinfo>
+	 <legalnotice>
+		<title>Ohlasy</title>
+		<para>Chcete-li nahlásit chybu nebo učinit návrh týkající se appletu Ryba nebo této příručky, postupujte podle pokynů na <ulink url="help:mate-user-guide/feedback" type="help">stránce ohlasů na MATE</ulink>.</para>
+
+	 </legalnotice>
+	 <abstract role="description">
+		<para>Applet Ryba zobrazuje animovaný obrázek na panelu a po klepnutí vám zobrazí věštbu.</para>
+	 </abstract>
+  </articleinfo>
+  <indexterm><primary>Ryba</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="fish-introduction">
+<title>Úvod</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="fish-fig">
+		<title>Applet Ryba</title>
+		<screenshot>
+		  <mediaobject><imageobject><imagedata fileref="figures/fish_applet.png" format="PNG"/> </imageobject> <textobject> <phrase>Zobrazuje applet Ryba.</phrase> </textobject></mediaobject>
+		</screenshot>
+	 </figure>
+    <!-- ==== End of Figure ======================================= -->
+<para>Applet <application>Ryba</application> zobrazuje animaci ryby na panelu. Můžete si upravit její jméno a program, který je spuštěn pokud na rybu klepnete. Výchozí spouštěný program je <application>fortune</application>, který zobrazuje náhodnou humornou citaci z databáze.</para>
+
+
+
+
+<para>Můžete si uzpůsobit zobrazený obrázek a příkaz spuštěný při klepnutí na applet.</para>
+<sect2 id="fish-introduction-add">
+<title>Přidání appletu Ryba na panel</title>
+  <para>Proveďte následující kroky:</para>
+         <orderedlist>
+           <listitem>
+             <para>Klepněte pravým tlačítkem na panel.</para>
+           </listitem>
+           <listitem>
+             <para>Zvolte <guimenuitem>Přidat na panel</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Projděte položky v seznamu okna <guilabel>Přidat na panel</guilabel> a vyberte <guilabel>Ryba</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Klepněte na <guibutton>Přidat</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2></sect1>
+
+<sect1 id="fish-usage">
+<title>Využití</title>
+<para>Klepnutím na applet zobrazíte okno <guilabel>Ryby Wandy</guilabel>. Okno obvykle zobrazuje věštby. Můžete nastavit applet tak, aby po klepnutí spouštěl jiný příkaz. Více informací popisuje <xref linkend="fish-settings"/>.</para>
+</sect1>
+
+<!-- ============= Preferences  ================================ -->
+<sect1 id="fish-settings">
+<title>Předvolby</title>
+<para>Pokud chcete upravit vlastnosti appletu <application>Ryba</application>, klepněte na něj v panelu pravým tlačítkem a zvolte <guimenu>Předvolby</guimenu>.</para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Jméno ryby</guilabel></term>
+<listitem>
+<para>Použijte toto pole k vlastnímu pojmenování ryby.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Příkaz, který spustit při kliknutí</guilabel></term>
+<listitem>
+<para>Ve výchozím nastavení spouští <application>Ryba</application> při klepnutí na applet příkaz <literal>fortune</literal>. Použijte toto textové pole k zadání alternativního příkazu, který bude spuštěn.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Soubor</guilabel></term>
+<listitem>
+<para>Použijte toto pole k výběru obrázku, který bude applet zobrazovat. Můžete si vybrat z obrázků dodávaných s tímto appletem nebo vlastní.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Celkem políček v animaci</guilabel></term>
+<listitem>
+<para>Použijte tento číselník s zadání počtu snímků animace.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Prodleva mezi políčky</guilabel></term>
+<listitem>
+<para>Použijte tento číselník s zadání prodlevy v sekundách mezi jednotlivými snímky animace.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Otočení na svislém panelu</guilabel></term>
+<listitem>
+<para>Použitím této volby umožníte pootočit obrázek appletu, pokud je přidán na svislý panel.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</article>

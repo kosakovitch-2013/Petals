@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-shortcuts" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-resize"/>
+  </info>
+  <title>キーボードショートカットの設定を表示する</title>
+  <p><app>MATE 端末</app>用に定義されているキーボードショートカットの設定を表示するには、<guiseq><gui style="guimenu">編集</gui><gui style="guimenuitem">キーボード・ショートカット</gui></guiseq>を選択します。<gui style="guilabel">キーボードショートカット</gui>ダイアログには次の項目があります。</p>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guilabel">すべてのメニューアクセスキーを無効にする ( Alt+f を押して File メニューを開くなど)</gui></title>
+      <p>このオプションの選択を解除すると、メニュー・アイテムを選択する際、マウスの代わりにキーボードを使用できるように定義されたアクセスキーが使用不能となります。各アクセスキーは、メニューまたはダイアログ・オプションにて下線付きの文字で識別されます。場合によっては、<key>Alt</key> キーをアクセスキーとともに押して、アクションを実行する必要があります。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">メニュー・ショートカットキーを無効にする (既定では F10)</gui></title>
+      <p>このオプションの選択を解除すると、<app>MATE 端末</app>メニューにアクセスできるように定義されているショートカットキーが無効になります。メニューにアクセスするための既定のショートカットキーは <key>F10</key> です。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">ショートカットキー</gui></title>
+      <p>ダイアログの<gui style="guilabel">ショートカットキー</gui>セクションには、各メニュー項目に定義されているショートカットキーの一覧があります。</p>
+      <note style="note">
+        <p>すべてのキーがショートカットキーとして使用できるわけではありません。例えば <key>Tab</key> キーは使えません。</p>
+      </note>
+    </item>
+  </terms>
+</page>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-profiles" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-more-windows"/>
+  </info>
+  <title>端末のプロファイル</title>
+  <p>新しいプロファイルを作成し、そのプロファイルを端子に適用して、フォント、色と効果、スクロール動作、ウィンドウタイトル、互換性などの特性を修正できます。また、プロファイルで <app>MATE端末</app>を起動したときに自動的に実行されるコマンドを指定することもできます。</p>
+  <p>各端末のプロファイルは<gui style="guilabel">プロファイル</gui>ダイアログで定義します。このダイアログは、<gui style="guimenu">編集</gui>メニューからアクセスできます。必要な数のプロファイルを定義できます。端末の起動時に、端末で使用したいプロファイルを選択できます。あるいは、端末の使用中にそのプロファイルを変更できます。コマンドラインからアプリケーションを起動するときに、端末の初期プロファイルを指定するには、次のコマンドを使用します。</p>
+  <p><cmd>mate-terminal --window-with-profile=<var>プロファイル名</var></cmd></p>
+  <p><gui style="guilabel">プロファイルの編集</gui>ダイアログで別のタイトルバー名を指定しない限り、現在のプロファイルの名前は、<app>MATE 端末</app>のタイトルバーに表示されます。</p>
+  <p>新しい端末を定義して使用する方法については、<xref linkend="mate-terminal-windows"/>を参照してください。</p>
+</page>

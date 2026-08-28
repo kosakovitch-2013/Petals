@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-title" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-encoding"/>
+  </info>
+  <title>端末の見出しを変更するには</title>
+  <p>現在の端末で表示されている見出しを変更するには、次の手順を実行します。</p>
+  <p><guiseq><gui style="guimenu">端末</gui><gui style="guimenuitem">タイトルの設定</gui></guiseq>を選択します。<gui style="guilabel">タイトル</gui>のテキストボックスに新しいタイトルを入力します。<app>MATE 端末</app>では直ちにこの変更を適用します。<gui style="guibutton">閉じる</gui>をクリックして<gui style="guilabel">タイトルの設定</gui>ダイアログを閉じます。</p>
+</page>

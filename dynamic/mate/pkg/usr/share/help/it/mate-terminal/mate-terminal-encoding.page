@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-encoding" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-reset"/>
+  </info>
+  <title>Modificare la codifica dei caratteri</title>
+  <p>Per modificare l'elenco delle codifiche dei caratteri mostrate nel menù <gui style="guisubmenu">Imposta la Codifica dei caratteri</gui>, procedere come segue:</p>
+  <p>Selezionare <guiseq><gui style="guimenu">Terminale</gui><gui style="guisubmenu">Imposta la codifica dei caratteri</gui><gui style="guimenuitem">Aggiungi o Rimuovi</gui></guiseq>. Per aggiungere una codifica al menu <gui style="guisubmenu">Imposta la codifica dei caratteri</gui>, selezionare la codifica nel riquadro <gui style="guilabel">Codifiche disponibili</gui>, quindi fare clic sul pulsante freccia destra. Per remuovere una codifica dal menu <gui style="guisubmenu">Imposta la codifica dei caratteri</gui>, selezionare la codifica nel riquadro <gui style="guilabel">Codifiche mostrate nel menù</gui>, quindi premere il pulsante freccia a sinistra. Fare clic su <gui style="guibutton">Chiudi</gui> per chiudere la finestra di dialogo <gui style="guilabel">Aggiungi o rimuovi codifiche del terminale</gui>.</p>
+</page>

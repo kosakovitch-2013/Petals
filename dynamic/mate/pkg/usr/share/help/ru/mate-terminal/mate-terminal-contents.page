@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-contents" type="topic" xml:lang="ru">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-shortcuts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  </info>
+  <title>Работа с содержимым окон терминалов</title>
+  <terms style="variablelist">
+    <item>
+      <title>Чтобы просмотреть предыдущие команды и вывод путём прокрутки:</title>
+      <p>Выполните одно из следующих действий:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Воспользуйтесь полосой прокрутки, которая обычно отображается в правой части окна терминала.</p>
+        </item>
+        <item>
+          <p>
+                        Press the <keyseq><key>Shift</key><key>Page Up</key></keyseq>, <keyseq><key>Shift</key><key>Page Down</key></keyseq>, <keyseq><key>Shift</key><key>Home</key></keyseq>, or <keyseq><key>Shift</key><key>End</key></keyseq> keys.  </p>
+        </item>
+      </list>
+      <p>
+                  The number of lines that you can scroll back to in the terminal window is determined by the <gui style="guilabel">Scrollback</gui> setting in the <gui style="guilabel">Scrolling</gui> tabbed section of the <gui style="guilabel">Editing Profile</gui> dialog.  You can also scroll up or down one line at a time by pressing <keyseq><key>Control</key><key>Shift</key><key>Up</key></keyseq> or <keyseq><key>Control</key><key>Shift</key><key>Down</key></keyseq>. </p>
+    </item>
+    <item>
+      <title>Чтобы выделить и скопировать текст:</title>
+      <p>Текст можно выделить любым из следующих способов:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Для посимвольного выделения щёлкните по первому символу, который требуется выделить, и перетащите указатель мыши к последнему символу, который требуется выделить.</p>
+        </item>
+        <item>
+          <p>Для пословного выделения щёлкните по первому слову, которое требуется выделить, и перетащите указатель мыши к последнему слову, которое требуется выделить. Символы выделяются отдельно.</p>
+        </item>
+        <item>
+          <p>Для построчного выделения сделайте тройной щелчок по первой строке, которую требуется выделить, и перетащите указатель мыши к последней строке, которую требуется выделить.</p>
+        </item>
+      </list>
+      <p>
+                  These actions select all text between the first and last items. For all text selections, <app>MATE Terminal</app> copies the selected text into the clipboard when you release the mouse button. To explicitly copy the selected text, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Copy</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>Чтобы вставить текст в терминал:</title>
+      <p>Если текст был ранее скопирован в буфер обмена, его можно вставить в терминал с помощью одного из следующих действий:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Чтобы вставить текст, который был скопирован только с помощью выделения, щёлкните в командной строке средней кнопкой мыши. Если у мыши нет средней кнопки, обратитесь к документации X Server, чтобы найти информацию о том, как выполнить эмуляцию средней кнопки мыши.</p>
+        </item>
+        <item>
+          <p>
+                        To paste text that you explicitly copied, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Paste</gui></guiseq>. </p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title>Чтобы перетащить файл в окно терминала:</title>
+      <p>Файл можно перетащить в терминал из другого приложения (например, из файлового менеджера). В терминале отображается путь к файлу и его полное имя.</p>
+    </item>
+    <item>
+      <title>Чтобы перейти по ссылке:</title>
+      <p>Чтобы выполнить переход по URL-адресу, показанному в терминале, выполните следующие действия:</p>
+      <p> 
+                      
+                        
+                          Move the mouse over the URL until the URL is underlined.  
+                      
+                      
+                        
+                          Right-click on the URL to open a popup menu.  
+                      
+                      
+                        
+                          Choose <gui style="guimenuitem">Open Link</gui> to start a link application and display the file located at the URL.  
+                      
+                  </p>
+    </item>
+  </terms>
+</page>

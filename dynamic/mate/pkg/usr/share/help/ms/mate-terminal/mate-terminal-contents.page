@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-contents" type="topic" xml:lang="ms">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-shortcuts"/>
+  </info>
+  <title>Mengendalikan Kandungan Tetingkap Terminal</title>
+  <terms style="variablelist">
+    <item>
+      <title>Menatal perintah dan output terdahulu:</title>
+      <p>Lakukan salah satu tindakan-tindakan berikut:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Guna palang tatal, yang biasanya dipapar di sebelah kanan tetingkap terminal.</p>
+        </item>
+        <item>
+          <p>
+                        Press the <keyseq><key>Shift</key><key>Page Up</key></keyseq>, <keyseq><key>Shift</key><key>Page Down</key></keyseq>, <keyseq><key>Shift</key><key>Home</key></keyseq>, or <keyseq><key>Shift</key><key>End</key></keyseq> keys.  </p>
+        </item>
+      </list>
+      <p>
+                  The number of lines that you can scroll back to in the terminal window is determined by the <gui style="guilabel">Scrollback</gui> setting in the <gui style="guilabel">Scrolling</gui> tabbed section of the <gui style="guilabel">Editing Profile</gui> dialog.  You can also scroll up or down one line at a time by pressing <keyseq><key>Control</key><key>Shift</key><key>Up</key></keyseq> or <keyseq><key>Control</key><key>Shift</key><key>Down</key></keyseq>. </p>
+    </item>
+    <item>
+      <title>Untuk memilih dan menyalin teks:</title>
+      <p>Anda boleh memilih teks berdasarkan mana-mana langkah berikut:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Untuk memilih satu aksara pada satu masa, klik pada aksara pertama yang mahu dipilih kemudian seret tetikus ke aksara terakhir yang dikehendaki.</p>
+        </item>
+        <item>
+          <p>Untuk memilih satu perkataan pada satu masa, dwi-klik pada aksara pertama yang mahu dipilih kemudian seret tetikus ke aksara terakhir yang dikehendaki. Simbol dipilih secara berasingan.</p>
+        </item>
+        <item>
+          <p>Untuk memilih satu baris pada satu masa, klik pada baris pertama yang mahu dipilih kemudian seret tetikus ke baris terakhir yang dikehendaki.</p>
+        </item>
+      </list>
+      <p>
+                  These actions select all text between the first and last items. For all text selections, <app>MATE Terminal</app> copies the selected text into the clipboard when you release the mouse button. To explicitly copy the selected text, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Copy</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>Menampal teks ke dalam terminal:</title>
+      <p>Sebelum ini anda menyalin teks ke dalam papan keratan, anda juga boleh menampal teks ke dalam terminal dengan membuat langkah-langkah berikut:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Untuk menampal teks yang telah disalin, klik-tengah pada bisikan perintah. Jika tetikus anda tiada butang tengah, sila rujuk dokumentasi X Server untuk maklumat lanjut bagaimana hendak emulasikan butang tetikus tengah.</p>
+        </item>
+        <item>
+          <p>
+                        To paste text that you explicitly copied, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Paste</gui></guiseq>. </p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title>Menyeret satu nama fail ke dalam tetingkap terminal:</title>
+      <p>Anda boleh menyeret satu nama fail ke dalam terminal daripada aplikasi lain seperti pengurus fail. Terminal dapat memaparkan laluan dan juga nama penuh fail tersebut.</p>
+    </item>
+    <item>
+      <title>Mencapai satu pautan:</title>
+      <p>Untuk mencapai Pelokasi Sumber Seragam (URL) yang terpapar di dalam terminal, buat langkah-langkah berikut:</p>
+      <p> 
+                      
+                        
+                          Move the mouse over the URL until the URL is underlined.  
+                      
+                      
+                        
+                          Right-click on the URL to open a popup menu.  
+                      
+                      
+                        
+                          Choose <gui style="guimenuitem">Open Link</gui> to start a link application and display the file located at the URL.  
+                      
+                  </p>
+    </item>
+  </terms>
+</page>

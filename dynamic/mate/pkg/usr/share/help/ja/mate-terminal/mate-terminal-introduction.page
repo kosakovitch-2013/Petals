@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-introduction" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>はじめに</title>
+  <p><app>MATE 端末</app>は、端末エミュレーション・アプリケーションで、以下の作業を行うことができます：</p>
+  <terms style="variablelist">
+    <item>
+      <title>MATE 環境での UNIX シェルへのアクセス</title>
+      <p>シェルとは、コマンドラインプロンプトで入力したコマンドを解釈して実行するプログラムです。<app>MATE 端末</app>を起動すると、システムアカウントで指定した標準シェルが起動します。いつでも別のシェルに切り替えることができます。</p>
+    </item>
+    <item>
+      <title>VT102、VT220、および <app>xterm</app> 端末上で動作するように設計されたアプリケーションを起動します。</title>
+      <p><app>MATE 端末</app>は、X コンソーシアムによって開発された <app>xterm</app> アプリケーションをエミュレートします。次に、<app>xterm</app> アプリケーションは DEC VT102 端末をエミュレートし、DEC VT220 エスケープ・シーケンスもサポートします。エスケープ・シーケンスは、<key>Esc</key> 文字で始まる一連の文字です。<app>MATE 端末</app>は、VT102 および VT220 端末がカーソルの位置決めや画面のクリアなどの機能に使用する、すべてのエスケープ・シーケンスを受け入れます。</p>
+    </item>
+  </terms>
+</page>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-contents" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-shortcuts"/>
+  </info>
+  <title>端末ウィンドウの内容を操作する</title>
+  <terms style="variablelist">
+    <item>
+      <title>前のコマンドと出力をスクロールするには</title>
+      <p>次のいずれかの操作を実行します。</p>
+      <list style="itemizedlist">
+        <item>
+          <p>スクロールバーを使用します。これは通常、端末ウィンドウの右側に表示されます。</p>
+        </item>
+        <item>
+          <p><keyseq><key>Shift</key><key>Page Up</key></keyseq> キー、<keyseq><key>Shift</key><key>Page Down</key></keyseq> キー、<keyseq><key>Shift</key><key>Home</key></keyseq> キー、または <keyseq><key>Shift</key><key>End</key></keyseq> キーを押します。</p>
+        </item>
+      </list>
+      <p>端末ウィンドウでスクロールバックできる行数は、<gui style="guilabel">プロファイルの編集</gui>ダイアログの<gui style="guilabel">スクロール</gui>タブ項目にある<gui style="guilabel">スクロールバックの設定</gui>によって決定されます。また、<keyseq><key>Control</key><key>Shift</key><key>Up</key></keyseq> または <keyseq><key>Control</key><key>Shift</key><key>Down</key></keyseq> を押すと、一度に１行ずつ上下にスクロールできます。</p>
+    </item>
+    <item>
+      <title>テキストを選択してコピーするには</title>
+      <p>次のいずれかの方法でテキストを選択できます。</p>
+      <list style="itemizedlist">
+        <item>
+          <p>文字を一度に選択するには、選択する最初の文字をクリックし、選択する最後の文字までマウスをドラッグします。</p>
+        </item>
+        <item>
+          <p>単語を一度に選択するには、選択する最初の単語をダブルクリックし、選択する最後の単語までマウスをドラッグします。記号は個別に選択されます。</p>
+        </item>
+        <item>
+          <p>行を一度に選択するには、選択する最初の行を３回クリックし、選択する最後の行までマウスをドラッグします。</p>
+        </item>
+      </list>
+      <p>一連の操作によって、最初と最後のアイテム間のすべてのテキストが選択されます。すべてのテキスト選択では、マウスボタンを放すと、<app>MATE 端末</app>は選択したテキストをクリップボードにコピーします。選択したテキストを明示的にコピーするには、<guiseq><gui style="guimenu">編集</gui><gui style="guimenuitem">コピー</gui></guiseq>を選択します。</p>
+    </item>
+    <item>
+      <title>テキストを端末に貼り付けるには</title>
+      <p>以前にテキストをクリップボードへコピーした場合は、次のいずれかの操作を実行することで、テキストを端末に貼り付けることができます。</p>
+      <list style="itemizedlist">
+        <item>
+          <p>選択のみでコピーしたテキストを貼り付けるには、コマンドプロンプトで中ボタンクリックします。マウスに中ボタンがない場合は、マウスの中ボタンをエミュレートする方法について、X Server の文書を参照してください。</p>
+        </item>
+        <item>
+          <p>明示的にコピーしたテキストを貼り付けるには、<guiseq><gui style="guimenu">編集</gui><gui style="guimenuitem">貼り付け</gui></guiseq>を選択します。</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title>ファイル名を端末ウィンドウにドラッグするには</title>
+      <p>ファイルマネージャなどの別のアプリケーションより端末へ、ファイル名をドラッグできます。端末には、ファイルのパスと完全な名前が表示されます。</p>
+    </item>
+    <item>
+      <title>リンクにアクセスするには</title>
+      <p>端末に表示されているユニフォーム・リソース・ロケータ (URL) にアクセスするには、次の手順を実行してください。</p>
+      <p>URL に下線が引かれるまで、URL の上へマウスを移動させます。その URL 上で右クリックしてポップアップメニューを開きます。<gui style="guimenuitem">リンクを開く</gui>を選択すると、リンク先のアプリケーションが起動し、URL にあるファイルが表示されます。</p>
+    </item>
+  </terms>
+</page>

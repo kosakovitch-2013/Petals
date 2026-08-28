@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-introduction" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index"/>
+  </info>
+  <title>Introduzione</title>
+  <p><app>MATE Terminal</app> è un'applicazione emulatore di terminale che può essere utilizzata per eseguire i seguenti compiti:</p>
+  <terms style="variablelist">
+    <item>
+      <title>Accedere ad una shell UNIX nell'ambiente MATE</title>
+      <p>Una shell è un programma che interpreta ed esegue i comandi che si scrivono da un prompt dei comandi. Quando si avvia <app>MATE Terminal</app>, l'applicazione avvia la shell predefinita che è specificata nel vostro account di sistema. Potete cambiare shell in qualsiasi momento.</p>
+    </item>
+    <item>
+      <title>Eseguire una qualsiasi applicazione progettata per essere eseguita sui terminali VT102, VT220, e <app>xterm</app>.</title>
+      <p><app>MATE Terminal</app> emula l'applicazione <app>xterm</app> sviluppata da X Consortium. A sua volta, l'applicazione <app>xterm</app> emula il terminale DEC VT102 e supporta inoltre le sequenze di escape del DEC VT220. Una sequenza de escape è una sequenza di caratteri che iniziano col carattere <key>Esc</key>. <app>MATE Terminal</app> accetta tutte le sequenze di escape che utilizzano i terminali VT102 e VT220 per funzioni come il posizionamento del cursore o la pulizia dello schermo. </p>
+    </item>
+  </terms>
+</page>

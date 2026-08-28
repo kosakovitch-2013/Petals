@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-title" type="topic" xml:lang="ru">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-colors"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Алексей Кабанов</mal:name>
+      <mal:email>ak099@mail.ru</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  </info>
+  <title>Заголовок и команда</title>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <gui style="guilabel">Initial title</gui>
+      </title>
+      <p>Воспользуйтесь этим текстовым полем для указания начального заголовка терминалов, использующих этот профиль. У новых терминалов, запускаемых из текущего терминала, будет новый начальный заголовок.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When terminal commands set their own titles</gui>
+      </title>
+      <p>Воспользуйтесь этим раскрывающимся списком для указания того, как следует обрабатывать устанавливаемые динамически заголовки (т.е. заголовки терминалов, установленные с помощью команд, которые выполняются в терминале).</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run command as a login shell</gui>
+      </title>
+      <p>Выберите этот параметр, чтобы принудительно запустить команду, выполняемую в терминале, в качестве оболочки входа. Если команда не является оболочкой, параметр не имеет значения.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Update login records when command is launched</gui>
+      </title>
+      <p>Выберите этот параметр для добавления новой записи входа при открытии новой оболочки.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run a custom command instead of my shell</gui>
+      </title>
+      <p>
+                  Select this option to run a specified command, other than the normal shell, in the terminal. Specify the custom command in the <gui style="guilabel">Custom command</gui> text box. 
+                </p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When command exits</gui>
+      </title>
+      <p>Воспользуйтесь этим раскрывающимся списком для указания действия, которое следует выполнить при выходе из команды.</p>
+    </item>
+  </terms>
+</page>

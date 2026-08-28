@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="index" type="guide" xml:lang="ja">
+  <info>
+    <credit type="copyright">
+      <name>MATE 文書化プロジェクト</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Paul Cutler</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Christian Persch</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>サン・マイクロシステムズ</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Miguel de Icaza</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Michael Zucchi</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Alexander Kirillov</name>
+      <years/>
+    </credit>
+    <credit type="publisher">
+      <name>MATE 文書化プロジェクト</name>
+    </credit>
+    <credit type="author">
+      <name>MATE 文書化チーム</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>MATE デスクトップ</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Sun GNOME 文書化チーム</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>サン・マイクロシステムズ</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Miguel de Icaza</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>GNOME 文書化プロジェクト</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Michael Zucchi</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>GNOME 文書化プロジェクト</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Alexander Kirillov</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>GNOME 文書化プロジェクト</orgname>
+      </affiliation>
+    </credit>
+    <credit type="publisher">
+      <name>GNOME 文書化プロジェクト</name>
+    </credit>
+    <releaseinfo xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">本マニュアルは、MATEデスクトップの 1.22 版について説明しています。</releaseinfo>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>端末アプリケーション</desc>
+  </info>
+
+  <title>MATE 端末</title>
+  <links type="topic"/>
+  <section id="get-started" style="2column">
+    <title>はじめましょう</title>
+    <p>次の節では、<app>MATE 端末</app>を開始する方法について説明します。</p>
+  </section>
+  <section id="usage" style="2column">
+    <title>使い方</title>
+  </section>
+  <section id="prefs" style="2column">
+    <title>各種設定</title>
+    <p><app>MATE 端末</app>を設定するには、<guiseq><gui style="guimenu">編集</gui><gui style="guimenuitem">現在</gui></guiseq>のプロファイルを選択します。別のプロファイルを設定するには、<guiseq><gui style="guimenu">編集</gui><gui style="guimenuitem">プロファイル</gui></guiseq>を選択し、編集したいプロファイルを選択して、<gui style="guibutton">編集</gui>をクリックします。</p>
+    <p><gui style="guilabel">プロファイルの編集</gui>ダイアログボックスには、<app>MATE 端末</app>の設定に使用できる次の各タブ項目があります。</p>
+  </section>
+</page>

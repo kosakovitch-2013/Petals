@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-title" type="topic" xml:lang="da">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-colors"/>
+  </info>
+  <title>Titel og kommando</title>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <gui style="guilabel">Initial title</gui>
+      </title>
+      <p>Brug denne tekstboks til at angive opstartstitlen for terminaler, der bruger profilen. Nye terminale  der startes fra den nuværende terminal har den nye opstartstitel.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When terminal commands set their own titles</gui>
+      </title>
+      <p>Brug dette rullegardin til at angive hvordan dynamisk angivne titler skal håndteres, det vil sige, terminaltitler angivet af kommander, der afvikles i terminalen.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run command as a login shell</gui>
+      </title>
+      <p>Vælg denne indstilling for at tvinge kommandoen, der lige nu afvikles inden i terminalen, til at blive afviklet som en logindskal. Hvis kommnadoen ikke er en skal, har indstillingen ingen effekt.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Update login records when command is launched</gui>
+      </title>
+      <p>Vælg denne indstilling for at indsætte et nyt element i log ind-opførslerne ,når en ny skal åbnes.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run a custom command instead of my shell</gui>
+      </title>
+      <p>
+                  Select this option to run a specified command, other than the normal shell, in the terminal. Specify the custom command in the <gui style="guilabel">Custom command</gui> text box. 
+                </p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When command exits</gui>
+      </title>
+      <p>Brug dette rullegardin til at angive hvilken handling, der skal udføres, når kommandoen afsluttes.</p>
+    </item>
+  </terms>
+</page>

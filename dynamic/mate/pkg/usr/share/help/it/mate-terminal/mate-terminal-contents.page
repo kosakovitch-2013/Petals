@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-contents" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-shortcuts"/>
+  </info>
+  <title>Lavorare con il contenuto delle finestre del Terminale</title>
+  <terms style="variablelist">
+    <item>
+      <title>Scorrere i comandi e l'output precedenti:</title>
+      <p>Eseguire una delle seguenti azioni:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Utilizzare la barra di scorrimento, che è solitamente visualizzata sulla destra della finestra del terminale.</p>
+        </item>
+        <item>
+          <p>Premere i tasti <keyseq><key>Shift</key><key>Page Up</key></keyseq>, <keyseq><key>Shift</key><key>Page Down</key></keyseq>, <keyseq><key>Shift</key><key>Home</key></keyseq>, o <keyseq><key>Shift</key><key>End</key></keyseq>.</p>
+        </item>
+      </list>
+      <p>Il numero di righe che si possono riesaminare nella finestra del terminale è determinato dall'impostazione <gui style="guilabel">Scorrimento all'indietro</gui> nella sezione scheda <gui style="guilabel">Scorrimento</gui> della finestra di dialogo <gui style="guilabel">Modifica Profilo</gui>. Si può inoltre scorrere in su o in giù di una riga alla volta premendo <keyseq><key>Control</key><key>Shift</key><key>Su</key></keyseq> o <keyseq><key>Control</key><key>Shift</key><key>Giù</key></keyseq>.</p>
+    </item>
+    <item>
+      <title>Selezionare e copiare il testo:</title>
+      <p>È possibile selezionare il testo in uno qualsiasi dei modi seguenti:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Per selezionare il testo un carattere alla volta, fare clic sul primo carattere da selezionare e trascinare il mouse fino all'ultimo carattere che si vuole selezionare. </p>
+        </item>
+        <item>
+          <p>Per selezionare il testo una parola alla volta fare doppio clic sulla prima parola da selezionare e trascinare il mouse fino all'ultima parola che si desidera selezionare. I simboli vengono selezionati singolarmente.</p>
+        </item>
+        <item>
+          <p>Per selezionare il testo una linea alla volta, fare triplo clic sulla prima linea da selezionare e trascinare il mouse fino all'ultima linea che si desidera selezionare.</p>
+        </item>
+      </list>
+      <p>Queste azioni selezionano tutto il testo compreso tra il primo e l'ultimo oggetto. In qualsiasi caso, <app>MATE Terminal</app> copia il testo selezionato negli appunti quando si rilascia il pulsante del mouse. Per copiare il testo in modo esplicito, selezionare <guiseq><gui style="guimenu">Modifica</gui><gui style="guimenuitem">Copia</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>Incollare testo in un Terminale:</title>
+      <p>Se in precedenza si è copiato del testo negli appunti, lo si può incollare nel terminale eseguendo una delle seguenti azioni:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Per incollare il testo che si è copiato solo con la selezione, fare clic col pulsante centrale del mouse. Se non si ha il pulsante centrale, fare riferimento alla documentazione del Server X per informazioni su come emulare il bottone centrale.</p>
+        </item>
+        <item>
+          <p>Per incollare del testo che si è copiato esplicitamente, selezionare <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Incolla</gui></guiseq>.</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title>Trascinare un file in una finestra del terminale:</title>
+      <p>È possibile trascinare un nome di file da una applicazione, come ad esempio un file manager, ad una finestra di terminale. Il terminale mostrerà il percorso ed il nome completo del file.</p>
+    </item>
+    <item>
+      <title>Accedere ad un collegamento:</title>
+      <p>Per accedere ad uno Uniform Resource Locator (URL) che è mostrato in un terminale, procedere come segue:</p>
+      <p>Posizionare il mouse sopra l'URL fino a quando esso non diventa sottolineato. Fare clic destro col pulsante del mouse sull'URL per aprire un menu a comparsa. Selezionare <gui style="guimenuitem">Apri Collegamento</gui> per avviare un'applicazione che gestisce i collegamenti che mostrerà il file localizzato a quell'URL.  </p>
+    </item>
+  </terms>
+</page>

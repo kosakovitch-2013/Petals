@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license xmlns="http://projectmallard.org/1.0/" href="https://www.gnu.org/licenses/old-licenses/fdl-1.1.txt">
+
+  <p>This work is licensed under a
+  <link href="help:fdl">GNU Free
+  Documentation License Version 1.1</link> or any later version.</p>
+
+	<p>
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this
+	  <link href="https://www.gnu.org/licenses/old-licenses/fdl-1.1.txt">link</link>.
+         </p>
+         <p> This manual is part of a collection of GNOME manuals
+          distributed under the GFDL.  If you want to distribute this
+          manual separately from the collection, you can do so by
+          adding a copy of the license to the manual, as described in
+          section 6 of the license.
+	</p>
+
+	<p>
+	  Many of the names used by companies to distinguish their
+	  products and services are claimed as trademarks. Where those
+	  names appear in any GNOME documentation, and the members of
+	  the GNOME Documentation Project are made aware of those
+	  trademarks, then the names are in capital letters or initial
+	  capital letters.
+	</p>
+
+	<p>
+	  DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED
+	  UNDER  THE TERMS OF THE GNU FREE DOCUMENTATION LICENSE
+	  WITH THE FURTHER UNDERSTANDING THAT:
+	</p>
+	<list>
+		<item>
+		  <p>DOKUMNET SA POSKYTUJE "TAK AKO JE", BEZ ZÁRUKY AKÉHOKOĽVEK DRUHU, ČI UŽ VÝSLOVNÉHO, VYPLÝVAJÚCEHO, A BEZ ZÁRUKY ŽE TENTO DOKUMENT JE BEZ AKÝCHKOĽVEK CHÝB, ALEBO VHODNÝ PRE KONKRÉTNY ÚČEL ALEBO OPRÁVNENIE. VŠETKA ZODPOVEDNOSŤ ZA KVALITU, PRESNOSŤ A ÚČINNOSŤ DOKUMENTU JE NA VÁS. AK SA DOKUMENT ALEBO JEHO MODIFIKÁCIA UKÁŽE PREUKÁZATEĽNE VADNÁ, MÔŽETE(ALE NIE AK STE POČIATOČNÝ AUTOR, AUTOR ALEBO AKÝKOĽVEK PRISPIEVATEĽ) PREVZIAŤ NÁKLADY NA UDRŽIAVANIE, OPRAVOVANIE A OPRAVU. TOTO VYHLÁSENIE SA POKLADÁ ZA NEODDELITELNÚ SÚČASŤ LICENCIE. NA POUŽÍVANIE DOKUMENTOV ALEBO ICH ZMENENÝCH VERZÍ SA VZŤAHUJE TÁTO LICENCIA OKREM TOHTO VYLÚČENIA ZODPOVEDNOSTI; A</p>
+		</item>
+		<item>
+		  <p>V ŽIADNOM PRÍPADE A ZA ŽIADNYCH PRÁVNYCH TEÓRIÍ, ČI ÚMYSELNÉ UBLÍŽENIE (AJ Z NEDBANLIVOSTI), ZMLUVOU, ALEBO INAK SA AUTOR, POČIATOČNÝ SPISOVATEĽ, VŠETCI PRISPIEVATELIA, DISTRIBÚTOR DOKUMENTU ALEBO JEHO MODIFIKOVANEJ VERZIE, ALEBO DODÁVATEĽ AKEJKOĽVEK STRANY,  NEZODPOVEDÁ ŽIADNEJ OSOBE ZA AKÉKOĽVEK PRIAME, NEPRIAME, ZVLÁŠTNE, NÁHODNÉ, ALEBO VYPLÝVAJÚCE ŠKODY AKÉHOKOĽVEK CHARAKTERU,  AKO OBMEDZENIA, STRATA DOBRÉHO MENA, PRERUŠENIE PRÁCE, ZLYHANIE POČÍTAČA ČI PORUCHY, ALEBO AKÉKOĽVEK INÉ ŠKODY A STRATY KTORÉ VZNIKNÚ, ALEBO SA BUDÚ VZŤAHOVAŤ NA POUŽÍVANIE TOHOTO DOKUMENTU ČI ZMENENÝCH VERZIÍ TOHTO DOKUMENTU AJ KEĎ STRANA BOLA INFORMOVANÁ O MOŽNOSTI TAKÝCHTO ŠKÔD.</p>
+		</item>
+	  </list>
+</license>

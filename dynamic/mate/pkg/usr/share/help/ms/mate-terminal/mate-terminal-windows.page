@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-windows" type="topic" xml:lang="ms">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-manage-profiles"/>
+  </info>
+  <title>Membuka dan Menutup Terminal</title>
+  <terms style="variablelist">
+    <item>
+      <title>Untuk membuka satu tetingkap terminal baharu:</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">File</gui><gui style="guimenuitem">Open Terminal</gui></guiseq>.  </p>
+      <p>Terminal baharu mewarisi tetapan aplikasi dan shell lalai dari terminal induk.</p>
+    </item>
+    <item>
+      <title>Untuk menutup satu tetingkap terminal:</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">File</gui><gui style="guimenuitem">Close Window</gui></guiseq>.  </p>
+      <p>
+                  This action closes the terminal and any subprocesses that you opened from the terminal. If you close the last terminal window, the <app>MATE Terminal</app> application exits.  </p>
+    </item>
+    <item>
+      <title>Untuk menambah satu terminal bertab baharu dalam satu tetingkap:</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">File</gui><gui style="guisubmenu">Open Tab</gui><gui style="guimenuitem">Default</gui></guiseq> or just <guiseq><gui style="guimenu">File</gui><gui style="guimenuitem">Open Tab</gui></guiseq> if there is no submenu.  </p>
+    </item>
+    <item>
+      <title>Untuk paparkan terminal bertab:</title>
+      <p>
+                  Click on the tab of the tabbed terminal that you want to display, or select a tab title from the <gui style="guimenu">Tabs</gui> menu.
+                </p>
+      <p>
+                  Alternatively, choose <guiseq><gui style="guimenu">Tabs</gui><gui style="guimenuitem">Next Tab</gui></guiseq> or <guiseq><gui style="guimenu">Tabs</gui><gui style="guimenuitem">Previous Tab</gui></guiseq> to navigate between tabs.
+                </p>
+    </item>
+    <item>
+      <title>Untuk menutup terminal bertab:</title>
+      <p>
+                   
+                      
+                        
+                          Display the tabbed terminal that you want to close. 
+                        
+                      
+                      
+                        
+                          Choose <guiseq><gui style="guimenu">File</gui><gui style="guimenuitem">Close Tab</gui></guiseq>.  
+                      
+                   
+                </p>
+    </item>
+  </terms>
+</page>

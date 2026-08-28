@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-first-start" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-profiles"/>
+  </info>
+  <title>MATE 端末を初めて起動するとき</title>
+  <p><app>MATE 端末</app>を初めて起動すると、標準設定のグループを含む端末ウィンドウが表示されます。標準設定のグループは、既定のプロファイルと呼ばれます。</p>
+  <figure>
+      <title>既定の MATE 端末ウィンドウの例</title>
+      <media type="image" src="figures/mate-terminal-default.png"/>
+  </figure>
+  <p>端末ウィンドウにコマンドプロンプトが表示され、UNIX コマンドを入力できます。コマンドプロンプトには、%、#、&gt;、$ またはその他の特殊文字を使用できます。カーソルはコマンドプロンプトに置かれます。UNIX コマンドを入力して <key>Return</key> キーを押すと、コンピュータによってコマンドが実行されます。既定では、<app>MATE 端末</app>は、アプリケーションを起動するユーザに指定された標準シェルを使用します。</p>
+  <p><app>MATE 端末</app>では、次の環境変数も設定されます。</p>
+  <terms style="variablelist">
+    <item>
+      <title><code style="varname">TERM</code></title>
+      <p>既定で <literal>xterm-256 カラー</literal>に設定されます。</p>
+    </item>
+    <item>
+      <title><code style="varname">WINDOWID</code></title>
+      <p>既定で X11 Window 識別子に設定されます。</p>
+    </item>
+  </terms>
+</page>

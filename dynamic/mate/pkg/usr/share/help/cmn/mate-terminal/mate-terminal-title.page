@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-title" type="topic" xml:lang="cmn">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-encoding"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Woodman Tuen</mal:name>
+      <mal:email>wmtuen@gmail.com</mal:email>
+      <mal:years>2005-06</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Abel Cheung</mal:name>
+      <mal:email>abel@oaka.org</mal:email>
+      <mal:years>2003-04</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>趙惟倫</mal:name>
+      <mal:email>bluebat@member.fsf.org</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+  <title>To Change the Terminal Title</title>
+  <p>
+          To change the title of the currently displayed terminal, perform the following steps:</p>
+  <p>
+          
+            Choose <guiseq><gui style="guimenu">Terminal</gui><gui style="guimenuitem">Set Title</gui></guiseq>. 
+          
+          
+            Type the new title in the <gui style="guilabel">Title</gui> text box. <app>MATE Terminal</app> applies the change immediately. 
+          
+          
+            Click <gui style="guibutton">Close</gui> to close the <gui style="guilabel">Set Title</gui> dialog.  
+          
+        </p>
+</page>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-profiles" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-more-windows"/>
+  </info>
+  <title>Profili del Terminale</title>
+  <p>È possibile creare un nuovo profilo, ed applicarlo al terminale per modificare quelle caratteristiche come ad esempio il font, il colore e gli effetti, il comportamento dello scorrimento, il titolo della finestra e la compatibilità. Si può anche specificare un comando che venga eseguito automaticamente quando si avvia <app>MATE Terminal</app> nel profilo.</p>
+  <p>Ogni profilo del terminale viene definito nella finestra di dialogo <gui style="guilabel">Profili</gui>, che si raggiunge dal menu <gui style="guimenu">Modifica</gui>. Si possono definire tanti profili quanto se ne desidera. Quando si avvia un terminale, si può scegliere quale profilo utilizzare per il terminale. In alternativa, è possibile cambiare il profilo del terminale quando il terminale è già in uso. Per specificare un profilo iniziale quando si avvia un terminale dalla riga di comando, utilizzare il seguente comando:</p>
+  <p><cmd>mate-terminal --window-with-profile=<var>nomeprofilo</var></cmd></p>
+  <p>Il nome del profilo corrente appare sulla barra del titolo di <app>MATE Terminal</app>, almeno che non si sia specificato un nome per la barra del titolo diverso nella finestra di dialogo <gui style="guilabel">Modifiche del Profilo</gui>.</p>
+  <p>Si veda per informazioni su come definire ed utilizzare un nuovo profilo di terminale.</p>
+</page>

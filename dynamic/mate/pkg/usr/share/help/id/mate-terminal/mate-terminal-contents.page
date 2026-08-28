@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-contents" type="topic" xml:lang="id">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-shortcuts"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kukuh Syafaat</mal:name>
+      <mal:email>syafaatkukuh@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2022.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Bekerja dengan Isi Jendela Terminal</title>
+  <terms style="variablelist">
+    <item>
+      <title>Untuk menggulir perintah dan keluaran sebelumnya:</title>
+      <p>Lakukan salah satu tindakan berikut:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Gunakan bilah gulir, yang biasanya ditampilkan di sebelah kanan jendela terminal.</p>
+        </item>
+        <item>
+          <p>
+                        Press the <keyseq><key>Shift</key><key>Page Up</key></keyseq>, <keyseq><key>Shift</key><key>Page Down</key></keyseq>, <keyseq><key>Shift</key><key>Home</key></keyseq>, or <keyseq><key>Shift</key><key>End</key></keyseq> keys.  </p>
+        </item>
+      </list>
+      <p>
+                  The number of lines that you can scroll back to in the terminal window is determined by the <gui style="guilabel">Scrollback</gui> setting in the <gui style="guilabel">Scrolling</gui> tabbed section of the <gui style="guilabel">Editing Profile</gui> dialog.  You can also scroll up or down one line at a time by pressing <keyseq><key>Control</key><key>Shift</key><key>Up</key></keyseq> or <keyseq><key>Control</key><key>Shift</key><key>Down</key></keyseq>. </p>
+    </item>
+    <item>
+      <title>Untuk memilih dan menyalin teks:</title>
+      <p>Anda dapat memilih teks dengan salah satu cara berikut:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Untuk memilih satu karakter pada suatu saat, klik karakter pertama yang ingin Anda pilih dan seret tetikus ke karakter terakhir yang ingin Anda pilih.</p>
+        </item>
+        <item>
+          <p>Untuk memilih kata sekaligus, klik ganda pada kata pertama yang ingin Anda pilih dan seret tetikus ke kata terakhir yang ingin Anda pilih. Simbol dipilih secara individual.</p>
+        </item>
+        <item>
+          <p>Untuk memilih garis sekaligus, klik tiga kali pada baris pertama yang ingin Anda pilih dan seret tetikus ke baris terakhir yang ingin Anda pilih.</p>
+        </item>
+      </list>
+      <p>
+                  These actions select all text between the first and last items. For all text selections, <app>MATE Terminal</app> copies the selected text into the clipboard when you release the mouse button. To explicitly copy the selected text, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Copy</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>Untuk menempelkan teks ke terminal:</title>
+      <p>Jika sebelumnya Anda menyalin teks ke papan klip, Anda dapat menempelkan teks ke terminal dengan melakukan salah satu tindakan berikut:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Untuk menempelkan teks yang Anda salin hanya dengan pilihan, klik tengah pada command prompt. Jika Anda tidak memiliki tombol tengah tetikus, lihat dokumentasi X Server untuk informasi tentang cara meniru tombol tengah tetikus.</p>
+        </item>
+        <item>
+          <p>
+                        To paste text that you explicitly copied, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Paste</gui></guiseq>. </p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title>Untuk menyeret nama berkas ke jendela terminal:</title>
+      <p>Anda dapat menyeret nama berkas ke terminal dari aplikasi lain seperti manajer berkas. Terminal menampilkan path dan nama lengkap berkas.</p>
+    </item>
+    <item>
+      <title>Untuk mengakses suatu tautan:</title>
+      <p>Untuk mengakses Uniform Resource Locator (URL) yang ditampilkan di terminal, lakukan langkah-langkah berikut:</p>
+      <p> 
+                      
+                        
+                          Move the mouse over the URL until the URL is underlined.  
+                      
+                      
+                        
+                          Right-click on the URL to open a popup menu.  
+                      
+                      
+                        
+                          Choose <gui style="guimenuitem">Open Link</gui> to start a link application and display the file located at the URL.  
+                      
+                  </p>
+    </item>
+  </terms>
+</page>

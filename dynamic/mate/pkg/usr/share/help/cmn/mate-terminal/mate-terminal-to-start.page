@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-to-start" type="topic" xml:lang="cmn">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-first-start"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Woodman Tuen</mal:name>
+      <mal:email>wmtuen@gmail.com</mal:email>
+      <mal:years>2005-06</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Abel Cheung</mal:name>
+      <mal:email>abel@oaka.org</mal:email>
+      <mal:years>2003-04</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>趙惟倫</mal:name>
+      <mal:email>bluebat@member.fsf.org</mal:email>
+      <mal:years>2013</mal:years>
+    </mal:credit>
+  </info>
+  <title>Starting MATE Terminal</title>
+  <p>
+          You can start <app>MATE Terminal</app> in the following ways: 
+        </p>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guimenu">Applications</gui> menu</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">Accessories</gui><gui style="guimenuitem">Terminal</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>命令列</title>
+      <p>
+                  Execute the following command: <cmd>mate-terminal</cmd>
+                </p>
+      <p>
+                  You can use command line options to modify the way in which you run <app>MATE Terminal</app>. To view the command line options, execute the following command: <cmd>mate-terminal --help</cmd>
+                </p>
+    </item>
+  </terms>
+</page>

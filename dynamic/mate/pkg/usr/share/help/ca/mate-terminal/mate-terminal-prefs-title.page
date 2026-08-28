@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-title" type="topic" xml:lang="ca">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-colors"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Joan Duran</mal:name>
+      <mal:email>jodufi@gmail.com</mal:email>
+      <mal:years>2007, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francesc Famadas</mal:name>
+      <mal:email>kiski97@gmail.com</mal:email>
+      <mal:years>2018</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Robert Antoni Buj Gelonch</mal:name>
+      <mal:email>rbuj@fedoraproject.org</mal:email>
+      <mal:years>2018, 2019</mal:years>
+    </mal:credit>
+  </info>
+  <title>Títol i ordre</title>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <gui style="guilabel">Initial title</gui>
+      </title>
+      <p>
+                  Use this text box to specify the initial title of terminals that use the profile. New terminals that are started from the current terminal have the new initial title. 
+                </p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When terminal commands set their own titles</gui>
+      </title>
+      <p>
+                  Use this drop-down list to specify how to handle dynamically-set titles, that is, terminal titles set by commands that run in the terminal.
+                </p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run command as a login shell</gui>
+      </title>
+      <p>
+                  Select this option to force the command that currently runs inside the terminal to run as a login shell. If the command is not a shell, the setting has no effect. 
+                </p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Update login records when command is launched</gui>
+      </title>
+      <p>
+                  Select this option to insert a new entry in the login records when a new shell is opened. 
+                </p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run a custom command instead of my shell</gui>
+      </title>
+      <p>
+                  Select this option to run a specified command, other than the normal shell, in the terminal. Specify the custom command in the <gui style="guilabel">Custom command</gui> text box. 
+                </p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When command exits</gui>
+      </title>
+      <p>
+                  Use this drop-down list to specify what action to perform when the command exits. 
+                </p>
+    </item>
+  </terms>
+</page>

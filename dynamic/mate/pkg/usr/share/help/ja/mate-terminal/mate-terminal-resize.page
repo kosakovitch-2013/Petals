@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-resize" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-title"/>
+  </info>
+  <title>文字サイズ</title>
+  <p>次の方法を利用すると、MATE 端末ウィンドウ内の文字の大きさを変更できます。</p>
+  <list style="itemizedlist">
+    <item>
+      <p>テキストのサイズを大きくする場合は、<guiseq><gui style="guimenu">表示</gui><gui style="guimenuitem">拡大</gui></guiseq>を選択します。</p>
+    </item>
+    <item>
+      <p>テキストのサイズを小さくする場合は、<guiseq><gui style="guimenu">表示</gui><gui style="guimenuitem">縮小</gui></guiseq>を選択します。</p>
+    </item>
+    <item>
+      <p>実際のサイズでテキストを表示するには、<guiseq><gui style="guimenu">表示</gui><gui style="guimenuitem">標準サイズ</gui></guiseq>を選択します。</p>
+    </item>
+  </list>
+</page>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-reset" type="topic" xml:lang="ms">
+  <info>
+    <link type="guide" xref="index#usage"/>
+  </info>
+  <title>Memulih Kembali Terminal Anda</title>
+  <p>Seksyen ini menyediakan beberapa nasihat sekiranya anda menghadapi masalah ketika mengendalikan terminal.</p>
+  <terms style="variablelist">
+    <item>
+      <title>Menetap semula keadaan terminal:</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">Terminal</gui><gui style="guimenuitem">Reset</gui></guiseq>. 
+                </p>
+    </item>
+  </terms>
+  <terms style="variablelist">
+    <item>
+      <title>Menetap semula terminal dan kosongkan skrin:</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">Terminal</gui><gui style="guimenuitem">Reset and Clear</gui></guiseq>.  </p>
+    </item>
+  </terms>
+</page>

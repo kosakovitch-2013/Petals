@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-manage-profiles" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-tabs"/>
+  </info>
+  <title>Gestire i Profili</title>
+  <terms style="variablelist">
+    <item>
+      <title>Per aggiungere un nuovo profilo:</title>
+      <p>Selezionare <guiseq><gui style="guimenu">File</gui><gui style="guimenuitem">Nuovo profilo</gui></guiseq> per mostrare la finestra di dialogo <gui style="guilabel">Nuovo profilo</gui>. Inserire il nuovo nome del profilo nel campo di testo <gui style="guilabel">Nome del profilo</gui>. Utilizzare l'elenco a discesa <gui style="guilabel">Basato su</gui> per selezionare il profilo su cui basare il nuovo profilo. Fare clic su <gui style="guibutton">Crea</gui> per mostrare la finestra di dialogo <gui style="guilabel">Modifica il profilo</gui>. Fare clic su <gui style="guibutton">Chiudi</gui>. <app>MATE Terminal</app> aggiungerà il profilo al sottomenù <guiseq><gui style="guimenu">Terminale</gui><gui style="guisubmenu">Cambia Profilo</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>Cambiare il profilo di una scheda del Terminale:</title>
+      <p>Fare clic sulla scheda terminale di cui si vuole cambiare profilo. Selezionare <guiseq><gui style="guimenu">Terminale</gui><gui style="guisubmenu">Cambia profilo</gui><gui style="guimenuitem"><var>momeprofilo</var></gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>Per modificare un profilo:</title>
+      <p>Si possono modificare i profili dalla finestra di dialogo <gui style="guilabel">Modifica profilo</gui>. Si può accedere alla finestra <gui style="guilabel">Modifica profilo</gui> nei seguenti modi:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Selezionare <guiseq><gui style="guimenu">Modifica</gui><gui style="guisubmenu">Profilo corrente</gui></guiseq>.</p>
+        </item>
+        <item>
+          <p>Fare clic col pulsante destro del mouse nella finestra del terminale, quindi selezionare <guiseq><gui style="guimenuitem">Profili</gui> <gui style="guimenuitem">Preferenze del Profilo</gui></guiseq> dal menù a comparsa.</p>
+        </item>
+        <item>
+          <p>Selezionare <guiseq><gui style="guimenu">Modifica</gui><gui style="guisubmenu">Profili</gui></guiseq>, selezionare il profilo che si vuole modificare, quindi fare click sul pulsante <gui style="guibutton">Modifica</gui>. Per informazioni sulle opzioni che si possono impostare per i profili, vedere .</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title>Per cancellare un profilo:</title>
+      <p>Selezionare <guiseq><gui style="guimenu">Modifica</gui><gui style="guimenuitem">Profili</gui></guiseq>. Scegliere il nome del profilo che si vuole eliminare dall'elenco <gui style="guilabel">Profili</gui>, quindi fare clic su <gui style="guibutton">Elimina</gui>. Verrà mostrata la finestra di dialogo <gui style="guilabel">Elimina Profilo</gui>. Fare clic su <gui style="guibutton">Elimina</gui> per confermare il cancellamento.  Fare clic su <gui style="guibutton">Chiudi</gui> per chiudere la finetra di dialogo <gui style="guilabel">Modifica profili</gui>.</p>
+    </item>
+  </terms>
+</page>

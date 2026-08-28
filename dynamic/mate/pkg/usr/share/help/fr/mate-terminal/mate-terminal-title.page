@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-title" type="topic" xml:lang="fr">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-encoding"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Renardias</mal:name>
+      <mal:email>vincent@ldsol.com</mal:email>
+      <mal:years>1998-2000.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Joaquim Fellmann</mal:name>
+      <mal:email>joaquim@hrnet.fr</mal:email>
+      <mal:years>2000.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Merlet</mal:name>
+      <mal:email>redfox@redfoxcenter.org</mal:email>
+      <mal:years>2000-2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Fergeau</mal:name>
+      <mal:email>teuf@users.sourceforge.net</mal:email>
+      <mal:years>2002-2003.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sun G11n</mal:name>
+      <mal:email>gnome_int_l10n@ireland.sun.com</mal:email>
+      <mal:years>2002.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Robert-André Mauchin</mal:name>
+      <mal:email>zebob.m@pengzone.org</mal:email>
+      <mal:years>2006-2008.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stéphane Raimbault</mal:name>
+      <mal:email>stephane.raimbault@gmail.com</mal:email>
+      <mal:years>2007.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yannick Tailliez</mal:name>
+      <mal:email>ytdispatch-libre@yahoo.com</mal:email>
+      <mal:years>2008.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2008-2010.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard dot b at bbox dot fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  </info>
+  <title>To Change the Terminal Title</title>
+  <p>
+          To change the title of the currently displayed terminal, perform the following steps:</p>
+  <p>
+          
+            Choose <guiseq><gui style="guimenu">Terminal</gui><gui style="guimenuitem">Set Title</gui></guiseq>. 
+          
+          
+            Type the new title in the <gui style="guilabel">Title</gui> text box. <app>MATE Terminal</app> applies the change immediately. 
+          
+          
+            Click <gui style="guibutton">Close</gui> to close the <gui style="guilabel">Set Title</gui> dialog.  
+          
+        </p>
+</page>

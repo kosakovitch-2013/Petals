@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-to-start" type="topic" xml:lang="is">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-first-start"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Samúel Jón Gunnarsson</mal:name>
+      <mal:email>sammi@techattack.nu</mal:email>
+      <mal:years>2003</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sveinn í Felli</mal:name>
+      <mal:email>sv1@fellsnet.is</mal:email>
+      <mal:years>2012-2016</mal:years>
+    </mal:credit>
+  </info>
+  <title>Starting MATE Terminal</title>
+  <p>
+          You can start <app>MATE Terminal</app> in the following ways: 
+        </p>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guimenu">Applications</gui> menu</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">Accessories</gui><gui style="guimenuitem">Terminal</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>Skipanalína</title>
+      <p>
+                  Execute the following command: <cmd>mate-terminal</cmd>
+                </p>
+      <p>
+                  You can use command line options to modify the way in which you run <app>MATE Terminal</app>. To view the command line options, execute the following command: <cmd>mate-terminal --help</cmd>
+                </p>
+    </item>
+  </terms>
+</page>

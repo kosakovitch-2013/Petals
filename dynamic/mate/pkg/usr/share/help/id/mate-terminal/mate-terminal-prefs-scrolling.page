@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-scrolling" type="topic" xml:lang="id">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-compatibility"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kukuh Syafaat</mal:name>
+      <mal:email>syafaatkukuh@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2022.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Menggulung</title>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <gui style="guilabel">Scrollbar is</gui>
+      </title>
+      <p>Gunakan daftar tarik turun ini untuk menentukan posisi bilah gulir di jendela terminal.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scrollback ... lines</gui>
+      </title>
+      <p>Gunakan kotak puntir ini untuk menentukan cacah baris yang dapat Anda gulir kembali menggunakan bilah gulir. Misalnya, jika Anda menentukan 100, Anda dapat menggulir kembali 100 baris terakhir yang ditampilkan di terminal.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scroll on output</gui>
+      </title>
+      <p>Pilih opsi ini untuk memungkinkan Anda menggulir keluaran pada terminal sementara terminal terus menampilkan lebih banyak keluaran dari perintah.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scroll on keystroke</gui>
+      </title>
+      <p>Pilih opsi ini untuk memungkinkan Anda menekan tombol apa pun pada papan ketik untuk menggulir turun jendela terminal ke command prompt. Tindakan ini hanya berlaku jika Anda menggulir naik jendela terminal dan Anda ingin kembali ke command prompt.</p>
+    </item>
+  </terms>
+</page>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY VERSION "1.10.1">
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY app "<application>MATE Control Center</application>">
+<!ENTITY appname "MATE Control Center">
+<!-- Information about the entities
+       The legal.xml file contains legal information, there is no need to edit the file.
+       Use the appversion entity to specify the version of the application.
+       Use the manrevision entity to specify the revision number of this manual.
+       Use the date entity to specify the release date of this manual.
+       Use the app entity to specify the name of the application. -->]>
+<article id="index" lang="pl">
+  
+  <articleinfo>
+    <abstract role="description">
+      <para>Centrum Sterowania MATE udostępnia centralne miejsce gdzie użytkownik może skonfigurować swoje środowisko. Pozwoli tobie zmienić wszystko od zachowania krawędzi okien po domyślną czcionkę.</para>
+    </abstract>
+    <title>Podręcznik Centrum Sterowania MATE</title>
+    <authorgroup>
+      <author><firstname>MATE Documentation Project</firstname> <surname/> <affiliation> <orgname>Pulpit MATE</orgname> </affiliation></author>
+      <author><firstname>Kevin</firstname><surname>Breit</surname></author>
+    </authorgroup>
+    <copyright><year>2015-2021</year> <holder>dokumentacja projektu MATE</holder></copyright>
+    <copyright><year>2001, 2002</year> <holder>Ximian, Inc.</holder></copyright>
+
+    <publisher role="maintainer">
+      <publishername>Projekt dokumentacji MATE</publishername>
+    </publisher>
+    <publisher>
+      <publishername>GNOME Documentation Project</publishername>
+    </publisher>
+    
+    <revhistory>
+      <revision><revnumber>2.15</revnumber> <date>Lipiec 2015</date> <firstname>MATE Documentation Project</firstname> <surname/></revision>
+      <revision lang="en">
+        <revnumber>2.14</revnumber> 
+        <date>March 2006</date>
+      </revision> 
+    </revhistory>
+
+     <legalnotice id="legalnotice">
+	<para lang="en">
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this <ulink type="help" url="help:fdl">link</ulink> or in the file COPYING-DOCS
+	  distributed with this manual.
+         </para>
+         <para>Ten podręcznik jest częścią zestawu podręczników MATE rozpowszechnianych na licencji GFDL. Jeżeli chcesz rozpowszechnić tą instrukcję osobno od zestawu, możesz to zrobić dodając kopię licencji do podręcznika, jak opisano w dziale 6 tej licencji.</para>
+
+	<para>Wiele nazw używanych przez firmy do rozróżnienia ich produktów i usług jest zgłoszonych jako znaki towarowe. W przypadku pojawienia się tych nazw w dowolnej dokumentacji MATE, a członkowie Projektu Dokumentacji MATE są świadomi tych znaków towarowych, wówczas nazwy są pisane wielkimi literami lub pierwszymi wielkimi literami.</para>
+
+	<para>DOKUMENT I ZMODYFIKOWANE WERSJE DOKUMENTU SĄ DOSTARCZANE NA WARUNKACH LICENCJI WOLNEJ DOKUMENTACJI GNU Z DALSZYM ZROZUMIENIEM, ŻE:<orderedlist>
+		<listitem>
+		  <para>DOKUMENT JEST DOSTARCZANY W STANIE „TAK JAK JEST”, BEZ JAKIEGOKOLWIEK WYRAŻENIA,  DOMNIEMANIA GWARANCJI, W TYM MIĘDZY INNYMI GWARANCJI, ŻE DOKUMENT LUB ZMODYFIKOWANA WERSJA DOKUMENTU JEST WOLNA OD WAD HANDLOWYCH LUB DO OKREŚLONEGO CELU -NARUSZENIE. CAŁKOWITE RYZYKO DOTYCZĄCE JAKOŚCI, DOKŁADNOŚCI I WYDAJNOŚCI DOKUMENTU LUB ZMODYFIKOWANEJ WERSJI DOKUMENTU SPOCZYWA NA UŻYTKOWNIKU. JEŻELI JAKIKOLWIEK DOKUMENT LUB ZMODYFIKOWANA WERSJA OKAŻE SIĘ WADLIWA POD JAKIMKOLWIEK WZGLĘGEM, UŻYTKOWNIK (NIE WSTĘPNY PISARZ, AUTOR CZY ŻADEN WSPÓŁPRACOWNIK) PONOSI KOSZTY WSZELKICH NIEZBĘDNYCH SERWISÓW, NAPRAW LUB POPRAWEK. NINIEJSZE WYŁĄCZENIE GWARANCJI STANOWI ISTOTNĄ CZĘŚĆ LICENCJI. ZGODNIE Z NINIEJSZYM WYŁĄCZENIEM ODPOWIEDZIALNOŚCI NIE JEST ZEZWOLONE NA KORZYSTANIE Z JAKICHKOLWIEK DOKUMENTÓW LUB ZMODYFIKOWANYCH WERSJI DOKUMENTU; ORAZ </para>
+		</listitem>
+		<listitem>
+		  <para>W ŻADNYM PRZYPADKU I W ŻADNEJ TEORII PRAWNEJ, CZY W DZIAŁANIU CZYNNYM (W TYM ZANIEDBANIA), UMOWY LUB W INNY SPOSÓB, AUTOR, PISARZ WSTĘPNY, WSPÓŁPRACOWNIK ANI DYSTRYBUTOR DOKUMENTU LUB ZMODYFIKOWANA WERSJA DOKUMENTU TAKICH STRON NIE PONOSI ODPOWIEDZIALNOŚCI WOBEC JAKICHKOLWIEK OSÓB ZA JAKIEKOLWIEK BEZPOŚREDNIE, POŚREDNIE, SZCZEGÓLNE, PRZYPADKOWE LUB WTÓRNE SZKODY JAKIEGOKOLWIEK CHARAKTERU, W TYM MIĘDZY INNYMI USZKODZENIA ZA UTRATĘ WŁAŚCIWOŚCI, PRZERWY W PRACY, AWARIE LUB INNE USZKODZENIA KOMPUTERA LUB STRATY WYNIKAJĄCE Z KORZYSTANIA Z DOKUMENTU I ZMODYFIKOWANYCH WERSJI DOKUMENTU, NAWET JEŚLI STRONA ZOSTAŁA POINFORMOWANA O MOŻLIWOŚCI WYSTĄPIENIA TAKICH SZKÓD.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+ <!-- This file contains link to license for the
+   documentation (GNU FDL), and other legal stuff such as "NO
+   WARRANTY" statement. Please do not change any of this. -->
+
+    <releaseinfo>Ta instrukcja opisuje wersję 1.10.0.1 Centrum Sterowania MATE.</releaseinfo>
+
+    <legalnotice>
+        <title>Opinia</title>
+        <para>Aby zgłosić błąd lub sugestię odnośnie aplikacji <application>Centrum Sterowania MATE</application> lub tej instrukcji, podążaj za wskazówkami <ulink url="help:mate-user-guide/feedback" type="help">Informacji Zwrotnej MATE</ulink></para>
+<!-- Translators may also add here feedback address for translations -->
+    </legalnotice>
+  </articleinfo>
+  
+  <sect1 id="intro">
+    <title>Wprowadzenie</title>
+    <para><application>Centrum Sterowania MATE</application> udostępnia jedno okno z którego uruchamia się wszystkie narzędzia preferencji. </para>
+    <note><para>Aby uzyskać pomoc w użytkowaniu narzędzi preferencji, zajrzyj do <ulink type="help" url="help:mate-user-guide/prefs">Przewodnika Użytkownika</ulink>.</para></note>
+
+<!-- ============= To Start Control Center  ============================ -->
+    <sect2 id="mate-control-center-to-start">
+      <title lang="en">To Start MATE Control Center</title>
+      <para lang="en">You can start <application>MATE Control Center</application> in the following ways:</para>
+      <variablelist>
+        <varlistentry>
+          <term lang="en"><guimenu>System</guimenu> menu</term>
+          <listitem>
+            <para lang="en">
+              Choose <menuchoice><guimenu>Control Center</guimenu></menuchoice> menu item.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Wiersz poleceń</term>
+          <listitem>
+            <para lang="en">
+              Execute the following command: <command>mate-control-center</command></para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
+
+  </sect1>
+  
+  <sect1 id="matecc-interface">
+    <title>Użycie</title>
+    <para lang="en">
+      The <application>MATE Control Center</application> window lists all preference tools installed on your system in groups.
+    </para>
+    <tip><para lang="en">
+      From the left pane, you can quickly access to a preference tool by selecting its group first, or type any keyword in the filter box. You can also access to common tasks, such as <guilabel>Change Theme</guilabel>, and <guilabel>Set Preferred Applications</guilabel>.
+    </para></tip>
+    <para lang="en">
+      To open a preference tool, just click on it.
+    </para>
+    <tip><para lang="en">The preference tool description is shown on mouse hover.</para></tip>
+  </sect1>
+</article>

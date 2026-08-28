@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-title" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-colors"/>
+  </info>
+  <title>Titolo e comando</title>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guilabel">Titolo iniziale</gui></title>
+      <p>Utilizzare questo campo di testo per specificare il titolo iniziale dei terminali che utilizzano il profilo. I nuovi terminali avviati dal terminale corrente avranno il nuovo titolo qui specificato.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Quando i comandi del terminale impostano un loro titolo</gui></title>
+      <p>Utilizzare questo elenco per specificare come gestire i titoli impostati dinamicamente, cioè, i titoli del terminale impostati da comandi che sono eseguiti nel terminale.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Esegui il comando come una shell di login</gui></title>
+      <p>Selezionare questa opzione per forzare il comando attualmente in esecuzione nel terminale ad essere eseguito come una shell di login. Se il comando non è una shell, questa impostazione non ha effetto.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Aggiorna i record di login quando viene eseguito il comando</gui></title>
+      <p>Selezionare questa opzione per inserire una nuova voce nei record di login quando viene aperta una nuova shell.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Esegui un comando personalizzato invece della mia shell</gui></title>
+      <p>Selezionare questa opzione per eseguire nel terminale un comando specifico, differente dalla normale shell. Specificare il comando personalizzato nella casella di testo <gui style="guilabel">Comando personalizzato</gui>.</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">Quando il comando ternina</gui></title>
+      <p>Utilizzare questo elenco per specificare quale azione compiere quando il comando termina.</p>
+    </item>
+  </terms>
+</page>

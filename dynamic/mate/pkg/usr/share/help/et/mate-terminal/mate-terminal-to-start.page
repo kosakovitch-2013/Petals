@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-to-start" type="topic" xml:lang="et">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-first-start"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ilmar Kerm</mal:name>
+      <mal:email>ikerm hot ee</mal:email>
+      <mal:years>2001, 2002.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Tõivo Leedjärv</mal:name>
+      <mal:email>toivo linux ee</mal:email>
+      <mal:years>2002, 2003.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Priit Laes</mal:name>
+      <mal:email>plaes plaes org</mal:email>
+      <mal:years>2004–2006, 2008, 2009</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ivar Smolin</mal:name>
+      <mal:email>okul linux ee</mal:email>
+      <mal:years>2005–2010, 2014–2015, 2018.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Starting MATE Terminal</title>
+  <p>
+          You can start <app>MATE Terminal</app> in the following ways: 
+        </p>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guimenu">Applications</gui> menu</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">Accessories</gui><gui style="guimenuitem">Terminal</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>Käsurida</title>
+      <p>
+                  Execute the following command: <cmd>mate-terminal</cmd>
+                </p>
+      <p>
+                  You can use command line options to modify the way in which you run <app>MATE Terminal</app>. To view the command line options, execute the following command: <cmd>mate-terminal --help</cmd>
+                </p>
+    </item>
+  </terms>
+</page>

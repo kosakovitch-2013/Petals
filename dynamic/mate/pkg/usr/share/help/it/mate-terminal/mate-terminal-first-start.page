@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-first-start" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-profiles"/>
+  </info>
+  <title>Quando si avvia il Terminale di MATE per la prima volta</title>
+  <p>Quando si avvia <app>MATE Terminal</app> per la prima volta, l'applicazione apre una finestra di terminale con un gruppo di impostazioni predefinite. Il gruppo di impostazioni predefinite è chiamato il profilo Predefinito.</p>
+  <figure>
+      <title>Esempio di una finestra MATE Terminal con il profilo Predefinito</title>
+      <media type="image" src="figures/mate-terminal-default.png"/>
+  </figure>
+  <p>La finestra del terminale mostra un prompt dei comandi in cui si può digitare comandi UNIX. Il prompt dei comandi può essere un simbolo tra %, #, &gt;, $, o un qualsiasi altro carattere speciale. Il cursore è posizionato subito dopo il prompt dei comandi. Quando si scrive un comando UNIX e si pressa <key>Invio</key>, il computer esegue il comando. Per impostazione predefinita, <app>MATE Terminal</app> utilizza la shell predefinita specificata per l'utente che avvia l'applicazione.</p>
+  <p><app>MATE Terminal</app> imposterà inoltre le seguenti variabili di ambiente:</p>
+  <terms style="variablelist">
+    <item>
+      <title><code style="varname">TERM</code></title>
+      <p>Imposta a <code style="literal">xterm-256color</code> per default.</p>
+    </item>
+    <item>
+      <title><code style="varname">WINDOWID</code></title>
+      <p>Per default., impostata all'identificativo X11 della finestra.</p>
+    </item>
+  </terms>
+</page>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-more-windows" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+  </info>
+  <title>複数の端末で作業する</title>
+  <p><app>MATE端末</app>にはタブ機能があり、1 つのウィンドウで複数の端末を開くことができます。各端末は個別のタブで開きます。適切なタブをクリックすると、ウィンドウに端末が表示されます。ウィンドウ内の各タブ付き端末は個別のサブプロセスであるため、各端末を異なるタスクに利用できます。ウィンドウ内の各タブ付き端末には、異なるプロファイルを適用できます。</p>
+  <p>端末ウィンドウのタイトルバーには、現在のプロファイルの名前、または現在のプロファイルによって指定された名前が表示されます。<xref linkend="mate-terminal-tabbed"/>に、4つのタブがある <app>MATE 端末</app>ウィンドウを示します。この場合、4つの各タブには異なるプロファイルがあります。アクティブなタブのプロファイルの名前 Profile 1 がタイトルバーに表示されます。</p>
+  <figure style="figure">
+    <figure style="screenshot">
+      <media type="image" src="figures/mate-terminal-tabbed.png"/>
+    </figure>
+  </figure>
+  <p>新しいタブ付き端末を開く方法については、<xref linkend="mate-terminal-windows"/>を参照してください。</p>
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-scrolling" type="topic" xml:lang="ms">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-compatibility"/>
+  </info>
+  <title>Penatalan</title>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <gui style="guilabel">Scrollbar is</gui>
+      </title>
+      <p>Guna senarai tarik-turun ini untuk menyatakan kedudukan palang tatal di dalam tetingkap terminal.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scrollback ... lines</gui>
+      </title>
+      <p>Guna kotak angka ini untuk menyatakan bilangan baris yang anda boleh tatal balik menggunakan palang tatal. Sebagai contoh, jika anda nyatakan 100 anda boleh tatal balik sehingga 100 baris terakhir yang terpapar di dalam terminal.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scroll on output</gui>
+      </title>
+      <p>Pilih pilihan ini untuk membolehkan anda menatal output dalam terminal ketika terminal terus menerus memaparkan lagi output daripada perintah.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scroll on keystroke</gui>
+      </title>
+      <p>Pilih pilihan ini yang membolehkan anda menekan mana-mana kekunci pada papan kekunci untuk menatal ke bawah tetingkap terminal berdasarkan bisikan perintah. Tindakan ini hanya diterapkan jika anda menatal ke atas tetingkap terminal dan mahu kembali ke bisikan perintah.</p>
+    </item>
+  </terms>
+</page>

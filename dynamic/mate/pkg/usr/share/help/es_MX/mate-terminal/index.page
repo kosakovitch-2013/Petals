@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="index" type="guide" xml:lang="es-MX">
+  <info>
+    <credit type="copyright">
+      <name>MATE Documentation Project</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Paul Cutler</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Christian Persch</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Sun Microsystems</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Miguel de Icaza</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Michael Zucchi</name>
+      <years/>
+    </credit>
+    <credit type="copyright">
+      <name>Alexander Kirillov</name>
+      <years/>
+    </credit>
+    <credit type="publisher">
+      <name>MATE Documentation Project</name>
+    </credit>
+    <credit type="author">
+      <name>MATE Documentation Team</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>MATE DESKTOP</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Sun GNOME Documentation Team</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>Sun Microsystems</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Miguel de Icaza</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>GNOME Documentation Project</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Michael Zucchi</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>GNOME Documentation Project</orgname>
+      </affiliation>
+    </credit>
+    <credit type="author">
+      <name>Alexander Kirillov</name>
+      <affiliation xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">
+        <orgname>GNOME Documentation Project</orgname>
+      </affiliation>
+    </credit>
+    <credit type="publisher">
+      <name>GNOME Documentation Project</name>
+    </credit>
+    <releaseinfo xmlns="http://docbook.org/ns/docbook" xmlns:db="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude">This manual describes version 1.22 of MATE Terminal.</releaseinfo>
+    <include xmlns="http://www.w3.org/2001/XInclude" href="legal.xml"/>
+    <desc>
+		terminal application
+		</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luis Armando Medina A.</mal:name>
+      <mal:email>contacto@luisarmandomedina.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.gnome.org</mal:email>
+      <mal:years>2003-2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pablo Gonzalo del Campo</mal:name>
+      <mal:email>pablodc@bigfoot.com</mal:email>
+      <mal:years>2000-2004</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Carlos Perelló Marín</mal:name>
+      <mal:email>carlos@gnome-db.org</mal:email>
+      <mal:years>2000, 2002</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ismael Olea</mal:name>
+      <mal:email>ismael@olea.org</mal:email>
+      <mal:years>2001</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge Carrasquilla Soares</mal:name>
+      <mal:email>jorge@conectiva.com.br</mal:email>
+      <mal:years>2000</mal:years>
+    </mal:credit>
+  </info>
+
+  <title>
+     MATE Terminal
+  </title>
+  <links type="topic"/>
+  <section id="get-started" style="2column">
+    <title>Getting Started</title>
+    <p>
+		The following sections describe how to start <app>MATE Terminal</app>. 
+	</p>
+  </section>
+  <section id="usage" style="2column">
+    <title>Usage</title>
+  </section>
+  <section id="prefs" style="2column">
+    <title>Preferencias</title>
+    <p>
+	To configure <app>MATE Terminal</app>, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Current Profile</gui></guiseq>. To configure another profile that you set up choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Profiles</gui></guiseq>, select the profile you want to edit, then click <gui style="guibutton">Edit</gui>.  </p>
+    <p>
+	The <gui style="guilabel">Editing Profile</gui> dialog contains the following tabbed sections that you can use to configure <app>MATE Terminal</app>: </p>
+  </section>
+</page>

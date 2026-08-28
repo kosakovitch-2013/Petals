@@ -1,0 +1,9 @@
+[MIME Cache]
+application/x-font-otf=mate-font-viewer.desktop;
+application/x-font-pcf=mate-font-viewer.desktop;
+application/x-font-ttf=mate-font-viewer.desktop;
+application/x-font-type1=mate-font-viewer.desktop;
+application/x-mate-saved-search=caja-folder-handler.desktop;
+application/x-mate-theme-package=mate-theme-installer.desktop;
+inode/directory=caja-folder-handler.desktop;
+x-content/software=caja-autorun-software.desktop;

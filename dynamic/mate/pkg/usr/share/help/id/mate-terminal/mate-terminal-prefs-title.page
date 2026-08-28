@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-title" type="topic" xml:lang="id">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-colors"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Kukuh Syafaat</mal:name>
+      <mal:email>syafaatkukuh@gmail.com</mal:email>
+      <mal:years>2017.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Andika Triwidada</mal:name>
+      <mal:email>andika@gmail.com</mal:email>
+      <mal:years>2022.</mal:years>
+    </mal:credit>
+  </info>
+  <title>Judul dan Perintah</title>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <gui style="guilabel">Initial title</gui>
+      </title>
+      <p>Gunakan kotak teks ini untuk menentukan judul awal terminal yang menggunakan profil. Terminal baru yang dimulai dari terminal saat ini memiliki judul awal yang baru.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When terminal commands set their own titles</gui>
+      </title>
+      <p>Gunakan daftar tarik turun ini untuk menentukan cara menangani judul yang ditetapkan secara dinamis, yaitu judul terminal yang ditetapkan oleh perintah yang berjalan di terminal.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run command as a login shell</gui>
+      </title>
+      <p>Pilih opsi ini untuk memaksa perintah yang saat ini berjalan di dalam terminal untuk berjalan sebagai shell login. Jika perintah bukan shell, pengaturan tidak berpengaruh.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Update login records when command is launched</gui>
+      </title>
+      <p>Pilih opsi ini untuk menyisipkan entri baru dalam catatan login saat shell baru dibuka.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Run a custom command instead of my shell</gui>
+      </title>
+      <p>
+                  Select this option to run a specified command, other than the normal shell, in the terminal. Specify the custom command in the <gui style="guilabel">Custom command</gui> text box. 
+                </p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">When command exits</gui>
+      </title>
+      <p>Gunakan daftar tarik turun ini untuk menentukan tindakan apa yang harus dilakukan saat perintah keluar.</p>
+    </item>
+  </terms>
+</page>

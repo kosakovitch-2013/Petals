@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-contents" type="topic" xml:lang="sr">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-shortcuts"/>
+  </info>
+  <title>Рад са садржајем прозора терминала</title>
+  <terms style="variablelist">
+    <item>
+      <title>Да се крећете кроз претходне наредбе и излаз:</title>
+      <p>Обавите једну од следећих радњи:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Користите клизач, који је обично приказан на десној страни прозора терминала.</p>
+        </item>
+        <item>
+          <p>
+                        Press the <keyseq><key>Shift</key><key>Page Up</key></keyseq>, <keyseq><key>Shift</key><key>Page Down</key></keyseq>, <keyseq><key>Shift</key><key>Home</key></keyseq>, or <keyseq><key>Shift</key><key>End</key></keyseq> keys.  </p>
+        </item>
+      </list>
+      <p>
+                  The number of lines that you can scroll back to in the terminal window is determined by the <gui style="guilabel">Scrollback</gui> setting in the <gui style="guilabel">Scrolling</gui> tabbed section of the <gui style="guilabel">Editing Profile</gui> dialog.  You can also scroll up or down one line at a time by pressing <keyseq><key>Control</key><key>Shift</key><key>Up</key></keyseq> or <keyseq><key>Control</key><key>Shift</key><key>Down</key></keyseq>. </p>
+    </item>
+    <item>
+      <title>Да изаберете и умножите текст:</title>
+      <p>Можете да изаберете текст на било који од следећих начина:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Да изаберете знак, кликните на први знак који желите да изаберете и превуците миша до последњег знака који желите да изаберете.</p>
+        </item>
+        <item>
+          <p>Да изаберете реч, два пута кликните на прву реч коју желите да изаберете и превуците миша до последње речи коју желите да изаберете. Симболи се бирају појединачно.</p>
+        </item>
+        <item>
+          <p>Да изаберете ред, три пута кликните на први ред који желите да изаберете и превуците миша до последњег реда који желите да изаберете.</p>
+        </item>
+      </list>
+      <p>
+                  These actions select all text between the first and last items. For all text selections, <app>MATE Terminal</app> copies the selected text into the clipboard when you release the mouse button. To explicitly copy the selected text, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Copy</gui></guiseq>.</p>
+    </item>
+    <item>
+      <title>Да убаците текст у терминал:</title>
+      <p>Ако сте претходно умноћили текст у оставу, можете да га убаците у терминал обавивши једну од следећих радњи:</p>
+      <list style="itemizedlist">
+        <item>
+          <p>Да убаците текст који сте умножили само избором, средњи клик на наредбени упит. Ако немате средње дугме миша, погледајте документацију Х сервера за информације о томе како да опонашате средње дугме миша.</p>
+        </item>
+        <item>
+          <p>
+                        To paste text that you explicitly copied, choose <guiseq><gui style="guimenu">Edit</gui><gui style="guimenuitem">Paste</gui></guiseq>. </p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title>Да превучете назив датотеке у прозор терминала:</title>
+      <p>Можете да превучете назив датотеке у терминал из другог програма као што је управник датотека. Терминал приказује путању и пун назив датотеке.</p>
+    </item>
+    <item>
+      <title>Да приступите вези:</title>
+      <p>Да приступите Јединственом Ресурсном Локатору (URL) који је приказан у терминалу, урадите следеће:</p>
+      <p> 
+                      
+                        
+                          Move the mouse over the URL until the URL is underlined.  
+                      
+                      
+                        
+                          Right-click on the URL to open a popup menu.  
+                      
+                      
+                        
+                          Choose <gui style="guimenuitem">Open Link</gui> to start a link application and display the file located at the URL.  
+                      
+                  </p>
+    </item>
+  </terms>
+</page>

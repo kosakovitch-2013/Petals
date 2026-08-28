@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-first-start" type="topic" xml:lang="fr">
+  <info>
+    <link type="guide" xref="index#get-started"/>
+    <link type="next" xref="mate-terminal-profiles"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Vincent Renardias</mal:name>
+      <mal:email>vincent@ldsol.com</mal:email>
+      <mal:years>1998-2000.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Joaquim Fellmann</mal:name>
+      <mal:email>joaquim@hrnet.fr</mal:email>
+      <mal:years>2000.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Merlet</mal:name>
+      <mal:email>redfox@redfoxcenter.org</mal:email>
+      <mal:years>2000-2006.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Christophe Fergeau</mal:name>
+      <mal:email>teuf@users.sourceforge.net</mal:email>
+      <mal:years>2002-2003.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Sun G11n</mal:name>
+      <mal:email>gnome_int_l10n@ireland.sun.com</mal:email>
+      <mal:years>2002.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Robert-André Mauchin</mal:name>
+      <mal:email>zebob.m@pengzone.org</mal:email>
+      <mal:years>2006-2008.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Stéphane Raimbault</mal:name>
+      <mal:email>stephane.raimbault@gmail.com</mal:email>
+      <mal:years>2007.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Yannick Tailliez</mal:name>
+      <mal:email>ytdispatch-libre@yahoo.com</mal:email>
+      <mal:years>2008.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Claude Paroz</mal:name>
+      <mal:email>claude@2xlibre.net</mal:email>
+      <mal:years>2008-2010.</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Gérard Baylard</mal:name>
+      <mal:email>gerard dot b at bbox dot fr</mal:email>
+      <mal:years>2010</mal:years>
+    </mal:credit>
+  </info>
+  <title>When You First Start MATE Terminal</title>
+  <p>
+          When you start <app>MATE Terminal</app> for the first time, the application opens a terminal window with a group of default settings. The group of default settings is called the Default profile.  </p>
+  <figure>
+      <title>Example of a Default MATE Terminal Window</title>
+      <media type="image" src="figures/mate-terminal-default.png"/>
+  </figure>
+  <p>
+          The terminal window displays a command prompt where you can type UNIX commands. The command prompt can be a %, #, &gt;, $, or any other special character. The cursor is positioned at the command prompt. When you type a UNIX command and press <key>Return</key>, the computer executes the command. By default, <app>MATE Terminal</app> uses the default shell specified for the user who starts the application. 
+        </p>
+  <p><app>MATE Terminal</app> also sets the following environment variables: 
+        </p>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <code style="varname">TERM</code>
+      </title>
+      <p>
+                  Set to <code style="literal">xterm-256color</code> by default. 
+                </p>
+    </item>
+    <item>
+      <title>
+        <code style="varname">WINDOWID</code>
+      </title>
+      <p>
+                  Set to the X11 window identifier by default. 
+                </p>
+    </item>
+  </terms>
+</page>

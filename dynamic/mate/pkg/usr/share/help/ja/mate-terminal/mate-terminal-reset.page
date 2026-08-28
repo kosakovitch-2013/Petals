@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-reset" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#usage"/>
+  </info>
+  <title>端末を修復するには</title>
+  <p>この節では、端末に問題が起きたときのアドバイスを提供します。</p>
+  <terms style="variablelist">
+    <item>
+      <title>端末の状態をリセットするには</title>
+      <p><guiseq><gui style="guimenu">端末</gui><gui style="guimenuitem">リセット</gui></guiseq>を選択します。</p>
+    </item>
+  </terms>
+  <terms style="variablelist">
+    <item>
+      <title>端末をリセットして画面をクリアするには</title>
+      <p><guiseq><gui style="guimenu">端末</gui><gui style="guimenuitem">リセットとクリア</gui></guiseq>を選択します。</p>
+    </item>
+  </terms>
+</page>

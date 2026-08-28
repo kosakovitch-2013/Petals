@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-reset" type="topic" xml:lang="es-MX">
+  <info>
+    <link type="guide" xref="index#usage"/>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Luis Armando Medina A.</mal:name>
+      <mal:email>contacto@luisarmandomedina.com</mal:email>
+      <mal:years>2016</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge González</mal:name>
+      <mal:email>jorgegonz@svn.gnome.org</mal:email>
+      <mal:years>2007-2010</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Francisco Javier F. Serrador</mal:name>
+      <mal:email>serrador@cvs.gnome.org</mal:email>
+      <mal:years>2003-2006</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Pablo Gonzalo del Campo</mal:name>
+      <mal:email>pablodc@bigfoot.com</mal:email>
+      <mal:years>2000-2004</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Carlos Perelló Marín</mal:name>
+      <mal:email>carlos@gnome-db.org</mal:email>
+      <mal:years>2000, 2002</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Ismael Olea</mal:name>
+      <mal:email>ismael@olea.org</mal:email>
+      <mal:years>2001</mal:years>
+    </mal:credit>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Jorge Carrasquilla Soares</mal:name>
+      <mal:email>jorge@conectiva.com.br</mal:email>
+      <mal:years>2000</mal:years>
+    </mal:credit>
+  </info>
+  <title>To Recover Your Terminal</title>
+  <p>
+          This section provides some advice if you have problems with terminals. 
+        </p>
+  <terms style="variablelist">
+    <item>
+      <title>To reset the state of the terminal:</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">Terminal</gui><gui style="guimenuitem">Reset</gui></guiseq>. 
+                </p>
+    </item>
+  </terms>
+  <terms style="variablelist">
+    <item>
+      <title>To reset the terminal and clear the screen:</title>
+      <p>
+                  Choose <guiseq><gui style="guimenu">Terminal</gui><gui style="guimenuitem">Reset and Clear</gui></guiseq>.  </p>
+    </item>
+  </terms>
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-windows" type="topic" xml:lang="it">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-manage-profiles"/>
+  </info>
+  <title>Aprire e chiudere Terminali</title>
+  <terms style="variablelist">
+    <item>
+      <title>Aprire una nuova finestra del Terminale:</title>
+      <p>Selezionare <guiseq><gui style="guimenu">File</gui><gui style="guimenuitem">Apri terminale</gui></guiseq>.</p>
+      <p>Il nuovo terminale eredita le impostazioni dell'applicazione e il tipo di shell dal terminale genitore.</p>
+    </item>
+    <item>
+      <title>Chiudere una finestra del Terminale:</title>
+      <p>Selezionare <guiseq><gui style="guimenu">File</gui><gui style="guimenuitem">Chiudi finestra</gui></guiseq>.</p>
+      <p>Questa azione chiude il terminale e ogni sotto-processo che si è aperto da quel terminale. Se si chiude l'ultima finestra del terminale, l'applicazione <app>MATE Terminal</app> terminerà.</p>
+    </item>
+    <item>
+      <title>Aggiungere una nuova scheda del Terminale alla finestra:</title>
+      <p>Selezionare <guiseq><gui style="guimenu">File</gui><gui style="guisubmenu">Apri scheda</gui><gui style="guimenuitem">Predefinito</gui></guiseq> o solo <guiseq><gui style="guimenu">File</gui><gui style="guimenuitem">Apri scheda</gui></guiseq> se non esiste alcun sotto-menù.</p>
+    </item>
+    <item>
+      <title>Mostrare una scheda del Terminale:</title>
+      <p>Fare clic sulla scheda del terminale che si vuole mostrare, o selezionare un titolo dal menù <gui style="guimenu">Schede</gui>.</p>
+      <p>In alternativa, selezionare <guiseq><gui style="guimenu">Schede</gui><gui style="guimenuitem">Scheda successiva</gui></guiseq> o <guiseq><gui style="guimenu">Schede</gui><gui style="guimenuitem">Scheda precedente</gui></guiseq> per spostarsi tra le schede.</p>
+    </item>
+    <item>
+      <title>Chiudere una scheda del Terminale:</title>
+      <p>Mostrare la scheda terminala che si deisdera chiudere. Selezionare <guiseq><gui style="guimenu">File</gui><gui style="guimenuitem">Chiudi Scheda</gui></guiseq>.</p>
+    </item>
+  </terms>
+</page>

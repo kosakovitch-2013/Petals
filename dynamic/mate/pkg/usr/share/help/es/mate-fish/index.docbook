@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+<!ENTITY legal SYSTEM "legal.xml">
+<!ENTITY appletversion "1.10.1">
+<!ENTITY manrevision "2.6">
+<!ENTITY date "July 2015">
+<!ENTITY applet "Fish">
+]>
+<!--
+      (Do not remove this comment block.)
+  Maintained by the MATE Documentation Project
+  http://wiki.mate-desktop.org/dev-doc:doc-team-guide
+  Template version: 2.0 beta
+  Template last modified Mar 12, 2002
+
+-->
+<article id="index" lang="es">
+<!-- please do not change the id; for translations, change lang to -->
+<!-- appropriate code -->
+  <articleinfo>
+	 <title>Manual de Pez</title>
+	 <copyright><year>2015-2021</year> <holder>Proyecto de documentación de MATE</holder></copyright>
+	 <copyright><year>2009</year> <holder>Paul Cutler</holder></copyright>
+	 <copyright><year>2002</year> <year>2003</year> <holder>Sun Microsystems</holder></copyright>
+	 <copyright><year>2000</year> <holder>Telsa Gwynne</holder></copyright>
+<!-- translators: uncomment this:
+
+  <copyright>
+   <year>2002</year>
+   <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+  </copyright>
+
+   -->
+
+	 <publisher role="maintainer">
+		<publishername>Proyecto de documentación de MATE</publishername>
+	 </publisher>
+	 <publisher role="maintainer">
+		<publishername>Proyecto de documentación de GNOME</publishername>
+	 </publisher>
+
+  <legalnotice id="legalnotice">
+	<para lang="en">
+	  Permission is granted to copy, distribute and/or modify this
+	  document under the terms of the GNU Free Documentation
+	  License (GFDL), Version 1.1 or any later version published
+	  by the Free Software Foundation with no Invariant Sections,
+	  no Front-Cover Texts, and no Back-Cover Texts.  You can find
+	  a copy of the GFDL at this <ulink type="help" url="help:fdl">link</ulink> or in the file COPYING-DOCS
+	  distributed with this manual.
+         </para>
+         <para>Este manual es parte de una colección de manuales de MATE distribuidos conforme a la GFDL. Si quiere distribuir este manual por separado de la colección, puede hacerlo añadiendo una copia de la licencia al manual, tal como se describe en la sección 6 de la licencia.</para>
+
+	<para>Muchos de los nombres usados por las empresas para distinguir sus productos y servicios se consideran marcas comerciales. Cuando esos nombres aparecen en cualquier documentación de MATE y los miembros del proyecto de documentación de MATE son conscientes de que se trata de marcas registradas, dichos nombres se escriben en letras mayúsculas o con inical mayúscula.</para>
+
+	<para>EL DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL DOCUMENTO SE PROPORCIONAN SEGÚN LOS TÉRMINOS DE LA LICENCIA DE DOCUMENTACIÓN LIBRE DE GNU CON EL ACUERDO ADICIONAL DE QUE:<orderedlist>
+		<listitem>
+		  <para>EL DOCUMENTO SE PROPORCIONA «TAL CUAL», SIN GARANTÍA DE NINGÚN TIPO, NI EXPLÍCITA NI IMPLÍCITA, INCLUYENDO, ENTRE OTRAS, LAS GARANTÍAS DE QUE EL DOCUMENTO O UNA VERSIÓN MODIFICADA DEL DOCUMENTO CAREZCA DE DEFECTOS COMERCIALES, SEA ADECUADO A UN PROPÓSITO PARTICULAR O INCUMPLA ALGUNA NORMATIVA. TODO RIESGO EN RELACIÓN CON LA CALIDAD, LA PRECISIÓN Y LA UTILIDAD DEL DOCUMENTO O UNA VERSIÓN MODIFICADA DEL DOCUMENTO RECAE EN USTED. SI EL DOCUMENTO O CUALQUIER VERSIÓN MODIFICADA DEL DOCUMENTO RESULTARA DEFECTUOSO EN CUALQUIER ASPECTO, USTED (Y NO EL REDACTOR INICIAL, EL AUTOR O CUALQUIER CONTRIBUYENTE) ASUMIRÁ TODOS LOS COSTES DE MANTENIMIENTO, REPARACIÓN O CORRECCIÓN NECESARIOS. ESTA RENUNCIA DE GARANTÍA ES UNA PARTE ESENCIAL DE ESTA LICENCIA. NO SE AUTORIZA EL USO DEL DOCUMENTO NI DE CUALQUIER VERSIÓN MODIFICADA DEL DOCUMENTO SALVO EN VIRTUD DE LA PRESENTE CLÁUSULA DE EXENCIÓN DE RESPONSABILIDAD; Y</para>
+		</listitem>
+		<listitem>
+		  <para>BAJO NINGUNA CIRCUNSTANCIA NI BAJO NINGÚN CONCEPTO LEGAL, YA SEA POR RESPONSABILIDAD CIVIL (INCLUIDA LA NEGLIGENCIA), CONTRACTUAL O DE OTRO TIPO, EL AUTOR, EL REDACTOR INICIAL, CUALQUIER CONTRIBUYENTE O CUALQUIER DISTRIBUIDOR DEL DOCUMENTO O DE UNA VERSIÓN MODIFICADA DEL DOCUMENTO, O CUALQUIER PROVEEDOR DE CUALQUIERA DE DICHAS PARTES, NO SERÁN RESPONSABLES ANTE NINGUNA PERSONA POR NINGÚN DAÑO DIRECTO, INDIRECTO, ESPECIAL, ACCIDENTAL O DERIVADO DE CUALQUIER TIPO, INCLUIDOS, ENTRE OTROS, LOS DAÑOS POR PÉRDIDA DE REPUTACIÓN, INTERRUPCIÓN DEL TRABAJO, FALLO O MAL FUNCIONAMIENTO DEL EQUIPO O CUALQUIER OTRO DAÑO O PÉRDIDA DERIVADO O RELACIONADO CON EL USO DEL DOCUMENTO Y LAS VERSIONES MODIFICADAS DEL DOCUMENTO, INCLUSO SI DICHAS PARTES HAN SIDO INFORMADAS DE LA POSIBILIDAD DE QUE SE PRODUZCAN DICHOS DAÑOS.</para>
+		</listitem>
+	  </orderedlist></para>
+  </legalnotice>
+
+
+
+
+	 <authorgroup>
+		<author><firstname>Proyecto de documentación de GNOME</firstname> <surname/> <affiliation> <orgname>Proyecto de documentación de GNOME</orgname> </affiliation></author>
+		<author><firstname>Paul</firstname> <surname>Cutler</surname> <affiliation> <orgname>Proyecto de documentación de GNOME</orgname> <address> <email>pcutler@GNOME.org</email> </address> </affiliation></author>
+		<author><firstname>Sun</firstname> <surname>Equipo de documentación de GNOME</surname> <affiliation> <orgname>Sun Microsystems</orgname> <address/> </affiliation></author>
+		<author><firstname>Telsa</firstname> <surname>Gwynne</surname> <affiliation> <orgname>Proyecto de documentación de GNOME</orgname> <address> <email>hobbit@aloss.ukuu.org.uk</email> </address> </affiliation></author>
+      <!-- This is appropriate place for other contributors: translators,
+           maintainers,  etc. Commented out by default.
+           <othercredit role="translator">
+	     <firstname>Latin</firstname>
+	     <surname>Translator 1</surname>
+	     <affiliation>
+	       <orgname>Latin Translation Team</orgname>
+	       <address> <email>translator@gnome.org</email> </address>
+	     </affiliation>
+	     <contrib>Latin translation</contrib>
+           </othercredit>
+-->
+	 </authorgroup>
+
+	<releaseinfo revision="1.10.1" role="review">
+	</releaseinfo>
+
+	 <revhistory>
+		<revision><revnumber>Manual de Miniaplicación Pez V2.6</revnumber> <date>Julio 2015</date> <revdescription>
+			 <para role="author">Equipo de Documentación de MATE</para>
+			 <para role="publisher">Proyecto de documentación de MATE</para>
+		  </revdescription></revision>
+		<revision><revnumber>Manual de Miniaplicación Pez V2.5;</revnumber> <date>Julio 2015</date> <revdescription>
+			 <para role="author">Equipo de documentación de GNOME de Sun</para>
+			 <para role="publisher">Proyecto de documentación de GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Manual de Miniaplicación Pez V2.4</revnumber> <date>Julio 2015</date> <revdescription>
+			 <para role="author">Equipo de documentación de GNOME de Sun</para>
+			 <para role="publisher">Proyecto de documentación de GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Manual de Miniaplicación Pez V2.2</revnumber> <date>Enero 2003</date> <revdescription>
+			 <para role="author">Equipo de documentación de GNOME de Sun</para>
+			 <para role="publisher">Proyecto de documentación de GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Manual de Miniaplicación Pez V2.1</revnumber> <date>Agosto 2002</date> <revdescription>
+			 <para role="author">Equipo de documentación de GNOME de Sun</para>
+			 <para role="publisher">Proyecto de documentación de GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Manual de Miniaplicación Pez V2.0</revnumber> <date>Mayo 2002</date> <revdescription>
+			 <para role="author">Equipo de documentación de GNOME de Sun</para>
+			 <para role="publisher">Proyecto de documentación de GNOME</para>
+		  </revdescription></revision>
+		<revision><revnumber>Manual de Miniaplicación Pez</revnumber> <date>2000</date> <revdescription>
+			 <para role="author">Telsa Gwynne <email>hobbit@aloss.ukuu.org.uk</email></para>
+			 <para role="publisher">Proyecto de documentación de GNOME</para>
+		  </revdescription></revision>
+	 </revhistory>
+	 <releaseinfo>Este manual describe la versión 1.10.1 de Pez</releaseinfo>
+	 <legalnotice>
+		<title>Comentarios</title>
+		<para>Para informar de un error o hacer una sugerencia acerca de la miniaplicación Pez o este manual, siga las instrucciones de la <ulink url="help:mate-user-guide/feedback" type="help">Página de comentarios de MATE</ulink>.</para>
+
+	 </legalnotice>
+	 <abstract role="description">
+		<para>La miniaplicación Pez muestra una imagen animada en el panel y le da su fortuna cuando se hace clic.</para>
+	 </abstract>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Toni Estevez</firstname>
+      </personname>
+      <email>toni.estevez@gmail.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2019</year>
+      
+      <holder>Toni Estevez</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Jorge González</firstname>
+      </personname>
+      <email>jorgegonz@svn.gnome.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2007-2010</year>
+      
+      <holder>Jorge González</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Francisco Javier F. Serrador</firstname>
+      </personname>
+      <email>serrador@cvs.gnome.org</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2003-2006</year>
+      
+      <holder>Francisco Javier F. Serrador</holder>
+    </copyright>
+  
+    <othercredit class="translator">
+      <personname>
+        <firstname>Pablo Gonzalo del Campo</firstname>
+      </personname>
+      <email>pablodc@bigfoot.com</email>
+    </othercredit>
+    <copyright>
+      
+        <year>2002-2003</year>
+      
+      <holder>Pablo Gonzalo del Campo</holder>
+    </copyright>
+  </articleinfo>
+  <indexterm><primary>Pez</primary></indexterm>
+
+<!-- ============= Document Body ============================= -->
+<!-- ============= Introduction ============================== -->
+<sect1 id="fish-introduction">
+<title>Introducción</title>
+<!-- ==== Figure ============================================= -->
+	 <figure id="fish-fig">
+		<title>Miniaplicación Pez</title>
+		<screenshot>
+		  <mediaobject><imageobject><imagedata fileref="figures/fish_applet.png" format="PNG"/> </imageobject> <textobject> <phrase>Muestra miniaplicación Pez.</phrase> </textobject></mediaobject>
+		</screenshot>
+	 </figure>
+    <!-- ==== End of Figure ======================================= -->
+<para>La miniaplicación <application>Pez</application> muestra un pez animado en el panel. Puede persinbalizar el nombre del pez y el programa a ejecutar cuando se hace clic sobre el pez. Por defecto, el programa que se ejecuta cuando se hace clic sobre el pez es <application>Fortune</application>, el cual muestra usualmente un mensaje aleatorio y cómico a partir de una base de datos de citas famosas.</para>
+
+
+
+
+<para>Puede personalizar la imagen mostrada y el programa a ejecutar cuando se hace clic sobre esta.</para>
+<sect2 id="fish-introduction-add">
+<title>Para añadir Pez al Panel</title>
+  <para>Siga los pasos siguientes:</para>
+         <orderedlist>
+           <listitem>
+             <para>Haga clic derecho en el panel.</para>
+           </listitem>
+           <listitem>
+             <para>Elegir <guimenuitem>Añadir al Panel</guimenuitem>.</para>
+           </listitem>
+           <listitem>
+             <para>Desplácese hacia abajo en la lista de elementos en el diálogo de <guilabel>Añadir al Panel</guilabel>, luego seleccione <guilabel>Pez</guilabel>.</para>
+           </listitem>
+           <listitem>
+             <para>Clic <guibutton>Añadir</guibutton>.</para>
+           </listitem>
+         </orderedlist>
+    </sect2></sect1>
+
+<sect1 id="fish-usage">
+<title>Uso</title>
+<para>Haga clic en la miniaplicación para mostrar el diálogo de <guilabel>Wanda la Pez</guilabel>. El diálogo normalmente muestra la fortuna. Puede configurar la miniaplicación para especificar el programa a ejecutar cuando se haga clic sobre esta. Ver <xref linkend="fish-settings"/> para obtener más información.</para>
+</sect1>
+
+<!-- ============= Preferences  ================================ -->
+<sect1 id="fish-settings">
+<title>Preferencias</title>
+<para>Para configurar <application>Pez</application>, haga clic derecho sobre la miniaplicación <application> Pez</application>, luego escoja <guimenu>Preferencias</guimenu>.</para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Nombre del pez</guilabel></term>
+<listitem>
+<para>Use este cuadro de texto para especificar el nombre del pez.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Programa a ejecutar al hacer clic</guilabel></term>
+<listitem>
+<para>Por defecto, <application>Pez</application>ejecutará <literal>fortune</literal> cuando se haga clic en la miniaplicación. Use este cuadro de texto para especificar un programa alternativo a ejecutar.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Archivo</guilabel></term>
+<listitem>
+<para>Use este campo para seleccionar la imagen para mostrar en la miniaplicación. Puede seleccionar una imagen que se suministra con la miniaplicación o una imagen personal.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Total de cuadros en la animación</guilabel></term>
+<listitem>
+<para>Use este cuadro de número para especificar el número de cuadros en la animación.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Pausa por cuadro</guilabel></term>
+<listitem>
+<para>Use este cuadro de número para especificar la pausa en segundos entre cada cuadro en la animación.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Rotar en paneles verticales</guilabel></term>
+<listitem>
+<para>Seleccione esta opción para rotar la imagen de la miniaplicación cuando añada esta a un panel vertical.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+</article>

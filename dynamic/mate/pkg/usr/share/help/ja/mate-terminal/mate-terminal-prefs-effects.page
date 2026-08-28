@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-effects" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-scrolling"/>
+  </info>
+  <title>効果</title>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guilabel">背景</gui></title>
+      <p>端末ウィンドウの背景を選択します。オプションは次のとおりです。</p>
+      <list style="itemizedlist">
+        <item>
+          <p><gui style="guilabel">単色</gui></p>
+          <p>このオプションを選択すると、<gui style="guilabel">色</gui>タブの項目で指定された背景色が、端末の背景色として使用されます。</p>
+        </item>
+        <item>
+          <p><gui style="guilabel">背景の画像</gui></p>
+          <p>画像ファイルを端末の背景として使用するには、このオプションを選択します。<gui style="guilabel">画像ファイル</gui>ドロップダウンの組合せボックスを使用して、画像ファイルの場所と名前を指定します。または、<gui style="guibutton">参照</gui>をクリックして画像ファイルを検索し、選択します。</p>
+          <p><gui style="guilabel">背景画像のスクロール</gui>オプションを選択すると、端末をスクロールするときに、背景画像がテキストと共にスクロールできるようになります。このオプションを選択しない場合、背景画像は端末の背景に固定され、テキストだけがスクロールされます。このオプションは、<gui style="guilabel">背景の画像</gui>オプションを選択した場合にのみ使用可能になります。</p>
+        </item>
+        <item>
+          <p><gui style="guilabel">透過な背景</gui></p>
+          <p>このオプションを選択すると、端末に透明な背景を使用します。</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title><gui style="guilabel">透過背景または画像背景に濃淡をつける</gui></title>
+      <p>このスライダを使用して、端末の背景を隠したり暗くしたりします。このオプションは、<gui style="guilabel">背景の画像</gui>または<gui style="guilabel">透過な背景</gui>オプションを選択した場合だけ有効になります。</p>
+    </item>
+  </terms>
+</page>

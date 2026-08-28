@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-manage-profiles" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-tabs"/>
+  </info>
+  <title>プロファイルを管理する</title>
+  <terms style="variablelist">
+    <item>
+      <title>新しいプロファイルを追加するには</title>
+      <p><guiseq><gui style="guimenu">ファイル</gui><gui style="guimenuitem">新しいプロファイル</gui></guiseq>を選択して、<gui style="guilabel">新しいプロファイル</gui>ダイアログを表示します。<gui style="guilabel">プロファイル名</gui>テキストボックスに新しいプロファイル名を入力します。<gui style="guilabel">ベースにするプロファイル</gui>のドロップダウンリストを使用して、新しいプロファイルのベースとなるプロファイルを選択します。<gui style="guibutton">作成</gui>をクリックして、<gui style="guilabel">プロファイルの編集</gui>ダイアログを表示します。<gui style="guibutton">閉じる</gui>をクリックします。<app>MATE 端末</app>は、プロファイルを<guiseq><gui style="guimenu">端末</gui><gui style="guisubmenu">プロファイルの変更</gui></guiseq>サブメニューに追加します。</p>
+    </item>
+    <item>
+      <title>タブ付き端末のプロファイルを変更するには</title>
+      <p>変更するプロファイルのタブ付き端末のタブをクリックします。 <guiseq><gui style="guimenu">端末</gui><gui style="guisubmenu">編集</gui><gui style="guimenuitem"><var>プロファイル名</var></gui></guiseq>を選択します。</p>
+    </item>
+    <item>
+      <title>プロファイルを編集するには</title>
+      <p><gui style="guilabel">プロファイルの編集</gui>ダイアログでプロファイルを編集します。<gui style="guilabel">プロファイルの編集</gui>ダイアログは、次の方法で呼び出せます。</p>
+      <list style="itemizedlist">
+        <item>
+          <p><guiseq><gui style="guimenu">編集</gui><gui style="guisubmenu">現在のプロファイル</gui></guiseq>を選択します。</p>
+        </item>
+        <item>
+          <p>端末ウィンドウ内で右クリックし、ポップアップメニューから<guiseq><gui style="guimenuitem">プロファイル</gui><gui style="guimenuitem">プロファイルの設定</gui></guiseq>を選択します。</p>
+        </item>
+        <item>
+          <p><guiseq><gui style="guimenu">編集</gui><gui style="guisubmenu">プロファイル</gui></guiseq>を選択し、編集したいプロファイルを選択して、<gui style="guibutton">編集</gui>をクリックします。プロファイルに設定可能なオプションの詳細は、<xref linkend="mate-terminal-prefs"/>を参照してください。</p>
+        </item>
+      </list>
+    </item>
+    <item>
+      <title>プロファイルを削除するには</title>
+      <p><guiseq><gui style="guimenu">編集</gui><gui style="guimenuitem">プロファイル</gui></guiseq>を選択します。<gui style="guilabel">プロファイル</gui>リストで削除したいプロファイル名を選択し、<gui style="guibutton">削除</gui>をクリックします。<gui style="guilabel">プロファイルの削除</gui>ダイアログが表示されます。<gui style="guibutton">削除</gui>をクリックして、削除を確定します。<gui style="guibutton">閉じる</gui>をクリックして、<gui style="guilabel">プロファイルの編集</gui>ダイアログを閉じてください。</p>
+    </item>
+  </terms>
+</page>

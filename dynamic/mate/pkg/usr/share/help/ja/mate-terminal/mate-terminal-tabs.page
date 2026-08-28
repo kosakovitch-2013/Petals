@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-tabs" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#usage"/>
+    <link type="next" xref="mate-terminal-contents"/>
+  </info>
+  <title>端末ウィンドウを変更する</title>
+  <terms style="variablelist">
+    <item>
+      <title>メニューバーを隠すには</title>
+      <p><guiseq><gui style="guimenu">表示</gui><gui style="guimenuitem">メニューバーの表示</gui></guiseq>を選択します。</p>
+    </item>
+    <item>
+      <title>非表示のメニューバーを表示するには</title>
+      <p>端末ウィンドウ内で右クリックし、ポップアップメニューから<gui style="guimenuitem">メニューバーの表示</gui>を選択します。</p>
+    </item>
+    <item>
+      <title><app>MATE 端末</app>ウィンドウを全画面モードで表示するには</title>
+      <p><guiseq><gui style="guimenu">表示</gui><gui style="guimenuitem">全画面</gui></guiseq>を選択します。全画面モードでは、全画面を表示するウィンドウにテキストが表示されます。ウィンドウには、ウィンドウ枠やタイトルバーは含まれません。このモードを終了するには、<guiseq><gui style="guimenu">表示</gui><gui style="guimenuitem">全画面</gui></guiseq>を再び選択します。</p>
+    </item>
+    <item>
+      <title>端末ウィンドウの外観を変更するには</title>
+      <p>端末ウィンドウの外観の変更方法は、<gui style="guilabel">プロファイルの編集</gui>ダイアログで選択できるオプションに関する情報を、<xref linkend="mate-terminal-prefs"/>で参照してください。たとえば、背景色やスクロールバーの位置を変更できます。</p>
+    </item>
+  </terms>
+</page>

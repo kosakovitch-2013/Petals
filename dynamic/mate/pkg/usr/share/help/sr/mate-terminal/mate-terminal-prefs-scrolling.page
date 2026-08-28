@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-scrolling" type="topic" xml:lang="sr">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-compatibility"/>
+  </info>
+  <title>Премицање</title>
+  <terms style="variablelist">
+    <item>
+      <title>
+        <gui style="guilabel">Scrollbar is</gui>
+      </title>
+      <p>Користите овај падајући списак да одредите положај клизача на прозору терминала.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scrollback ... lines</gui>
+      </title>
+      <p>Користите ову вртешку да одредите број редова за који можете да померите уназад користећи клизач. На пример, ако наведете 100 тада можете да померите уназад последњих 100 редова приказаних у терминалу.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scroll on output</gui>
+      </title>
+      <p>Изаберите ову опцију да омогућите померање исписа на терминалу док терминал наставља да приказује још исписа наредбе.</p>
+    </item>
+    <item>
+      <title>
+        <gui style="guilabel">Scroll on keystroke</gui>
+      </title>
+      <p>Изаберите ову опцију да омогућите да можете да притиснете неки тастер на тастатури да померите на доле прозор терминала на упит наредбе. Ова радња се примењује само ако сте померили на горе прозор терминала и желите да се вратите на упит наредбе.</p>
+    </item>
+  </terms>
+</page>

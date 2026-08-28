@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" id="mate-terminal-prefs-general" type="topic" xml:lang="ja">
+  <info>
+    <link type="guide" xref="index#prefs"/>
+    <link type="next" xref="mate-terminal-prefs-title"/>
+  </info>
+  <title>全般</title>
+  <terms style="variablelist">
+    <item>
+      <title><gui style="guilabel">プロファイル名</gui></title>
+      <p>このテキストボックスを使用して、現在のプロファイルの名前を決めます。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">システムの固定幅フォントを使う</gui></title>
+      <p>このオプションを選択すると、<app>外観</app>設定ツールの<gui style="guilabel">フォント</gui>タブで指定された標準の固定幅フォントを使用します。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">フォント</gui></title>
+      <p>このボタンをクリックして、端末で使うフォントの種類とフォントサイズを選択します。このボタンは、<gui style="guilabel">システムの固定幅フォントを使用する</gui>オプションが選択されていない場合にのみ、使用可能になります。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">太字フォントを有効にする</gui></title>
+      <p>このオプションを選択すると、端末に太字のテキストを表示できます。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">常にメニューバーを既定で表示する</gui></title>
+      <p>このオプションを選択すると、新しい端末ウィンドウにメニューバーが表示されます。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">終端ベルを鳴らす</gui></title>
+      <p>このオプションを選択すると、端末ベル音を有効にします。</p>
+    </item>
+    <item>
+      <title><gui style="guilabel">単語単位で選択する文字</gui></title>
+      <p>このテキストボックスを使用して、文字列を単語単位で選択した場合に、<app>MATE 端末</app>で単語と見なされる文字または文字グループを指定します。文字列を単語単位で選択する方法の詳細は、<xref linkend="mate-terminal-contents"/>を参照してください。</p>
+    </item>
+  </terms>
+</page>
