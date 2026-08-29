@@ -1,0 +1,5 @@
+name=fluxbox
+version=1.3.7
+arch=x86_64
+desc="Fluxbox window manager"
+deps=libx11 libxcb libxau libxdmcp libxext libxrender libxinerama libxrandr
