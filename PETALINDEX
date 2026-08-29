@@ -33,3 +33,4 @@ mate 1.28 dynamic/mate-1.28-x86_64.petal
 glib 2.82 dynamic/glib-2.82-x86_64.petal
 pcre2 10.44 dynamic/pcre2-10.44-x86_64.petal
 libffi 3.4 dynamic/libffi-3.4-x86_64.petal
+openbox 3.6.1 dynamic/openbox-3.6.1-x86_64.petal

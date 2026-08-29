@@ -1,0 +1,5 @@
+name=openbox
+version=3.6.1
+arch=x86_64
+desc="Openbox window manager"
+deps=libx11 libxcb libxau libxdmcp
