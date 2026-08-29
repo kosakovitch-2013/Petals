@@ -1,0 +1,5 @@
+name=xwallpaper
+version=0.7.0
+arch=x86_64
+desc="Minimal wallpaper setter"
+deps=libx11 libxcb libxau libxdmcp

@@ -35,3 +35,4 @@ pcre2 10.44 dynamic/pcre2-10.44-x86_64.petal
 libffi 3.4 dynamic/libffi-3.4-x86_64.petal
 openbox 3.6.1 dynamic/openbox-3.6.1-x86_64.petal
 fluxbox 1.3.7 dynamic/fluxbox-1.3.7-x86_64.petal
+xwallpaper 0.7.0 dynamic/xwallpaper-0.7.0-x86_64.petal
