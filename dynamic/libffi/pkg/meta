@@ -1,0 +1,5 @@
+name=libffi
+version=3.4
+arch=x86_64
+desc="Foreign Function Interface library"
+deps=

@@ -1,0 +1,5 @@
+name=pcre2
+version=10.44
+arch=x86_64
+desc="Perl Compatible Regular Expressions"
+deps=

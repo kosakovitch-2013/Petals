@@ -2,4 +2,4 @@ name=glib
 version=2.82
 arch=x86_64
 desc="GLib library"
-deps=libffi pcre2
+deps=pcre2 libffi
