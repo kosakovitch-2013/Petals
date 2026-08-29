@@ -30,3 +30,4 @@ petals-wrapper 0.1 dynamic/petals-wrapper-0.1-any.petal
 doas 6.8.2 dynamic/doas-6.8.2-x86_64.petal
 openssl 3.3.1 dynamic/openssl-3.3.1-x86_64.petal
 mate 1.28 dynamic/mate-1.28-x86_64.petal
+glib 2.82 dynamic/glib-2.82-x86_64.petal

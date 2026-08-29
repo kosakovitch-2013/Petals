@@ -1,0 +1,5 @@
+name=mate
+version=1.28
+arch=x86_64
+desc="MATE Desktop Environment"
+deps=xorg-server libx11 libxcb glib
