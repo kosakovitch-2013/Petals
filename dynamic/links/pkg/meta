@@ -1,0 +1,5 @@
+name=links
+version=2.30
+arch=x86_64
+desc="Text and graphics web browser"
+deps=ncurses openssl
