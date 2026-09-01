@@ -1,0 +1,5 @@
+name=gcc
+version=16.1.0
+arch=x86_64
+desc="GNU Compiler Collection"
+deps=glibc
