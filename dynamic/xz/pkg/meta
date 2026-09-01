@@ -1,0 +1,5 @@
+name=xz
+version=5.6.3
+arch=x86_64
+desc="XZ compression utilities"
+deps=
