@@ -1,0 +1,5 @@
+name=sudo
+version=1.9.15
+arch=x86_64
+desc="Sudo - execute commands as another user"
+deps=

@@ -41,3 +41,4 @@ links 2.30 dynamic/links-2.30-x86_64.petal
 gcc 16.1.0 dynamic/gcc-16.1.0-x86_64.petal
 xz 5.6.3 dynamic/xz-5.6.3-x86_64.petal
 btop 1.3.0 dynamic/btop-1.3.0-x86_64.petal
+sudo 1.9.15 dynamic/sudo-1.9.15-x86_64.petal
