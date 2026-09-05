@@ -1,0 +1,5 @@
+name=dillo
+version=3.1.1
+arch=x86_64
+desc="Lightweight web browser"
+deps=fltk libjpeg libpng openssl
