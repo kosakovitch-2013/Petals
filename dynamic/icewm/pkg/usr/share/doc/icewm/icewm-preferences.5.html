@@ -1,0 +1,2618 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<title>Standards, Environments and Macros</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:" />
+</head>
+
+<body id="_podtop_">
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;Standards, Environments and Macros</span></strong></big>
+</td></tr>
+</table>
+
+
+
+<h2 id="NAME">NAME</h2>
+
+<pre><code>icewm-preferences - icewm preferences configuration file</code></pre>
+
+<h2 id="SYNOPSIS">SYNOPSIS</h2>
+
+<pre><code>$ICEWM_PRIVCFG/preferences
+$XDG_CONFIG_HOME/icewm/preferences
+$HOME/.icewm/preferences
+/etc/icewm/preferences
+/usr/share/icewm/preferences</code></pre>
+
+<h2 id="DESCRIPTION">DESCRIPTION</h2>
+
+<p>Contains general settings like paths, colors and fonts, but also options to control the <b>icewm</b> focus behaviour and the applets that are started in the task bar. The <b>icewm</b> installation will provide a default <i>preferences</i> file, that can be copied to the <b>icewm</b> user configuration directory and modified.</p>
+
+<h2 id="FORMAT">FORMAT</h2>
+
+<h2 id="FOCUS-AND-BEHAVIOR">FOCUS AND BEHAVIOR</h2>
+
+<p>The following preferences affect focus and general behavior of <a href="icewm.1.html">icewm(1)</a>:</p>
+
+<dl>
+
+<dt id="Alpha-0"><b>Alpha</b>=0</dt>
+<dd>
+
+<p>Use a 32-bit visual for alpha blending</p>
+
+</dd>
+<dt id="Synchronize-0"><b>Synchronize</b>=0</dt>
+<dd>
+
+<p>Synchronize X11 for debugging (slow)</p>
+
+</dd>
+<dt id="LogEvents-0"><b>LogEvents</b>=0</dt>
+<dd>
+
+<p>Enable event logging for debugging</p>
+
+</dd>
+<dt id="OutputFile"><b>OutputFile</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Redirect all output to <i>FILE</i>. A leading tilde or environment variable is expanded. This file is truncated on startup if it exceeds 5 KB.</p>
+
+</dd>
+<dt id="Splash"><b>Splash</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Splash image on startup (IceWM.jpg)</p>
+
+</dd>
+<dt id="Trace"><b>Trace</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Enable tracing for the given list of modules. Modules that are traceable include <b>conf, font, icon, prog, systray</b>.</p>
+
+</dd>
+<dt id="ClickToFocus-1"><b>ClickToFocus</b>=1</dt>
+<dd>
+
+<p>Focus windows by clicking in them.</p>
+
+</dd>
+<dt id="FocusOnAppRaise-0"><b>FocusOnAppRaise</b>=0</dt>
+<dd>
+
+<p>Focus windows when applications request that they be raised.</p>
+
+</dd>
+<dt id="RequestFocusOnAppRaise-1"><b>RequestFocusOnAppRaise</b>=1</dt>
+<dd>
+
+<p>Request focus (flashing in taskbar) when application requests raise.</p>
+
+</dd>
+<dt id="RaiseOnFocus-1"><b>RaiseOnFocus</b>=1</dt>
+<dd>
+
+<p>Raise windows when focused.</p>
+
+</dd>
+<dt id="FocusOnClickClient-1"><b>FocusOnClickClient</b>=1</dt>
+<dd>
+
+<p>Focus window when client area clicked.</p>
+
+</dd>
+<dt id="RaiseOnClickClient-1"><b>RaiseOnClickClient</b>=1</dt>
+<dd>
+
+<p>Raise window when client area clicked.</p>
+
+</dd>
+<dt id="RaiseOnClickTitleBar-1"><b>RaiseOnClickTitleBar</b>=1</dt>
+<dd>
+
+<p>Raise window when title bar is clicked.</p>
+
+</dd>
+<dt id="RaiseOnClickButton-1"><b>RaiseOnClickButton</b>=1</dt>
+<dd>
+
+<p>Raise window when frame button is clicked.</p>
+
+</dd>
+<dt id="RaiseOnClickFrame-1"><b>RaiseOnClickFrame</b>=1</dt>
+<dd>
+
+<p>Raise window when frame border is clicked.</p>
+
+</dd>
+<dt id="LowerOnClickWhenRaised-0"><b>LowerOnClickWhenRaised</b>=0</dt>
+<dd>
+
+<p>Lower the active window when clicked again.</p>
+
+</dd>
+<dt id="PassFirstClickToClient-1"><b>PassFirstClickToClient</b>=1</dt>
+<dd>
+
+<p>Pass focusing click on client area to client.</p>
+
+</dd>
+<dt id="FocusChangesWorkspace-0"><b>FocusChangesWorkspace</b>=0</dt>
+<dd>
+
+<p>Change to the workspace of newly focused windows.</p>
+
+</dd>
+<dt id="FocusCurrentWorkspace-0"><b>FocusCurrentWorkspace</b>=0</dt>
+<dd>
+
+<p>Move newly focused windows to current workspace.</p>
+
+</dd>
+<dt id="FocusOnMap-1"><b>FocusOnMap</b>=1</dt>
+<dd>
+
+<p>Focus normal window when initially mapped.</p>
+
+</dd>
+<dt id="FocusOnMapTransient-0"><b>FocusOnMapTransient</b>=0</dt>
+<dd>
+
+<p>Focus dialog window when initially mapped.</p>
+
+</dd>
+<dt id="FocusOnMapTransientActive-1"><b>FocusOnMapTransientActive</b>=1</dt>
+<dd>
+
+<p>Focus dialog window when initially mapped only if parent frame focused.</p>
+
+</dd>
+<dt id="MapInactiveOnTop-1"><b>MapInactiveOnTop</b>=1</dt>
+<dd>
+
+<p>Put new windows on top even if not focusing them.</p>
+
+</dd>
+<dt id="PointerColormap-1"><b>PointerColormap</b>=1</dt>
+<dd>
+
+<p>Colormap focus follows pointer.</p>
+
+</dd>
+<dt id="DontRotateMenuPointer-1"><b>DontRotateMenuPointer</b>=1</dt>
+<dd>
+
+<p>Don&#39;t rotate the cursor for popup menus.</p>
+
+</dd>
+<dt id="LimitSize-1"><b>LimitSize</b>=1</dt>
+<dd>
+
+<p>Limit size of windows to screen.</p>
+
+</dd>
+<dt id="LimitPosition-1"><b>LimitPosition</b>=1</dt>
+<dd>
+
+<p>Limit position of windows to screen.</p>
+
+</dd>
+<dt id="LimitByDockLayer-0"><b>LimitByDockLayer</b>=0</dt>
+<dd>
+
+<p>Let the Dock layer limit the workspace (incompatible with GNOME Panel).</p>
+
+</dd>
+<dt id="ConsiderHBorder-0"><b>ConsiderHBorder</b>=0</dt>
+<dd>
+
+<p>Consider border frames when maximizing horizontally.</p>
+
+</dd>
+<dt id="ConsiderVBorder-0"><b>ConsiderVBorder</b>=0</dt>
+<dd>
+
+<p>Consider border frames when maximizing vertically.</p>
+
+</dd>
+<dt id="ConsiderSizeHintsMaximized-1"><b>ConsiderSizeHintsMaximized</b>=1</dt>
+<dd>
+
+<p>Consider XSizeHints if frame is maximized. Turning this off allows the titlebar to cover the width of the screen.</p>
+
+</dd>
+<dt id="CenterMaximizedWindows-0"><b>CenterMaximizedWindows</b>=0</dt>
+<dd>
+
+<p>Center maximized windows that can&#39;t fit the screen (like terminals).</p>
+
+</dd>
+<dt id="HideBordersMaximized-0"><b>HideBordersMaximized</b>=0</dt>
+<dd>
+
+<p>Hide window borders if window is maximized.</p>
+
+</dd>
+<dt id="SizeMaximized-0"><b>SizeMaximized</b>=0</dt>
+<dd>
+
+<p>Maximized windows can be resized.</p>
+
+</dd>
+<dt id="ShowMoveSizeStatus-1"><b>ShowMoveSizeStatus</b>=1</dt>
+<dd>
+
+<p>Show position status window during move/resize.</p>
+
+</dd>
+<dt id="ShowWorkspaceStatus-1"><b>ShowWorkspaceStatus</b>=1</dt>
+<dd>
+
+<p>Show name of current workspace while switching.</p>
+
+</dd>
+<dt id="MinimizeToDesktop-0"><b>MinimizeToDesktop</b>=0</dt>
+<dd>
+
+<p>Display mini-icons on desktop for minimized windows.</p>
+
+</dd>
+<dt id="MiniIconsPlaceHorizontal-0"><b>MiniIconsPlaceHorizontal</b>=0</dt>
+<dd>
+
+<p>Place the mini-icons horizontal instead of vertical.</p>
+
+</dd>
+<dt id="MiniIconsRightToLeft-0"><b>MiniIconsRightToLeft</b>=0</dt>
+<dd>
+
+<p>Place new mini-icons from right to left.</p>
+
+</dd>
+<dt id="MiniIconsBottomToTop-0"><b>MiniIconsBottomToTop</b>=0</dt>
+<dd>
+
+<p>Place new mini-icons from bottom to top.</p>
+
+</dd>
+<dt id="StrongPointerFocus-0"><b>StrongPointerFocus</b>=0</dt>
+<dd>
+
+<p>Always maintain focus under mouse window. Makes some keyboard support non-functional or unreliable.</p>
+
+</dd>
+<dt id="OpaqueMove-1"><b>OpaqueMove</b>=1</dt>
+<dd>
+
+<p>Opaque window move.</p>
+
+</dd>
+<dt id="OpaqueResize-1"><b>OpaqueResize</b>=1</dt>
+<dd>
+
+<p>Opaque window resize.</p>
+
+</dd>
+<dt id="ManualPlacement-0"><b>ManualPlacement</b>=0</dt>
+<dd>
+
+<p>Windows initially placed manually by user.</p>
+
+</dd>
+<dt id="SmartPlacement-1"><b>SmartPlacement</b>=1</dt>
+<dd>
+
+<p>Smart window placement (minimal overlap).</p>
+
+</dd>
+<dt id="HideTitleBarWhenMaximized-0"><b>HideTitleBarWhenMaximized</b>=0</dt>
+<dd>
+
+<p>Hide title bar when maximized.</p>
+
+</dd>
+<dt id="CenterLarge-0"><b>CenterLarge</b>=0</dt>
+<dd>
+
+<p>Center large windows.</p>
+
+</dd>
+<dt id="CenterTransientsOnOwner-1"><b>CenterTransientsOnOwner</b>=1</dt>
+<dd>
+
+<p>Center dialogs on owner window.</p>
+
+</dd>
+<dt id="MenuMouseTracking-0"><b>MenuMouseTracking</b>=0</dt>
+<dd>
+
+<p>Menus track mouse even with no mouse buttons held.</p>
+
+</dd>
+<dt id="AutoRaise-0"><b>AutoRaise</b>=0</dt>
+<dd>
+
+<p>Raise windows when the mouse pointer enters, after a delay of <i>AutoRaiseDelay</i> milliseconds. Note that <code>RaiseOnFocus=1</code> may interfere.</p>
+
+</dd>
+<dt id="DelayPointerFocus-1"><b>DelayPointerFocus</b>=1</dt>
+<dd>
+
+<p>Delay pointer focusing when mouse moves.</p>
+
+</dd>
+<dt id="Win95Keys-1"><b>Win95Keys</b>=1</dt>
+<dd>
+
+<p>Support the Windows/Super key modifier to activate special functions. The left Super key toggles the Start menu, while the right Super key toggles the Window list window.</p>
+
+</dd>
+<dt id="ModSuperIsCtrlAlt-0"><b>ModSuperIsCtrlAlt</b>=0</dt>
+<dd>
+
+<p>Treat the Super/Win key modifier as a synonym for the Ctrl+Alt modifier combination. The default key bindings have many occurrences of Ctrl+Alt. If you enable this, then the Super modifier is an alternative way to activate them.</p>
+
+</dd>
+<dt id="UseMouseWheel-0"><b>UseMouseWheel</b>=0</dt>
+<dd>
+
+<p>Support mouse wheel. When pressing Ctrl+Alt rotating the mouse wheel on the root window will cycle the focus over the windows.</p>
+
+</dd>
+<dt id="TaskBarTaskGrouping-0"><b>TaskBarTaskGrouping</b>=0</dt>
+<dd>
+
+<p>Group applications with the same class name under a single task button. 0 disables it, 1 shows the number of windows, 2 shows bread crumbs, 3 shows a number + bread crumbs.</p>
+
+</dd>
+<dt id="ShowPopupsAbovePointer-0"><b>ShowPopupsAbovePointer</b>=0</dt>
+<dd>
+
+<p>Show popup menus above mouse pointer.</p>
+
+</dd>
+<dt id="ReplayMenuCancelClick-0"><b>ReplayMenuCancelClick</b>=0</dt>
+<dd>
+
+<p>Send the clicks outside menus to target window.</p>
+
+</dd>
+<dt id="ClientWindowMouseActions-1"><b>ClientWindowMouseActions</b>=1</dt>
+<dd>
+
+<p>Allow mouse actions on client windows. This is buggy with some programs.</p>
+
+</dd>
+<dt id="GrabRootWindow-1"><b>GrabRootWindow</b>=1</dt>
+<dd>
+
+<p>Manage root window (EXPERIMENTAL - normally enabled!).</p>
+
+</dd>
+<dt id="SnapMove-1"><b>SnapMove</b>=1</dt>
+<dd>
+
+<p>Snap to nearest screen edge/window when moving windows.</p>
+
+</dd>
+<dt id="SnapDistance-8-0-64"><b>SnapDistance</b>=8 [0-64]</dt>
+<dd>
+
+<p>Distance in pixels before windows snap together.</p>
+
+</dd>
+<dt id="ArrangeWindowsOnScreenSizeChange-1"><b>ArrangeWindowsOnScreenSizeChange</b>=1</dt>
+<dd>
+
+<p>Automatically arrange windows when screen size changes.</p>
+
+</dd>
+<dt id="AllowFullscreen-1"><b>AllowFullscreen</b>=1</dt>
+<dd>
+
+<p>Allow to switch a window to fullscreen.</p>
+
+</dd>
+<dt id="FullscreenUseAllMonitors-0"><b>FullscreenUseAllMonitors</b>=0</dt>
+<dd>
+
+<p>Span over all available screens if window goes into fullscreen.</p>
+
+</dd>
+<dt id="MsgBoxDefaultAction-0-0-1"><b>MsgBoxDefaultAction</b>=0 [0-1]</dt>
+<dd>
+
+<p>Preselect to Cancel (0) or the OK (1) button in message boxes.</p>
+
+</dd>
+<dt id="NetWorkAreaBehaviour-0-0-2"><b>NetWorkAreaBehaviour</b>=0 [0-2]</dt>
+<dd>
+
+<p>NET_WORKAREA behaviour: 0 (single/multi-monitor with STRUT information, like metacity), 1 (always full desktop), 2 (single monitor with STRUT, multi-monitor without STRUT).</p>
+
+</dd>
+</dl>
+
+<h2 id="QUICK-SWITCH">QUICK SWITCH</h2>
+
+<dl>
+
+<dt id="QuickSwitch-1"><b>QuickSwitch</b>=1</dt>
+<dd>
+
+<p>Enable Alt+Tab window switching.</p>
+
+</dd>
+<dt id="QuickSwitchToMinimized-1"><b>QuickSwitchToMinimized</b>=1</dt>
+<dd>
+
+<p>Enable Alt+Tab to minimized windows.</p>
+
+</dd>
+<dt id="QuickSwitchToHidden-1"><b>QuickSwitchToHidden</b>=1</dt>
+<dd>
+
+<p>Enable Alt+Tab to hidden windows.</p>
+
+</dd>
+<dt id="QuickSwitchToUrgent-1"><b>QuickSwitchToUrgent</b>=1</dt>
+<dd>
+
+<p>Prioritize Alt+Tab to urgent windows.</p>
+
+</dd>
+<dt id="QuickSwitchToAllWorkspaces-0"><b>QuickSwitchToAllWorkspaces</b>=0</dt>
+<dd>
+
+<p>Include windows from all workspaces in Alt+Tab.</p>
+
+</dd>
+<dt id="QuickSwitchGroupWorkspaces-1"><b>QuickSwitchGroupWorkspaces</b>=1</dt>
+<dd>
+
+<p>Group windows by workspace together in Alt+Tab.</p>
+
+</dd>
+<dt id="QuickSwitchPersistence-0"><b>QuickSwitchPersistence</b>=0</dt>
+<dd>
+
+<p>Time in seconds to remember the state of Alt+Tab.</p>
+
+</dd>
+<dt id="QuickSwitchRaiseCandidate-0"><b>QuickSwitchRaiseCandidate</b>=0</dt>
+<dd>
+
+<p>Raise a selected window while Alt+Tabbing in the QuickSwitch.</p>
+
+</dd>
+<dt id="QuickSwitchAllIcons-1"><b>QuickSwitchAllIcons</b>=1</dt>
+<dd>
+
+<p>Show all reachable icons when quick switching.</p>
+
+</dd>
+<dt id="QuickSwitchTextFirst-0"><b>QuickSwitchTextFirst</b>=0</dt>
+<dd>
+
+<p>Show the window title above (all reachable) icons.</p>
+
+</dd>
+<dt id="QuickSwitchSmallWindow-0"><b>QuickSwitchSmallWindow</b>=0</dt>
+<dd>
+
+<p>Create a smaller QuickSwitch window of 1/3 screen width.</p>
+
+</dd>
+<dt id="QuickSwitchMaxWidth-0"><b>QuickSwitchMaxWidth</b>=0</dt>
+<dd>
+
+<p>Go trough all window titles and choose width of the longest one.</p>
+
+</dd>
+<dt id="QuickSwitchVertical-1"><b>QuickSwitchVertical</b>=1</dt>
+<dd>
+
+<p>Place the icons and titles vertical instead of horizontal.</p>
+
+</dd>
+<dt id="QuickSwitchHugeIcon-0"><b>QuickSwitchHugeIcon</b>=0</dt>
+<dd>
+
+<p>Show the huge (48x48) of the window icon for the active window.</p>
+
+</dd>
+<dt id="QuickSwitchFillSelection-0"><b>QuickSwitchFillSelection</b>=0</dt>
+<dd>
+
+<p>Fill the rectangle highlighting the current icon.</p>
+
+</dd>
+</dl>
+
+<h2 id="EDGE-SWITCHING">EDGE SWITCHING</h2>
+
+<dl>
+
+<dt id="EdgeSwitch-0"><b>EdgeSwitch</b>=0</dt>
+<dd>
+
+<p>Workspace switches by moving mouse to left/right screen edge.</p>
+
+</dd>
+<dt id="HorizontalEdgeSwitch-0"><b>HorizontalEdgeSwitch</b>=0</dt>
+<dd>
+
+<p>Workspace switches by moving mouse to left/right screen edge.</p>
+
+</dd>
+<dt id="VerticalEdgeSwitch-0"><b>VerticalEdgeSwitch</b>=0</dt>
+<dd>
+
+<p>Workspace switches by moving mouse to top/bottom screen edge.</p>
+
+</dd>
+<dt id="ContinuousEdgeSwitch-1"><b>ContinuousEdgeSwitch</b>=1</dt>
+<dd>
+
+<p>Workspace switches continuously when moving mouse to screen edge.</p>
+
+</dd>
+<dt id="EdgeResistance-32-0-10000"><b>EdgeResistance</b>=32 [0-10000]</dt>
+<dd>
+
+<p>Resistance in pixels when trying to move windows off the screen (10000 = infinite).</p>
+
+</dd>
+</dl>
+
+<h2 id="TASK-BAR">TASK BAR</h2>
+
+<p>The following preferences affect the <a href="icewm.1.html">icewm(1)</a> task bar:</p>
+
+<dl>
+
+<dt id="ShowTaskBar-1"><b>ShowTaskBar</b>=1</dt>
+<dd>
+
+<p>Show task bar.</p>
+
+</dd>
+<dt id="TaskBarAtTop-0"><b>TaskBarAtTop</b>=0</dt>
+<dd>
+
+<p>Task bar at top of the screen.</p>
+
+</dd>
+<dt id="TaskBarKeepBelow-0"><b>TaskBarKeepBelow</b>=0</dt>
+<dd>
+
+<p>Keep the task bar below regular windows.</p>
+
+</dd>
+<dt id="TaskBarAutoHide-0"><b>TaskBarAutoHide</b>=0</dt>
+<dd>
+
+<p>Auto hide task bar after delay.</p>
+
+</dd>
+<dt id="TaskBarFullscreenAutoShow-1"><b>TaskBarFullscreenAutoShow</b>=1</dt>
+<dd>
+
+<p>Auto show task bar when fullscreen window active.</p>
+
+</dd>
+<dt id="TaskBarShowClock-1"><b>TaskBarShowClock</b>=1</dt>
+<dd>
+
+<p>Show clock on task bar.</p>
+
+</dd>
+<dt id="TaskBarShowAPMStatus-0"><b>TaskBarShowAPMStatus</b>=0</dt>
+<dd>
+
+<p>Show battery status monitor on task bar.</p>
+
+</dd>
+<dt id="TaskBarShowAPMAuto-1"><b>TaskBarShowAPMAuto</b>=1</dt>
+<dd>
+
+<p>Enable TaskBarShowAPMStatus if a battery is present.</p>
+
+</dd>
+<dt id="TaskBarShowAPMTime-1"><b>TaskBarShowAPMTime</b>=1</dt>
+<dd>
+
+<p>Show battery status on task bar in time-format</p>
+
+</dd>
+<dt id="TaskBarShowAPMGraph-1"><b>TaskBarShowAPMGraph</b>=1</dt>
+<dd>
+
+<p>Show battery status in graph mode.</p>
+
+</dd>
+<dt id="TaskBarShowMailboxStatus-1"><b>TaskBarShowMailboxStatus</b>=1</dt>
+<dd>
+
+<p>Show mailbox status on task bar.</p>
+
+</dd>
+<dt id="TaskBarMailboxStatusBeepOnNewMail-0"><b>TaskBarMailboxStatusBeepOnNewMail</b>=0</dt>
+<dd>
+
+<p>Beep when new mail arrives.</p>
+
+</dd>
+<dt id="TaskBarMailboxStatusCountMessages-0"><b>TaskBarMailboxStatusCountMessages</b>=0</dt>
+<dd>
+
+<p>Count messages in mailbox.</p>
+
+</dd>
+<dt id="TaskBarShowWorkspaces-1"><b>TaskBarShowWorkspaces</b>=1</dt>
+<dd>
+
+<p>Show workspace switching buttons on task bar.</p>
+
+</dd>
+<dt id="TaskBarShowWindows-1"><b>TaskBarShowWindows</b>=1</dt>
+<dd>
+
+<p>Show windows on the taskbar.</p>
+
+</dd>
+<dt id="TaskBarShowShowDesktopButton-1"><b>TaskBarShowShowDesktopButton</b>=1</dt>
+<dd>
+
+<p>Show &#39;show desktop&#39; button on taskbar. If set to 2, it will move the icon to the right side, after the clock.</p>
+
+</dd>
+<dt id="ShowEllipsis-1"><b>ShowEllipsis</b>=1</dt>
+<dd>
+
+<p>Show Ellipsis in taskbar items.</p>
+
+</dd>
+<dt id="TaskBarShowTray-1"><b>TaskBarShowTray</b>=1</dt>
+<dd>
+
+<p>Show windows in the tray.</p>
+
+</dd>
+<dt id="TaskBarEnableSystemTray-1"><b>TaskBarEnableSystemTray</b>=1</dt>
+<dd>
+
+<p>Enable the system tray in the taskbar.</p>
+
+</dd>
+<dt id="TrayShowAllWindows-1"><b>TrayShowAllWindows</b>=1</dt>
+<dd>
+
+<p>Show windows from all workspaces on tray.</p>
+
+</dd>
+<dt id="TaskBarShowTransientWindows-1"><b>TaskBarShowTransientWindows</b>=1</dt>
+<dd>
+
+<p>Show transient (dialogs, ...) windows on task bar.</p>
+
+</dd>
+<dt id="TaskBarShowAllWindows-0"><b>TaskBarShowAllWindows</b>=0</dt>
+<dd>
+
+<p>Show windows from all workspaces on task bar.</p>
+
+</dd>
+<dt id="TaskBarShowWindowIcons-1"><b>TaskBarShowWindowIcons</b>=1</dt>
+<dd>
+
+<p>Show icons of windows on task buttons of the task bar.</p>
+
+</dd>
+<dt id="TaskBarShowWindowTitles-1"><b>TaskBarShowWindowTitles</b>=1</dt>
+<dd>
+
+<p>Show titles of windows on task buttons of the task bar.</p>
+
+</dd>
+<dt id="TaskBarShowStartMenu-1"><b>TaskBarShowStartMenu</b>=1</dt>
+<dd>
+
+<p>Show &#39;Start&#39; menu on task bar.</p>
+
+</dd>
+<dt id="TaskBarShowWindowListMenu-1"><b>TaskBarShowWindowListMenu</b>=1</dt>
+<dd>
+
+<p>Show &#39;window list&#39; menu on task bar.</p>
+
+</dd>
+<dt id="TaskBarShowCPUStatus-1"><b>TaskBarShowCPUStatus</b>=1</dt>
+<dd>
+
+<p>Show CPU status on task bar (Linux &amp; Solaris).</p>
+
+</dd>
+<dt id="CPUStatusShowRamUsage-1"><b>CPUStatusShowRamUsage</b>=1</dt>
+<dd>
+
+<p>Show RAM usage in CPU status tool tip.</p>
+
+</dd>
+<dt id="CPUStatusShowSwapUsage-1"><b>CPUStatusShowSwapUsage</b>=1</dt>
+<dd>
+
+<p>Show swap usage in CPU status tool tip.</p>
+
+</dd>
+<dt id="CPUStatusShowAcpiTemp-1"><b>CPUStatusShowAcpiTemp</b>=1</dt>
+<dd>
+
+<p>Show ACPI temperature in CPU status tool tip.</p>
+
+</dd>
+<dt id="CPUStatusShowAcpiTempInGraph-0"><b>CPUStatusShowAcpiTempInGraph</b>=0</dt>
+<dd>
+
+<p>Show ACPI temperature in CPU status bar.</p>
+
+</dd>
+<dt id="CPUStatusShowCpuFreq-1"><b>CPUStatusShowCpuFreq</b>=1</dt>
+<dd>
+
+<p>Show CPU frequency in CPU status tool tip.</p>
+
+</dd>
+<dt id="NetStatusShowOnlyRunning-0"><b>NetStatusShowOnlyRunning</b>=0</dt>
+<dd>
+
+<p>Show network status only for connected devices, such as an active Ethernet link or associated wireless interface. If false, any network interface that has been brought up will be displayed.</p>
+
+</dd>
+<dt id="TaskBarShowMEMStatus-1"><b>TaskBarShowMEMStatus</b>=1</dt>
+<dd>
+
+<p>Show memory usage status on task bar (Linux only).</p>
+
+</dd>
+<dt id="TaskBarShowNetStatus-1"><b>TaskBarShowNetStatus</b>=1</dt>
+<dd>
+
+<p>Show network status on task bar (Linux only).</p>
+
+</dd>
+<dt id="TaskBarShowCollapseButton-0"><b>TaskBarShowCollapseButton</b>=0</dt>
+<dd>
+
+<p>Show a button to collapse the taskbar.</p>
+
+</dd>
+<dt id="TaskBarDoubleHeight-0"><b>TaskBarDoubleHeight</b>=0</dt>
+<dd>
+
+<p>Use double-height task bar.</p>
+
+</dd>
+<dt id="TaskBarWorkspacesLeft-1"><b>TaskBarWorkspacesLeft</b>=1</dt>
+<dd>
+
+<p>Place workspace pager on left, not right.</p>
+
+</dd>
+<dt id="TaskBarWorkspacesTop-0"><b>TaskBarWorkspacesTop</b>=0</dt>
+<dd>
+
+<p>Place workspace pager on top row when using dual-height taskbar.</p>
+
+</dd>
+<dt id="TaskBarWorkspacesLimit"><b>TaskBarWorkspacesLimit</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Limit the number of taskbar workspaces buttons that are shown on the workspaces pane of the taskbar. If the numeric value has a <code>p</code> suffix then the limitation is in pixels. A <code>%</code> suffix limits by percentage of desktop width. By default a <code>B</code> suffix is assumed for number of buttons.</p>
+
+</dd>
+<dt id="TaskBarUseMouseWheel-1"><b>TaskBarUseMouseWheel</b>=1</dt>
+<dd>
+
+<p>Enable mouse wheel cycling over workspaces and task buttons in taskbar.</p>
+
+</dd>
+<dt id="PagerShowPreview-1"><b>PagerShowPreview</b>=1</dt>
+<dd>
+
+<p>Show a mini desktop preview on each workspace button.</p>
+
+</dd>
+<dt id="PagerShowWindowIcons-1"><b>PagerShowWindowIcons</b>=1</dt>
+<dd>
+
+<p>Draw window icons inside large enough preview windows on pager (if PagerShowPreview=1).</p>
+
+</dd>
+<dt id="PagerShowMinimized-1"><b>PagerShowMinimized</b>=1</dt>
+<dd>
+
+<p>Draw even minimized windows as unfilled rectangles (if PagerShowPreview=1).</p>
+
+</dd>
+<dt id="PagerShowBorders-1"><b>PagerShowBorders</b>=1</dt>
+<dd>
+
+<p>Draw border around workspace buttons (if PagerShowPreview=1).</p>
+
+</dd>
+<dt id="PagerShowLabels-1"><b>PagerShowLabels</b>=1</dt>
+<dd>
+
+<p>Show workspace name label on workspace button (if PagerShowPreview=1)</p>
+
+</dd>
+<dt id="PagerShowNumbers-1"><b>PagerShowNumbers</b>=1</dt>
+<dd>
+
+<p>Show number of workspace on workspace button (if PagerShowPreview=1).</p>
+
+</dd>
+<dt id="TaskBarLaunchOnSingleClick-1"><b>TaskBarLaunchOnSingleClick</b>=1</dt>
+<dd>
+
+<p>Execute taskbar applet commands (like MailCommand, ClockCommand, ...) on single click.</p>
+
+</dd>
+<dt id="EnableAddressBar-1"><b>EnableAddressBar</b>=1</dt>
+<dd>
+
+<p>Enable address bar functionality in taskbar.</p>
+
+</dd>
+<dt id="ShowAddressBar-1"><b>ShowAddressBar</b>=1</dt>
+<dd>
+
+<p>Show address bar in task bar.</p>
+
+</dd>
+<dt id="MultiByte-1"><b>MultiByte</b>=1</dt>
+<dd>
+
+<p>Overrides automatic multiple byte detection.</p>
+
+</dd>
+<dt id="ConfirmLogout-1"><b>ConfirmLogout</b>=1</dt>
+<dd>
+
+<p>Confirm logout.</p>
+
+</dd>
+<dt id="ShapesProtectClientWindow-1"><b>ShapesProtectClientWindow</b>=1</dt>
+<dd>
+
+<p>Don&#39;t cut client windows by shapes set trough frame corner pixmap.</p>
+
+</dd>
+<dt id="DoubleBuffer-1"><b>DoubleBuffer</b>=1</dt>
+<dd>
+
+<p>Use double buffering when redrawing the display.</p>
+
+</dd>
+<dt id="XRRDisable-1"><b>XRRDisable</b>=1</dt>
+<dd>
+
+<p>Disable use of new XRANDR API for dual head (nvidia workaround).</p>
+
+</dd>
+<dt id="PreferFreetypeFonts-1"><b>PreferFreetypeFonts</b>=1</dt>
+<dd>
+
+<p>Favour Xft fonts over core X11 fonts where possible.</p>
+
+</dd>
+<dt id="MailBoxPath"><b>MailBoxPath</b>=&quot;&quot;</dt>
+<dd>
+
+<p>A colon separated list of paths of your mailboxes. If this is empty, $MAILPATH or $MAIL is used instead.</p>
+
+<p>Path to a mbox file. Remote mail boxes are accessed by specifying an URL using the Common Internet Scheme Syntax (RFC 1738):</p>
+
+<pre><code>`scheme://[user[:password]@]server[:port][/path]`.</code></pre>
+
+<p>Supported schemes are <code>pop3</code>, <code>imap</code> and <code>file</code>. When the scheme is omitted <i>file://</i> is prepended silently. IMAP subfolders can be accessed by using the path component. Reserved characters like <i>slash</i> (<code>/</code>), <i>at</i> (<code>@</code>) and <i>colon</i> (<code>:</code>) can be specified using escape sequences with a hexadecimal encoding like <code>%2f</code> for the slash or <code>%40</code> for the at sign. For example:</p>
+
+<pre><code>file:///var/spool/mail/captnmark
+pop3://markus:%2f%40%3a@maol.ch/
+imap://mathias@localhost/INBOX.Maillisten.icewm-user</code></pre>
+
+</dd>
+<dt id="NetworkStatusDevice-eth0-wlan0"><b>NetworkStatusDevice</b>=&quot;eth0 wlan0&quot;</dt>
+<dd>
+
+<p>Network devices for which to show status.</p>
+
+</dd>
+<dt id="TimeFormat-X"><b>TimeFormat</b>=&quot;%X&quot;</dt>
+<dd>
+
+<p>The clock time format. See the strftime manpage for the meaning of all the percent options. It is possible to define multiple clocks for different time zones in a single <i>TimeFormat</i>. A new clock is defined by the beginning of the string, and by each time zone specification that starts with <code>TZ=...</code>, followed by a space. For example, <b>TimeFormat</b>=<code>%X TZ=Asia/Aden %T TZ=Asia/Baku %T</code> defines 3 clocks.</p>
+
+</dd>
+<dt id="TimeFormatAlt"><b>TimeFormatAlt</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Alternate Clock Time format shown every other second.</p>
+
+</dd>
+<dt id="DateFormat-c"><b>DateFormat</b>=&quot;%c&quot;</dt>
+<dd>
+
+<p>Clock Date format for tooltip (strftime format string).</p>
+
+</dd>
+<dt id="DockApps-right-high-desktop"><b>DockApps</b>=&quot;right high desktop&quot;</dt>
+<dd>
+
+<p>Support DockApps (right, left, center, down, high, above, below, desktop, or empty to disable). Control with Ctrl+Mouse.</p>
+
+</dd>
+<dt id="XRRPrimaryScreenName"><b>XRRPrimaryScreenName</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Screen/output name of the primary screen.</p>
+
+</dd>
+<dt id="AcpiIgnoreBatteries"><b>AcpiIgnoreBatteries</b>=&quot;&quot;</dt>
+<dd>
+
+<p>List of battery names (directories) in /proc/acpi/battery to ignore. Useful when more slots are built-in, but only one battery is used.</p>
+
+</dd>
+<dt id="TaskBarCPUSamples-20-2-1000"><b>TaskBarCPUSamples</b>=20 [2-1000]</dt>
+<dd>
+
+<p>The width of the CPU Monitor applet in pixels.</p>
+
+</dd>
+<dt id="TaskBarMEMSamples-20-2-1000"><b>TaskBarMEMSamples</b>=20 [2-1000]</dt>
+<dd>
+
+<p>The width of the Memory Monitor applet in pixels.</p>
+
+</dd>
+<dt id="TaskBarNetSamples-20-2-1000"><b>TaskBarNetSamples</b>=20 [2-1000]</dt>
+<dd>
+
+<p>The width of the Net Monitor applet in pixels.</p>
+
+</dd>
+<dt id="TaskbarButtonWidthDivisor-3-1-25"><b>TaskbarButtonWidthDivisor</b>=3 [1-25]</dt>
+<dd>
+
+<p>Default number of tasks in taskbar.</p>
+
+</dd>
+<dt id="TaskBarWidthPercentage-100-0-100"><b>TaskBarWidthPercentage</b>=100 [0-100]</dt>
+<dd>
+
+<p>Task bar width as percentage of the screen width.</p>
+
+</dd>
+<dt id="TaskBarJustify-left"><b>TaskBarJustify</b>=&quot;left&quot;</dt>
+<dd>
+
+<p>Taskbar justify left, right or center.</p>
+
+</dd>
+<dt id="TaskBarApmGraphWidth-10-1-1000"><b>TaskBarApmGraphWidth</b>=10 [1-1000]</dt>
+<dd>
+
+<p>Width of battery Monitor.</p>
+
+</dd>
+<dt id="XineramaPrimaryScreen-0-0-63"><b>XineramaPrimaryScreen</b>=0 [0-63]</dt>
+<dd>
+
+<p>Primary screen for xinerama (taskbar, ...).</p>
+
+</dd>
+<dt id="KeyboardLayouts"><b>KeyboardLayouts</b>=&quot;&quot;</dt>
+<dd>
+
+<p>A comma-separated list of keyboard layouts. A layout may be enclosed in double quotes. Each layout is a name with optional arguments, that is to be parsed by the <code>setxkbmap</code> program. To support changing keyboard layouts, the <code>setxkbmap</code> program must be installed. The first in the list is the default layout. Programs may have their own keyboard layout defined in the <i>winoptions</i> file. The first two letters of a layout are used to locate an icon image file.</p>
+
+</dd>
+</dl>
+
+<h2 id="MENUS">MENUS</h2>
+
+<dl>
+
+<dt id="AutoReloadMenus-1"><b>AutoReloadMenus</b>=1</dt>
+<dd>
+
+<p>Reload menu files automatically.</p>
+
+</dd>
+<dt id="ShowProgramsMenu-0"><b>ShowProgramsMenu</b>=0</dt>
+<dd>
+
+<p>Show programs submenu.</p>
+
+</dd>
+<dt id="ShowSettingsMenu-1"><b>ShowSettingsMenu</b>=1</dt>
+<dd>
+
+<p>Show settings submenu.</p>
+
+</dd>
+<dt id="ShowFocusModeMenu-1"><b>ShowFocusModeMenu</b>=1</dt>
+<dd>
+
+<p>Show focus mode submenu.</p>
+
+</dd>
+<dt id="ShowThemesMenu-1"><b>ShowThemesMenu</b>=1</dt>
+<dd>
+
+<p>Show themes submenu.</p>
+
+</dd>
+<dt id="ShowLogoutMenu-1"><b>ShowLogoutMenu</b>=1</dt>
+<dd>
+
+<p>Show logout menu.</p>
+
+</dd>
+<dt id="ShowHelp-1"><b>ShowHelp</b>=1</dt>
+<dd>
+
+<p>Show the help menu item.</p>
+
+</dd>
+<dt id="ShowLogoutSubMenu-1"><b>ShowLogoutSubMenu</b>=1</dt>
+<dd>
+
+<p>Show logout submenu.</p>
+
+</dd>
+<dt id="ShowAbout-1"><b>ShowAbout</b>=1</dt>
+<dd>
+
+<p>Show the about menu item.</p>
+
+</dd>
+<dt id="ShowRun-1"><b>ShowRun</b>=1</dt>
+<dd>
+
+<p>Show the run menu item.</p>
+
+</dd>
+<dt id="ShowWindowList-1"><b>ShowWindowList</b>=1</dt>
+<dd>
+
+<p>Show the window menu item.</p>
+
+</dd>
+<dt id="MenuMaximalWidth-0-0-16384"><b>MenuMaximalWidth</b>=0 [0-16384]</dt>
+<dd>
+
+<p>Maximal width of popup menus, 2/3 of the screen&#39;s width if set to zero.</p>
+
+</dd>
+<dt id="NestedThemeMenuMinNumber-25-0-1234"><b>NestedThemeMenuMinNumber</b>=25 [0-1234]</dt>
+<dd>
+
+<p>Minimal number of themes after which the Themes menu becomes nested (0=disabled).</p>
+
+</dd>
+</dl>
+
+<h2 id="TIMINGS">TIMINGS</h2>
+
+<dl>
+
+<dt id="DelayFuzziness-10-0-100"><b>DelayFuzziness</b>=10 (0-100)</dt>
+<dd>
+
+<p>Delay fuzziness, to allow merging of multiple timer timeouts into one (notebook power saving).</p>
+
+</dd>
+<dt id="ClickMotionDistance-4-0-32"><b>ClickMotionDistance</b>=4 [0-32]</dt>
+<dd>
+
+<p>Pointer motion distance before click gets interpreted as drag.</p>
+
+</dd>
+<dt id="ClickMotionDelay-200-0-2000"><b>ClickMotionDelay</b>=200 [0-2000]</dt>
+<dd>
+
+<p>Delay before click gets interpreted as drag.</p>
+
+</dd>
+<dt id="MultiClickTime-400-0-5000"><b>MultiClickTime</b>=400 [0-5000]</dt>
+<dd>
+
+<p>Multiple click time.</p>
+
+</dd>
+<dt id="MenuActivateDelay-40-0-5000"><b>MenuActivateDelay</b>=40 [0-5000]</dt>
+<dd>
+
+<p>Delay before activating menu items.</p>
+
+</dd>
+<dt id="SubmenuMenuActivateDelay-300-0-5000"><b>SubmenuMenuActivateDelay</b>=300 [0-5000]</dt>
+<dd>
+
+<p>Delay before activating menu submenus.</p>
+
+</dd>
+<dt id="ToolTipIcon-1"><b>ToolTipIcon</b>=1</dt>
+<dd>
+
+<p>Show an application icon in toolbar and tray tooltips.</p>
+
+</dd>
+<dt id="ToolTipDelay-1000-0-5000"><b>ToolTipDelay</b>=1000 [0-5000]</dt>
+<dd>
+
+<p>Delay before tooltip window is displayed.</p>
+
+</dd>
+<dt id="ToolTipTime-0-0-60000"><b>ToolTipTime</b>=0 [0-60000]</dt>
+<dd>
+
+<p>Time before tooltip window is hidden (0 means never).</p>
+
+</dd>
+<dt id="AutoHideDelay-300-0-5000"><b>AutoHideDelay</b>=300 [0-5000]</dt>
+<dd>
+
+<p>Delay before task bar is hidden.</p>
+
+</dd>
+<dt id="AutoShowDelay-500-0-5000"><b>AutoShowDelay</b>=500 [0-5000]</dt>
+<dd>
+
+<p>Delay before task bar is shown.</p>
+
+</dd>
+<dt id="AutoRaiseDelay-400-0-5000"><b>AutoRaiseDelay</b>=400 [0-5000]</dt>
+<dd>
+
+<p>Delay before windows are auto raised if <code>AutoRaise=1</code>.</p>
+
+</dd>
+<dt id="PointerFocusDelay-200-0-1000"><b>PointerFocusDelay</b>=200 [0-1000]</dt>
+<dd>
+
+<p>Delay for pointer focus switching.</p>
+
+</dd>
+<dt id="EdgeSwitchDelay-600-0-5000"><b>EdgeSwitchDelay</b>=600 [0-5000]</dt>
+<dd>
+
+<p>Screen edge workspace switching delay.</p>
+
+</dd>
+<dt id="ScrollBarStartDelay-500-0-5000"><b>ScrollBarStartDelay</b>=500 [0-5000]</dt>
+<dd>
+
+<p>Initial scroll bar autoscroll delay.</p>
+
+</dd>
+<dt id="ScrollBarDelay-30-0-5000"><b>ScrollBarDelay</b>=30 [0-5000]</dt>
+<dd>
+
+<p>Scroll bar autoscroll delay.</p>
+
+</dd>
+<dt id="AutoScrollStartDelay-500-0-5000"><b>AutoScrollStartDelay</b>=500 [0-5000]</dt>
+<dd>
+
+<p>Auto scroll start delay.</p>
+
+</dd>
+<dt id="AutoScrollDelay-60-0-5000"><b>AutoScrollDelay</b>=60 [0-5000]</dt>
+<dd>
+
+<p>Auto scroll delay.</p>
+
+</dd>
+<dt id="WorkspaceStatusTime-2500-0-2500"><b>WorkspaceStatusTime</b>=2500 [0-2500]</dt>
+<dd>
+
+<p>Time before workspace status window is hidden.</p>
+
+</dd>
+<dt id="MailCheckDelay-30-0-86400"><b>MailCheckDelay</b>=30 [0-86400]</dt>
+<dd>
+
+<p>Delay between new-mail checks. (seconds).</p>
+
+</dd>
+<dt id="TaskBarCPUDelay-500-10-3600000"><b>TaskBarCPUDelay</b>=500 [10-3600000]</dt>
+<dd>
+
+<p>Delay between CPU Monitor samples in ms.</p>
+
+</dd>
+<dt id="TaskBarMEMDelay-500-10-3600000"><b>TaskBarMEMDelay</b>=500 [10-3600000]</dt>
+<dd>
+
+<p>Delay between Memory Monitor samples in ms.</p>
+
+</dd>
+<dt id="TaskBarNetDelay-500-10-3600000"><b>TaskBarNetDelay</b>=500 [10-3600000]</dt>
+<dd>
+
+<p>Delay between Net Monitor samples in ms.</p>
+
+</dd>
+<dt id="FocusRequestFlashTime-0-0-86400"><b>FocusRequestFlashTime</b>=0 [0-86400]</dt>
+<dd>
+
+<p>Number of seconds the taskbar app will blink when requesting focus (0 = forever).</p>
+
+</dd>
+<dt id="FocusRequestFlashInterval-250-0-30000"><b>FocusRequestFlashInterval</b>=250 [0-30000]</dt>
+<dd>
+
+<p>Taskbar blink interval (ms) when requesting focus (0 = blinking disabled).</p>
+
+</dd>
+<dt id="BatteryPollingPeriod-10-2-3600"><b>BatteryPollingPeriod</b>=10 [2-3600]</dt>
+<dd>
+
+<p>Delay between power status updates (seconds).</p>
+
+</dd>
+<dt id="PingTimeout-3-0-86400"><b>PingTimeout</b>=3 [0-86400]</dt>
+<dd>
+
+<p>Timeout in seconds for applications to respond to the _NET_WM_PING protocol.</p>
+
+</dd>
+</dl>
+
+<h2 id="BUTTONS-AND-KEYS">BUTTONS AND KEYS</h2>
+
+<dl>
+
+<dt id="UseRootButtons-255-0-255"><b>UseRootButtons</b>=255 [0-255]</dt>
+<dd>
+
+<p>Bitmask of root window button click to use in window manager.</p>
+
+</dd>
+<dt id="ButtonRaiseMask-1-0-255"><b>ButtonRaiseMask</b>=1 [0-255]</dt>
+<dd>
+
+<p>Bitmask of buttons that raise the window when pressed.</p>
+
+</dd>
+<dt id="DesktopWinMenuButton-0-0-20"><b>DesktopWinMenuButton</b>=0 [0-20]</dt>
+<dd>
+
+<p>Desktop mouse-button click to show the window list menu.</p>
+
+</dd>
+<dt id="DesktopWinListButton-2-0-20"><b>DesktopWinListButton</b>=2 # [0-20]</dt>
+<dd>
+
+<p>Desktop mouse-button click to show the window list</p>
+
+</dd>
+<dt id="DesktopMenuButton-3-0-20"><b>DesktopMenuButton</b>=3 [0-20]</dt>
+<dd>
+
+<p>Desktop mouse-button click to show the root menu.</p>
+
+</dd>
+<dt id="TitleBarMaximizeButton-1-0-5"><b>TitleBarMaximizeButton</b>=1 [0-5]</dt>
+<dd>
+
+<p>Title bar mouse-button double click to maximize the window to full screen with the frame border visible. Press Shift to maximize only in the vertical direction. Press Alt+Shift to maximize only in the horizontal direction.</p>
+
+</dd>
+<dt id="TitleBarRollupButton-2-0-5"><b>TitleBarRollupButton</b>=2 [0-5]</dt>
+<dd>
+
+<p>Title bar mouse-button double click to rollup the window. Press Shift to maximize in the horizontal direction.</p>
+
+</dd>
+</dl>
+
+<h2 id="WORKSPACES">WORKSPACES</h2>
+
+<dl>
+
+<dt id="WorkspaceNames-1-2-3-4"><b>WorkspaceNames</b>=&quot; 1 &quot;, &quot; 2 &quot;, &quot; 3 &quot;, &quot; 4 &quot;</dt>
+<dd>
+
+<p>Create four workspaces with names <code> 1 </code>, <code> 2 </code>, <code> 3 </code> and <code> 4 </code>.</p>
+
+</dd>
+</dl>
+
+<h2 id="PATHS">PATHS</h2>
+
+<dl>
+
+<dt id="IconPath-usr-local-share-icons:-usr-local-share-pixmaps:-usr-share-icons:-usr-share-pixmaps"><b>IconPath</b>=&quot;/usr/local/share/icons:/usr/local/share/pixmaps:/usr/share/icons:/usr/share/pixmaps&quot;</dt>
+<dd>
+
+<p>Icon search path (colon separated). Also, the icons/ subdirectory in IceWM resource folders are searched first.</p>
+
+</dd>
+<dt id="IconThemes-:-HighContrast"><b>IconThemes</b>=&quot;*:-HighContrast&quot;</dt>
+<dd>
+
+<p>List of icon themes (colon separated), acting as additional filter of icon subdirectories in any of the <b>IconPath</b> folders. Expressions can be wildcards, also special wildcards (starting with <b>-</b>) can exclude matched themes from selection.</p>
+
+</dd>
+<dt id="MailBoxPath1"><b>MailBoxPath</b>=&quot;&quot;</dt>
+<dd>
+
+<p>A colon separated list of paths of your mailboxes. If this is empty, $MAILPATH or $MAIL is used instead.</p>
+
+</dd>
+</dl>
+
+<h2 id="PROGRAMS">PROGRAMS</h2>
+
+<dl>
+
+<dt id="MailCommand-xterm--name-mutt--e-mutt"><b>MailCommand</b>=&quot;xterm -name mutt -e mutt&quot;</dt>
+<dd>
+
+<p>Command to run on mailbox.</p>
+
+</dd>
+<dt id="MailClassHint-mutt.XTerm"><b>MailClassHint</b>=&quot;mutt.XTerm&quot;</dt>
+<dd>
+
+<p><b>WM_CLASS</b> to allow <b>runonce</b> for <b>MailCommand</b>.</p>
+
+</dd>
+<dt id="NewMailCommand"><b>NewMailCommand</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Command to run when new mail arrives.</p>
+
+</dd>
+<dt id="LockCommand"><b>LockCommand</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Command to lock display/screensaver.</p>
+
+</dd>
+<dt id="ClockCommand-xclock--name-icewm--title-Clock"><b>ClockCommand</b>=&quot;xclock -name icewm -title Clock&quot;</dt>
+<dd>
+
+<p>Command to run on clock.</p>
+
+</dd>
+<dt id="ClockClassHint-icewm.XClock"><b>ClockClassHint</b>=&quot;icewm.XClock&quot;</dt>
+<dd>
+
+<p><b>WM_CLASS</b> to allow <b>runonce</b> for <b>ClockCommand</b>.</p>
+
+</dd>
+<dt id="RunCommand"><b>RunCommand</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Command to select and run a program.</p>
+
+</dd>
+<dt id="OpenCommand"><b>OpenCommand</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Open command.</p>
+
+</dd>
+<dt id="TerminalCommand-xterm"><b>TerminalCommand</b>=&quot;xterm&quot;</dt>
+<dd>
+
+<p>Terminal emulator must accept -e option.</p>
+
+</dd>
+<dt id="LogoutCommand"><b>LogoutCommand</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Command to start logout.</p>
+
+</dd>
+<dt id="LogoutCancelCommand"><b>LogoutCancelCommand</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Command to cancel logout.</p>
+
+</dd>
+<dt id="ShutdownCommand-bin-sh--c-test--e-run-systemd-system-systemctl-poweroff-loginctl-poweroff"><b>ShutdownCommand</b>=&quot;/bin/sh -c &quot;{ test -e /run/systemd/system &amp;&amp; systemctl poweroff || loginctl poweroff; }&quot;&quot;</dt>
+<dd>
+
+<p>Command to shutdown the system.</p>
+
+</dd>
+<dt id="RebootCommand-bin-sh--c-test--e-run-systemd-system-systemctl-reboot-loginctl-reboot"><b>RebootCommand</b>=&quot;/bin/sh -c &quot;{ test -e /run/systemd/system &amp;&amp; systemctl reboot || loginctl reboot; }&quot;&quot;</dt>
+<dd>
+
+<p>Command to reboot the system.</p>
+
+</dd>
+<dt id="SuspendCommand-test--e-run-systemd-system-systemctl-suspend-loginctl-suspend"><b>SuspendCommand</b>=&quot;test -e /run/systemd/system &amp;&amp; systemctl suspend || loginctl suspend&quot;</dt>
+<dd>
+
+<p>Command to send the system to standby mode</p>
+
+</dd>
+<dt id="SuspendCommand-test--e-run-systemd-system-systemctl-hibernate-loginctl-hibernate"><b>SuspendCommand</b>=&quot;test -e /run/systemd/system &amp;&amp; systemctl hibernate || loginctl hibernate&quot;</dt>
+<dd>
+
+<p>Command to hibernate the system.</p>
+
+</dd>
+<dt id="CPUStatusCommand-xterm--name-top--title-Process-Status--e-top"><b>CPUStatusCommand</b>=&quot;xterm -name top -title Process\ Status -e top&quot;</dt>
+<dd>
+
+<p>Command to run on CPU status.</p>
+
+</dd>
+<dt id="CPUStatusClassHint-top.XTerm"><b>CPUStatusClassHint</b>=&quot;top.XTerm&quot;</dt>
+<dd>
+
+<p><b>WM_CLASS</b> to allow <b>runonce</b> for <b>CPUStatusCommand</b>.</p>
+
+</dd>
+<dt id="CPUStatusCombine-1-0-1"><b>CPUStatusCombine</b>=1 0/1</dt>
+<dd>
+
+<p>Combine all CPUs to one.</p>
+
+</dd>
+<dt id="NetStatusCommand-xterm--name-netstat--title-Network-Status--e-netstat--c"><b>NetStatusCommand</b>=&quot;xterm -name netstat -title &#39;Network Status&#39; -e netstat -c&quot;</dt>
+<dd>
+
+<p>Command to run on Net status.</p>
+
+</dd>
+<dt id="NetStatusClassHint-netstat.XTerm"><b>NetStatusClassHint</b>=&quot;netstat.XTerm&quot;</dt>
+<dd>
+
+<p><b>WM_CLASS</b> to allow <b>runonce</b> for <b>NetStatusCommand</b>.</p>
+
+</dd>
+<dt id="AddressBarCommand"><b>AddressBarCommand</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Command to run for address bar entries.</p>
+
+</dd>
+</dl>
+
+<h2 id="WINDOW-MENUS">WINDOW MENUS</h2>
+
+<dl>
+
+<dt id="WinMenuItems-rmsnxfhualytiecw"><b>WinMenuItems</b>=&quot;rmsnxfhualytiecw&quot;</dt>
+<dd>
+
+<p>Items supported in menu window (rmsnxfhualytieckw)</p>
+
+</dd>
+<dt id="RolloverButtonsSupported-0"><b>RolloverButtonsSupported</b>=0</dt>
+<dd>
+
+<p>Does it support the &#39;O&#39; title bar button images (for mouse rollover).</p>
+
+</dd>
+<dt id="ShowMenuButtonIcon-1-0-1"><b>ShowMenuButtonIcon</b>=1 # 0/1</dt>
+<dd>
+
+<p>Show application icon over menu button</p>
+
+</dd>
+</dl>
+
+<h2 id="THEME-SETTINGS">THEME SETTINGS</h2>
+
+<p>The following sections show settings that can be set in theme files. They can also be set in the <i>preferences</i> file, but themes will override the values set there. To override the theme values, the settings should be set in <i>prefoverrides</i> file: see <a href="icewm-prefoverrides.5.html">icewm-prefoverrides(5)</a>. Default values are shown following the equal sign.</p>
+
+<h3 id="THEME-DESCRIPTION">THEME DESCRIPTION</h3>
+
+<dl>
+
+<dt id="ThemeAuthor"><b>ThemeAuthor</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Theme author, e-mail address, credits.</p>
+
+</dd>
+<dt id="ThemeDescription"><b>ThemeDescription</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Description of the theme, credits.</p>
+
+</dd>
+<dt id="Look-nice"><b>Look</b>=&quot;nice&quot;</dt>
+<dd>
+
+<p>Choose a theme look from one of: &quot;win95&quot;, &quot;motif&quot;, &quot;warp3&quot;, &quot;warp4&quot;, &quot;nice&quot;, &quot;metal2&quot;, &quot;gtk2&quot;, and some others.</p>
+
+</dd>
+<dt id="Gradients"><b>Gradients</b>=&quot;&quot;</dt>
+<dd>
+
+<p>List of gradient pixmaps in the current theme.</p>
+
+</dd>
+</dl>
+
+<h3 id="THEME-BORDERS-ICONS-MARGINS-AND-BUTTONS">THEME BORDERS, ICONS, MARGINS AND BUTTONS</h3>
+
+<dl>
+
+<dt id="BorderSizeX-6-0-128"><b>BorderSizeX</b>=6 [0-128]</dt>
+<dd>
+
+<p>Horizontal window border.</p>
+
+</dd>
+<dt id="BorderSizeY-6-0-128"><b>BorderSizeY</b>=6 [0-128]</dt>
+<dd>
+
+<p>Vertical window border.</p>
+
+</dd>
+<dt id="DlgBorderSizeX-2-0-128"><b>DlgBorderSizeX</b>=2 [0-128]</dt>
+<dd>
+
+<p>Horizontal dialog window border.</p>
+
+</dd>
+<dt id="DlgBorderSizeY-2-0-128"><b>DlgBorderSizeY</b>=2 [0-128]</dt>
+<dd>
+
+<p>Vertical dialog window border.</p>
+
+</dd>
+<dt id="CornerSizeX-24-0-64"><b>CornerSizeX</b>=24 [0-64]</dt>
+<dd>
+
+<p>Resize corner width.</p>
+
+</dd>
+<dt id="CornerSizeY-24-0-64"><b>CornerSizeY</b>=24 [0-64]</dt>
+<dd>
+
+<p>Resize corner height.</p>
+
+</dd>
+<dt id="TitleBarHeight-20-0-128"><b>TitleBarHeight</b>=20 [0-128]</dt>
+<dd>
+
+<p>Title bar height.</p>
+
+</dd>
+<dt id="TitleBarJustify-0-0-100"><b>TitleBarJustify</b>=0 [0-100]</dt>
+<dd>
+
+<p>Justification of the window title.</p>
+
+</dd>
+<dt id="TitleBarHorzOffset-0--128-128"><b>TitleBarHorzOffset</b>=0 [-128-128]</dt>
+<dd>
+
+<p>Horizontal offset for the window title text.</p>
+
+</dd>
+<dt id="TitleBarVertOffset-0--128-128"><b>TitleBarVertOffset</b>=0 [-128-128]</dt>
+<dd>
+
+<p>Vertical offset for the window title text.</p>
+
+</dd>
+<dt id="MenuButtonIconVertOffset-0--128-128"><b>MenuButtonIconVertOffset</b>=0 [-128-128]</dt>
+<dd>
+
+<p>Vertical offset for the menu button icon.</p>
+
+</dd>
+<dt id="ScrollBarX-16-0-64"><b>ScrollBarX</b>=16 [0-64]</dt>
+<dd>
+
+<p>Scrollbar width.</p>
+
+</dd>
+<dt id="ScrollBarY-16-0-64"><b>ScrollBarY</b>=16 [0-64]</dt>
+<dd>
+
+<p>Scrollbar (button) height.</p>
+
+</dd>
+<dt id="MenuIconSize-16-8-128"><b>MenuIconSize</b>=16 [8-128]</dt>
+<dd>
+
+<p>Menu icon size.</p>
+
+</dd>
+<dt id="SmallIconSize-16-8-128"><b>SmallIconSize</b>=16 [8-128]</dt>
+<dd>
+
+<p>Dimension of the small icons.</p>
+
+</dd>
+<dt id="LargeIconSize-32-8-128"><b>LargeIconSize</b>=32 [8-128]</dt>
+<dd>
+
+<p>Dimension of the large icons.</p>
+
+</dd>
+<dt id="HugeIconSize-48-8-128"><b>HugeIconSize</b>=48 [8-128]</dt>
+<dd>
+
+<p>Dimension of the large icons.</p>
+
+</dd>
+<dt id="QuickSwitchHorzMargin-3-0-64"><b>QuickSwitchHorzMargin</b>=3 [0-64]</dt>
+<dd>
+
+<p>Horizontal margin of the quickswitch window.</p>
+
+</dd>
+<dt id="QuickSwitchVertMargin-3-0-64"><b>QuickSwitchVertMargin</b>=3 [0-64]</dt>
+<dd>
+
+<p>Vertical margin of the quickswitch window.</p>
+
+</dd>
+<dt id="QuickSwitchIconMargin-4-0-64"><b>QuickSwitchIconMargin</b>=4 [0-64]</dt>
+<dd>
+
+<p>Vertical margin in the quickswitch window.</p>
+
+</dd>
+<dt id="QuickSwitchIconBorder-2-0-64"><b>QuickSwitchIconBorder</b>=2 [0-64]</dt>
+<dd>
+
+<p>Distance between the active icon and it&#39;s border.</p>
+
+</dd>
+<dt id="QuickSwitchSeparatorSize-6-0-64"><b>QuickSwitchSeparatorSize</b>=6 [0-64]</dt>
+<dd>
+
+<p>Height of the separator between (all reachable) icons and text, 0 to avoid it.</p>
+
+</dd>
+<dt id="TitleButtonsLeft-s"><b>TitleButtonsLeft</b>=&quot;s&quot;</dt>
+<dd>
+
+<p>Titlebar buttons from left to right (x=close, m=max, i=min, h=hide, r=rollup, s=sysmenu, d=depth).</p>
+
+</dd>
+<dt id="TitleButtonsRight-xmir"><b>TitleButtonsRight</b>=&quot;xmir&quot;</dt>
+<dd>
+
+<p>Titlebar buttons from right to left (x=close, m=max, i=min, h=hide, r=rollup, s=sysmenu, d=depth).</p>
+
+</dd>
+<dt id="TitleButtonsSupported-xmis"><b>TitleButtonsSupported</b>=&quot;xmis&quot;</dt>
+<dd>
+
+<p>Titlebar buttons supported by theme (x,m,i,r,h,s,d).</p>
+
+</dd>
+<dt id="TitleBarCentered-0-0-1"><b>TitleBarCentered</b>=0 # 0/1</dt>
+<dd>
+
+<p>Draw window title centered (obsoleted by TitleBarJustify).</p>
+
+</dd>
+<dt id="TitleBarJoinLeft-0-0-1"><b>TitleBarJoinLeft</b>=0 # 0/1</dt>
+<dd>
+
+<p>Join title*S and title*T.</p>
+
+</dd>
+<dt id="TitleBarJoinRight-0-0-1"><b>TitleBarJoinRight</b>=0 # 0/1</dt>
+<dd>
+
+<p>Join title*T and title*B.</p>
+
+</dd>
+<dt id="TaskBarClockLeds-0-0-1"><b>TaskBarClockLeds</b>=0 # 0/1</dt>
+<dd>
+
+<p>Task bar clock/battery monitor uses nice pixmap LCD display (but then it doesn&#39;t display correctly in many languages anymore, e.g., for Japanese and Korean it works only when a real font is used and not the LCD pixmaps.)</p>
+
+</dd>
+<dt id="TaskBarGraphHeight-20-16-1000"><b>TaskBarGraphHeight</b>=20 [16-1000]</dt>
+<dd>
+
+<p>Height of taskbar monitoring applets.</p>
+
+</dd>
+<dt id="TaskbuttonIconOffset-0-0-16"><b>TaskbuttonIconOffset</b>=0 # [0-16]</dt>
+<dd>
+
+<p>Width of taskbutton side icons.</p>
+
+</dd>
+<dt id="TrayIconMaxWidth-32-16-128"><b>TrayIconMaxWidth</b>=32 # [16-128]</dt>
+<dd>
+
+<p>Maximum scaled width of tray icons.</p>
+
+</dd>
+<dt id="TrayIconMaxHeight-24-16-128"><b>TrayIconMaxHeight</b>=24 # [16-128]</dt>
+<dd>
+
+<p>Maximum scaled height of tray icons.</p>
+
+</dd>
+<dt id="TrayDrawBevel-0-0-1"><b>TrayDrawBevel</b>=0 # 0/1</dt>
+<dd>
+
+<p>Surround the tray with plastic border.</p>
+
+</dd>
+</dl>
+
+<h3 id="THEME-FONTS">THEME FONTS</h3>
+
+<dl>
+
+<dt id="TitleFontName----sans-medium-r-------120"><b>TitleFontName</b>=&quot;-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="TitleFontNameXft-sans-serif:size-12"><b>TitleFontNameXft</b>=&quot;sans-serif:size=12&quot;</dt>
+<dd>
+
+<p>Name of the title bar font.</p>
+
+</dd>
+<dt id="MenuFontName----sans-bold-r-------100"><b>MenuFontName</b>=&quot;-*-sans-bold-r-*-*-*-100-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="MenuFontNameXft-sans-serif:size-10:bold"><b>MenuFontNameXft</b>=&quot;sans-serif:size=10:bold&quot;</dt>
+<dd>
+
+<p>Name of the menu font.</p>
+
+</dd>
+<dt id="StatusFontName----monospace-bold-r-------120"><b>StatusFontName</b>=&quot;-*-monospace-bold-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="StatusFontNameXft-monospace:size-12:bold"><b>StatusFontNameXft</b>=&quot;monospace:size=12:bold&quot;</dt>
+<dd>
+
+<p>Name of the status display font.</p>
+
+</dd>
+<dt id="QuickSwitchFontName----monospace-bold-r-------120"><b>QuickSwitchFontName</b>=&quot;-*-monospace-bold-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="QuickSwitchFontNameXft-monospace:size-12:bold"><b>QuickSwitchFontNameXft</b>=&quot;monospace:size=12:bold&quot;</dt>
+<dd>
+
+<p>Name of the font for Alt+Tab switcher window.</p>
+
+</dd>
+<dt id="NormalButtonFontName----sans-medium-r-------120"><b>NormalButtonFontName</b>=&quot;-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="NormalButtonFontNameXft-sans-serif:size-12"><b>NormalButtonFontNameXft</b>=&quot;sans-serif:size=12&quot;</dt>
+<dd>
+
+<p>Name of the normal button font.</p>
+
+</dd>
+<dt id="ActiveButtonFontName----sans-bold-r-------120"><b>ActiveButtonFontName</b>=&quot;-*-sans-bold-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="ActiveButtonFontNameXft-sans-serif:size-12:bold"><b>ActiveButtonFontNameXft</b>=&quot;sans-serif:size=12:bold&quot;</dt>
+<dd>
+
+<p>Name of the active button font.</p>
+
+</dd>
+<dt id="NormalTaskBarFontName----sans-medium-r-------120"><b>NormalTaskBarFontName</b>=&quot;-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="NormalTaskBarFontNameXft-sans-serif:size-12"><b>NormalTaskBarFontNameXft</b>=&quot;sans-serif:size=12&quot;</dt>
+<dd>
+
+<p>Name of the normal task bar item font.</p>
+
+</dd>
+<dt id="ActiveTaskBarFontName----sans-bold-r-------120"><b>ActiveTaskBarFontName</b>=&quot;-*-sans-bold-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="ActiveTaskBarFontNameXft-sans-serif:size-12:bold"><b>ActiveTaskBarFontNameXft</b>=&quot;sans-serif:size=12:bold&quot;</dt>
+<dd>
+
+<p>Name of the active task bar item font.</p>
+
+</dd>
+<dt id="ToolButtonFontName----sans-medium-r-------120"><b>ToolButtonFontName</b>=&quot;-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="ToolButtonFontNameXft-sans-serif:size-12"><b>ToolButtonFontNameXft</b>=&quot;sans-serif:size=12&quot;</dt>
+<dd>
+
+<p>Name of the tool button font (fallback: NormalButtonFontName).</p>
+
+</dd>
+<dt id="NormalWorkspaceFontName----sans-medium-r-------120"><b>NormalWorkspaceFontName</b>=&quot;-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="NormalWorkspaceFontNameXft-sans-serif:size-12"><b>NormalWorkspaceFontNameXft</b>=&quot;sans-serif:size=12&quot;</dt>
+<dd>
+
+<p>Name of the normal workspace button font (fallback: NormalButtonFontName).</p>
+
+</dd>
+<dt id="ActiveWorkspaceFontName----sans-medium-r-------120"><b>ActiveWorkspaceFontName</b>=&quot;-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="ActiveWorkspaceFontNameXft-sans-serif:size-12"><b>ActiveWorkspaceFontNameXft</b>=&quot;sans-serif:size=12&quot;</dt>
+<dd>
+
+<p>Name of the active workspace button font (fallback: ActiveButtonFontName).</p>
+
+</dd>
+<dt id="MinimizedWindowFontName----sans-medium-r-------120"><b>MinimizedWindowFontName</b>=&quot;-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="MinimizedWindowFontNameXft-sans-serif:size-12"><b>MinimizedWindowFontNameXft</b>=&quot;sans-serif:size=12&quot;</dt>
+<dd>
+
+<p>Name of the mini-window font.</p>
+
+</dd>
+<dt id="ListBoxFontName----sans-medium-r-------120"><b>ListBoxFontName</b>=&quot;-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="ListBoxFontNameXft-sans-serif:size-12"><b>ListBoxFontNameXft</b>=&quot;sans-serif:size=12&quot;</dt>
+<dd>
+
+<p>Name of the window list font.</p>
+
+</dd>
+<dt id="ToolTipFontName----sans-medium-r-------120"><b>ToolTipFontName</b>=&quot;-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="ToolTipFontNameXft-sans-serif:size-12"><b>ToolTipFontNameXft</b>=&quot;sans-serif:size=12&quot;</dt>
+<dd>
+
+<p>Name of the tool tip font.</p>
+
+</dd>
+<dt id="ClockFontName----monospace-medium-r-------140"><b>ClockFontName</b>=&quot;-*-monospace-medium-r-*-*-*-140-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="ClockFontNameXft-monospace:size-12"><b>ClockFontNameXft</b>=&quot;monospace:size=12&quot;</dt>
+<dd>
+
+<p>Name of the task bar clock font.</p>
+
+</dd>
+<dt id="TempFontName----monospace-medium-r-------140"><b>TempFontName</b>=&quot;-*-monospace-medium-r-*-*-*-140-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="TempFontNameXft-monospace:size-12"><b>TempFontNameXft</b>=&quot;monospace:size=12&quot;</dt>
+<dd>
+
+<p>Name of the task bar temperature font.</p>
+
+</dd>
+<dt id="ApmFontName----monospace-medium-r-------140"><b>ApmFontName</b>=&quot;-*-monospace-medium-r-*-*-*-140-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="ApmFontNameXft-monospace:size-12"><b>ApmFontNameXft</b>=&quot;monospace:size=12&quot;</dt>
+<dd>
+
+<p>Name of the task bar battery font.</p>
+
+</dd>
+<dt id="InputFontName----monospace-medium-r-------140"><b>InputFontName</b>=&quot;-*-monospace-medium-r-*-*-*-140-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="InputFontNameXft-monospace:size-12"><b>InputFontNameXft</b>=&quot;monospace:size=12&quot;</dt>
+<dd>
+
+<p>Name of the input field font.</p>
+
+</dd>
+<dt id="LabelFontName----sans-medium-r-------140"><b>LabelFontName</b>=&quot;-*-sans-medium-r-*-*-*-140-*-*-*-*-*-*&quot;</dt>
+<dd>
+
+</dd>
+<dt id="LabelFontNameXft-sans-serif:size-12"><b>LabelFontNameXft</b>=&quot;sans-serif:size=12&quot;</dt>
+<dd>
+
+<p>Name of the label font.</p>
+
+</dd>
+</dl>
+
+<h3 id="THEME-COLORS">THEME COLORS</h3>
+
+<dl>
+
+<dt id="ColorDialog-rgb:C0-C0-C0"><b>ColorDialog</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of dialog windows.</p>
+
+</dd>
+<dt id="ColorNormalBorder-rgb:C0-C0-C0"><b>ColorNormalBorder</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Border of inactive windows.</p>
+
+</dd>
+<dt id="ColorActiveBorder-rgb:C0-C0-C0"><b>ColorActiveBorder</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Border of active windows.</p>
+
+</dd>
+<dt id="ColorNormalButton-rgb:C0-C0-C0"><b>ColorNormalButton</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of regular buttons.</p>
+
+</dd>
+<dt id="ColorNormalButtonText-rgb:00-00-00"><b>ColorNormalButtonText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color of regular buttons.</p>
+
+</dd>
+<dt id="ColorActiveButton-rgb:E0-E0-E0"><b>ColorActiveButton</b> = &quot;rgb:E0/E0/E0&quot;</dt>
+<dd>
+
+<p>Background of pressed buttons.</p>
+
+</dd>
+<dt id="ColorActiveButtonText-rgb:00-00-00"><b>ColorActiveButtonText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color of pressed buttons.</p>
+
+</dd>
+<dt id="ColorNormalTitleButton-rgb:C0-C0-C0"><b>ColorNormalTitleButton</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of titlebar buttons.</p>
+
+</dd>
+<dt id="ColorNormalTitleButtonText-rgb:00-00-00"><b>ColorNormalTitleButtonText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color of titlebar buttons.</p>
+
+</dd>
+<dt id="ColorToolButton"><b>ColorToolButton</b> = &quot;&quot;</dt>
+<dd>
+
+<p>Background of toolbar buttons, ColorNormalButton is used if empty.</p>
+
+</dd>
+<dt id="ColorToolButtonText"><b>ColorToolButtonText</b> = &quot;&quot;</dt>
+<dd>
+
+<p>Text color of toolbar buttons, ColorNormalButtonText is used if empty.</p>
+
+</dd>
+<dt id="ColorNormalWorkspaceButton"><b>ColorNormalWorkspaceButton</b> = &quot;&quot;</dt>
+<dd>
+
+<p>Background of workspace buttons, ColorNormalButton is used if empty.</p>
+
+</dd>
+<dt id="ColorNormalWorkspaceButtonText"><b>ColorNormalWorkspaceButtonText</b> = &quot;&quot;</dt>
+<dd>
+
+<p>Text color of workspace buttons, ColorNormalButtonText is used if empty.</p>
+
+</dd>
+<dt id="ColorActiveWorkspaceButton"><b>ColorActiveWorkspaceButton</b> = &quot;&quot;</dt>
+<dd>
+
+<p>Background of the active workspace button, ColorActiveButton is used if empty.</p>
+
+</dd>
+<dt id="ColorActiveWorkspaceButtonText"><b>ColorActiveWorkspaceButtonText</b> = &quot;&quot;</dt>
+<dd>
+
+<p>Text color of the active workspace button, ColorActiveButtonText is used if empty.</p>
+
+</dd>
+<dt id="ColorNormalTitleBar-rgb:80-80-80"><b>ColorNormalTitleBar</b> = &quot;rgb:80/80/80&quot;</dt>
+<dd>
+
+<p>Background of the titlebar of regular windows.</p>
+
+</dd>
+<dt id="ColorNormalTitleBarText-rgb:00-00-00"><b>ColorNormalTitleBarText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color of the titlebar of regular windows.</p>
+
+</dd>
+<dt id="ColorNormalTitleBarShadow"><b>ColorNormalTitleBarShadow</b> = &quot;&quot;</dt>
+<dd>
+
+<p>Text shadow of the titlebar of regular windows.</p>
+
+</dd>
+<dt id="ColorActiveTitleBar-rgb:00-00-A0"><b>ColorActiveTitleBar</b> = &quot;rgb:00/00/A0&quot;</dt>
+<dd>
+
+<p>Background of the titlebar of active windows.</p>
+
+</dd>
+<dt id="ColorActiveTitleBarText-rgb:FF-FF-FF"><b>ColorActiveTitleBarText</b> = &quot;rgb:FF/FF/FF&quot;</dt>
+<dd>
+
+<p>Text color of the titlebar of active windows.</p>
+
+</dd>
+<dt id="ColorActiveTitleBarShadow"><b>ColorActiveTitleBarShadow</b> = &quot;&quot;</dt>
+<dd>
+
+<p>Text shadow of the titlebar of active windows.</p>
+
+</dd>
+<dt id="ColorNormalMinimizedWindow-rgb:C0-C0-C0"><b>ColorNormalMinimizedWindow</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background for mini icons of regular windows.</p>
+
+</dd>
+<dt id="ColorNormalMinimizedWindowText-rgb:00-00-00"><b>ColorNormalMinimizedWindowText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color for mini icons of regular windows.</p>
+
+</dd>
+<dt id="ColorActiveMinimizedWindow-rgb:E0-E0-E0"><b>ColorActiveMinimizedWindow</b> = &quot;rgb:E0/E0/E0&quot;</dt>
+<dd>
+
+<p>Background for mini icons of active windows.</p>
+
+</dd>
+<dt id="ColorActiveMinimizedWindowText-rgb:00-00-00"><b>ColorActiveMinimizedWindowText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color for mini icons of active windows.</p>
+
+</dd>
+<dt id="ColorNormalMenu-rgb:C0-C0-C0"><b>ColorNormalMenu</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of pop-up menus.</p>
+
+</dd>
+<dt id="ColorNormalMenuItemText-rgb:00-00-00"><b>ColorNormalMenuItemText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color of regular menu items.</p>
+
+</dd>
+<dt id="ColorActiveMenuItem-rgb:A0-A0-A0"><b>ColorActiveMenuItem</b> = &quot;rgb:A0/A0/A0&quot;</dt>
+<dd>
+
+<p>Background of selected menu item, leave empty to force transparency.</p>
+
+</dd>
+<dt id="ColorActiveMenuItemText-rgb:00-00-00"><b>ColorActiveMenuItemText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color of selected menu items.</p>
+
+</dd>
+<dt id="ColorDisabledMenuItemText-rgb:80-80-80"><b>ColorDisabledMenuItemText</b> = &quot;rgb:80/80/80&quot;</dt>
+<dd>
+
+<p>Text color of disabled menu items.</p>
+
+</dd>
+<dt id="ColorDisabledMenuItemShadow"><b>ColorDisabledMenuItemShadow</b> = &quot;&quot;</dt>
+<dd>
+
+<p>Shadow of regular menu items.</p>
+
+</dd>
+<dt id="ColorMoveSizeStatus-rgb:C0-C0-C0"><b>ColorMoveSizeStatus</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of move/resize status window.</p>
+
+</dd>
+<dt id="ColorMoveSizeStatusText-rgb:00-00-00"><b>ColorMoveSizeStatusText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color of move/resize status window.</p>
+
+</dd>
+<dt id="ColorQuickSwitch-rgb:C0-C0-C0"><b>ColorQuickSwitch</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of the quick switch window.</p>
+
+</dd>
+<dt id="ColorQuickSwitchText-rgb:00-00-00"><b>ColorQuickSwitchText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color in the quick switch window.</p>
+
+</dd>
+<dt id="ColorQuickSwitchActive"><b>ColorQuickSwitchActive</b> = &quot;&quot;</dt>
+<dd>
+
+<p>Rectangle around the active icon in the quick switch window.</p>
+
+</dd>
+<dt id="ColorDefaultTaskBar-rgb:C0-C0-C0"><b>ColorDefaultTaskBar</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of the taskbar.</p>
+
+</dd>
+<dt id="ColorNormalTaskBarApp-rgb:C0-C0-C0"><b>ColorNormalTaskBarApp</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background for task buttons of regular windows.</p>
+
+</dd>
+<dt id="ColorNormalTaskBarAppText-rgb:00-00-00"><b>ColorNormalTaskBarAppText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color for task buttons of regular windows.</p>
+
+</dd>
+<dt id="ColorActiveTaskBarApp-rgb:E0-E0-E0"><b>ColorActiveTaskBarApp</b> = &quot;rgb:E0/E0/E0&quot;</dt>
+<dd>
+
+<p>Background for task buttons of the active window.</p>
+
+</dd>
+<dt id="ColorActiveTaskBarAppText-rgb:00-00-00"><b>ColorActiveTaskBarAppText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color for task buttons of the active window.</p>
+
+</dd>
+<dt id="ColorMinimizedTaskBarApp-rgb:A0-A0-A0"><b>ColorMinimizedTaskBarApp</b> = &quot;rgb:A0/A0/A0&quot;</dt>
+<dd>
+
+<p>Background for task buttons of minimized windows.</p>
+
+</dd>
+<dt id="ColorMinimizedTaskBarAppText-rgb:00-00-00"><b>ColorMinimizedTaskBarAppText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color for task buttons of minimized windows.</p>
+
+</dd>
+<dt id="ColorInvisibleTaskBarApp-rgb:80-80-80"><b>ColorInvisibleTaskBarApp</b> = &quot;rgb:80/80/80&quot;</dt>
+<dd>
+
+<p>Background for task buttons of windows on other workspaces.</p>
+
+</dd>
+<dt id="ColorInvisibleTaskBarAppText-rgb:00-00-00"><b>ColorInvisibleTaskBarAppText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color for task buttons of windows on other workspaces.</p>
+
+</dd>
+<dt id="ColorScrollBar-rgb:A0-A0-A0"><b>ColorScrollBar</b> = &quot;rgb:A0/A0/A0&quot;</dt>
+<dd>
+
+<p>Scrollbar background (sliding area).</p>
+
+</dd>
+<dt id="ColorScrollBarSlider-rgb:C0-C0-C0"><b>ColorScrollBarSlider</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of the slider button in scrollbars.</p>
+
+</dd>
+<dt id="ColorScrollBarButton-rgb:C0-C0-C0"><b>ColorScrollBarButton</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of the arrow buttons in scrollbars.</p>
+
+</dd>
+<dt id="ColorScrollBarArrow-rgb:C0-C0-C0"><b>ColorScrollBarArrow</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of the arrow buttons in scrollbars (obsolete).</p>
+
+</dd>
+<dt id="ColorScrollBarButtonArrow-rgb:00-00-00"><b>ColorScrollBarButtonArrow</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Color of active arrows on scrollbar buttons.</p>
+
+</dd>
+<dt id="ColorScrollBarInactiveArrow-rgb:80-80-80"><b>ColorScrollBarInactiveArrow</b> = &quot;rgb:80/80/80&quot;</dt>
+<dd>
+
+<p>Color of inactive arrows on scrollbar buttons.</p>
+
+</dd>
+<dt id="ColorListBox-rgb:C0-C0-C0"><b>ColorListBox</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of listboxes.</p>
+
+</dd>
+<dt id="ColorListBoxText-rgb:00-00-00"><b>ColorListBoxText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color in listboxes.</p>
+
+</dd>
+<dt id="ColorListBoxSelection-rgb:80-80-80"><b>ColorListBoxSelection</b> = &quot;rgb:80/80/80&quot;</dt>
+<dd>
+
+<p>Background of selected listbox items.</p>
+
+</dd>
+<dt id="ColorListBoxSelectionText-rgb:00-00-00"><b>ColorListBoxSelectionText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color of selected listbox items.</p>
+
+</dd>
+<dt id="ColorToolTip-rgb:E0-E0-00"><b>ColorToolTip</b> = &quot;rgb:E0/E0/00&quot;</dt>
+<dd>
+
+<p>Background of tooltips.</p>
+
+</dd>
+<dt id="ColorToolTipText-rgb:00-00-00"><b>ColorToolTipText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color of tooltips.</p>
+
+</dd>
+<dt id="ColorLabel-rgb:C0-C0-C0"><b>ColorLabel</b> = &quot;rgb:C0/C0/C0&quot;</dt>
+<dd>
+
+<p>Background of labels, leave empty to force transparency.</p>
+
+</dd>
+<dt id="ColorLabelText-rgb:00-00-00"><b>ColorLabelText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color of labels.</p>
+
+</dd>
+<dt id="ColorInput-rgb:FF-FF-FF"><b>ColorInput</b> = &quot;rgb:FF/FF/FF&quot;</dt>
+<dd>
+
+<p>Background of text entry fields (e.g., the addressbar).</p>
+
+</dd>
+<dt id="ColorInputText-rgb:00-00-00"><b>ColorInputText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Text color of text entry fields (e.g., the addressbar).</p>
+
+</dd>
+<dt id="ColorInputSelection-rgb:80-80-80"><b>ColorInputSelection</b> = &quot;rgb:80/80/80&quot;</dt>
+<dd>
+
+<p>Background of selected text in an entry field.</p>
+
+</dd>
+<dt id="ColorInputSelectionText-rgb:00-00-00"><b>ColorInputSelectionText</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Selected text in an entry field.</p>
+
+</dd>
+<dt id="ColorClock-rgb:00-00-00"><b>ColorClock</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Background of non-LCD clock, leave empty to force transparency.</p>
+
+</dd>
+<dt id="ColorClockText-rgb:00-FF-00"><b>ColorClockText</b> = &quot;rgb:00/FF/00&quot;</dt>
+<dd>
+
+<p>Text color of non-LCD clock.</p>
+
+</dd>
+<dt id="ColorKeyboardLayoutText"><b>ColorKeyboardLayoutText</b> = &quot;&quot;</dt>
+<dd>
+
+<p>Color of keyboard layout indicator.</p>
+
+</dd>
+<dt id="ColorApm-rgb:00-00-00"><b>ColorApm</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Background of battery monitor, leave empty to force transparency.</p>
+
+</dd>
+<dt id="ColorApmText-rgb:00-FF-00"><b>ColorApmText</b> = &quot;rgb:00/FF/00&quot;</dt>
+<dd>
+
+<p>Text color of battery monitor.</p>
+
+</dd>
+<dt id="ColorApmBattery-rgb:FF-FF-00"><b>ColorApmBattery</b> = &quot;rgb:FF/FF/00&quot;</dt>
+<dd>
+
+<p>Color of battery monitor when discharging.</p>
+
+</dd>
+<dt id="ColorApmLine-rgb:00-FF-00"><b>ColorApmLine</b> = &quot;rgb:00/FF/00&quot;</dt>
+<dd>
+
+<p>Color of battery monitor when charging.</p>
+
+</dd>
+<dt id="ColorApmGraphBg-rgb:00-00-00"><b>ColorApmGraphBg</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Background color for graph mode.</p>
+
+</dd>
+<dt id="ColorCPUStatusUser-rgb:00-FF-00"><b>ColorCPUStatusUser</b> = &quot;rgb:00/FF/00&quot;</dt>
+<dd>
+
+<p>User load on the CPU monitor.</p>
+
+</dd>
+<dt id="ColorCPUStatusSystem-rgb:FF-00-00"><b>ColorCPUStatusSystem</b> = &quot;rgb:FF/00/00&quot;</dt>
+<dd>
+
+<p>System load on the CPU monitor.</p>
+
+</dd>
+<dt id="ColorCPUStatusInterrupts-rgb:FF-FF-00"><b>ColorCPUStatusInterrupts</b> = &quot;rgb:FF/FF/00&quot;</dt>
+<dd>
+
+<p>Interrupts on the CPU monitor.</p>
+
+</dd>
+<dt id="ColorCPUStatusIoWait-rgb:60-00-60"><b>ColorCPUStatusIoWait</b> = &quot;rgb:60/00/60&quot;</dt>
+<dd>
+
+<p>IO Wait on the CPU monitor.</p>
+
+</dd>
+<dt id="ColorCPUStatusSoftIrq-rgb:00-FF-FF"><b>ColorCPUStatusSoftIrq</b> = &quot;rgb:00/FF/FF&quot;</dt>
+<dd>
+
+<p>Soft Interrupts on the CPU monitor.</p>
+
+</dd>
+<dt id="ColorCPUStatusNice-rgb:00-00-FF"><b>ColorCPUStatusNice</b> = &quot;rgb:00/00/FF&quot;</dt>
+<dd>
+
+<p>Nice load on the CPU monitor.</p>
+
+</dd>
+<dt id="ColorCPUStatusIdle-rgb:00-00-00"><b>ColorCPUStatusIdle</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Idle (non) load on the CPU monitor, leave empty to force transparency.</p>
+
+</dd>
+<dt id="ColorCPUStatusSteal-rgb:FF-8A-91"><b>ColorCPUStatusSteal</b> = &quot;rgb:FF/8A/91&quot;</dt>
+<dd>
+
+<p>Involuntary Wait on the CPU monitor.</p>
+
+</dd>
+<dt id="ColorCPUStatusTemp-rgb:60-60-C0"><b>ColorCPUStatusTemp</b> = &quot;rgb:60/60/C0&quot;</dt>
+<dd>
+
+<p>Temperature of the CPU.</p>
+
+</dd>
+<dt id="ColorMEMStatusUser-rgb:40-40-80"><b>ColorMEMStatusUser</b> = &quot;rgb:40/40/80&quot;</dt>
+<dd>
+
+<p>User program usage in the memory monitor.</p>
+
+</dd>
+<dt id="ColorMEMStatusBuffers-rgb:60-60-C0"><b>ColorMEMStatusBuffers</b> = &quot;rgb:60/60/C0&quot;</dt>
+<dd>
+
+<p>OS buffers usage in the memory monitor.</p>
+
+</dd>
+<dt id="ColorMEMStatusCached-rgb:80-80-FF"><b>ColorMEMStatusCached</b> = &quot;rgb:80/80/FF&quot;</dt>
+<dd>
+
+<p>OS cached usage in the memory monitor.</p>
+
+</dd>
+<dt id="ColorMEMStatusFree-rgb:00-00-00"><b>ColorMEMStatusFree</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Free memory in the memory monitor.</p>
+
+</dd>
+<dt id="ColorNetSend-rgb:FF-FF-00"><b>ColorNetSend</b> = &quot;rgb:FF/FF/00&quot;</dt>
+<dd>
+
+<p>Outgoing load on the network monitor.</p>
+
+</dd>
+<dt id="ColorNetReceive-rgb:FF-00-FF"><b>ColorNetReceive</b> = &quot;rgb:FF/00/FF&quot;</dt>
+<dd>
+
+<p>Incoming load on the network monitor.</p>
+
+</dd>
+<dt id="ColorNetIdle-rgb:00-00-00"><b>ColorNetIdle</b> = &quot;rgb:00/00/00&quot;</dt>
+<dd>
+
+<p>Idle (non) load on the network monitor, leave empty to force transparency.</p>
+
+</dd>
+</dl>
+
+<h3 id="DESKTOP-BACKGROUND">DESKTOP BACKGROUND</h3>
+
+<p>The following themeable preferences are read by <a href="icewmbg.1.html">icewmbg(1)</a>:</p>
+
+<dl>
+
+<dt id="DesktopBackgroundCenter-0-0-1"><b>DesktopBackgroundCenter</b>=0 0/1</dt>
+<dd>
+
+<p>Display desktop background centered and not tiled.</p>
+
+</dd>
+<dt id="DesktopBackgroundScaled-0-0-1"><b>DesktopBackgroundScaled</b>=0 0/1</dt>
+<dd>
+
+<p>Resize desktop background to full screen.</p>
+
+</dd>
+<dt id="DesktopBackgroundColor"><b>DesktopBackgroundColor</b>=&quot;&quot;</dt>
+<dd>
+
+<p>A comma-separated list of zero or more desktop background colors.</p>
+
+</dd>
+<dt id="DesktopBackgroundImage"><b>DesktopBackgroundImage</b>=&quot;&quot;</dt>
+<dd>
+
+<p>A comma-separated list of zero or more desktop background images. Each image may be a path with a <a href="https://manned.org/glob.7">glob(7)</a> pattern, or start with a tilde or environment variable.</p>
+
+</dd>
+<dt id="ShuffleBackgroundImages-0-0-1"><b>ShuffleBackgroundImages</b>=0 0/1</dt>
+<dd>
+
+<p>Choose a random selection from the list of background images.</p>
+
+</dd>
+<dt id="SupportSemitransparency-1-0-1"><b>SupportSemitransparency</b>=1 0/1</dt>
+<dd>
+
+<p>Support for semitransparent terminals like Eterm or gnome-terminal.</p>
+
+</dd>
+<dt id="DesktopTransparencyColor"><b>DesktopTransparencyColor</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Color(s) to announce for semitransparent windows.</p>
+
+</dd>
+<dt id="DesktopTransparencyImage"><b>DesktopTransparencyImage</b>=&quot;&quot;</dt>
+<dd>
+
+<p>Image(s) to announce for semitransparent windows. This is a list similar to <b>DesktopBackgroundImage</b>.</p>
+
+</dd>
+<dt id="DesktopBackgroundMultihead-0-0-1"><b>DesktopBackgroundMultihead</b>=0 0/1</dt>
+<dd>
+
+<p>Paint the background image over all multihead monitors combined.</p>
+
+</dd>
+<dt id="CycleBackgroundsPeriod-0"><b>CycleBackgroundsPeriod</b>=0</dt>
+<dd>
+
+<p>Seconds between cycling over all background images, default zero is off.</p>
+
+</dd>
+</dl>
+
+<h2 id="EXAMPLES">EXAMPLES</h2>
+
+<pre><code>Alpha=1
+Splash=&quot;IceWM.jpg&quot;
+LimitSize=0
+LimitPosition=0
+LimitByDockLayer=1
+QuickSwitchToAllWorkspaces=1
+QuickSwitchHugeIcon=1
+QuickSwitchFillSelection=1
+TaskBarMailboxStatusBeepOnNewMail=1
+TaskBarMailboxStatusCountMessages=1
+TaskBarShowMEMStatus=0
+TaskBarShowCollapseButton=1
+TaskBarWorkspacesLimit=&quot;8&quot;
+ShowProgramsMenu=1
+ShowAddressBar=0
+ToolTipDelay=200
+ToolTipTime=5000
+AutoHideDelay=900
+AutoShowDelay=100
+EdgeResistance=3
+KeySysWinMenu=&quot;&quot;
+KeySysWinListMenu=&quot;Shift+Ctrl+Esc&quot;</code></pre>
+
+<p>The above example shows how to tell <b>icewm</b> to not bind a specific key: <i>KeySysWinMenu</i> in this case.</p>
+
+<h2 id="FILES">FILES</h2>
+
+<p>Locations for the <i>preferences</i> file are as follows:</p>
+
+<pre><code>$ICEWM_PRIVCFG/preferences
+$XDG_CONFIG_HOME/icewm/preferences
+$HOME/.icewm/preferences
+/etc/icewm/preferences
+/usr/share/icewm/preferences</code></pre>
+
+<p>The locations are searched in the order listed; the first file found is read and the remainder ignored.</p>
+
+<h2 id="SEE-ALSO">SEE ALSO</h2>
+
+<p><a href="icewm.1.html">icewm(1)</a>, <a href="icewm-prefoverride.5.html">icewm-prefoverride(5)</a>.</p>
+
+<h2 id="AUTHOR">AUTHOR</h2>
+
+<p>Brian Bidulock <a href="mailto:bidulock@openss7.org">mailto:bidulock@openss7.org</a>.</p>
+
+<h2 id="LICENSE">LICENSE</h2>
+
+<p><b>IceWM</b> is licensed under the GNU Library General Public License. See the <i>COPYING</i> file in the distribution.</p>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;Standards, Environments and Macros</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>
+
+

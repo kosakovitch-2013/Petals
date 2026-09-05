@@ -1,0 +1,5 @@
+name=icewm
+version=3.4.7
+arch=x86_64
+desc="Lightweight window manager"
+deps=libx11 libxext

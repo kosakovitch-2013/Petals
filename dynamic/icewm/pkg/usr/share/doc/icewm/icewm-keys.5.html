@@ -1,0 +1,180 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<title>Standards, Environments and Macros</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:" />
+</head>
+
+<body id="_podtop_">
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;Standards, Environments and Macros</span></strong></big>
+</td></tr>
+</table>
+
+
+
+<h2 id="NAME">NAME</h2>
+
+<pre><code>icewm-keys - icewm keys configuration file</code></pre>
+
+<h2 id="SYNOPSIS">SYNOPSIS</h2>
+
+<pre><code>$ICEWM_PRIVCFG/keys
+$XDG_CONFIG_HOME/icewm/keys
+$HOME/.icewm/keys
+/etc/icewm/keys
+/usr/share/icewm/keys</code></pre>
+
+<h2 id="DESCRIPTION">DESCRIPTION</h2>
+
+<p>The <code>keys</code> file defines global keybindings to launch applications. A keybinding has three parts: the word <b>key</b>, a double-quoted string with an X11 key combination and a program with its arguments. These are separated by one or more spaces. Empty lines are allowed. Comment lines start with a hash.</p>
+
+<p>For example, the following defines a hotkey to restart <b>icewm</b>:</p>
+
+<pre><code>key &quot;Ctrl+Shift+r&quot;      icesh restart</code></pre>
+
+<p>See the output of <code>xmodmap -pk</code> for a list of the many keystroke names you can use in icewm key definitions. Since IceWM version 3.4.0, bindings can not only be defined by their keystroke name, but also by their key label. In addition, the shifted key is now definable as well. For example, the key with + and = can be bound in either of the following four ways, which are identical:</p>
+
+<pre><code>key &quot;Ctrl+Shift+equal&quot;  xterm
+key &quot;Ctrl+Shift+=&quot;      xterm
+key &quot;Ctrl+plus&quot;         xterm
+key &quot;Ctrl++&quot;            xterm</code></pre>
+
+<p>To bind the mouse, use <code>Pointer_Button1</code> for button 1, and so on. This only works when the mouse is over the root window. See below for examples.</p>
+
+<p>The command <code>icesh keys</code> instructs icewm to reload this file.</p>
+
+<h2 id="FORMAT">FORMAT</h2>
+
+<p>The syntax of the <i>keys</i> file is as follows:</p>
+
+<ul>
+
+<dl>
+
+<dt id="key-key_combination-program-options"><b>key</b> <b>&quot;</b><i>key_combination</i><b>&quot;</b> <i>program</i> <i>options</i></dt>
+<dd>
+
+</dd>
+</dl>
+
+</ul>
+
+<p>Where,</p>
+
+<dl>
+
+<dt id="key"><b>key</b></dt>
+<dd>
+
+<p>The word <b>key</b> begins the definition of a keybinding.</p>
+
+</dd>
+<dt id="key_combination"><i>key_combination</i></dt>
+<dd>
+
+<p>A combination of modifiers and a key, like <code>Ctrl+Alt+Delete</code>. Valid modifiers are Alt, AltGr, Ctrl, Hyper, Meta, Shift, Super. Each modifier must be followed by a single plus-sign. The key is either a keystroke name or a key label. Instead of a key, mouse pointer buttons can be specified by <code>Pointer_Button1</code> and up, like <code>Shift+Pointer_Button3</code>.</p>
+
+</dd>
+<dt id="program-options"><i>program</i> <i>options</i></dt>
+<dd>
+
+<p><i>program</i> is the name of the executable or its path. It may start with a tilde or an environment variable, which will be expanded. The <i>options</i> are passed as arguments to the <i>program</i>.</p>
+
+</dd>
+<dt id="switchkey"><b>switchkey</b></dt>
+<dd>
+
+<p>Is an alternative to <b>key</b>. In this case the <i>program</i> must print on standard output the definition of a dynamic <a href="icewm-menu.1.html">icewm-menu(1)</a>. This menu will presented as a popup menu.</p>
+
+</dd>
+</dl>
+
+<h2 id="EXAMPLES">EXAMPLES</h2>
+
+<p>Following is the example <i>keys</i> file that ships with <a href="icewm.1.html">icewm(1)</a>:</p>
+
+<pre><code># This is an example for IceWM&#39;s hotkey definition file.
+#
+# A list of all valid keyboard symbols can be found in
+# /usr/include/X11/keysymdef.h, XF86keysym.h, ...
+# Omit the XK_ prefixs and replace XF86XK_ prefixes by XF86.
+# Valid modifiers are Alt, AltGr, Ctrl, Shift, Meta, Super, Hyper.
+#
+key &quot;Alt+Ctrl+t&quot; xterm
+key &quot;Alt+Ctrl+b&quot; xdg-open about:blank
+key &quot;Alt+Ctrl+s&quot; xdg-open https://www.google.com
+
+key &quot;Super+KP_Subtract&quot; amixer sset PCM 5%-
+key &quot;Super+KP_Add&quot; amixer sset PCM 5%+
+
+# &quot;Multimedia key&quot; bindings for XFree86. Gather the
+# keycodes of your advanced function keys by watching the
+# output of the xev command whilst pressing those keys
+# and map those symbols using xmodmap.
+
+key &quot;XF86AudioLowerVolume&quot; amixer sset PCM 5%-
+key &quot;XF86AudioRaiseVolume&quot; amixer sset PCM 5%+
+key &quot;XF86AudioMute&quot; amixer sset PCM 0%
+key &quot;XF86HomePage&quot; xdg-open about:blank
+key &quot;XF86Search&quot; xdg-open https://www.google.com
+key &quot;XF86Eject&quot; eject
+
+# display and select monitor setup configurations
+switchkey &quot;Super+p&quot; icewm-menu-xrandr</code></pre>
+
+<p>Following shows how to add mouse button bindings on the root window to change the current workspace rolling the mouse wheel on the desktop:</p>
+
+<pre><code>key &quot;Pointer_Button4&quot;   icesh goto prev
+key &quot;Pointer_Button5&quot;   icesh goto next</code></pre>
+
+<p>These are key bindings for single window tile operations to replace the <i>KeyWinArrange</i> key bindings from the <i>preferences</i> file:</p>
+
+<pre><code>key &quot;Ctrl+Alt+KP_Home&quot;  icesh -f sizeto 49% 49% top left
+key &quot;Ctrl+Alt+KP_Up&quot;    icesh -f sizeto 100% 49% top left
+key &quot;Ctrl+Alt+KP_Prior&quot; icesh -f sizeto 49% 49% top right
+key &quot;Ctrl+Alt+KP_Right&quot; icesh -f sizeto 49% 100% top right
+key &quot;Ctrl+Alt+KP_Next&quot;  icesh -f sizeto 49% 49% bottom right
+key &quot;Ctrl+Alt+KP_Down&quot;  icesh -f sizeto 100% 49% bottom left
+key &quot;Ctrl+Alt+KP_End&quot;   icesh -f sizeto 49% 49% bottom left
+key &quot;Ctrl+Alt+KP_Left&quot;  icesh -f sizeto 49% 100% top left
+key &quot;Ctrl+Alt+KP_Begin&quot; icesh -f sizeto 49% 49% center</code></pre>
+
+<h2 id="FILES">FILES</h2>
+
+<p>Locations for the <i>keys</i> file are as follows:</p>
+
+<pre><code>$ICEWM_PRIVCFG/keys
+$XDG_CONFIG_HOME/icewm/keys
+$HOME/.icewm/keys
+/etc/icewm/keys
+/usr/share/icewm/keys</code></pre>
+
+<p>The locations are searched in the order listed; the first file found is read and the remainder ignored.</p>
+
+<h2 id="SEE-ALSO">SEE ALSO</h2>
+
+<p><a href="icewm.1.html">icewm(1)</a>.</p>
+
+<h2 id="AUTHOR">AUTHOR</h2>
+
+<p>Brian Bidulock <a href="mailto:bidulock@openss7.org">mailto:bidulock@openss7.org</a>.</p>
+
+<h2 id="LICENSE">LICENSE</h2>
+
+<p><b>IceWM</b> is licensed under the GNU Library General Public License. See the <i>COPYING</i> file in the distribution.</p>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;Standards, Environments and Macros</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<title>Standards, Environments and Macros</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:" />
+</head>
+
+<body id="_podtop_">
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;Standards, Environments and Macros</span></strong></big>
+</td></tr>
+</table>
+
+
+
+<h2 id="NAME">NAME</h2>
+
+<pre><code>icewm-env - icewm environment configuration file</code></pre>
+
+<h2 id="SYNOPSIS">SYNOPSIS</h2>
+
+<pre><code>$ICEWM_PRIVCFG/env
+$XDG_CONFIG_HOME/icewm/env
+$HOME/.icewm/env
+/etc/icewm/env
+/usr/share/icewm/env</code></pre>
+
+<h2 id="DESCRIPTION">DESCRIPTION</h2>
+
+<p><a href="icewm-session.1.html">icewm-session(1)</a> loads additional environment variables from the file <i>env</i> before it does anything else. These variables are then propagated to all other processes, including <a href="icewm.1.html">icewm(1)</a>, via their environment.</p>
+
+<h2 id="FORMAT">FORMAT</h2>
+
+<p>Each line is subjected to POSIX shell expansion by <a href="https://manned.org/wordexp.3">wordexp(3)</a>. Comment lines starting by a hash-sign (<code>#</code>) are ignored. <a href="icewm-session.1.html">icewm-session(1)</a> will load those expanded lines that contain a name, followed by an equals sign, followed by the value (which may be empty).</p>
+
+<p>The word <b>unset</b> begins a line with names to be removed from the environment.</p>
+
+<h2 id="EXAMPLES">EXAMPLES</h2>
+
+<pre><code># This is a comment.
+# And another.
+
+XDG_CURRENT_DESKTOP=&quot;ICEWM&quot;
+XDG_MENU_PREFIX=&quot;unexicon-&quot;
+
+START_DATE=`date`
+START_FROM=`pwd`</code></pre>
+
+<h2 id="FILES">FILES</h2>
+
+<p><a href="icewm-session.1.html">icewm-session(1)</a> looks for the <i>env</i> file in the following locations:</p>
+
+<pre><code>$ICEWM_PRIVCFG/env
+$XDG_CONFIG_HOME/icewm/env
+$HOME/.icewm/env
+/etc/icewm/env
+/usr/share/icewm/env</code></pre>
+
+<p>The locations are searched in the order listed; the first file found is read and the remainder ignored.</p>
+
+<h2 id="SEE-ALSO">SEE ALSO</h2>
+
+<p><a href="icewm.1.html">icewm(1)</a>, <a href="icewm-session.1.html">icewm-session(1)</a>, <a href="icewm-startup.5.html">icewm-startup(5)</a>.</p>
+
+<h2 id="AUTHOR">AUTHOR</h2>
+
+<p>Brian Bidulock <a href="mailto:bidulock@openss7.org">mailto:bidulock@openss7.org</a>.</p>
+
+<h2 id="LICENSE">LICENSE</h2>
+
+<p><b>IceWM</b> is licensed under the GNU Library General Public License. See the <i>COPYING</i> file in the distribution.</p>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;Standards, Environments and Macros</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>
+
+

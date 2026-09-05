@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<title>User Commands</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:" />
+</head>
+
+<body id="_podtop_">
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;User Commands</span></strong></big>
+</td></tr>
+</table>
+
+
+
+<h2 id="NAME">NAME</h2>
+
+<pre><code>icewm-menu-xrandr - IceWM menu provider for multi-monitor setup shortcuts</code></pre>
+
+<h2 id="SYNOPSIS">SYNOPSIS</h2>
+
+<p><b>icewm-menu-xrandr</b></p>
+
+<h2 id="DESCRIPTION">DESCRIPTION</h2>
+
+<p><b>icewm-menu-xrandr</b> is a helper to manage multi-screen configurations in a semi-automated way. It is a regular icewm menu generator that detects the available xrandr screens (i.e. connected monitors) and creates menu entries that call the xrandr command to setup this configuration.</p>
+
+<p>Optionally, the contents of the generated configurations can be accessed on-the-fly through a &quot;quick-switch&quot; style menu which pops up upon pressing Super-P key binding (or a manually configured key, see <a href="icewm-keys.5.html">icewm-keys(5)</a> for the configuration of <b>switchkey</b> directive).</p>
+
+<p>The tool does not examine the exact monitor resolutions, refresh rates or screen orientation. For this matters it uses auto selected mode by default. However, it is possible to replace the custom option selection for each output using <i>xrandr</i> options in a custom configuration file (see <i>CONFIGURATION</i> below). Also tuning specific options like --brightness and --gamma is possible there.</p>
+
+<p>The displayed name of the monitors is constructed using the output name and the monitor information from its EDID data. Either from its &quot;Display Name&quot; field or from the &quot;Unspecified ASCII text&quot; fields (concatenated).</p>
+
+<h2 id="OPTIONS">OPTIONS</h2>
+
+<dl>
+
+<dt id="max"><b>--max</b></dt>
+<dd>
+
+<p>Obsolete and ineffective option. Used to select the <i>xrandr</i> mode with the highest detected refresh rate. However, the maximum rate might cause problems, therefore the explicit configuration in the <i>INI file</i> should be used now, see <i>CONFIGURATION</i>.</p>
+
+</dd>
+<dt id="auto-number-init-value"><b>--auto-number [ init value ]</b></dt>
+<dd>
+
+<p>Adding a auto-incremented numbered prefix to each display name, optionally started at the specified value. This mostly useful for menu creation.</p>
+
+</dd>
+<dt id="xrandr-command"><b>--xrandr command</b></dt>
+<dd>
+
+<p>Replacement for <i>xrandr</i> command that should deliver equivalent data and accept the same options as <i>xrandr</i>.</p>
+
+</dd>
+<dt id="activate-combo-name"><b>--activate combo-name</b></dt>
+<dd>
+
+<p>A shortcut to run the activation command of the specified combo, just like <i>IceWM</i> would run the commmand when selected from the menu or quick-switch dialog. The <i>combo-name</i> parameter needs to match the displayed name exactly.</p>
+
+</dd>
+</dl>
+
+<h2 id="CONFIGURATION">CONFIGURATION</h2>
+
+<p>Optionally, a local configuration can specify command line options to <i>xrandr</i> calls, and further commands to run after mode switching.</p>
+
+<p>Refer to configuration examples (<i>xrandr_menu</i>) in <i>icewm</i> documentation or its contrib folder for the syntax and rules of that file. It can be placed into <i>$HOME/.config/icewm</i> or into <i>$HOME/.icewm</i> or wherever <i>$XDG_CONFIG_HOME/.config/icewm</i> might resolve to.</p>
+
+<h2 id="SEE-ALSO">SEE ALSO</h2>
+
+<p><a href="icewm.1.html">icewm(1)</a>, <a href="https://manned.org/xrandr.1">xrandr(1)</a>.</p>
+
+<h2 id="BUGS">BUGS</h2>
+
+<p>Please report bugs at <a href="https://github.com/bbidulock/icewm/issues">https://github.com/bbidulock/icewm/issues</a>.</p>
+
+<h2 id="AUTHOR">AUTHOR</h2>
+
+<p>Eduard Bloch <a href="mailto:edi@gmx.de">mailto:edi@gmx.de</a>.</p>
+
+<h2 id="LICENSE">LICENSE</h2>
+
+<p><b>icewm-menu-xrandr</b> is licensed under the Simplified BSD License. <b>IceWM</b> is licensed under the GNU Library General Public License. See the <i>COPYING</i> file in the distribution.</p>
+
+<table border="0" width="100%" cellspacing="0" cellpadding="3">
+<tr><td class="_podblock_" style="background-color: #cccccc; color: #000" valign="middle">
+<big><strong><span class="_podblock_">&nbsp;User Commands</span></strong></big>
+</td></tr>
+</table>
+
+</body>
+
+</html>
+
+
