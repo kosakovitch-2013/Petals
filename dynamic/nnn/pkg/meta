@@ -1,0 +1,5 @@
+name=nnn
+version=5.0
+arch=x86_64
+desc="Terminal file manager"
+deps=ncurses
