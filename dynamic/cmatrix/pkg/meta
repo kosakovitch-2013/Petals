@@ -1,0 +1,5 @@
+name=cmatrix
+version=2.0
+arch=x86_64
+desc="Matrix digital rain"
+deps=ncurses

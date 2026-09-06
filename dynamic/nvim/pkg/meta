@@ -1,0 +1,5 @@
+name=nvim
+version=0.10.0
+arch=x86_64
+desc="Neovim text editor"
+deps=luajit libuv

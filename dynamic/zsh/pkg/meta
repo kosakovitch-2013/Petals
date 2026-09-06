@@ -1,0 +1,5 @@
+name=zsh
+version=5.9
+arch=x86_64
+desc="Z shell"
+deps=ncurses

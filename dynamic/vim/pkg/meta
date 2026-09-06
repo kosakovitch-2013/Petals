@@ -1,0 +1,5 @@
+name=vim
+version=9.1.0
+arch=x86_64
+desc="Vi Improved text editor"
+deps=ncurses
