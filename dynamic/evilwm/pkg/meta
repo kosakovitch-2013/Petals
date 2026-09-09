@@ -1,0 +1,5 @@
+name=evilwm
+version=1.4.1
+arch=x86_64
+desc="Minimalist window manager"
+deps=libx11 libxcb libxau libxdmcp

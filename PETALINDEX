@@ -49,4 +49,4 @@ vim 9.1.0 dynamic/vim-9.1.0-x86_64.petal
 zsh 5.9 dynamic/zsh-5.9-x86_64.petal
 cmatrix 2.0 dynamic/cmatrix-2.0-x86_64.petal
 nvim 0.10.0 dynamic/nvim-0.10.0-x86_64.petal
-bspwm 0.9.13 dynamic/bspwm-0.9.13-x86_64.petal
+evilwm 1.4.1 dynamic/evilwm-1.4.1-x86_64.petal

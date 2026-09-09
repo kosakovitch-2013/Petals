@@ -1,5 +1,0 @@
-name=bspwm
-version=0.9.13
-arch=x86_64
-desc="Binary space partitioning window manager"
-deps=libxcb libxau libxdmcp
