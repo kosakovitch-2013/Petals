@@ -50,3 +50,4 @@ zsh 5.9 dynamic/zsh-5.9-x86_64.petal
 cmatrix 2.0 dynamic/cmatrix-2.0-x86_64.petal
 nvim 0.10.0 dynamic/nvim-0.10.0-x86_64.petal
 evilwm 1.4.1 dynamic/evilwm-1.4.1-x86_64.petal
+lxqt-desktop 2.4.0 dynamic/lxqt-desktop-2.4.0-x86_64.petal

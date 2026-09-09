@@ -1,0 +1,5 @@
+name=lxqt-desktop
+version=2.4.0
+arch=x86_64
+desc="LXQt Desktop Environment"
+deps=qt6 openbox
