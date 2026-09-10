@@ -1,0 +1,5 @@
+name=lpanel
+version=1.0
+arch=x86_64
+desc="Lavender minimal panel"
+deps=libx11 libxcb libxau libxdmcp
