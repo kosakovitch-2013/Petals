@@ -1,0 +1,5 @@
+name=qt6
+version=6.9.0
+arch=x86_64
+desc="Qt6 application framework (minimal)"
+deps=libx11 libxcb glib
