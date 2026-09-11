@@ -44,7 +44,6 @@ btop 1.3.0 dynamic/btop-1.3.0-x86_64.petal
 sudo 1.9.15 dynamic/sudo-1.9.15-x86_64.petal
 nnn 5.0 dynamic/nnn-5.0-x86_64.petal
 fltk 1.3.8 dynamic/fltk-1.3.8-x86_64.petal
-dillo 3.1.1 dynamic/dillo-3.1.1-x86_64.petal
 vim 9.1.0 dynamic/vim-9.1.0-x86_64.petal
 zsh 5.9 dynamic/zsh-5.9-x86_64.petal
 cmatrix 2.0 dynamic/cmatrix-2.0-x86_64.petal
@@ -53,3 +52,4 @@ evilwm 1.4.1 dynamic/evilwm-1.4.1-x86_64.petal
 lxqt-desktop 2.4.0 dynamic/lxqt-desktop-2.4.0-x86_64.petal
 qt6 6.9.0 dynamic/qt6-6.9.0-x86_64.petal
 lpanel 1.0 dynamic/lpanel-1.0-x86_64.petal
+dillo 3.1.1 dynamic/dillo-3.1.1-x86_64.petal"
