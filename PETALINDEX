@@ -28,7 +28,6 @@ tcc mob dynamic/tcc-mob-x86_64.petal
 make 4.4.1 dynamic/make-4.4.1-x86_64.petal
 petals-wrapper 0.1 dynamic/petals-wrapper-0.1-any.petal
 doas 6.8.2 dynamic/doas-6.8.2-x86_64.petal
-openssl 3.3.1 dynamic/openssl-3.3.1-x86_64.petal
 mate 1.28 dynamic/mate-1.28-x86_64.petal
 glib 2.82 dynamic/glib-2.82-x86_64.petal
 pcre2 10.44 dynamic/pcre2-10.44-x86_64.petal
@@ -53,3 +52,4 @@ lxqt-desktop 2.4.0 dynamic/lxqt-desktop-2.4.0-x86_64.petal
 qt6 6.9.0 dynamic/qt6-6.9.0-x86_64.petal
 lpanel 1.0 dynamic/lpanel-1.0-x86_64.petal
 dillo 3.1.1 dynamic/dillo-3.1.1-x86_64.petal"
+openssl 3.6.3 dynamic/openssl-3.6.3-x86_64.petal
