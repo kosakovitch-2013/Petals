@@ -1,0 +1,5 @@
+name=xcompmgr
+version=1.1.9
+arch=x86_64
+desc="X11 compositing manager for shadows and fading"
+deps=libx11 libxcomposite libxdamage libxext libxfixes libxrender

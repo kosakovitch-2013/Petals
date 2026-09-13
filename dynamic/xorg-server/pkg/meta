@@ -2,4 +2,4 @@ name=xorg-server
 version=21.1.14
 arch=x86_64
 desc="X.org X server"
-deps=xorg-headers xtrans libxau libxdmcp libxcb libx11
+deps=xorg-headers xtrans libxau libxdmcp libxcb libx11 xcompmgr
