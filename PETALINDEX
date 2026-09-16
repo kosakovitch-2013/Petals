@@ -55,3 +55,6 @@ dillo 3.1.1 dynamic/dillo-3.1.1-x86_64.petal
 openssl 3.6.3 dynamic/openssl-3.6.3-x86_64.petal
 zelpy 1.0 dynamic/zelpy-1.0-x86_64.petal
 xcompmgr 1.1.9 dynamic/xcompmgr-1.1.9-x86_64.petal
+dbus 1.16.2 dynamic/dbus-1.16.2-x86_64.petal
+dbus-glib 0.114 dynamic/dbus-glib-0.114-x86_64.petal
+xfwm4 4.18.0 dynamic/xfwm4-4.18.0-x86_64.petal

@@ -1,0 +1,5 @@
+name=dbus-glib
+version=0.114
+arch=x86_64
+desc="Deprecated GLib binding for D-Bus (needed by xfwm4)"
+deps=dbus glib

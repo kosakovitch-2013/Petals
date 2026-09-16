@@ -1,0 +1,5 @@
+name=xfwm4
+version=4.18.0
+arch=x86_64
+desc="Xfce window manager (minimal build)"
+deps=gtk3 glib libxfce4ui xfconf dbus

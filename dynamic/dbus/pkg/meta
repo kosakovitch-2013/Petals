@@ -1,0 +1,5 @@
+name=dbus
+version=1.16.2
+arch=x86_64
+desc="D-Bus message bus system"
+deps=expat glib
