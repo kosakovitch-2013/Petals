@@ -1,0 +1,12 @@
+prefix=/usr
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+apiversion=0
+
+Name: Muffins ClutterX11
+Description: Muffin ClutterX11 Private Library
+Version: 5.4.4
+Requires: muffin-clutter-0, atk >=  2.5.3, cairo-gobject >=  1.10.0, glib-2.0 >=  2.61.1, gobject-2.0 >=  2.61.1, gio-unix-2.0 >=  2.61.1, json-glib-1.0 >=  0.12.0, pango >=  1.2.0, x11, muffin-cogl-0
+Libs: -lm
+Cflags: -I${includedir}/muffin/clutter

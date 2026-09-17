@@ -1,0 +1,14 @@
+prefix=/usr
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+apiversion=0
+girdir=${libdir}/muffin
+typelibdir=${libdir}/muffin
+
+Name: Meta
+Description: Muffin compositor and window manager library
+Version: 5.4.4
+Requires: cairo >=  1.10.0, gio-unix-2.0 >=  2.61.1, glib-2.0 >=  2.61.1, cinnamon-desktop >=  5.3, gtk+-3.0 >=  3.19.8, pango >=  1.2.0, gl, egl, xfixes >=  3, xi >=  1.7.4, x11, muffin-clutter-0
+Libs: -L${prefix}/lib -lmuffin
+Cflags: -I${includedir}/muffin

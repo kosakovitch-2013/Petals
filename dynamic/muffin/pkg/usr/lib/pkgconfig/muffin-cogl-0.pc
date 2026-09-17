@@ -1,0 +1,12 @@
+prefix=/usr
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+apiversion=0
+
+Name: Cogl
+Description: An object oriented GL/GLES Abstraction/Utility Layer in mutter
+Version: 5.4.4
+Requires: glib-2.0 >=  2.61.1, gobject-2.0 >=  2.61.1, graphene-gobject-1.0 >=  1.9.3, egl, x11, gl, glesv2
+Libs: -L${prefix}/lib/muffin -lmuffin-cogl-0 -lm
+Cflags: -I${includedir}/muffin/cogl
