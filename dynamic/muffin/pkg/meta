@@ -1,5 +1,0 @@
-name=muffin
-version=5.4.4
-arch=x86_64
-desc="Cinnamon window manager (minimal build)"
-deps=gtk3 glib cinnamon-desktop clutter cogl

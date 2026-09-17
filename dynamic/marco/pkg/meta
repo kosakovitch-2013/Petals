@@ -1,0 +1,5 @@
+name=marco
+version=1.28.1
+arch=x86_64
+desc="MATE window manager"
+deps=gtk3 glib libx11
