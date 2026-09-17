@@ -1,0 +1,5 @@
+name=git
+version=2.46.0
+arch=x86_64
+desc="Distributed version control system"
+deps=openssl curl zlib

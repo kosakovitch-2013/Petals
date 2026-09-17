@@ -58,3 +58,4 @@ xcompmgr 1.1.9 dynamic/xcompmgr-1.1.9-x86_64.petal
 dbus 1.16.2 dynamic/dbus-1.16.2-x86_64.petal
 dbus-glib 0.114 dynamic/dbus-glib-0.114-x86_64.petal
 marco 1.28.1 dynamic/marco-1.28.1-x86_64.petal
+git 2.46.0 dynamic/git-2.46.0-x86_64.petal
