@@ -1,0 +1,5 @@
+name=cantarell-fonts
+version=0.303.1
+arch=any
+desc="Cantarell font family (GNOME default)"
+deps=fontconfig

@@ -1,0 +1,5 @@
+name=gtk3
+version=3.24.43
+arch=x86_64
+desc="GTK+ 3 application toolkit"
+deps=glib cairo pango gdk-pixbuf atk gsettings-desktop-schemas

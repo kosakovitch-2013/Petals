@@ -1,0 +1,5 @@
+name=adwaita-icon-theme
+version=48.0
+arch=any
+desc="Adwaita icon theme for GTK applications"
+deps=gtk3

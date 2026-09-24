@@ -59,3 +59,7 @@ dbus 1.16.2 dynamic/dbus-1.16.2-x86_64.petal
 dbus-glib 0.114 dynamic/dbus-glib-0.114-x86_64.petal
 marco 1.28.1 dynamic/marco-1.28.1-x86_64.petal
 git 2.46.0 dynamic/git-2.46.0-x86_64.petal
+gsettings-desktop-schemas 48.0 dynamic/gsettings-desktop-schemas-48.0-any.petal
+adwaita-icon-theme 48.0 dynamic/adwaita-icon-theme-48.0-any.petal
+cantarell-fonts 0.303.1 dynamic/cantarell-fonts-0.303.1-any.petal
+gtk3 3.24.43 dynamic/gtk3-3.24.43-x86_64.petal

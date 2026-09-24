@@ -1,0 +1,5 @@
+name=gsettings-desktop-schemas
+version=48.0
+arch=any
+desc="GSettings schemas for GTK apps"
+deps=glib
