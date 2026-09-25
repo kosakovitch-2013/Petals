@@ -1,0 +1,5 @@
+name=alacritty
+version=0.15.1
+arch=x86_64
+desc="GPU-accelerated terminal emulator"
+deps=fontconfig freetype2 libxcb libxkbcommon
