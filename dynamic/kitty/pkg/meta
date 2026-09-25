@@ -1,0 +1,5 @@
+name=kitty
+version=0.36.0
+arch=x86_64
+desc="GPU-accelerated terminal emulator"
+deps=python3 openssl harfbuzz fontconfig freetype mesa

@@ -63,3 +63,4 @@ gsettings-desktop-schemas 48.0 dynamic/gsettings-desktop-schemas-48.0-any.petal
 adwaita-icon-theme 48.0 dynamic/adwaita-icon-theme-48.0-any.petal
 cantarell-fonts 0.303.1 dynamic/cantarell-fonts-0.303.1-any.petal
 gtk3 3.24.43 dynamic/gtk3-3.24.43-x86_64.petal
+kitty 0.36.0 dynamic/kitty-0.36.0-x86_64.petal
