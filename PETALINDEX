@@ -64,3 +64,4 @@ adwaita-icon-theme 48.0 dynamic/adwaita-icon-theme-48.0-any.petal
 cantarell-fonts 0.303.1 dynamic/cantarell-fonts-0.303.1-any.petal
 gtk3 3.24.43 dynamic/gtk3-3.24.43-x86_64.petal
 alacritty 0.15.1 dynamic/alacritty-0.15.1-x86_64.petal
+xrandr 1.5.4 dynamic/xrandr-1.5.4-x86_64.petal

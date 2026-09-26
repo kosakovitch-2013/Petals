@@ -1,0 +1,5 @@
+name=xrandr
+version=1.5.4
+arch=x86_64
+desc="x11 randr utility"
+deps=
