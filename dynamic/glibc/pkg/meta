@@ -1,0 +1,5 @@
+name=glibc
+version=2.44
+arch=x86_64
+desc="GNU C Library"
+deps=linux

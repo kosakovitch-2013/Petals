@@ -1,5 +1,5 @@
 name=linit
-version=0.1
+version=0.2
 arch=x86_64
 desc="Lavender init system"
-deps=bash
+deps=glibc
