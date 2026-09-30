@@ -64,4 +64,5 @@ cantarell-fonts 0.303.1 dynamic/cantarell-fonts-0.303.1-any.petal
 gtk3 3.24.43 dynamic/gtk3-3.24.43-x86_64.petal
 alacritty 0.15.1 dynamic/alacritty-0.15.1-x86_64.petal
 xrandr 1.5.4 dynamic/xrandr-1.5.4-x86_64.petal
-base 0.1 meta/base-0.1-any.petal
+base 0.1 dynamic/base-0.1-any.petal
+glibc 2.44 dynamic/glibc-2.44-x86_64.petal
