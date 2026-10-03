@@ -66,3 +66,4 @@ alacritty 0.15.1 dynamic/alacritty-0.15.1-x86_64.petal
 xrandr 1.5.4 dynamic/xrandr-1.5.4-x86_64.petal
 base 0.1 dynamic/base-0.1-any.petal
 glibc 2.44 dynamic/glibc-2.44-x86_64.petal
+binutils 2.47 dynamic/binutils-2.47-x86_64.petal

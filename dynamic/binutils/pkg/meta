@@ -1,0 +1,5 @@
+name=binutils
+version=2.47
+arch=x86_64
+desc="GNU Binary Utilities"
+deps=glibc

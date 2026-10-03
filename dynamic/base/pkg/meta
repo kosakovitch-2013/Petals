@@ -2,4 +2,4 @@ name=base
 version=0.1
 arch=any
 desc="Lavender base system"
-deps=glibc coreutils bash linit linux util-linux e2fsprogs xz openssl
+deps=glibc coreutils binutils bash linit linux util-linux e2fsprogs xz openssl
