@@ -1,0 +1,5 @@
+name=slock
+version=1.5
+arch=x86_64
+desc="Simple X display locker"
+deps=libx11 libxext libxrandr

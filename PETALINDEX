@@ -67,3 +67,4 @@ xrandr 1.5.4 dynamic/xrandr-1.5.4-x86_64.petal
 base 0.1 dynamic/base-0.1-any.petal
 glibc 2.44 dynamic/glibc-2.44-x86_64.petal
 binutils 2.47 dynamic/binutils-2.47-x86_64.petal
+slock 1.5 dynamic/slock-1.5-x86_64.petal
