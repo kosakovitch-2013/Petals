@@ -1,0 +1,5 @@
+name=linapad
+version=1.0
+arch=x86_64
+desc="Linapad - lightweight FLTK text editor"
+deps=

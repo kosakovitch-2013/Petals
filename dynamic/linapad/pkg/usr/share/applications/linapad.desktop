@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Linapad
+Comment=Lavender text editor
+Exec=linapad
+Terminal=false
+Categories=Utility;TextEditor;
