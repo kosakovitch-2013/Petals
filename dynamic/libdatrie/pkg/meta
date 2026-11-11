@@ -1,0 +1,5 @@
+name=libdatrie
+version=0.2.13
+arch=x86_64
+desc="Double-array trie library for Thai"
+deps=glibc

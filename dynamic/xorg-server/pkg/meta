@@ -1,5 +1,5 @@
 name=xorg-server
-version=21.1.14
+version=21.1.15
 arch=x86_64
-desc="X.org X server"
-deps=xorg-headers xtrans libxau libxdmcp libxcb libx11 xcompmgr xrandr
+desc="X.org X server and X11 libraries"
+deps=xorg-headers xtrans libxau libxdmcp libxcb libx11 xcompmgr xrandr libXinerama libXi libXext libXcursor libXdamage libXfixes libXcomposite libXrender libX11-xcb libxcb-shm libthai libdatrie

@@ -1,0 +1,7 @@
+brk-ctype.lo: brk-ctype.c /usr/include/stdc-predef.h brk-ctype.h \
+ ../../include/thai/thailib.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h
+/usr/include/stdc-predef.h:
+brk-ctype.h:
+../../include/thai/thailib.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h:
