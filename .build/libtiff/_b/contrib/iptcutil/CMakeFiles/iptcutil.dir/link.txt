@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Winline -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -fstrict-aliasing -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/iptcutil.dir/link.d CMakeFiles/iptcutil.dir/iptcutil.c.o -o iptcutil  -Wl,-rpath,/home/kot/Petals/.build/libtiff/_b/libtiff ../../libtiff/libtiff.so.6.0.2

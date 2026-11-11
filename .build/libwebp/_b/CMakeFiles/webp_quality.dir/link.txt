@@ -1,0 +1,1 @@
+/usr/bin/cc  -pthread -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/webp_quality.dir/link.d CMakeFiles/webp_quality.dir/extras/webp_quality.c.o -o webp_quality  libexampleutil.a libimagedec.a libextras.a libimageioutil.a libwebpdemux.a libwebp.a libsharpyuv.a -lm /usr/lib/libpng.so /usr/lib/libz.so /usr/lib/libjpeg.so

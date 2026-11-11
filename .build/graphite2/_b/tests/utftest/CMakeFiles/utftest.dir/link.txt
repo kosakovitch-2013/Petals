@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/utftest.dir/link.d CMakeFiles/utftest.dir/utftest.cpp.o -o utftest  -Wl,-rpath,/home/kot/Petals/.build/graphite2/_b/src ../../src/libgraphite2.so.3.2.1 -lc -lgcc

@@ -1,0 +1,9 @@
+/home/kot/Petals/.build/_b/CMakeFiles/zlib.dir
+/home/kot/Petals/.build/_b/CMakeFiles/zlibstatic.dir
+/home/kot/Petals/.build/_b/CMakeFiles/test.dir
+/home/kot/Petals/.build/_b/CMakeFiles/edit_cache.dir
+/home/kot/Petals/.build/_b/CMakeFiles/rebuild_cache.dir
+/home/kot/Petals/.build/_b/CMakeFiles/list_install_components.dir
+/home/kot/Petals/.build/_b/CMakeFiles/install.dir
+/home/kot/Petals/.build/_b/CMakeFiles/install/local.dir
+/home/kot/Petals/.build/_b/CMakeFiles/install/strip.dir

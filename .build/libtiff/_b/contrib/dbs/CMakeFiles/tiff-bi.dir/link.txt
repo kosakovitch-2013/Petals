@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Winline -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -fstrict-aliasing -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/tiff-bi.dir/link.d "CMakeFiles/tiff-bi.dir/tiff-bi.c.o" -o tiff-bi  -Wl,-rpath,/home/kot/Petals/.build/libtiff/_b/libtiff ../../libtiff/libtiff.so.6.0.2

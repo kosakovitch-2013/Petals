@@ -1,0 +1,5 @@
+name=cairo
+version=1.18.0
+arch=x86_64
+desc="2D graphics library"
+deps=pixman freetype2 fontconfig libpng libx11 libxcb libXinerama glib

@@ -1,0 +1,5 @@
+name=libpng
+version=1.6.43
+arch=x86_64
+desc="PNG library"
+deps=zlib

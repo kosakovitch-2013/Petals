@@ -1,0 +1,5 @@
+name=libjpeg-turbo
+version=3.0.2
+arch=x86_64
+desc="JPEG library"
+deps=glibc

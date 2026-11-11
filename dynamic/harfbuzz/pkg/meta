@@ -1,0 +1,5 @@
+name=harfbuzz
+version=8.4.0
+arch=x86_64
+desc="Text shaping engine"
+deps=freetype2 glib graphite2

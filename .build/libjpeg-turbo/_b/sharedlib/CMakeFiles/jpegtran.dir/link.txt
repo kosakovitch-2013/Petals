@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/jpegtran.dir/link.d CMakeFiles/jpegtran.dir/__/jpegtran.c.o CMakeFiles/jpegtran.dir/__/cdjpeg.c.o CMakeFiles/jpegtran.dir/__/rdswitch.c.o CMakeFiles/jpegtran.dir/__/transupp.c.o -o ../jpegtran  -Wl,-rpath,/home/kot/Petals/.build/libjpeg-turbo/_b: ../libjpeg.so.62.4.0

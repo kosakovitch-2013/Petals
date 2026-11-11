@@ -1,0 +1,5 @@
+name=fontconfig
+version=2.15.0
+arch=x86_64
+desc="Font configuration library"
+deps=freetype2

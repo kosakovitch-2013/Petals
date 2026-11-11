@@ -1,0 +1,14 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/kot/Petals/.build/libtiff/_b/cmake_install.cmake",
+		"/home/kot/Petals/.build/libtiff/_b/port/cmake_install.cmake",
+		"/home/kot/Petals/.build/libtiff/_b/libtiff/cmake_install.cmake",
+		"/home/kot/Petals/.build/libtiff/_b/contrib/cmake_install.cmake",
+		"/home/kot/Petals/.build/libtiff/_b/contrib/addtiffo/cmake_install.cmake",
+		"/home/kot/Petals/.build/libtiff/_b/contrib/dbs/cmake_install.cmake",
+		"/home/kot/Petals/.build/libtiff/_b/contrib/iptcutil/cmake_install.cmake",
+		"/home/kot/Petals/.build/libtiff/_b/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

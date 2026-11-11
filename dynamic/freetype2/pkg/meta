@@ -1,0 +1,5 @@
+name=freetype2
+version=2.13.2
+arch=x86_64
+desc="Font rendering library"
+deps=zlib libpng

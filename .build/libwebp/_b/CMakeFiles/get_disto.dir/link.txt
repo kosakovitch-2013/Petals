@@ -1,0 +1,1 @@
+/usr/bin/cc  -pthread -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/get_disto.dir/link.d CMakeFiles/get_disto.dir/extras/get_disto.c.o -o get_disto  libimagedec.a libimageioutil.a libwebpdemux.a libwebp.a libsharpyuv.a -lm /usr/lib/libpng.so /usr/lib/libz.so /usr/lib/libjpeg.so

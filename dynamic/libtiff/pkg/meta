@@ -1,0 +1,5 @@
+name=libtiff
+version=4.6.0
+arch=x86_64
+desc="TIFF library"
+deps=libjpeg-turbo zlib xz

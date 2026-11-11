@@ -1,0 +1,2 @@
+/home/kot/Petals/.build/libjpeg-turbo/_b/simd/CMakeFiles/CheckASM_NASM/CMakeFiles/edit_cache.dir
+/home/kot/Petals/.build/libjpeg-turbo/_b/simd/CMakeFiles/CheckASM_NASM/CMakeFiles/rebuild_cache.dir

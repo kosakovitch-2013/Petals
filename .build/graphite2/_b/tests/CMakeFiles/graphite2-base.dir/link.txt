@@ -1,0 +1,2 @@
+/usr/bin/ar qc libgraphite2-base.a "CMakeFiles/graphite2-base.dir/__/src/FeatureMap.cpp.o" "CMakeFiles/graphite2-base.dir/__/src/Intervals.cpp.o" "CMakeFiles/graphite2-base.dir/__/src/NameTable.cpp.o" "CMakeFiles/graphite2-base.dir/__/src/Sparse.cpp.o" "CMakeFiles/graphite2-base.dir/__/src/TtfUtil.cpp.o" "CMakeFiles/graphite2-base.dir/__/src/UtfCodec.cpp.o"
+/usr/bin/ranlib libgraphite2-base.a

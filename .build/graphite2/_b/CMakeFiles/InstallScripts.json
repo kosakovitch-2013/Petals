@@ -1,0 +1,22 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/kot/Petals/.build/graphite2/_b/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/src/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/endian/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/bittwiddling/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/examples/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/featuremap/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/grlist/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/json/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/nametabletest/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/sparsetest/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/utftest/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/vm/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/tests/fuzz-tests/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/doc/cmake_install.cmake",
+		"/home/kot/Petals/.build/graphite2/_b/gr2fonttest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

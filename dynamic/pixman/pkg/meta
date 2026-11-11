@@ -1,0 +1,5 @@
+name=pixman
+version=0.43.4
+arch=x86_64
+desc="Pixel manipulation library"
+deps=glibc

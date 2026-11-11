@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvm-test-common.a "CMakeFiles/vm-test-common.dir/basic_test.cpp.o"
+/usr/bin/ranlib libvm-test-common.a

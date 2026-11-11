@@ -1,0 +1,5 @@
+name=shared-mime-info
+version=2.4
+arch=x86_64
+desc="Shared MIME database"
+deps=glib libxml2

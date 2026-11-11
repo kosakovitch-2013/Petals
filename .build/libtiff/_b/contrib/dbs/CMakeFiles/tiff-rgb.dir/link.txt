@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Winline -Wformat-security -Wpointer-arith -Wdisabled-optimization -Wno-unknown-pragmas -fstrict-aliasing -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/tiff-rgb.dir/link.d "CMakeFiles/tiff-rgb.dir/tiff-rgb.c.o" -o tiff-rgb  -Wl,-rpath,/home/kot/Petals/.build/libtiff/_b/libtiff ../../libtiff/libtiff.so.6.0.2 /usr/lib/libm.so

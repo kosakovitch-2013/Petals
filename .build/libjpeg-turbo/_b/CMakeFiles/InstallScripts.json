@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/kot/Petals/.build/libjpeg-turbo/_b/cmake_install.cmake",
+		"/home/kot/Petals/.build/libjpeg-turbo/_b/simd/cmake_install.cmake",
+		"/home/kot/Petals/.build/libjpeg-turbo/_b/sharedlib/cmake_install.cmake",
+		"/home/kot/Petals/.build/libjpeg-turbo/_b/md5/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

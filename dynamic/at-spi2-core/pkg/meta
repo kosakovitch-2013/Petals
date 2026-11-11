@@ -1,0 +1,5 @@
+name=at-spi2-core
+version=2.52.0
+arch=x86_64
+desc="Accessibility toolkit"
+deps=glib dbus libxml2 libx11

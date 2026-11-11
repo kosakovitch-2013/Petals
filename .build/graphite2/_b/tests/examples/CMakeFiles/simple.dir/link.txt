@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/simple.dir/link.d CMakeFiles/simple.dir/simple.c.o -o simple  -Wl,-rpath,/home/kot/Petals/.build/graphite2/_b/src ../../src/libgraphite2.so.3.2.1 -lc -lgcc

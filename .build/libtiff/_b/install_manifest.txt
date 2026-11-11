@@ -1,0 +1,16 @@
+/usr/lib/pkgconfig/libtiff-4.pc
+/usr/lib/libtiff.so.6.0.2
+/usr/lib/libtiff.so.6
+/usr/lib/libtiff.so
+/usr/include/tiff.h
+/usr/include/tiffio.h
+/usr/include/tiffvers.h
+/usr/include/tiffconf.h
+/usr/lib/cmake/tiff/TiffTargets.cmake
+/usr/lib/cmake/tiff/TiffTargets-release.cmake
+/usr/lib/cmake/tiff/TiffConfigVersion.cmake
+/usr/lib/cmake/tiff/TiffConfig.cmake
+/usr/lib/libtiffxx.so.6.0.2
+/usr/lib/libtiffxx.so.6
+/usr/lib/libtiffxx.so
+/usr/include/tiffio.hxx

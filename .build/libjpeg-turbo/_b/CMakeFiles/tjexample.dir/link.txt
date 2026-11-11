@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/tjexample.dir/link.d CMakeFiles/tjexample.dir/tjexample.c.o -o tjexample  -Wl,-rpath,/home/kot/Petals/.build/libjpeg-turbo/_b libturbojpeg.so.0.3.0

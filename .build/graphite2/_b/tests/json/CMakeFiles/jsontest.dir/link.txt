@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/jsontest.dir/link.d CMakeFiles/jsontest.dir/jsontest.cpp.o CMakeFiles/jsontest.dir/__/__/src/json.cpp.o -o jsontest

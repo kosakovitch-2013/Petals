@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/tjbench.dir/link.d CMakeFiles/tjbench.dir/tjbench.c.o CMakeFiles/tjbench.dir/tjutil.c.o -o tjbench  -Wl,-rpath,/home/kot/Petals/.build/libjpeg-turbo/_b: libturbojpeg.so.0.3.0 -lm

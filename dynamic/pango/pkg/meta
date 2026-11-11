@@ -1,0 +1,5 @@
+name=pango
+version=1.52.2
+arch=x86_64
+desc="Text layout library"
+deps=harfbuzz freetype2 fontconfig cairo fribidi glib

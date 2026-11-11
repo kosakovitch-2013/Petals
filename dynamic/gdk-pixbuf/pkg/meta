@@ -1,0 +1,5 @@
+name=gdk-pixbuf
+version=2.42.12
+arch=x86_64
+desc="Image loading library"
+deps=glib libpng libjpeg-turbo libtiff libwebp

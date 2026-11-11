@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/linebreak.dir/link.d CMakeFiles/linebreak.dir/linebreak.c.o -o linebreak  -Wl,-rpath,/home/kot/Petals/.build/graphite2/_b/src ../../src/libgraphite2.so.3.2.1 -lc -lgcc

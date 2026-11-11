@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -DNDEBUG -shared -Wl,--version-script=/home/kot/Petals/.build/libtiff/libtiff/libtiffxx.map -Wl,--dependency-file=CMakeFiles/tiffxx.dir/link.d -Wl,-soname,libtiffxx.so.6 -o libtiffxx.so.6.0.2 CMakeFiles/tiffxx.dir/tif_stream.cxx.o  -Wl,-rpath,/home/kot/Petals/.build/libtiff/_b/libtiff: libtiff.so.6.0.2
