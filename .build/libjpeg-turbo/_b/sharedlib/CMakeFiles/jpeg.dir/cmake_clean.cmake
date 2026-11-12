@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "../.62"
+  "../.8"
   "../libjpeg.pdb"
   "../libjpeg.so"
-  "../libjpeg.so.62"
-  "../libjpeg.so.62.4.0"
+  "../libjpeg.so.8"
+  "../libjpeg.so.8.3.2"
   "CMakeFiles/jpeg.dir/link.d"
   "CMakeFiles/jpeg.dir/__/jaricom.c.o"
   "CMakeFiles/jpeg.dir/__/jaricom.c.o.d"

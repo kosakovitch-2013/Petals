@@ -14,7 +14,7 @@
   CMakeFiles/djpeg12.dir/__/wrgif.c.o \
   CMakeFiles/djpeg12.dir/__/wrppm.c.o \
   CMakeFiles/djpeg16.dir/__/wrppm.c.o \
-  ../libjpeg.so.62.4.0 \
+  ../libjpeg.so.8.3.2 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so \
@@ -77,7 +77,7 @@ CMakeFiles/djpeg12.dir/__/wrppm.c.o:
 
 CMakeFiles/djpeg16.dir/__/wrppm.c.o:
 
-../libjpeg.so.62.4.0:
+../libjpeg.so.8.3.2:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a:
 

@@ -200,7 +200,7 @@ cjpeg: sharedlib/CMakeFiles/cjpeg16.dir/__/rdgif.c.o
 cjpeg: sharedlib/CMakeFiles/cjpeg16.dir/__/rdppm.c.o
 cjpeg: sharedlib/CMakeFiles/cjpeg.dir/build.make
 cjpeg: sharedlib/CMakeFiles/cjpeg.dir/compiler_depend.ts
-cjpeg: libjpeg.so.62.4.0
+cjpeg: libjpeg.so.8.3.2
 cjpeg: sharedlib/CMakeFiles/cjpeg.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable ../cjpeg"
 	cd /home/kot/Petals/.build/libjpeg-turbo/_b/sharedlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cjpeg.dir/link.txt --verbose=$(VERBOSE)

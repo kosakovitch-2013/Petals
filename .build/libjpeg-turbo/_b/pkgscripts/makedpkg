@@ -106,7 +106,7 @@ DATAROOTDIR=/usr/share
 DOCDIR=/usr/share/doc/libjpeg-turbo
 INCLUDEDIR=/usr/include
 JAVADIR=
-LIBDIR=/usr/lib64
+LIBDIR=/usr/lib
 MANDIR=/usr/share/man
 
 if [ ! `uid` -eq 0 ]; then

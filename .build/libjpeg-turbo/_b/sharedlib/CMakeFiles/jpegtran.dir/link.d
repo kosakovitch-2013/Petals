@@ -6,7 +6,7 @@
   CMakeFiles/jpegtran.dir/__/cdjpeg.c.o \
   CMakeFiles/jpegtran.dir/__/rdswitch.c.o \
   CMakeFiles/jpegtran.dir/__/transupp.c.o \
-  ../libjpeg.so.62.4.0 \
+  ../libjpeg.so.8.3.2 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc_s_asneeded.so \
@@ -53,7 +53,7 @@ CMakeFiles/jpegtran.dir/__/rdswitch.c.o:
 
 CMakeFiles/jpegtran.dir/__/transupp.c.o:
 
-../libjpeg.so.62.4.0:
+../libjpeg.so.8.3.2:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/16/libgcc.a:
 

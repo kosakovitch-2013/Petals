@@ -14,8 +14,8 @@
 # EXTERNAL cache entries
 ########################
 
-//Build string (default: 20261111)
-BUILD:STRING=20261111
+//Build string (default: 20261112)
+BUILD:STRING=20261112
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -122,9 +122,8 @@ CMAKE_INSTALL_INCLUDEDIR:PATH=include
 // (Default: <CMAKE_INSTALL_DATAROOTDIR>/info)
 CMAKE_INSTALL_INFODIR:PATH=<CMAKE_INSTALL_DATAROOTDIR>/info
 
-//Directory into which object files and object code libraries should
-// be installed (Default: lib64)
-CMAKE_INSTALL_LIBDIR:PATH=lib64
+//No help, variable specified on the command line.
+CMAKE_INSTALL_LIBDIR:PATH=lib
 
 //Directory under which executables run by other programs should
 // be installed (Default: libexec)
@@ -327,11 +326,11 @@ PKGVENDOR:STRING=The libjpeg-turbo Project
 // this platform (default is to fall back to a non-SIMD build)
 REQUIRE_SIMD:BOOL=OFF
 
-//Major version of the libjpeg API shared library (default: 62)
-SO_MAJOR_VERSION:STRING=62
+//Major version of the libjpeg API shared library (default: 8)
+SO_MAJOR_VERSION:STRING=8
 
-//Minor version of the libjpeg API shared library (default: 0)
-SO_MINOR_VERSION:STRING=0
+//Minor version of the libjpeg API shared library (default: 2)
+SO_MINOR_VERSION:STRING=2
 
 //Include arithmetic decoding support when emulating the libjpeg
 // v6b API/ABI
@@ -353,7 +352,7 @@ WITH_JPEG7:BOOL=OFF
 
 //Emulate libjpeg v8 API/ABI (this makes libjpeg-turbo backward-incompatible
 // with libjpeg v6b)
-WITH_JPEG8:BOOL=OFF
+WITH_JPEG8:BOOL=1
 
 //Include SIMD extensions, if available for this platform
 WITH_SIMD:BOOL=ON
@@ -589,7 +588,7 @@ SIZE_T:INTERNAL=8
 //CHECK_TYPE_SIZE: sizeof(unsigned long)
 UNSIGNED_LONG:INTERNAL=8
 WITH_JPEG7_INT:INTERNAL=0
-WITH_JPEG8_INT:INTERNAL=0
+WITH_JPEG8_INT:INTERNAL=1
 WITH_SIMD_INT:INTERNAL=1
 //CMAKE_INSTALL_BINDIR has default value
 _GNUInstallDirs_CMAKE_INSTALL_DEFAULT_BINDIR:INTERNAL=1
@@ -603,8 +602,6 @@ _GNUInstallDirs_CMAKE_INSTALL_DEFAULT_DOCDIR:INTERNAL=1
 _GNUInstallDirs_CMAKE_INSTALL_DEFAULT_INCLUDEDIR:INTERNAL=1
 //CMAKE_INSTALL_INFODIR has default value
 _GNUInstallDirs_CMAKE_INSTALL_DEFAULT_INFODIR:INTERNAL=1
-//CMAKE_INSTALL_LIBDIR has default value
-_GNUInstallDirs_CMAKE_INSTALL_DEFAULT_LIBDIR:INTERNAL=1
 //CMAKE_INSTALL_LIBEXECDIR has default value
 _GNUInstallDirs_CMAKE_INSTALL_DEFAULT_LIBEXECDIR:INTERNAL=1
 //CMAKE_INSTALL_LOCALEDIR has default value
@@ -664,7 +661,7 @@ _GNUInstallDirs_CMAKE_INSTALL_LAST_INCLUDEDIR:INTERNAL=include
 //CMAKE_INSTALL_INFODIR during last run
 _GNUInstallDirs_CMAKE_INSTALL_LAST_INFODIR:INTERNAL=<CMAKE_INSTALL_DATAROOTDIR>/info
 //CMAKE_INSTALL_LIBDIR during last run
-_GNUInstallDirs_CMAKE_INSTALL_LAST_LIBDIR:INTERNAL=lib64
+_GNUInstallDirs_CMAKE_INSTALL_LAST_LIBDIR:INTERNAL=lib
 //CMAKE_INSTALL_LIBEXECDIR during last run
 _GNUInstallDirs_CMAKE_INSTALL_LAST_LIBEXECDIR:INTERNAL=libexec
 //CMAKE_INSTALL_LOCALEDIR during last run

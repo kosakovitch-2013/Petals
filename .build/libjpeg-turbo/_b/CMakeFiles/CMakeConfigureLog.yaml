@@ -938,8 +938,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-JWfXJa"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-JWfXJa"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-XHZgZw"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-XHZgZw"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -948,13 +948,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-JWfXJa'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-XHZgZw'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c2fb2/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_c2fb2.dir/build.make CMakeFiles/cmTC_c2fb2.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-JWfXJa'
-        Building C object CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o
-        /usr/bin/cc   -v -o CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e0df2/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e0df2.dir/build.make CMakeFiles/cmTC_e0df2.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-XHZgZw'
+        Building C object CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         Target: x86_64-pc-linux-gnu
@@ -962,8 +962,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.2.1 20260810 (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c2fb2.dir/'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c2fb2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccm1K4AQ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0df2.dir/'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e0df2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccPB25Lj.s
         GNU C23 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)
         	compiled by GNU C version 16.2.1 20260810, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.28-GMP
         
@@ -977,14 +977,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: f931fde8682f21d1ebcf65f6b881e532
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c2fb2.dir/'
-         as -v --64 -o CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o /tmp/ccm1K4AQ.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0df2.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o /tmp/ccPB25Lj.s
         GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_c2fb2
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2fb2.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e0df2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0df2.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/cc
         COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper
@@ -995,14 +995,14 @@ events:
         gcc version 16.2.1 20260810 (GCC) 
         COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c2fb2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c2fb2.'
-         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8f6Tbt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c2fb2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e0df2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e0df2.'
+         /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoe3mJV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e0df2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         collect2 version 16.2.1 20260810
-        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8f6Tbt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c2fb2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
+        /usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoe3mJV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e0df2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o
         GNU ld (GNU Binutils) 2.47
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c2fb2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c2fb2.'
-        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o -o cmTC_c2fb2
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-JWfXJa'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e0df2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e0df2.'
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o -o cmTC_e0df2
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-XHZgZw'
         
       exitCode: 0
   -
@@ -1035,13 +1035,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|wild))("|,| |$)]
-        ignore line: [Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-JWfXJa']
+        ignore line: [Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-XHZgZw']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c2fb2/fast]
-        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_c2fb2.dir/build.make CMakeFiles/cmTC_c2fb2.dir/build]
-        ignore line: [make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-JWfXJa']
-        ignore line: [Building C object CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o]
-        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e0df2/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_e0df2.dir/build.make CMakeFiles/cmTC_e0df2.dir/build]
+        ignore line: [make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-XHZgZw']
+        ignore line: [Building C object CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [Target: x86_64-pc-linux-gnu]
@@ -1049,8 +1049,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c2fb2.dir/']
-        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_c2fb2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccm1K4AQ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0df2.dir/']
+        ignore line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e0df2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccPB25Lj.s]
         ignore line: [GNU C23 (GCC) version 16.2.1 20260810 (x86_64-pc-linux-gnu)]
         ignore line: [	compiled by GNU C version 16.2.1 20260810  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.28-GMP]
         ignore line: []
@@ -1064,14 +1064,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: f931fde8682f21d1ebcf65f6b881e532]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c2fb2.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o /tmp/ccm1K4AQ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0df2.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o /tmp/ccPB25Lj.s]
         ignore line: [GNU assembler version 2.47 (x86_64-pc-linux-gnu) using BFD version (GNU Binutils) 2.47]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_c2fb2]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2fb2.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_e0df2]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0df2.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/cc]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper]
@@ -1082,13 +1082,13 @@ events:
         ignore line: [gcc version 16.2.1 20260810 (GCC) ]
         ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-pc-linux-gnu/16/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c2fb2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c2fb2.']
-        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8f6Tbt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c2fb2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e0df2' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e0df2.']
+        link line: [ /usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2 -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoe3mJV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e0df2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc8f6Tbt.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccoe3mJV.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s_asneeded] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -1104,7 +1104,7 @@ events:
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-pie] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_c2fb2] ==> ignore
+          arg [cmTC_e0df2] ==> ignore
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o]
@@ -1116,7 +1116,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lgcc_s_asneeded] ==> lib [gcc_s_asneeded]
           arg [-latomic_asneeded] ==> lib [atomic_asneeded]
@@ -1126,9 +1126,9 @@ events:
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o]
           arg [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         ignore line: [collect2 version 16.2.1 20260810]
-        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8f6Tbt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c2fb2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/bin/ld]
-        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8f6Tbt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c2fb2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
-        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8f6Tbt.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c2fb2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_c2fb2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoe3mJV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e0df2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker [/usr/bin/ld]
+        link line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoe3mJV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e0df2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o] ==> linker architecture flags [-m;elf]
+        ignore line: [/usr/bin/ld -plugin /usr/lib/gcc/x86_64-pc-linux-gnu/16/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-pc-linux-gnu/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccoe3mJV.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s_asneeded --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_e0df2 /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o -L/usr/lib/gcc/x86_64-pc-linux-gnu/16 -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e0df2.dir/CMakeCCompilerABI.c.o -lgcc -lgcc_s_asneeded -latomic_asneeded -lc -lgcc -lgcc_s_asneeded /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtendS.o /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crtn.o]
         linker tool for 'C': /usr/bin/ld -m;elf
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/Scrt1.o] ==> [/usr/lib/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o] ==> [/usr/lib/crti.o]
@@ -1165,8 +1165,8 @@ events:
     checks:
       - "Looking for sys/types.h"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-QNqYfi"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-QNqYfi"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-dMSCVw"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-dMSCVw"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1175,17 +1175,17 @@ events:
       variable: "HAVE_SYS_TYPES_H"
       cached: true
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-QNqYfi'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-dMSCVw'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f83e2/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_f83e2.dir/build.make CMakeFiles/cmTC_f83e2.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-QNqYfi'
-        Building C object CMakeFiles/cmTC_f83e2.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_f83e2.dir/CheckIncludeFile.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-QNqYfi/CheckIncludeFile.c
-        Linking C executable cmTC_f83e2
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f83e2.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_f83e2.dir/CheckIncludeFile.c.o -o cmTC_f83e2
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-QNqYfi'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_a733d/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_a733d.dir/build.make CMakeFiles/cmTC_a733d.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-dMSCVw'
+        Building C object CMakeFiles/cmTC_a733d.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_a733d.dir/CheckIncludeFile.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-dMSCVw/CheckIncludeFile.c
+        Linking C executable cmTC_a733d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a733d.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_a733d.dir/CheckIncludeFile.c.o -o cmTC_a733d
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-dMSCVw'
         
       exitCode: 0
   -
@@ -1197,8 +1197,8 @@ events:
     checks:
       - "Looking for stdint.h"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hIKCWG"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hIKCWG"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-oYAlC3"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-oYAlC3"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1207,17 +1207,17 @@ events:
       variable: "HAVE_STDINT_H"
       cached: true
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hIKCWG'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-oYAlC3'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_befbe/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_befbe.dir/build.make CMakeFiles/cmTC_befbe.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hIKCWG'
-        Building C object CMakeFiles/cmTC_befbe.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_befbe.dir/CheckIncludeFile.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hIKCWG/CheckIncludeFile.c
-        Linking C executable cmTC_befbe
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_befbe.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_befbe.dir/CheckIncludeFile.c.o -o cmTC_befbe
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hIKCWG'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_af044/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_af044.dir/build.make CMakeFiles/cmTC_af044.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-oYAlC3'
+        Building C object CMakeFiles/cmTC_af044.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_af044.dir/CheckIncludeFile.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-oYAlC3/CheckIncludeFile.c
+        Linking C executable cmTC_af044
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_af044.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_af044.dir/CheckIncludeFile.c.o -o cmTC_af044
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-oYAlC3'
         
       exitCode: 0
   -
@@ -1229,8 +1229,8 @@ events:
     checks:
       - "Looking for stddef.h"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-L8uPgc"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-L8uPgc"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-3za5hS"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-3za5hS"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1239,17 +1239,17 @@ events:
       variable: "HAVE_STDDEF_H"
       cached: true
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-L8uPgc'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-3za5hS'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_697ff/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_697ff.dir/build.make CMakeFiles/cmTC_697ff.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-L8uPgc'
-        Building C object CMakeFiles/cmTC_697ff.dir/CheckIncludeFile.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_697ff.dir/CheckIncludeFile.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-L8uPgc/CheckIncludeFile.c
-        Linking C executable cmTC_697ff
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_697ff.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_697ff.dir/CheckIncludeFile.c.o -o cmTC_697ff
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-L8uPgc'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_07b81/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_07b81.dir/build.make CMakeFiles/cmTC_07b81.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-3za5hS'
+        Building C object CMakeFiles/cmTC_07b81.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_07b81.dir/CheckIncludeFile.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-3za5hS/CheckIncludeFile.c
+        Linking C executable cmTC_07b81
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_07b81.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_07b81.dir/CheckIncludeFile.c.o -o cmTC_07b81
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-3za5hS'
         
       exitCode: 0
   -
@@ -1261,8 +1261,8 @@ events:
     checks:
       - "Check size of size_t"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-REPMPk"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-REPMPk"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-NBO0q3"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-NBO0q3"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1271,17 +1271,17 @@ events:
       variable: "HAVE_SIZE_T"
       cached: true
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-REPMPk'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-NBO0q3'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_acce7/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_acce7.dir/build.make CMakeFiles/cmTC_acce7.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-REPMPk'
-        Building C object CMakeFiles/cmTC_acce7.dir/SIZE_T.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_acce7.dir/SIZE_T.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-REPMPk/SIZE_T.c
-        Linking C executable cmTC_acce7
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_acce7.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_acce7.dir/SIZE_T.c.o -o cmTC_acce7
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-REPMPk'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f8a11/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_f8a11.dir/build.make CMakeFiles/cmTC_f8a11.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-NBO0q3'
+        Building C object CMakeFiles/cmTC_f8a11.dir/SIZE_T.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_f8a11.dir/SIZE_T.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-NBO0q3/SIZE_T.c
+        Linking C executable cmTC_f8a11
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8a11.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_f8a11.dir/SIZE_T.c.o -o cmTC_f8a11
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-NBO0q3'
         
       exitCode: 0
   -
@@ -1293,8 +1293,8 @@ events:
     checks:
       - "Check size of unsigned long"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-fnOWQA"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-fnOWQA"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-PJtYrK"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-PJtYrK"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1303,17 +1303,17 @@ events:
       variable: "HAVE_UNSIGNED_LONG"
       cached: true
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-fnOWQA'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-PJtYrK'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_20441/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_20441.dir/build.make CMakeFiles/cmTC_20441.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-fnOWQA'
-        Building C object CMakeFiles/cmTC_20441.dir/UNSIGNED_LONG.c.o
-        /usr/bin/cc    -o CMakeFiles/cmTC_20441.dir/UNSIGNED_LONG.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-fnOWQA/UNSIGNED_LONG.c
-        Linking C executable cmTC_20441
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20441.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_20441.dir/UNSIGNED_LONG.c.o -o cmTC_20441
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-fnOWQA'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_20086/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_20086.dir/build.make CMakeFiles/cmTC_20086.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-PJtYrK'
+        Building C object CMakeFiles/cmTC_20086.dir/UNSIGNED_LONG.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_20086.dir/UNSIGNED_LONG.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-PJtYrK/UNSIGNED_LONG.c
+        Linking C executable cmTC_20086
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20086.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_20086.dir/UNSIGNED_LONG.c.o -o cmTC_20086
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-PJtYrK'
         
       exitCode: 0
   -
@@ -1325,8 +1325,8 @@ events:
     checks:
       - "Performing Test HAVE_BUILTIN_CTZL"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hdEWR2"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hdEWR2"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-aTWTFC"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-aTWTFC"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1335,17 +1335,17 @@ events:
       variable: "HAVE_BUILTIN_CTZL"
       cached: true
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hdEWR2'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-aTWTFC'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6d0f4/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_6d0f4.dir/build.make CMakeFiles/cmTC_6d0f4.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hdEWR2'
-        Building C object CMakeFiles/cmTC_6d0f4.dir/src.c.o
-        /usr/bin/cc -DHAVE_BUILTIN_CTZL   -o CMakeFiles/cmTC_6d0f4.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hdEWR2/src.c
-        Linking C executable cmTC_6d0f4
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d0f4.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_6d0f4.dir/src.c.o -o cmTC_6d0f4
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-hdEWR2'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bae92/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_bae92.dir/build.make CMakeFiles/cmTC_bae92.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-aTWTFC'
+        Building C object CMakeFiles/cmTC_bae92.dir/src.c.o
+        /usr/bin/cc -DHAVE_BUILTIN_CTZL   -o CMakeFiles/cmTC_bae92.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-aTWTFC/src.c
+        Linking C executable cmTC_bae92
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bae92.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_bae92.dir/src.c.o -o cmTC_bae92
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-aTWTFC'
         
       exitCode: 0
   -
@@ -1357,8 +1357,8 @@ events:
     checks:
       - "Performing Test RIGHT_SHIFT_IS_UNSIGNED"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Zo8bJG"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Zo8bJG"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Nddu5M"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Nddu5M"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1367,17 +1367,17 @@ events:
       variable: "RIGHT_SHIFT_IS_UNSIGNED_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Zo8bJG'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Nddu5M'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_336f3/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_336f3.dir/build.make CMakeFiles/cmTC_336f3.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Zo8bJG'
-        Building C object CMakeFiles/cmTC_336f3.dir/src.c.o
-        /usr/bin/cc -DRIGHT_SHIFT_IS_UNSIGNED   -o CMakeFiles/cmTC_336f3.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Zo8bJG/src.c
-        Linking C executable cmTC_336f3
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_336f3.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_336f3.dir/src.c.o -o cmTC_336f3
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Zo8bJG'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9b633/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_9b633.dir/build.make CMakeFiles/cmTC_9b633.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Nddu5M'
+        Building C object CMakeFiles/cmTC_9b633.dir/src.c.o
+        /usr/bin/cc -DRIGHT_SHIFT_IS_UNSIGNED   -o CMakeFiles/cmTC_9b633.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Nddu5M/src.c
+        Linking C executable cmTC_9b633
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9b633.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_9b633.dir/src.c.o -o cmTC_9b633
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Nddu5M'
         
       exitCode: 0
     runResult:
@@ -1395,8 +1395,8 @@ events:
     checks:
       - "Performing Test HIDDEN_WORKS"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Q31zwW"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Q31zwW"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-9EZ0Zv"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-9EZ0Zv"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1405,17 +1405,17 @@ events:
       variable: "HIDDEN_WORKS"
       cached: true
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Q31zwW'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-9EZ0Zv'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e16e8/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_e16e8.dir/build.make CMakeFiles/cmTC_e16e8.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Q31zwW'
-        Building C object CMakeFiles/cmTC_e16e8.dir/src.c.o
-        /usr/bin/cc -DHIDDEN_WORKS   -o CMakeFiles/cmTC_e16e8.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Q31zwW/src.c
-        Linking C executable cmTC_e16e8
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e16e8.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_e16e8.dir/src.c.o -o cmTC_e16e8
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-Q31zwW'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7035f/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_7035f.dir/build.make CMakeFiles/cmTC_7035f.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-9EZ0Zv'
+        Building C object CMakeFiles/cmTC_7035f.dir/src.c.o
+        /usr/bin/cc -DHIDDEN_WORKS   -o CMakeFiles/cmTC_7035f.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-9EZ0Zv/src.c
+        Linking C executable cmTC_7035f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7035f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_7035f.dir/src.c.o -o cmTC_7035f
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-9EZ0Zv'
         
       exitCode: 0
   -
@@ -1427,8 +1427,8 @@ events:
     checks:
       - "Performing Test INLINE_WORKS"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-daa9hO"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-daa9hO"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-ZjkZKR"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-ZjkZKR"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1437,17 +1437,17 @@ events:
       variable: "INLINE_WORKS"
       cached: true
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-daa9hO'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-ZjkZKR'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bfc2a/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_bfc2a.dir/build.make CMakeFiles/cmTC_bfc2a.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-daa9hO'
-        Building C object CMakeFiles/cmTC_bfc2a.dir/src.c.o
-        /usr/bin/cc -DINLINE_WORKS   -o CMakeFiles/cmTC_bfc2a.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-daa9hO/src.c
-        Linking C executable cmTC_bfc2a
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bfc2a.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_bfc2a.dir/src.c.o -o cmTC_bfc2a
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-daa9hO'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e2cc6/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_e2cc6.dir/build.make CMakeFiles/cmTC_e2cc6.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-ZjkZKR'
+        Building C object CMakeFiles/cmTC_e2cc6.dir/src.c.o
+        /usr/bin/cc -DINLINE_WORKS   -o CMakeFiles/cmTC_e2cc6.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-ZjkZKR/src.c
+        Linking C executable cmTC_e2cc6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e2cc6.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_e2cc6.dir/src.c.o -o cmTC_e2cc6
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-ZjkZKR'
         
       exitCode: 0
   -
@@ -1459,8 +1459,8 @@ events:
     checks:
       - "Performing Test HAVE_THREAD_LOCAL"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-e7AuaS"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-e7AuaS"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-w06O4E"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-w06O4E"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1469,17 +1469,17 @@ events:
       variable: "HAVE_THREAD_LOCAL"
       cached: true
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-e7AuaS'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-w06O4E'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8d352/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_8d352.dir/build.make CMakeFiles/cmTC_8d352.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-e7AuaS'
-        Building C object CMakeFiles/cmTC_8d352.dir/src.c.o
-        /usr/bin/cc -DHAVE_THREAD_LOCAL   -o CMakeFiles/cmTC_8d352.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-e7AuaS/src.c
-        Linking C executable cmTC_8d352
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d352.dir/link.txt --verbose=1
-        /usr/bin/cc CMakeFiles/cmTC_8d352.dir/src.c.o -o cmTC_8d352
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-e7AuaS'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8dfaf/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_8dfaf.dir/build.make CMakeFiles/cmTC_8dfaf.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-w06O4E'
+        Building C object CMakeFiles/cmTC_8dfaf.dir/src.c.o
+        /usr/bin/cc -DHAVE_THREAD_LOCAL   -o CMakeFiles/cmTC_8dfaf.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-w06O4E/src.c
+        Linking C executable cmTC_8dfaf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8dfaf.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_8dfaf.dir/src.c.o -o cmTC_8dfaf
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-w06O4E'
         
       exitCode: 0
   -
@@ -1491,8 +1491,8 @@ events:
     checks:
       - "Performing Test HAVE_VERSION_SCRIPT"
     directories:
-      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-RPK8Mi"
-      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-RPK8Mi"
+      source: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-zearrj"
+      binary: "/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-zearrj"
     cmakeVariables:
       CMAKE_C_FLAGS: ""
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -1501,17 +1501,17 @@ events:
       variable: "HAVE_VERSION_SCRIPT"
       cached: true
       stdout: |
-        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-RPK8Mi'
+        Change Dir: '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-zearrj'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0b6a1/fast
-        /usr/bin/make  -f CMakeFiles/cmTC_0b6a1.dir/build.make CMakeFiles/cmTC_0b6a1.dir/build
-        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-RPK8Mi'
-        Building C object CMakeFiles/cmTC_0b6a1.dir/src.c.o
-        /usr/bin/cc -DHAVE_VERSION_SCRIPT  -Wl,--version-script,/home/kot/Petals/.build/libjpeg-turbo/_b/conftest.map -o CMakeFiles/cmTC_0b6a1.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-RPK8Mi/src.c
-        Linking C executable cmTC_0b6a1
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b6a1.dir/link.txt --verbose=1
-        /usr/bin/cc  -Wl,--version-script,/home/kot/Petals/.build/libjpeg-turbo/_b/conftest.map CMakeFiles/cmTC_0b6a1.dir/src.c.o -o cmTC_0b6a1
-        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-RPK8Mi'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_bd3c3/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_bd3c3.dir/build.make CMakeFiles/cmTC_bd3c3.dir/build
+        make[1]: Entering directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-zearrj'
+        Building C object CMakeFiles/cmTC_bd3c3.dir/src.c.o
+        /usr/bin/cc -DHAVE_VERSION_SCRIPT  -Wl,--version-script,/home/kot/Petals/.build/libjpeg-turbo/_b/conftest.map -o CMakeFiles/cmTC_bd3c3.dir/src.c.o -c /home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-zearrj/src.c
+        Linking C executable cmTC_bd3c3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd3c3.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wl,--version-script,/home/kot/Petals/.build/libjpeg-turbo/_b/conftest.map CMakeFiles/cmTC_bd3c3.dir/src.c.o -o cmTC_bd3c3
+        make[1]: Leaving directory '/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles/CMakeScratch/TryCompile-zearrj'
         
       exitCode: 0
   -
@@ -1525,7 +1525,7 @@ events:
       Looking for a ASM_NASM compiler passed with the following output:
       -- The ASM_NASM compiler identification is NASM
       -- Found assembler: /usr/bin/nasm
-      -- Configuring done (0.2s)
+      -- Configuring done (0.1s)
       -- Generating done (0.0s)
       -- Build files have been written to: /home/kot/Petals/.build/libjpeg-turbo/_b/simd/CMakeFiles/CheckASM_NASM
       

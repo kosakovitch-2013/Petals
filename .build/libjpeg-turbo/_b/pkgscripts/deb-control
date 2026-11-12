@@ -1,5 +1,5 @@
 Package: {__PKGNAME}
-Version: 3.0.2-20261111
+Version: 3.0.2-20261112
 Section: misc
 Priority: optional
 Architecture: {__ARCH}

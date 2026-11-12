@@ -1,1 +1,1 @@
-/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/example.dir/link.d CMakeFiles/example.dir/__/example.c.o -o ../example  -Wl,-rpath,/home/kot/Petals/.build/libjpeg-turbo/_b ../libjpeg.so.62.4.0
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/example.dir/link.d CMakeFiles/example.dir/__/example.c.o -o ../example  -Wl,-rpath,/home/kot/Petals/.build/libjpeg-turbo/_b ../libjpeg.so.8.3.2

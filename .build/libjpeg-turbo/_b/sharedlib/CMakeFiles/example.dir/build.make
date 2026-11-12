@@ -96,7 +96,7 @@ example_EXTERNAL_OBJECTS =
 example: sharedlib/CMakeFiles/example.dir/__/example.c.o
 example: sharedlib/CMakeFiles/example.dir/build.make
 example: sharedlib/CMakeFiles/example.dir/compiler_depend.ts
-example: libjpeg.so.62.4.0
+example: libjpeg.so.8.3.2
 example: sharedlib/CMakeFiles/example.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/kot/Petals/.build/libjpeg-turbo/_b/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../example"
 	cd /home/kot/Petals/.build/libjpeg-turbo/_b/sharedlib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/example.dir/link.txt --verbose=$(VERBOSE)

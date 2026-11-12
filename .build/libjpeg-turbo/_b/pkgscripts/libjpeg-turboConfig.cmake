@@ -8,7 +8,7 @@ get_filename_component(PACKAGE_PREFIX_DIR "${CMAKE_CURRENT_LIST_DIR}/../../../" 
 # Use original install prefix when loaded through a "/usr move"
 # cross-prefix symbolic link such as /lib -> /usr/lib.
 get_filename_component(_realCurr "${CMAKE_CURRENT_LIST_DIR}" REALPATH)
-get_filename_component(_realOrig "/usr/lib64/cmake/libjpeg-turbo" REALPATH)
+get_filename_component(_realOrig "/usr/lib/cmake/libjpeg-turbo" REALPATH)
 if(_realCurr STREQUAL _realOrig)
   set(PACKAGE_PREFIX_DIR "/usr")
 endif()

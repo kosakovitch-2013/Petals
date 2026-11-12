@@ -36,7 +36,7 @@
 %endif
 %endif
 #-->%else
-%define _libdir  /usr/lib64
+%define _libdir  /usr/lib
 #-->%endif
 
 Summary: A SIMD-accelerated JPEG codec that provides both the libjpeg and TurboJPEG APIs
@@ -46,7 +46,7 @@ Vendor: The libjpeg-turbo Project
 URL: http://www.libjpeg-turbo.org
 Group: System Environment/Libraries
 #-->Source0: https://github.com/libjpeg-turbo/libjpeg-turbo/releases/download/%{version}/libjpeg-turbo-%{version}.tar.gz
-Release: 20261111
+Release: 20261112
 License: BSD-style
 BuildRoot: %{_blddir}/%{name}-buildroot-%{version}-%{release}
 Requires: /sbin/ldconfig
@@ -96,13 +96,13 @@ reference implementation of the JPEG standard.
 #-->  -DCMAKE_INSTALL_PREFIX=%{_prefix} \
 #-->  -DCMAKE_POSITION_INDEPENDENT_CODE=0 \
 #-->  -DENABLE_SHARED=1 -DENABLE_STATIC=0 \
-#-->  -DSO_MAJOR_VERSION=62 \
-#-->  -DSO_MINOR_VERSION=0 \
-#-->  -DJPEG_LIB_VERSION=62 \
+#-->  -DSO_MAJOR_VERSION=8 \
+#-->  -DSO_MINOR_VERSION=2 \
+#-->  -DJPEG_LIB_VERSION=80 \
 #-->  -DREQUIRE_SIMD=0 \
 #-->  -DWITH_ARITH_DEC=1 -DWITH_ARITH_ENC=1 \
 #-->  -DWITH_JAVA=0 \
-#-->  -DWITH_JPEG7=0 -DWITH_JPEG8=0 \
+#-->  -DWITH_JPEG7=0 -DWITH_JPEG8=1 \
 #-->  -DWITH_SIMD=1 -DWITH_TURBOJPEG=1 .
 #-->make DESTDIR=$RPM_BUILD_ROOT
 
@@ -183,8 +183,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}
 %endif
 %if "%{_enable_shared}" == "1"
-	%{_libdir}/libjpeg.so.62.4.0
-	%{_libdir}/libjpeg.so.62
+	%{_libdir}/libjpeg.so.8.3.2
+	%{_libdir}/libjpeg.so.8
 	%{_libdir}/libjpeg.so
 %endif
 %if "%{_enable_static}" == "1"

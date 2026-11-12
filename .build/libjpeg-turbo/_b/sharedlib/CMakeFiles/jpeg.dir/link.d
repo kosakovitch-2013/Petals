@@ -1,4 +1,4 @@
-../libjpeg.so.62.4.0: \
+../libjpeg.so.8.3.2: \
   /home/kot/Petals/.build/libjpeg-turbo/_b/sharedlib/../libjpeg.map \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/16/crtbeginS.o \

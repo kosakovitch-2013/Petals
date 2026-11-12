@@ -1,0 +1,5 @@
+name=libiconv
+version=1.17
+arch=x86_64
+desc="Character encoding conversion library"
+deps=glibc

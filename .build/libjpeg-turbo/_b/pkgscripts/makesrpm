@@ -18,7 +18,7 @@ onexit()
 PKGNAME=libjpeg-turbo
 PROJECT=libjpeg-turbo
 VERSION=3.0.2
-BUILD=20261111
+BUILD=20261112
 
 if [ -f $PKGNAME-$VERSION.src.rpm ]; then
 	rm -f $PKGNAME-$VERSION.src.rpm

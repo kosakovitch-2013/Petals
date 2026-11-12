@@ -1,1 +1,1 @@
-/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/wrjpgcom.dir/link.d CMakeFiles/wrjpgcom.dir/wrjpgcom.c.o -o wrjpgcom  -Wl,-rpath,::::::::::
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/wrjpgcom.dir/link.d CMakeFiles/wrjpgcom.dir/wrjpgcom.c.o -o wrjpgcom  -Wl,-rpath,::::::::
