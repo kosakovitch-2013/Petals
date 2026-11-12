@@ -1,0 +1,5 @@
+name=mesa
+version=24.3.4
+arch=x86_64
+desc="Mesa 3D graphics library (software rendering)"
+deps=libglvnd libx11 libxcb zlib expat

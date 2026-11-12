@@ -1,0 +1,5 @@
+name=libglvnd
+version=1.7.0
+arch=x86_64
+desc="GL Vendor-Neutral Dispatch library"
+deps=libx11 mesa
