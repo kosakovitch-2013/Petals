@@ -1,0 +1,5 @@
+name=libbsd
+version=0.12.2
+arch=x86_64
+desc="BSD compatibility library"
+deps=

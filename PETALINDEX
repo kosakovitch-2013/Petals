@@ -118,3 +118,5 @@ libXi 1.8.2 dynamic/libXi-1.8.2-x86_64.petal
 libXrandr 1.5.4 dynamic/libXrandr-1.5.4-x86_64.petal
 xcb-util 0.4.1 dynamic/xcb-util-0.4.1-x86_64.petal
 libltdl 2.4.7 dynamic/libltdl-2.4.7-x86_64.petal
+libICE 1.1.1 dynamic/libICE-1.1.1-x86_64.petal
+libbsd 0.12.2 dynamic/libbsd-0.12.2-x86_64.petal
