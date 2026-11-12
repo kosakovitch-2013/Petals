@@ -1,0 +1,5 @@
+name=dconf
+version=0.49.0
+arch=x86_64
+desc="Low-level configuration system"
+deps=glib dbus

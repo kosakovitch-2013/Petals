@@ -2,4 +2,4 @@ name=marco
 version=1.28.1
 arch=x86_64
 desc="MATE window manager"
-deps=gtk3 mate-desktop startup-notification libXpresent libx11 libICE libSM libXRes libXcursor libXi libXrandr libxcb-util libcanberra xfconf
+deps=gtk3 mate-desktop startup-notification libXpresent libx11 libICE libSM libXRes libXcursor libXi libXrandr libxcb-util libcanberra xfconf dconf
