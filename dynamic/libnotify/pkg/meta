@@ -1,0 +1,5 @@
+name=libnotify
+version=0.8.3
+arch=x86_64
+desc="Desktop notifications library"
+deps=gtk3

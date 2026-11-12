@@ -1,0 +1,5 @@
+name=libxfce4ui
+version=4.18.6
+arch=x86_64
+desc="XFCE4 UI library"
+deps=gtk3 libxfce4util xfconf

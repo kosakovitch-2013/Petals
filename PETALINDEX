@@ -94,3 +94,10 @@ libdatrie 0.2.13 dynamic/libdatrie-0.2.13-x86_64.petal
 libthai 0.1.29 dynamic/libthai-0.1.29-x86_64.petal
 libiconv 1.17 dynamic/libiconv-1.17-x86_64.petal
 tint2 17.1.3 dynamic/tint2-17.1.3-x86_64.petal
+libxfce4util 4.18.2 dynamic/libxfce4util-4.18.2-x86_64.petal
+xfconf 4.18.3 dynamic/xfconf-4.18.3-x86_64.petal
+libxfce4ui 4.18.6 dynamic/libxfce4ui-4.18.6-x86_64.petal
+garcon 4.18.2 dynamic/garcon-4.18.2-x86_64.petal
+exo 4.18.0 dynamic/exo-4.18.0-x86_64.petal
+libnotify 0.8.3 dynamic/libnotify-0.8.3-x86_64.petal
+xfwm4 4.18.0 dynamic/xfwm4-4.18.0-x86_64.petal

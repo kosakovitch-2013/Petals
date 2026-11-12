@@ -1,0 +1,14 @@
+{ global:
+g_io_module_load;
+g_io_module_query;
+g_io_module_unload;
+xfconf_basic_gvalue_to_gvariant;
+xfconf_basic_gvariant_to_gvalue;
+xfconf_dup_value_array;
+xfconf_gsettings_backend_get_type;
+xfconf_gsettings_backend_new;
+xfconf_gvalue_to_gvariant;
+xfconf_gvariant_to_gvalue;
+xfconf_gvariant_to_hash;
+xfconf_hash_to_gvariant;
+local: *; };

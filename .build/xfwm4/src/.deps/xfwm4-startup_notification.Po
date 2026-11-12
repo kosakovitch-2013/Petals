@@ -1,0 +1,4 @@
+xfwm4-startup_notification.o: startup_notification.c \
+ /usr/include/stdc-predef.h ../config.h
+/usr/include/stdc-predef.h:
+../config.h:

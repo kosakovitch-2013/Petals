@@ -1,0 +1,5 @@
+name=garcon
+version=4.18.2
+arch=x86_64
+desc="XFCE4 menu library"
+deps=gtk3 libxfce4ui libxfce4util
