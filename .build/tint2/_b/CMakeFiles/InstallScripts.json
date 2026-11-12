@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/kot/Petals/.build/tint2/_b/cmake_install.cmake",
+		"/home/kot/Petals/.build/tint2/_b/themes/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

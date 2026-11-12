@@ -1,0 +1,5 @@
+name=tint2
+version=17.1.3
+arch=x86_64
+desc="Lightweight GTK3 panel/taskbar"
+deps=gtk3

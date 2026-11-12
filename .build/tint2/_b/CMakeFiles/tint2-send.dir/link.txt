@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/tint2-send.dir/link.d "CMakeFiles/tint2-send.dir/src/tint2-send/tint2-send.c.o" -o tint2-send  -lXcomposite -lXdamage -lXfixes -lXinerama -lXrandr -lXext -lXrender -lX11
