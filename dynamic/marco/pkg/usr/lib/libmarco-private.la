@@ -11,13 +11,13 @@ dlname='libmarco-private.so.2'
 library_names='libmarco-private.so.2.0.0 libmarco-private.so.2 libmarco-private.so'
 
 # The name of the static archive.
-old_library='libmarco-private.a'
+old_library=''
 
 # Linker flags that cannot go in dependency_libs.
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -lcanberra-gtk3 -lcanberra -lmate-desktop-2 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lcairo-gobject -lgdk_pixbuf-2.0 -latk-1.0 -lpango-1.0 -lcairo -lharfbuzz -lgio-2.0 -lgobject-2.0 -lz -lstartup-notification-1 -lXcomposite -lXdamage -lXRes -lXcursor -lXrender -lXfixes -lgtop-2.0 -lglib-2.0 -lXrandr -lXpresent -lSM -lICE -lX11 -lXext -lXinerama -lm'
+dependency_libs=' -lcanberra-gtk3 -lcanberra -lmate-desktop-2 -lgtk-3 -lgdk-3 -lpangocairo-1.0 -lcairo-gobject -lgdk_pixbuf-2.0 -latk-1.0 -lpango-1.0 -lcairo -lharfbuzz -lgio-2.0 -lgobject-2.0 -lstartup-notification-1 -lXcomposite -lXdamage -lXRes -lXcursor -lXrender -lXfixes -lgtop-2.0 -lglib-2.0 -lXrandr -lXpresent -lSM -lICE -lX11 -lXext -lXinerama -lm'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

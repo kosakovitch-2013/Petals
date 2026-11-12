@@ -1,0 +1,5 @@
+name=libcanberra
+version=0.30
+arch=x86_64
+desc="XDG sound theme implementation"
+deps=libvorbis tdb gtk3

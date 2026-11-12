@@ -1,0 +1,5 @@
+name=libgtop
+version=2.41.3
+arch=x86_64
+desc="System monitoring library"
+deps=glib

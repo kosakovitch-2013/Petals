@@ -1,0 +1,5 @@
+name=mate-common
+version=1.28.0
+arch=x86_64
+desc="MATE common build macros"
+deps=

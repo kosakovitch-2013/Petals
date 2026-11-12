@@ -1,0 +1,5 @@
+name=libvorbis
+version=1.3.7
+arch=x86_64
+desc="Vorbis audio codec"
+deps=libogg

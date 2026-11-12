@@ -1,0 +1,1164 @@
+commit fee79b7559965d8ae3b4b8e213717b525c703c1b
+Author: lukefromdc <lukefromdc@hushmail.com>
+Date:   Mon Mar 11 17:24:09 2024 -0400
+
+    Release 1.28.2
+
+ NEWS         | 5 +++++
+ configure.ac | 2 +-
+ meson.build  | 2 +-
+ 3 files changed, 7 insertions(+), 2 deletions(-)
+
+commit 86042f6b7d94e4dcd6cce32acce057d12d94347a
+Author: lukefromdc <lukefromdc@hushmail.com>
+Date:   Mon Mar 11 17:20:05 2024 -0400
+
+    sync with Transifex
+
+ po/bg.po  |    2 +-
+ po/el.po  |    2 +-
+ po/he.po  |    2 +-
+ po/ko.po  |    2 +-
+ po/nan.po | 1434 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ po/sv.po  |    4 +-
+ po/tr.po  |    4 +-
+ po/tzm.po | 1434 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 8 files changed, 2876 insertions(+), 8 deletions(-)
+
+commit 2020a05689482627fce1543461c60ad026132c34
+Author: zhu yaliang <zhuyaliang@loongson.cn>
+Date:   Mon Mar 4 17:43:42 2024 +0800
+
+    Make MateImageMenuItem subclassable
+    See the discussion on:https://github.com/mate-desktop/mate-panel/issues/1433
+
+ libmate-desktop/mate-image-menu-item.c | 72 +++++++++++++++++++++-------------
+ libmate-desktop/mate-image-menu-item.h | 28 ++++++++++++-
+ 2 files changed, 71 insertions(+), 29 deletions(-)
+
+commit 44f5c03bd177e5eec9c4c31104c1ee358e9b3a33
+Author: Colomban Wendling <cwendling@hypra.fr>
+Date:   Wed Feb 28 22:21:06 2024 +0100
+
+    MateImageMenuItem: Remove unnecessary label field
+    
+    This was used in GtkImageMenuItem to support stock items, but this is a
+    deprecated feature that didn't make it to MateImageMenuItem.  Now, this
+    is entirely unused, and just leads to glue code maintaining an unused
+    local copy of the label, effectively wasting a little bit of memory and
+    adding complexity.
+    
+    Just drop all references to it, without any functional difference.
+
+ libmate-desktop/mate-image-menu-item.c | 39 ----------------------------------
+ 1 file changed, 39 deletions(-)
+
+commit bdbeed74419708dc35e23ceecc10f166abfddb78
+Author: raveit65 <mate@raveit.de>
+Date:   Fri Feb 16 22:02:12 2024 +0100
+
+    release 1.28.1
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ meson.build  | 2 +-
+ 3 files changed, 6 insertions(+), 2 deletions(-)
+
+commit c062e31ea4a2447d495febaeef94c15aed138033
+Author: Bobby Rong <rjl931189261@126.com>
+Date:   Fri Feb 16 22:32:15 2024 +0800
+
+    xdg-portal: add meson.build to EXTRA_DIST
+    
+    Follow-up of 287fdce6d430 ("add xdg-desktop-portal config file")
+    
+    Unbreaks meson build using release tarball:
+    
+    meson.build:109:0: ERROR: Nonexistent build file 'xdg-portal/meson.build'
+
+ xdg-portal/Makefile.am | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 63ec055ba3440aebedbce0646d172661e32be332
+Author: raveit65 <mate@raveit.de>
+Date:   Mon Feb 12 23:36:47 2024 +0100
+
+    release 1.28.0
+
+ NEWS         | 4 ++++
+ configure.ac | 4 ++--
+ meson.build  | 2 +-
+ 3 files changed, 7 insertions(+), 3 deletions(-)
+
+commit 2a757b20a9698d0c08695c940a48e96025218bbc
+Author: raveit65 <mate@raveit.de>
+Date:   Mon Feb 12 23:35:49 2024 +0100
+
+    tx: sync with transifex
+
+ po/ar.po | 88 +++++++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 45 insertions(+), 43 deletions(-)
+
+commit a6ae322b606584765ce2298891011c8e87041180
+Author: raveit65 <mate@raveit.de>
+Date:   Fri Feb 2 22:22:24 2024 +0100
+
+    releases 1.27.4
+
+ NEWS         | 15 +++++++++++++++
+ configure.ac |  2 +-
+ meson.build  |  2 +-
+ 3 files changed, 17 insertions(+), 2 deletions(-)
+
+commit a3efb94656cec1c207b1168320a61558901715bb
+Author: raveit65 <mate@raveit.de>
+Date:   Fri Feb 2 22:13:30 2024 +0100
+
+    tx: sync with transifex
+
+ po/az.po | 12 ++++++++---
+ po/cs.po |  7 +++++--
+ po/da.po | 15 +++++++++++---
+ po/es.po |  6 +++++-
+ po/eu.po |  7 +++++--
+ po/id.po |  3 +++
+ po/it.po |  9 +++++---
+ po/ja.po | 71 ++++++++++++++++++++++++++++++++--------------------------------
+ po/ko.po |  2 +-
+ po/nb.po |  7 +++++--
+ po/oc.po | 22 +++++++++++---------
+ po/ru.po |  3 +++
+ po/sr.po | 15 +++++++++++---
+ 13 files changed, 114 insertions(+), 65 deletions(-)
+
+commit f3c7dad2d9d3368577a3f37754803d7b9930bb27
+Author: raveit65 <mate@raveit.de>
+Date:   Tue Jan 23 12:05:24 2024 +0100
+
+    ci: use ubuntu jammy as docker
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1c0e360cb2498cc64ea954a8decd93465c00bde7
+Author: zhuyaliang <15132211195@163.com>
+Date:   Sun Oct 8 13:55:48 2023 +0800
+
+    mate-colorsel: Fix compilation warnings use rgba replace color
+
+ libmate-desktop/mate-colorsel.c  | 343 +++++++++++++++++----------------------
+ libmate-desktop/mate-colorsel.h  |  20 +--
+ libmate-desktop/mate-desktop.abi |   4 +-
+ tools/mate-color-select.c        |   4 +-
+ 4 files changed, 162 insertions(+), 209 deletions(-)
+
+commit b713be3f27b908d3d62a28270018abefa2c1b8df
+Author: zhuyaliang <15132211195@163.com>
+Date:   Tue Oct 10 10:09:02 2023 +0800
+
+    meson: Add meson support for static library
+
+ libmate-desktop/meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9cdaead58f88a29f80dd4991cdf0792f645c317b
+Author: zhuyaliang <15132211195@163.com>
+Date:   Sun Oct 8 10:27:51 2023 +0800
+
+    Fix compilation warning replace gtk_style_context_get_background_color
+
+ libmate-desktop/mate-bg-crossfade.c  |  2 +-
+ libmate-desktop/mate-desktop-utils.c | 10 ++++++++--
+ 2 files changed, 9 insertions(+), 3 deletions(-)
+
+commit 0808f973c42fba85719322c9a2ffdb9289201f3f
+Author: lukefromdc <lukefromdc@hushmail.com>
+Date:   Mon Oct 9 14:06:40 2023 -0400
+
+    wayland: fix uninitialized variable
+    
+    We still have sn_display in the runtime checks to determine whether to call the startup notification, so we have to initialize it to NULL in the wayland case
+
+ libmate-desktop/mate-desktop-item.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 8689fbe8dfc6c37cb24e116aacb3981f580a2abf
+Author: zhuyaliang <15132211195@163.com>
+Date:   Sun Oct 8 14:04:10 2023 +0800
+
+    mate-rr-labeler: Fix compilation warnings use css replace gtk_widget_override_color
+
+ libmate-desktop/mate-rr-labeler.c | 22 +++++++++++++++++++++-
+ 1 file changed, 21 insertions(+), 1 deletion(-)
+
+commit c6ee1dbc3736c7077b6fe226c2ac724f686980b0
+Author: zhuyaliang <15132211195@163.com>
+Date:   Sun Oct 8 14:00:44 2023 +0800
+
+    mate-colorseldialog: Fix compilation warnings remove deprecated function
+
+ libmate-desktop/mate-colorseldialog.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+commit a8e5c19f5a6c4632dc5b72d0eea38f5d09d35e19
+Author: zhuyaliang <15132211195@163.com>
+Date:   Mon Sep 4 14:54:56 2023 +0800
+
+    Add meson build libstartup-notification support type is auto
+    Fix https://github.com/mate-desktop/mate-desktop/issues/570
+
+ meson.build       | 6 ++++--
+ meson_options.txt | 4 ++--
+ 2 files changed, 6 insertions(+), 4 deletions(-)
+
+commit b7b0241a59d616699d83b03c57227182e8b1109a
+Author: zhuyaliang <15132211195@163.com>
+Date:   Sat Oct 7 15:27:49 2023 +0800
+
+    Remove useless mate_color_button apis
+
+ libmate-desktop/Makefile.am        |   7 +-
+ libmate-desktop/mate-colorbutton.c | 894 -------------------------------------
+ libmate-desktop/mate-colorbutton.h | 100 -----
+ libmate-desktop/mate-desktop.abi   |  13 -
+ libmate-desktop/meson.build        |   8 -
+ libmate-desktop/test.c             |  58 ---
+ po/POTFILES.in                     |   1 -
+ 7 files changed, 1 insertion(+), 1080 deletions(-)
+
+commit 079950d33769e083d5251a254787e61d11345fb2
+Author: Colomban Wendling <cwendling@hypra.fr>
+Date:   Thu Oct 5 11:47:58 2023 +0200
+
+    Fix MATE_DESKTOP_CHECK_VERSION
+    
+    Not that I know anybody that wants it though.
+
+ configure.ac                      | 4 ----
+ libmate-desktop/mate-desktop.h.in | 8 ++++----
+ libmate-desktop/meson.build       | 3 +++
+ 3 files changed, 7 insertions(+), 8 deletions(-)
+
+commit 27c71da25fd0b6b70ca2eef600ec82ea13d68e01
+Author: zhuyaliang <15132211195@163.com>
+Date:   Thu Oct 5 11:47:08 2023 +0200
+
+    Remove useless code
+
+ libmate-desktop/mate-desktop.h.in | 10 ----------
+ 1 file changed, 10 deletions(-)
+
+commit 5e3b73e620de7d3cb1aa4285594e0a6d9a78dee6
+Author: zhuyaliang <15132211195@163.com>
+Date:   Wed Oct 4 16:12:05 2023 +0800
+
+    Rename libmate-desktop/{mate-desktop.h => mate-desktop.h.in} add MATE_DESKTOP_VERSION marco
+
+ configure.ac                                          |  1 +
+ libmate-desktop/{mate-desktop.h => mate-desktop.h.in} |  2 ++
+ libmate-desktop/meson.build                           | 15 ++++++++++++---
+ 3 files changed, 15 insertions(+), 3 deletions(-)
+
+commit e174117cb48ec90b041a2faa28016964c5a0b92b
+Author: raveit65 <mate@raveit.de>
+Date:   Sun Sep 17 10:00:42 2023 +0200
+
+    release 1.27.3
+
+ NEWS         | 6 ++++++
+ configure.ac | 2 +-
+ meson.build  | 2 +-
+ 3 files changed, 8 insertions(+), 2 deletions(-)
+
+commit 4a7a4267d35757cbe7653c85cb38f3e81091f388
+Author: raveit65 <mate@raveit.de>
+Date:   Sun Sep 17 09:58:14 2023 +0200
+
+    tx: drop tzm language which caused the build fail
+
+ po/tzm.po | 1434 -------------------------------------------------------------
+ 1 file changed, 1434 deletions(-)
+
+commit 51adfbf9c146bc543e3c6ae1e61e84f648058641
+Author: raveit65 <mate@raveit.de>
+Date:   Sun Sep 17 09:31:54 2023 +0200
+
+    tx: sync with transifex
+
+ po/af.po          | 20 ++++++++++----------
+ po/am.po          | 20 ++++++++++----------
+ po/an.po          | 20 ++++++++++----------
+ po/ar.po          | 20 ++++++++++----------
+ po/as.po          | 20 ++++++++++----------
+ po/ast.po         | 20 ++++++++++----------
+ po/az.po          | 20 ++++++++++----------
+ po/be.po          | 20 ++++++++++----------
+ po/bg.po          | 20 ++++++++++----------
+ po/bn.po          | 20 ++++++++++----------
+ po/bn_IN.po       | 20 ++++++++++----------
+ po/br.po          | 20 ++++++++++----------
+ po/bs.po          | 20 ++++++++++----------
+ po/ca.po          | 20 ++++++++++----------
+ po/ca@valencia.po | 20 ++++++++++----------
+ po/cmn.po         | 20 ++++++++++----------
+ po/crh.po         | 20 ++++++++++----------
+ po/cs.po          | 27 ++++++++++++---------------
+ po/cy.po          | 20 ++++++++++----------
+ po/da.po          | 20 ++++++++++----------
+ po/de.po          | 20 ++++++++++----------
+ po/de_CH.po       | 20 ++++++++++----------
+ po/dz.po          | 20 ++++++++++----------
+ po/el.po          | 20 ++++++++++----------
+ po/en_AU.po       | 20 ++++++++++----------
+ po/en_CA.po       | 20 ++++++++++----------
+ po/en_GB.po       | 22 +++++++++++-----------
+ po/eo.po          | 20 ++++++++++----------
+ po/es.po          | 23 ++++++++++-------------
+ po/es_AR.po       | 20 ++++++++++----------
+ po/es_CL.po       | 20 ++++++++++----------
+ po/es_CO.po       | 20 ++++++++++----------
+ po/es_MX.po       | 20 ++++++++++----------
+ po/et.po          | 20 ++++++++++----------
+ po/eu.po          | 20 ++++++++++----------
+ po/fa.po          | 20 ++++++++++----------
+ po/fi.po          | 20 ++++++++++----------
+ po/fr.po          | 22 +++++++++++-----------
+ po/frp.po         | 20 ++++++++++----------
+ po/fur.po         | 20 ++++++++++----------
+ po/fy.po          | 20 ++++++++++----------
+ po/ga.po          | 20 ++++++++++----------
+ po/gl.po          | 20 ++++++++++----------
+ po/gu.po          | 20 ++++++++++----------
+ po/he.po          | 20 ++++++++++----------
+ po/hi.po          | 20 ++++++++++----------
+ po/hr.po          | 20 ++++++++++----------
+ po/hu.po          | 20 ++++++++++----------
+ po/hy.po          | 20 ++++++++++----------
+ po/ia.po          | 20 ++++++++++----------
+ po/id.po          | 23 ++++++++++-------------
+ po/ie.po          | 20 ++++++++++----------
+ po/ig.po          | 20 ++++++++++----------
+ po/is.po          | 20 ++++++++++----------
+ po/it.po          | 23 ++++++++++-------------
+ po/ja.po          | 23 ++++++++++-------------
+ po/jv.po          | 20 ++++++++++----------
+ po/ka.po          | 20 ++++++++++----------
+ po/kab.po         | 20 ++++++++++----------
+ po/kk.po          | 20 ++++++++++----------
+ po/kn.po          | 20 ++++++++++----------
+ po/ko.po          | 20 ++++++++++----------
+ po/ku.po          | 20 ++++++++++----------
+ po/ku_IQ.po       | 20 ++++++++++----------
+ po/ky.po          | 20 ++++++++++----------
+ po/li.po          | 20 ++++++++++----------
+ po/lo.po          | 20 ++++++++++----------
+ po/lt.po          | 20 ++++++++++----------
+ po/lv.po          | 20 ++++++++++----------
+ po/mai.po         | 20 ++++++++++----------
+ po/mg.po          | 20 ++++++++++----------
+ po/mk.po          | 20 ++++++++++----------
+ po/ml.po          | 20 ++++++++++----------
+ po/mn.po          | 20 ++++++++++----------
+ po/mr.po          | 20 ++++++++++----------
+ po/ms.po          | 20 ++++++++++----------
+ po/nb.po          | 23 ++++++++++-------------
+ po/nds.po         | 20 ++++++++++----------
+ po/ne.po          | 20 ++++++++++----------
+ po/nl.po          | 26 +++++++++++++-------------
+ po/nn.po          | 20 ++++++++++----------
+ po/nso.po         | 20 ++++++++++----------
+ po/oc.po          | 24 ++++++++++++------------
+ po/or.po          | 20 ++++++++++----------
+ po/pa.po          | 20 ++++++++++----------
+ po/pl.po          | 26 +++++++++++++-------------
+ po/ps.po          | 20 ++++++++++----------
+ po/pt.po          | 20 ++++++++++----------
+ po/pt_BR.po       | 20 ++++++++++----------
+ po/ro.po          | 20 ++++++++++----------
+ po/ru.po          | 23 ++++++++++-------------
+ po/sc.po          | 20 ++++++++++----------
+ po/si.po          | 20 ++++++++++----------
+ po/sk.po          | 20 ++++++++++----------
+ po/sl.po          | 20 ++++++++++----------
+ po/sq.po          | 20 ++++++++++----------
+ po/sr.po          | 20 ++++++++++----------
+ po/sr@latin.po    | 20 ++++++++++----------
+ po/sv.po          | 30 +++++++++++++++++-------------
+ po/ta.po          | 20 ++++++++++----------
+ po/te.po          | 20 ++++++++++----------
+ po/th.po          | 20 ++++++++++----------
+ po/tk.po          | 20 ++++++++++----------
+ po/tr.po          | 23 ++++++++++-------------
+ po/tt.po          | 20 ++++++++++----------
+ po/tzm.po         | 20 ++++++++++----------
+ po/ug.po          | 20 ++++++++++----------
+ po/uk.po          | 23 ++++++++++-------------
+ po/ur.po          | 20 ++++++++++----------
+ po/uz.po          | 20 ++++++++++----------
+ po/vi.po          | 20 ++++++++++----------
+ po/wa.po          | 20 ++++++++++----------
+ po/xh.po          | 20 ++++++++++----------
+ po/yi.po          | 20 ++++++++++----------
+ po/yo.po          | 20 ++++++++++----------
+ po/zh_CN.po       | 26 +++++++++++++-------------
+ po/zh_HK.po       | 20 ++++++++++----------
+ po/zh_TW.po       | 26 +++++++++++++-------------
+ po/zu.po          | 20 ++++++++++----------
+ 119 files changed, 1215 insertions(+), 1238 deletions(-)
+
+commit 287fdce6d43086d4610f294a8cff759fb58eeabb
+Author: raveit65 <mate@raveit.de>
+Date:   Thu Sep 14 12:13:19 2023 +0200
+
+    add xdg-desktop-portal config file
+
+ Makefile.am                  | 2 +-
+ configure.ac                 | 1 +
+ meson.build                  | 1 +
+ xdg-portal/Makefile.am       | 5 +++++
+ xdg-portal/mate-portals.conf | 3 +++
+ xdg-portal/meson.build       | 4 ++++
+ 6 files changed, 15 insertions(+), 1 deletion(-)
+
+commit 0d811ab11128b7473ac762391321a24efe6095ab
+Author: zhuyaliang <15132211195@163.com>
+Date:   Thu Sep 14 20:38:21 2023 +0800
+
+    Fix ninja test symbols check FAIL
+
+ libmate-desktop/mate-desktop.abi | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit e6df0c43918c59e5224eca853904c9cf6ce09e64
+Author: raveit65 <mate@raveit.de>
+Date:   Sat Sep 2 16:58:51 2023 +0200
+
+    tx: update resources
+
+ mate-desktop.pot | 20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+
+commit 43b608f5b04c1917f9b02f1509cad53307841b88
+Author: raveit65 <mate@raveit.de>
+Date:   Wed Aug 23 10:51:29 2023 +0200
+
+    release 1.27.2
+
+ NEWS         | 10 ++++++++--
+ configure.ac |  2 +-
+ meson.build  |  2 +-
+ 3 files changed, 10 insertions(+), 4 deletions(-)
+
+commit 7376d0ee8bf7f8c3e30fed19f179c0eef0b1e0f5
+Author: raveit65 <mate@raveit.de>
+Date:   Wed Aug 23 10:48:33 2023 +0200
+
+    tx: pull with transifex
+
+ po/ca.po    |  2 +-
+ po/cs.po    |  6 +++---
+ po/en_GB.po |  2 +-
+ po/ko.po    |  2 +-
+ po/oc.po    |  7 +++++--
+ po/ru.po    |  4 ++--
+ po/sl.po    |  2 +-
+ po/tr.po    | 24 +++++++++++++++---------
+ 8 files changed, 29 insertions(+), 20 deletions(-)
+
+commit 12b687f42efd6c004d2a931351eea291e122433d
+Author: lukefromdc <lukefromdc@hushmail.com>
+Date:   Wed Aug 9 16:34:05 2023 -0400
+
+    desktop-item: limit startup notification to x11
+    
+    *Wrap all startup notification calls in x11-only conditional blocks
+    *This is x11-specific code, so don't try to run it outside of x11
+
+ libmate-desktop/mate-desktop-item.c | 98 ++++++++++++++++++++-----------------
+ 1 file changed, 52 insertions(+), 46 deletions(-)
+
+commit a8085cc547281f7df27a7063ffcdb6c9cb027ee0
+Author: lukefromdc <lukefromdc@hushmail.com>
+Date:   Fri Jun 16 18:37:26 2023 -0400
+
+    Initial support for showing a caja desktop in wayland
+    
+    *put XKillClient and gdk_x11_screen_get_xscreen behind x11-only runtime checks
+
+ libmate-desktop/mate-bg.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit 9f81a561186ea52c2bef57b9aaba9e596af4bce2
+Author: raveit65 <mate@raveit.de>
+Date:   Mon Apr 3 21:13:11 2023 +0200
+
+    release 1.27.1
+
+ NEWS         | 5 +++++
+ configure.ac | 2 +-
+ meson.build  | 2 +-
+ 3 files changed, 7 insertions(+), 2 deletions(-)
+
+commit 0586e6a6c59b3b0049b51be03ec409a713662e80
+Author: raveit65 <mate@raveit.de>
+Date:   Mon Apr 3 20:57:57 2023 +0200
+
+    tx: sync with transifex
+
+ .tx/config_20221028215406.bak |    9 -
+ po/af.po                      |    2 +-
+ po/am.po                      |    2 +-
+ po/an.po                      |    2 +-
+ po/ar.po                      |    2 +-
+ po/as.po                      |    2 +-
+ po/ast.po                     |    2 +-
+ po/az.po                      |    2 +-
+ po/be.po                      |    2 +-
+ po/bg.po                      |    2 +-
+ po/bn.po                      |    2 +-
+ po/bn_IN.po                   |    2 +-
+ po/br.po                      |    2 +-
+ po/bs.po                      |    2 +-
+ po/ca.po                      |    2 +-
+ po/ca@valencia.po             |    2 +-
+ po/cmn.po                     |    2 +-
+ po/crh.po                     |    2 +-
+ po/cs.po                      |   31 +-
+ po/cy.po                      |    2 +-
+ po/da.po                      |    2 +-
+ po/de.po                      |    2 +-
+ po/de_CH.po                   |    2 +-
+ po/dz.po                      |    2 +-
+ po/el.po                      |    2 +-
+ po/en_AU.po                   |    2 +-
+ po/en_CA.po                   |    2 +-
+ po/en_GB.po                   |   19 +-
+ po/eo.po                      |    2 +-
+ po/es.po                      |    2 +-
+ po/es_AR.po                   |    2 +-
+ po/es_CL.po                   |    2 +-
+ po/es_CO.po                   |    2 +-
+ po/es_MX.po                   |    2 +-
+ po/et.po                      |    4 +-
+ po/eu.po                      |    2 +-
+ po/fa.po                      |    2 +-
+ po/fi.po                      |    2 +-
+ po/fr.po                      |    8 +-
+ po/frp.po                     |    2 +-
+ po/fur.po                     |    2 +-
+ po/fy.po                      |    2 +-
+ po/ga.po                      |    2 +-
+ po/gl.po                      |    2 +-
+ po/gu.po                      |    2 +-
+ po/he.po                      |    4 +-
+ po/hi.po                      |    2 +-
+ po/hr.po                      |    2 +-
+ po/hu.po                      |    2 +-
+ po/hy.po                      |    2 +-
+ po/ia.po                      |    2 +-
+ po/id.po                      |   20 +-
+ po/ie.po                      |   70 +-
+ po/ig.po                      |    2 +-
+ po/is.po                      |    2 +-
+ po/it.po                      |    2 +-
+ po/ja.po                      |    8 +-
+ po/jv.po                      |    2 +-
+ po/ka.po                      |    7 +-
+ po/kab.po                     |    2 +-
+ po/kk.po                      |    2 +-
+ po/kn.po                      |    2 +-
+ po/ko.po                      |    4 +-
+ po/ku.po                      |    2 +-
+ po/ku_IQ.po                   |    2 +-
+ po/ky.po                      |    2 +-
+ po/li.po                      |    2 +-
+ po/lo.po                      |    2 +-
+ po/lt.po                      |    2 +-
+ po/lv.po                      |    2 +-
+ po/mai.po                     |    2 +-
+ po/mg.po                      |    2 +-
+ po/mk.po                      |    2 +-
+ po/ml.po                      |    2 +-
+ po/mn.po                      |    2 +-
+ po/mr.po                      |    2 +-
+ po/ms.po                      |    2 +-
+ po/nb.po                      |   15 +-
+ po/nds.po                     |   10 +-
+ po/ne.po                      |    2 +-
+ po/nl.po                      |   16 +-
+ po/nn.po                      |    2 +-
+ po/nso.po                     |    2 +-
+ po/oc.po                      |    2 +-
+ po/or.po                      |    2 +-
+ po/pa.po                      |    2 +-
+ po/pl.po                      |    2 +-
+ po/ps.po                      |    2 +-
+ po/pt.po                      |    2 +-
+ po/pt_BR.po                   |    2 +-
+ po/ro.po                      |    2 +-
+ po/ru.po                      |   23 +-
+ po/sc.po                      |    2 +-
+ po/si.po                      |    2 +-
+ po/sk.po                      |    2 +-
+ po/sl.po                      |    2 +-
+ po/sq.po                      |    2 +-
+ po/sr.po                      |    2 +-
+ po/sr@latin.po                |    2 +-
+ po/sv.po                      |    2 +-
+ po/ta.po                      |    2 +-
+ po/te.po                      |    2 +-
+ po/th.po                      |    2 +-
+ po/tk.po                      |    2 +-
+ po/tr.po                      |   30 +-
+ po/tt.po                      |    2 +-
+ po/tzm.po                     | 1434 +++++++++++++++++++++++++++++++++++++++++
+ po/ug.po                      |    2 +-
+ po/uk.po                      |   92 +--
+ po/ur.po                      |    2 +-
+ po/uz.po                      |    2 +-
+ po/vi.po                      |    2 +-
+ po/wa.po                      |    2 +-
+ po/xh.po                      |    2 +-
+ po/yi.po                      |    2 +-
+ po/yo.po                      |    2 +-
+ po/zh_CN.po                   |    2 +-
+ po/zh_HK.po                   |    2 +-
+ po/zh_TW.po                   |    2 +-
+ po/zu.po                      |    2 +-
+ 120 files changed, 1765 insertions(+), 243 deletions(-)
+
+commit 3312217c28c82ff2eb6e02154460e75f5de9c18f
+Author: zhuyaliang <15132211195@163.com>
+Date:   Thu Mar 30 17:15:09 2023 +0800
+
+    Add mate image menu item apis
+
+ docs/reference/mate-desktop/mate-desktop-docs.sgml |   5 +
+ .../mate-desktop/mate-desktop-sections.txt         |  10 +
+ libmate-desktop/Makefile.am                        |  14 +-
+ libmate-desktop/mate-desktop.abi                   |   5 +
+ libmate-desktop/mate-image-menu-item.c             | 552 +++++++++++++++++++++
+ libmate-desktop/mate-image-menu-item.h             |  42 ++
+ libmate-desktop/meson.build                        |   8 +
+ libmate-desktop/test-image-menu-item.c             |  88 ++++
+ 8 files changed, 721 insertions(+), 3 deletions(-)
+
+commit 96e97b3bd0593c6c160d571c54ea2ebf6ee1c011
+Author: mbkma <johannes.unruh@fau.de>
+Date:   Fri Nov 11 20:12:53 2022 +0100
+
+    release 1.27.0
+
+ NEWS         | 28 ++++++++++++++++++++++++++++
+ configure.ac |  2 +-
+ meson.build  |  2 +-
+ 3 files changed, 30 insertions(+), 2 deletions(-)
+
+commit 5b7f1b449dea133d7c343c2ac8d822826c7b836c
+Author: mbkma <johannes.unruh@fau.de>
+Date:   Wed Nov 9 22:22:08 2022 +0100
+
+    tx: sync with transifex
+
+ po/af.po          | 206 ++++++++++++----------
+ po/am.po          | 206 ++++++++++++----------
+ po/an.po          | 206 ++++++++++++----------
+ po/ar.po          | 212 ++++++++++++----------
+ po/as.po          | 206 ++++++++++++----------
+ po/ast.po         | 207 ++++++++++++----------
+ po/az.po          | 210 ++++++++++++----------
+ po/be.po          | 206 ++++++++++++----------
+ po/bg.po          | 210 ++++++++++++----------
+ po/bn.po          | 206 ++++++++++++----------
+ po/bn_IN.po       | 206 ++++++++++++----------
+ po/br.po          | 208 ++++++++++++----------
+ po/bs.po          | 206 ++++++++++++----------
+ po/ca.po          | 209 ++++++++++++----------
+ po/ca@valencia.po | 210 ++++++++++++----------
+ po/cmn.po         | 206 ++++++++++++----------
+ po/crh.po         | 206 ++++++++++++----------
+ po/cs.po          | 217 +++++++++++++----------
+ po/cy.po          | 206 ++++++++++++----------
+ po/da.po          | 219 ++++++++++++-----------
+ po/de.po          | 212 ++++++++++++----------
+ po/de_CH.po       | 206 ++++++++++++----------
+ po/dz.po          | 206 ++++++++++++----------
+ po/el.po          | 215 +++++++++++++----------
+ po/en_AU.po       | 206 ++++++++++++----------
+ po/en_CA.po       | 206 ++++++++++++----------
+ po/en_GB.po       | 209 ++++++++++++----------
+ po/eo.po          | 210 ++++++++++++----------
+ po/es.po          | 236 ++++++++++++++-----------
+ po/es_AR.po       | 213 ++++++++++++----------
+ po/es_CL.po       | 214 +++++++++++++----------
+ po/es_CO.po       | 212 ++++++++++++----------
+ po/es_MX.po       | 212 ++++++++++++----------
+ po/et.po          | 209 ++++++++++++----------
+ po/eu.po          | 237 ++++++++++++++-----------
+ po/fa.po          | 211 ++++++++++++----------
+ po/fi.po          | 212 ++++++++++++----------
+ po/fr.po          | 228 +++++++++++++-----------
+ po/frp.po         | 210 ++++++++++++----------
+ po/fur.po         | 206 ++++++++++++----------
+ po/fy.po          | 210 ++++++++++++----------
+ po/ga.po          | 206 ++++++++++++----------
+ po/gl.po          | 209 ++++++++++++----------
+ po/gu.po          | 206 ++++++++++++----------
+ po/he.po          | 209 ++++++++++++----------
+ po/hi.po          | 211 ++++++++++++----------
+ po/hr.po          | 210 ++++++++++++----------
+ po/hu.po          | 212 ++++++++++++----------
+ po/hy.po          | 209 ++++++++++++----------
+ po/ia.po          | 210 ++++++++++++----------
+ po/id.po          | 215 +++++++++++++----------
+ po/ie.po          | 207 ++++++++++++----------
+ po/ig.po          | 206 ++++++++++++----------
+ po/is.po          | 210 ++++++++++++----------
+ po/it.po          | 489 ++++++++++++++++++++++++++++-----------------------
+ po/ja.po          | 251 ++++++++++++++------------
+ po/jv.po          | 210 ++++++++++++----------
+ po/ka.po          | 206 ++++++++++++----------
+ po/kab.po         | 206 ++++++++++++----------
+ po/kk.po          | 206 ++++++++++++----------
+ po/kn.po          | 215 +++++++++++++----------
+ po/ko.po          | 213 ++++++++++++----------
+ po/ku.po          | 206 ++++++++++++----------
+ po/ku_IQ.po       | 206 ++++++++++++----------
+ po/ky.po          | 206 ++++++++++++----------
+ po/li.po          | 206 ++++++++++++----------
+ po/lo.po          | 206 ++++++++++++----------
+ po/lt.po          | 206 ++++++++++++----------
+ po/lv.po          | 206 ++++++++++++----------
+ po/mai.po         | 206 ++++++++++++----------
+ po/mg.po          | 206 ++++++++++++----------
+ po/mk.po          | 206 ++++++++++++----------
+ po/ml.po          | 206 ++++++++++++----------
+ po/mn.po          | 206 ++++++++++++----------
+ po/mr.po          | 210 ++++++++++++----------
+ po/ms.po          | 209 ++++++++++++----------
+ po/nb.po          | 217 +++++++++++++----------
+ po/nds.po         | 210 ++++++++++++----------
+ po/ne.po          | 212 ++++++++++++----------
+ po/nl.po          | 209 ++++++++++++----------
+ po/nn.po          | 209 ++++++++++++----------
+ po/nso.po         | 206 ++++++++++++----------
+ po/oc.po          | 260 ++++++++++++++-------------
+ po/or.po          | 208 ++++++++++++----------
+ po/pa.po          | 206 ++++++++++++----------
+ po/pl.po          | 221 +++++++++++++----------
+ po/ps.po          | 208 ++++++++++++----------
+ po/pt.po          | 255 +++++++++++++++------------
+ po/pt_BR.po       | 226 +++++++++++++-----------
+ po/ro.po          | 211 ++++++++++++----------
+ po/ru.po          | 245 +++++++++++++++-----------
+ po/sc.po          | 210 ++++++++++++----------
+ po/si.po          | 206 ++++++++++++----------
+ po/sk.po          | 212 ++++++++++++----------
+ po/sl.po          | 515 +++++++++++++++++++++++++++++-------------------------
+ po/sq.po          | 208 ++++++++++++----------
+ po/sr.po          | 209 ++++++++++++----------
+ po/sr@latin.po    | 206 ++++++++++++----------
+ po/sv.po          | 218 ++++++++++++-----------
+ po/ta.po          | 210 ++++++++++++----------
+ po/te.po          | 208 ++++++++++++----------
+ po/th.po          | 207 ++++++++++++----------
+ po/tk.po          | 206 ++++++++++++----------
+ po/tr.po          | 278 ++++++++++++++++-------------
+ po/tt.po          | 206 ++++++++++++----------
+ po/ug.po          | 206 ++++++++++++----------
+ po/uk.po          | 211 ++++++++++++----------
+ po/ur.po          | 206 ++++++++++++----------
+ po/uz.po          | 206 ++++++++++++----------
+ po/vi.po          | 211 ++++++++++++----------
+ po/wa.po          | 206 ++++++++++++----------
+ po/xh.po          | 206 ++++++++++++----------
+ po/yi.po          | 206 ++++++++++++----------
+ po/yo.po          | 206 ++++++++++++----------
+ po/zh_CN.po       | 485 ++++++++++++++++++++++++++------------------------
+ po/zh_HK.po       | 210 ++++++++++++----------
+ po/zh_TW.po       | 214 +++++++++++++----------
+ po/zu.po          | 206 ++++++++++++----------
+ 118 files changed, 14492 insertions(+), 11344 deletions(-)
+
+commit 7b379f54a5b09df007f7e84dabbbc5f8ce9381a9
+Author: Colomban Wendling <cwendling@hypra.fr>
+Date:   Mon Nov 7 11:57:51 2022 +0100
+
+    Revert "[mate-bg] small cleanup"
+    
+    It is not possible to use the `list` pointer after it has been deleted,
+    so the "cleanup" this commit made lead to using freed memory if any
+    item actually got clean up.
+    
+    This "cleanup" also don't seem meaningful to me, as all it does
+    otherwise is trade an assignation for a redundant test -- either of
+    which the compiler might happily optimize out.
+    
+    This reverts commit 47426c90d10e9f738ecf89f35db94ca8deff55e0.
+
+ libmate-desktop/mate-bg.c | 17 ++++++++---------
+ 1 file changed, 8 insertions(+), 9 deletions(-)
+
+commit 354058cc0370a770bb2cfe46d6e6082035d3f909
+Author: mbkma <johannes.unruh@fau.de>
+Date:   Sat Oct 29 15:39:06 2022 +0200
+
+    tx: update resource
+
+ mate-desktop.pot | 204 +++++++++++++++++++++++++++++--------------------------
+ 1 file changed, 109 insertions(+), 95 deletions(-)
+
+commit ca466c127ffb6c92b1975f6f8aa4748f1240b11b
+Author: mbkma <johannes.unruh@fau.de>
+Date:   Fri Oct 28 21:54:07 2022 +0200
+
+    tx: migrate config file
+
+ .tx/config                    | 13 +++++++------
+ .tx/config_20221028215406.bak |  9 +++++++++
+ 2 files changed, 16 insertions(+), 6 deletions(-)
+
+commit 3ca4cf20fc5d80d4aae64746f505740eff5d2c23
+Author: rbuj <robert.buj@gmail.com>
+Date:   Thu Jul 28 18:22:38 2022 +0200
+
+    mate-desktop-item: time_t mtime -> gint64 mtime
+    
+    The timestamp is compared with g_file_info_get_attribute_uint64
+    in mate_desktop_item_get_file_status (const MateDesktopItem *item)
+
+ libmate-desktop/mate-desktop-item.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+commit d33085ff3b6a088a512b243382d20f1f0adc0957
+Author: rbuj <robert.buj@gmail.com>
+Date:   Thu Jul 28 18:21:22 2022 +0200
+
+    mate-bg: time_t mtime -> gint64 mtime
+    
+    The timestamp is retrieved with g_file_info_get_attribute_uint64
+    in get_mtime (const char *filename)
+
+ libmate-desktop/mate-bg.c | 27 ++++++++-------------------
+ 1 file changed, 8 insertions(+), 19 deletions(-)
+
+commit ec93c117bf6dd3bc8f465012902dbd7aad38d6a7
+Author: rbuj <robert.buj@gmail.com>
+Date:   Wed Dec 22 08:47:47 2021 +0100
+
+    Fix implicit conversion changes signedness: 'gboolean' to 'guint'
+
+ libmate-desktop/mate-colorbutton.c | 2 +-
+ libmate-desktop/mate-colorsel.c    | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 3084c93b8c7f0b4520a665e54dc508e7cda12dc1
+Author: rbuj <robert.buj@gmail.com>
+Date:   Fri Oct 22 18:26:52 2021 +0200
+
+    mate-desktop-thumbnail: fix memory leak
+
+ libmate-desktop/mate-desktop-thumbnail.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 0f2374f59767e2117456a88ada65e207fa471cd6
+Author: rbuj <robert.buj@gmail.com>
+Date:   Thu Oct 28 13:49:11 2021 +0200
+
+    Fix build warnings about missing field initializer
+
+ libmate-desktop/mate-colorsel.c | 6 +++---
+ mate-about/mate-about.h.in      | 2 +-
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+commit b9a25a4f24ffb23874e0923f63c75149f13b071c
+Author: rbuj <robert.buj@gmail.com>
+Date:   Mon Nov 8 12:44:21 2021 +0100
+
+    mate-bg: fix memory leak
+
+ libmate-desktop/mate-bg.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+
+commit d9d67f267e6906f7d2f8212081f32b7d58d4afa2
+Author: rbuj <robert.buj@gmail.com>
+Date:   Sat Nov 27 11:16:04 2021 +0100
+
+    mate-bg: Dereference of null pointer
+
+ libmate-desktop/mate-bg.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 58cfa199535e2c4f86b8b8507e8979a6d23487e4
+Author: rbuj <robert.buj@gmail.com>
+Date:   Mon Jul 25 15:18:59 2022 +0200
+
+    configure.ac: The macro 'AC_HELP_STRING' is obsolete
+
+ configure.ac | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit d0aba4c3a76bed01e073ed8e301655b56cf00e2e
+Author: rbuj <robert.buj@gmail.com>
+Date:   Tue Jul 26 19:49:11 2022 +0200
+
+    mate-desktop-item: macro is not used [-Wunused-macros]
+
+ libmate-desktop/mate-desktop-item.c | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit e9ba2a710c300c435cb32546d6255a6cf12201c9
+Author: rbuj <robert.buj@gmail.com>
+Date:   Tue Jul 26 19:48:47 2022 +0200
+
+    mate-colorsel: macro is not used [-Wunused-macros]
+
+ .build.yml                                         |  156 +
+ .github/FUNDING.yml                                |    9 +
+ .github/issue_template.md                          |   19 +
+ .travis.yml                                        |   76 +
+ .tx/config                                         |    9 +
+ AUTHORS                                            |   26 +
+ COPYING                                            |  339 ++
+ COPYING-DOCS                                       |  355 ++
+ COPYING.LIB                                        |  481 +++
+ ChangeLog                                          |    2 +
+ Makefile.am                                        |   57 +
+ NEWS                                               |  338 ++
+ README                                             |   34 +
+ abi-check                                          |   45 +
+ autogen.sh                                         |   24 +
+ config.meson.h                                     |   50 +
+ configure.ac                                       |  293 ++
+ docs/Makefile.am                                   |    3 +
+ docs/reference/Makefile.am                         |    3 +
+ docs/reference/mate-desktop/Makefile.am            |   82 +
+ docs/reference/mate-desktop/mate-desktop-docs.sgml |   50 +
+ .../mate-desktop/mate-desktop-overrides.txt        |    0
+ .../mate-desktop/mate-desktop-sections.txt         |  310 ++
+ docs/reference/mate-desktop/mate-desktop.types     |    9 +
+ docs/reference/mate-desktop/meson.build            |    7 +
+ git.mk                                             |  400 ++
+ icons/128x128/apps/mate-desktop.png                |  Bin 0 -> 14990 bytes
+ icons/16x16/apps/mate-desktop.png                  |  Bin 0 -> 896 bytes
+ icons/22x22/apps/mate-desktop.png                  |  Bin 0 -> 1403 bytes
+ icons/24x24/apps/mate-desktop.png                  |  Bin 0 -> 1595 bytes
+ icons/32x32/apps/mate-desktop.png                  |  Bin 0 -> 2427 bytes
+ icons/48x48/apps/mate-desktop.png                  |  Bin 0 -> 4290 bytes
+ icons/Makefile.am                                  |   46 +
+ icons/meson.build                                  |   17 +
+ icons/scalable/apps/mate-desktop-symbolic.svg      |   24 +
+ icons/scalable/apps/mate-desktop.svg               |  213 ++
+ libmate-desktop/Makefile.am                        |  149 +
+ libmate-desktop/display-name.c                     |  301 ++
+ libmate-desktop/edid-parse.c                       |  536 +++
+ libmate-desktop/edid.h                             |  184 +
+ libmate-desktop/mate-bg-crossfade.c                |  766 ++++
+ libmate-desktop/mate-bg-crossfade.h                |   80 +
+ libmate-desktop/mate-bg.c                          | 3266 ++++++++++++++++
+ libmate-desktop/mate-bg.h                          |  173 +
+ libmate-desktop/mate-colorbutton.c                 |  894 +++++
+ libmate-desktop/mate-colorbutton.h                 |  100 +
+ libmate-desktop/mate-colorsel.c                    | 2921 +++++++++++++++
+ libmate-desktop/mate-colorsel.h                    |  126 +
+ libmate-desktop/mate-colorseldialog.c              |  244 ++
+ libmate-desktop/mate-colorseldialog.h              |   73 +
+ libmate-desktop/mate-dconf.c                       |  148 +
+ libmate-desktop/mate-dconf.h                       |   49 +
+ libmate-desktop/mate-desktop-2.0-uninstalled.pc.in |   11 +
+ libmate-desktop/mate-desktop-2.0.pc.in             |   12 +
+ libmate-desktop/mate-desktop-item.c                | 3888 ++++++++++++++++++++
+ libmate-desktop/mate-desktop-item.h                |  307 ++
+ libmate-desktop/mate-desktop-thumbnail.c           | 1351 +++++++
+ libmate-desktop/mate-desktop-thumbnail.h           |  101 +
+ libmate-desktop/mate-desktop-utils.c               |  461 +++
+ libmate-desktop/mate-desktop-utils.h               |   58 +
+ libmate-desktop/mate-desktop.abi                   |  245 ++
+ libmate-desktop/mate-desktop.h                     |   45 +
+ libmate-desktop/mate-desktop.map                   |    6 +
+ libmate-desktop/mate-gsettings.c                   |  189 +
+ libmate-desktop/mate-gsettings.h                   |   51 +
+ libmate-desktop/mate-hsv.c                         | 1435 ++++++++
+ libmate-desktop/mate-hsv.h                         |   98 +
+ libmate-desktop/mate-languages.c                   | 1333 +++++++
+ libmate-desktop/mate-languages.h                   |   53 +
+ libmate-desktop/mate-rr-config.c                   | 1975 ++++++++++
+ libmate-desktop/mate-rr-config.h                   |  150 +
+ libmate-desktop/mate-rr-labeler.c                  |  548 +++
+ libmate-desktop/mate-rr-labeler.h                  |   65 +
+ libmate-desktop/mate-rr-output-info.c              |  252 ++
+ libmate-desktop/mate-rr-private.h                  |   84 +
+ libmate-desktop/mate-rr.c                          | 2166 +++++++++++
+ libmate-desktop/mate-rr.h                          |  200 +
+ libmate-desktop/meson.build                        |  162 +
+ libmate-desktop/pnp.ids                            | 2248 +++++++++++
+ libmate-desktop/private.h                          |   36 +
+ libmate-desktop/test-desktop-thumbnail.c           |   64 +
+ libmate-desktop/test-ditem.c                       |  158 +
+ libmate-desktop/test-languages.c                   |   88 +
+ libmate-desktop/test.c                             |   58 +
+ makepot                                            |    6 +
+ man/Makefile.am                                    |   12 +
+ man/mate-about.1                                   |   24 +
+ man/mate-color-select.1                            |   18 +
+ man/meson.build                                    |    5 +
+ mate-about/Makefile.am                             |   32 +
+ mate-about/mate-about.c                            |  108 +
+ mate-about/mate-about.desktop.in                   |   12 +
+ mate-about/mate-about.h.in                         |  670 ++++
+ mate-about/mate-version.xml.in                     |    7 +
+ mate-about/meson.build                             |   55 +
+ mate-desktop.pot                                   | 1412 +++++++
+ meson.build                                        |  125 +
+ meson_options.txt                                  |   29 +
+ po/LINGUAS                                         |  121 +
+ po/Makevars                                        |   78 +
+ po/POTFILES.in                                     |   39 +
+ po/POTFILES.skip                                   |    4 +
+ po/af.po                                           | 1411 +++++++
+ po/am.po                                           | 1426 +++++++
+ po/an.po                                           | 1423 +++++++
+ po/ar.po                                           | 1499 ++++++++
+ po/as.po                                           | 1465 ++++++++
+ po/ast.po                                          | 1500 ++++++++
+ po/az.po                                           | 1425 +++++++
+ po/be.po                                           | 1471 ++++++++
+ po/bg.po                                           | 1588 ++++++++
+ po/bn.po                                           | 1481 ++++++++
+ po/bn_IN.po                                        | 1478 ++++++++
+ po/br.po                                           | 1552 ++++++++
+ po/bs.po                                           | 1443 ++++++++
+ po/ca.po                                           | 1588 ++++++++
+ po/ca@valencia.po                                  | 1603 ++++++++
+ po/cmn.po                                          | 1421 +++++++
+ po/crh.po                                          | 1475 ++++++++
+ po/cs.po                                           | 1575 ++++++++
+ po/cy.po                                           | 1473 ++++++++
+ po/da.po                                           | 1593 ++++++++
+ po/de.po                                           | 1613 ++++++++
+ po/de_CH.po                                        | 1421 +++++++
+ po/dz.po                                           | 1449 ++++++++
+ po/el.po                                           | 1599 ++++++++
+ po/en_AU.po                                        | 1517 ++++++++
+ po/en_CA.po                                        | 1426 +++++++
+ po/en_GB.po                                        | 1556 ++++++++
+ po/eo.po                                           | 1466 ++++++++
+ po/es.po                                           | 1632 ++++++++
+ po/es_AR.po                                        | 1429 +++++++
+ po/es_CL.po                                        | 1426 +++++++
+ po/es_CO.po                                        | 1415 +++++++
+ po/es_MX.po                                        | 1423 +++++++
+ po/et.po                                           | 1518 ++++++++
+ po/eu.po                                           | 1541 ++++++++
+ po/fa.po                                           | 1457 ++++++++
+ po/fi.po                                           | 1555 ++++++++
+ po/fr.po                                           | 1653 +++++++++
+ po/frp.po                                          | 1408 +++++++
+ po/fur.po                                          | 1419 +++++++
+ po/fy.po                                           | 1418 +++++++
+ po/ga.po                                           | 1420 +++++++
+ po/gl.po                                           | 1616 ++++++++
+ po/gnome-copyrights.txt                            | 1374 +++++++
+ po/gu.po                                           | 1460 ++++++++
+ po/he.po                                           | 1476 ++++++++
+ po/hi.po                                           | 1460 ++++++++
+ po/hr.po                                           | 1573 ++++++++
+ po/hu.po                                           | 1592 ++++++++
+ po/hy.po                                           | 1547 ++++++++
+ po/ia.po                                           | 1410 +++++++
+ po/id.po                                           | 1586 ++++++++
+ po/ie.po                                           | 1408 +++++++
+ po/ig.po                                           | 1408 +++++++
+ po/is.po                                           | 1495 ++++++++
+ po/it.po                                           | 1626 ++++++++
+ po/ja.po                                           | 1482 ++++++++
+ po/jv.po                                           | 1436 ++++++++
+ po/ka.po                                           | 1432 +++++++
+ po/kab.po                                          | 1411 +++++++
+ po/kk.po                                           | 1443 ++++++++
+ po/kn.po                                           | 1570 ++++++++
+ po/ko.po                                           | 1467 ++++++++
+ po/ku.po                                           | 1431 +++++++
+ po/ku_IQ.po                                        | 1409 +++++++
+ po/ky.po                                           | 1410 +++++++
+ po/li.po                                           | 1408 +++++++
+ po/lo.po                                           | 1412 +++++++
+ po/lt.po                                           | 1564 ++++++++
+ po/lv.po                                           | 1464 ++++++++
+ po/mai.po                                          | 1430 +++++++
+ po/meson.build                                     |    1 +
+ po/mg.po                                           | 1433 ++++++++
+ po/mi.po                                           | 1387 +++++++
+ po/mk.po                                           | 1504 ++++++++
+ po/ml.po                                           | 1503 ++++++++
+ po/mn.po                                           | 1460 ++++++++
+ po/mr.po                                           | 1464 ++++++++
+ po/ms.po                                           | 1577 ++++++++
+ po/nb.po                                           | 1577 ++++++++
+ po/nds.po                                          | 1513 ++++++++
+ po/ne.po                                           | 1434 ++++++++
+ po/nl.po                                           | 1619 ++++++++
+ po/nn.po                                           | 1456 ++++++++
+ po/nso.po                                          | 1410 +++++++
+ po/oc.po                                           | 1499 ++++++++
+ po/or.po                                           | 1470 ++++++++
+ po/pa.po                                           | 1457 ++++++++
+ po/pl.po                                           | 1601 ++++++++
+ po/ps.po                                           | 1410 +++++++
+ po/pt.po                                           | 1600 ++++++++
+ po/pt_BR.po                                        | 1628 ++++++++
+ po/ro.po                                           | 1552 ++++++++
+ po/ru.po                                           | 1617 ++++++++
+ po/sc.po                                           | 1487 ++++++++
+ po/si.po                                           | 1408 +++++++
+ po/sk.po                                           | 1560 ++++++++
+ po/sl.po                                           | 1558 ++++++++
+ po/sq.po                                           | 1492 ++++++++
+ po/sr.po                                           | 1576 ++++++++
+ po/sr@latin.po                                     | 1538 ++++++++
+ po/sv.po                                           | 1569 ++++++++
+ po/ta.po                                           | 1465 ++++++++
+ po/te.po                                           | 1461 ++++++++
+ po/th.po                                           | 1451 ++++++++
+ po/tk.po                                           | 1408 +++++++
+ po/tr.po                                           | 1582 ++++++++
+ po/tt.po                                           | 1408 +++++++
+ po/ug.po                                           | 1417 +++++++
+ po/uk.po                                           | 1587 ++++++++
+ po/ur.po                                           | 1422 +++++++
+ po/uz.po                                           | 1422 +++++++
+ po/vi.po                                           | 1464 ++++++++
+ po/wa.po                                           | 1412 +++++++
+ po/xh.po                                           | 1433 ++++++++
+ po/yi.po                                           | 1410 +++++++
+ po/yo.po                                           | 1408 +++++++
+ po/zh_CN.po                                        | 1465 ++++++++
+ po/zh_HK.po                                        | 1420 +++++++
+ po/zh_TW.po                                        | 1448 ++++++++
+ po/zu.po                                           | 1410 +++++++
+ schemas/Makefile.am                                |   28 +
+ schemas/meson.build                                |   40 +
+ .../org.mate.accessibility-keyboard.gschema.xml    |  118 +
+ schemas/org.mate.accessibility-startup.gschema.xml |    9 +
+ .../org.mate.applications-at-mobility.gschema.xml  |   14 +
+ .../org.mate.applications-at-visual.gschema.xml    |   14 +
+ schemas/org.mate.applications-browser.gschema.xml  |   19 +
+ .../org.mate.applications-calculator.gschema.xml   |    9 +
+ .../org.mate.applications-messenger.gschema.xml    |    9 +
+ schemas/org.mate.applications-office.gschema.xml   |   30 +
+ schemas/org.mate.applications-terminal.gschema.xml |   14 +
+ schemas/org.mate.background.gschema.xml.in         |   62 +
+ schemas/org.mate.debug.gschema.xml                 |   19 +
+ schemas/org.mate.file-views.gschema.xml            |    9 +
+ schemas/org.mate.interface.gschema.xml             |  192 +
+ schemas/org.mate.lockdown.gschema.xml              |   49 +
+ schemas/org.mate.sound.gschema.xml                 |   46 +
+ schemas/org.mate.thumbnail-cache.gschema.xml       |   13 +
+ schemas/org.mate.thumbnailers.gschema.xml          |   14 +
+ schemas/org.mate.typing-break.gschema.xml          |   24 +
+ tools/Makefile.am                                  |   29 +
+ tools/mate-color-select.c                          |   90 +
+ tools/mate-color-select.desktop.in                 |   14 +
+ tools/meson.build                                  |   18 +
+ utils/post_install.py                              |   21 +
+ 248 files changed, 213350 insertions(+)

@@ -1,0 +1,5 @@
+name=libltdl
+version=2.4.7
+arch=x86_64
+desc="GNU libtool dynamic module loader"
+deps=

@@ -1,0 +1,1206 @@
+commit 59275bd6d149c0c186346fea7ef83d6de61281c4
+Author: raveit65 <mate@raveit.de>
+Date:   Fri Feb 16 22:05:23 2024 +0100
+
+    release 1.28.1
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ meson.build  | 2 +-
+ 3 files changed, 6 insertions(+), 2 deletions(-)
+
+commit 7c3a54e7ce0fb523ff4b6ec38969f8049e473d1f
+Author: Bobby Rong <rjl931189261@126.com>
+Date:   Fri Feb 16 23:11:23 2024 +0800
+
+    themes/eOS/meson.build: Install missing PNGs
+    
+    Follow-up of 4a2a5dc092814bfe ("eOS theme: Add single button backgrounds")
+    
+    Without this fix these PNGs are installed when using autotools but not using meson.
+
+ src/themes/eOS/meson.build | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit b21f748440662aef8e7e54d27fd618d2274f1024
+Author: raveit65 <mate@raveit.de>
+Date:   Wed Feb 14 15:52:02 2024 +0100
+
+    release 1.28.0
+
+ NEWS         | 5 +++++
+ configure.ac | 4 ++--
+ meson.build  | 2 +-
+ 3 files changed, 8 insertions(+), 3 deletions(-)
+
+commit 35d3dc5c3b477ca134a9314bacd3725b0546898e
+Author: raveit65 <mate@raveit.de>
+Date:   Wed Feb 14 15:46:25 2024 +0100
+
+    tx: sync with transifex
+
+ po/ja.po | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+commit c6fb9cc87bec7dd7abcacc3fd1df080eda1fb6c1
+Author: Lars R. Damerow <lars@pixar.com>
+Date:   Thu Feb 8 18:00:03 2024 -0800
+
+    workspace: ignore not_this_one if not in current workspace
+    
+    When the active workspace is changed, marco figures out which window
+    should get focus by calling `focus_ancestor_or_top_window`. In some
+    cases that call might include a window that should not get focus as
+    `not_this_one`.
+    
+    When `not_this_one` refers to a window, the function will check to see
+    if it has a parent, and if it does, it will ignore the new workspace's
+    `mru_list` and will focus that parent window. However, it doesn't check
+    to see if the parent window is actually on the new workspace. If the
+    parent isn't on the new workspace, focusing it will drag it over,
+    including the transient window that was supposed to be ignored. This
+    isn't the result a user would likely expect, and is made more confusing
+    by the parent window being minimized, stuck that way until the user
+    switches to another workspace and back.
+    
+    This change makes `focus_ancestor_or_top_window` ignore the
+    `not_this_one` window if it isn't on the new workspace's `mru_list`.
+    Instead it will just search the new workspace's `mru_list` for a window
+    to focus.
+
+ src/core/workspace.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit 84be1dc64ffed125541d8ef845b0b58f5cd9bdb6
+Author: raveit65 <mate@raveit.de>
+Date:   Fri Feb 2 23:30:49 2024 +0100
+
+    releases 1.27.1
+
+ NEWS         | 20 +++++++++++++++++++-
+ configure.ac |  2 +-
+ meson.build  |  2 +-
+ 3 files changed, 21 insertions(+), 3 deletions(-)
+
+commit 78fa5f0e90a0e5090b0f2ef026f1156af6962347
+Author: raveit65 <mate@raveit.de>
+Date:   Fri Feb 2 23:24:34 2024 +0100
+
+    tx: sync with transifex
+
+ po/af.po          |  480 ++++++++---------
+ po/am.po          |  480 ++++++++---------
+ po/ar.po          |  480 ++++++++---------
+ po/as.po          |  480 ++++++++---------
+ po/ast.po         |  480 ++++++++---------
+ po/az.po          |  480 ++++++++---------
+ po/be.po          |  480 ++++++++---------
+ po/bg.po          |  480 ++++++++---------
+ po/bn.po          |  480 ++++++++---------
+ po/bn_IN.po       |  480 ++++++++---------
+ po/br.po          |  480 ++++++++---------
+ po/bs.po          |  480 ++++++++---------
+ po/ca.po          |  482 ++++++++---------
+ po/ca@valencia.po |  480 ++++++++---------
+ po/cmn.po         |  480 ++++++++---------
+ po/crh.po         |  480 ++++++++---------
+ po/cs.po          |  482 ++++++++---------
+ po/cy.po          |  480 ++++++++---------
+ po/da.po          |  488 +++++++++---------
+ po/de.po          |  480 ++++++++---------
+ po/dz.po          |  480 ++++++++---------
+ po/el.po          |  480 ++++++++---------
+ po/en_AU.po       |  480 ++++++++---------
+ po/en_CA.po       |  480 ++++++++---------
+ po/en_GB.po       |  488 +++++++++---------
+ po/eo.po          |  480 ++++++++---------
+ po/es.po          |  485 ++++++++---------
+ po/es_AR.po       |  480 ++++++++---------
+ po/es_CO.po       |  480 ++++++++---------
+ po/et.po          |  480 ++++++++---------
+ po/eu.po          |  489 +++++++++---------
+ po/fa.po          |  480 ++++++++---------
+ po/fi.po          |  480 ++++++++---------
+ po/fr.po          |  480 ++++++++---------
+ po/ga.po          |  480 ++++++++---------
+ po/gl.po          |  480 ++++++++---------
+ po/gu.po          |  480 ++++++++---------
+ po/ha.po          |  480 ++++++++---------
+ po/he.po          |  482 ++++++++---------
+ po/hi.po          |  480 ++++++++---------
+ po/hr.po          |  480 ++++++++---------
+ po/hu.po          |  480 ++++++++---------
+ po/hy.po          |  480 ++++++++---------
+ po/id.po          |  488 +++++++++---------
+ po/ie.po          |  480 ++++++++---------
+ po/ig.po          |  480 ++++++++---------
+ po/is.po          |  480 ++++++++---------
+ po/it.po          |  490 +++++++++---------
+ po/ja.po          |  504 +++++++++---------
+ po/ka.po          |  485 ++++++++---------
+ po/kk.po          |  480 ++++++++---------
+ po/kn.po          |  480 ++++++++---------
+ po/ko.po          |  482 ++++++++---------
+ po/ku.po          |  480 ++++++++---------
+ po/ku_IQ.po       |  480 ++++++++---------
+ po/ky.po          |  480 ++++++++---------
+ po/la.po          |  480 ++++++++---------
+ po/li.po          |  480 ++++++++---------
+ po/lt.po          |  480 ++++++++---------
+ po/lv.po          |  480 ++++++++---------
+ po/mai.po         |  480 ++++++++---------
+ po/mg.po          |  480 ++++++++---------
+ po/mk.po          |  480 ++++++++---------
+ po/ml.po          |  480 ++++++++---------
+ po/mn.po          |  480 ++++++++---------
+ po/mr.po          |  480 ++++++++---------
+ po/ms.po          |  480 ++++++++---------
+ po/nb.po          |  486 +++++++++---------
+ po/nds.po         |  488 +++++++++---------
+ po/ne.po          |  480 ++++++++---------
+ po/nl.po          |  489 +++++++++---------
+ po/nn.po          |  480 ++++++++---------
+ po/oc.po          |  490 +++++++++---------
+ po/or.po          |  480 ++++++++---------
+ po/pa.po          |  480 ++++++++---------
+ po/pl.po          |  488 +++++++++---------
+ po/ps.po          |  480 ++++++++---------
+ po/pt.po          |  480 ++++++++---------
+ po/pt_BR.po       |  485 ++++++++---------
+ po/ro.po          |  480 ++++++++---------
+ po/ru.po          |  487 +++++++++---------
+ po/rw.po          |  480 ++++++++---------
+ po/si.po          |  480 ++++++++---------
+ po/sk.po          |  480 ++++++++---------
+ po/sl.po          |  480 ++++++++---------
+ po/sq.po          |  480 ++++++++---------
+ po/sr.po          |  488 +++++++++---------
+ po/sr@latin.po    |  480 ++++++++---------
+ po/sv.po          |  480 ++++++++---------
+ po/ta.po          |  480 ++++++++---------
+ po/te.po          |  480 ++++++++---------
+ po/th.po          |  480 ++++++++---------
+ po/tk.po          |  480 ++++++++---------
+ po/tr.po          | 1486 ++++++++++++++++++++++++++++-------------------------
+ po/ug.po          |  480 ++++++++---------
+ po/uk.po          |  480 ++++++++---------
+ po/ur.po          |  480 ++++++++---------
+ po/uz.po          |  480 ++++++++---------
+ po/vi.po          |  480 ++++++++---------
+ po/wa.po          |  480 ++++++++---------
+ po/xh.po          |  480 ++++++++---------
+ po/yo.po          |  480 ++++++++---------
+ po/zh_CN.po       |  484 ++++++++---------
+ po/zh_HK.po       |  480 ++++++++---------
+ po/zh_TW.po       |  484 ++++++++---------
+ 105 files changed, 26356 insertions(+), 25204 deletions(-)
+
+commit 02595645c59ac7552d25d47341992c49c606f83b
+Author: raveit65 <mate@raveit.de>
+Date:   Tue Jan 23 12:18:51 2024 +0100
+
+    ci: use ubuntu jammy as docker
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b87bed36282d767885da5450da26ddd92f6112fe
+Author: Colomban Wendling <cwendling@hypra.fr>
+Date:   Wed Oct 4 10:42:54 2023 +0200
+
+    tabpopup: Use more contrasting background when not composited
+    
+    When composited, the tab popup uses an OSD style which typically has a
+    dark background, so we use a light background highlight color.
+    However, when not composited the popup uses a light color and should
+    thus use a dark highlight.  This was done for the workspace popup, but
+    not for the window one, leading to the highlight being hardly visible
+    in several themes.
+
+ src/ui/tabpopup.c | 21 ++++++++++++++++-----
+ 1 file changed, 16 insertions(+), 5 deletions(-)
+
+commit 22df555ebe785c023471e6de3da7e037fc7f3b94
+Author: ns <0n-s@users.noreply.github.com>
+Date:   Tue Oct 10 16:10:48 2023 +0000
+
+    Allow applications to raise windows when raise_on_click is off.
+    
+    This is Metacity commit 50358a95 ("Allow applications to raise windows
+    when raise_on_click is off. Closes #445447.") applied to Marco without
+    modification.
+    
+    It also includes a change to the GSettings key's description to remove
+    the now obsolete warning on the raise-on-click key, & replaces it with
+    an actually useful description. This is copied from the equivalent key
+    in gsettings-desktop-schemas.
+    
+    Fixes: https://github.com/mate-desktop/marco/issues/762
+
+ src/core/window.c              | 3 +--
+ src/org.mate.marco.gschema.xml | 2 +-
+ 2 files changed, 2 insertions(+), 3 deletions(-)
+
+commit ee84552160f9c22ad696969e837793f53c975d46
+Author: raveit65 <mate@raveit.de>
+Date:   Sun Oct 1 20:58:55 2023 +0200
+
+    replace deprecated gtk_image_menu_item
+
+ .build.yml    | 33 +++++++++++++++++++++++++++++++++
+ configure.ac  |  2 +-
+ meson.build   |  4 ++++
+ src/ui/menu.c |  6 ++++--
+ 4 files changed, 42 insertions(+), 3 deletions(-)
+
+commit 5867bb2694f7a7d7cb72e50be0a61239321e46d3
+Author: raveit65 <mate@raveit.de>
+Date:   Fri Sep 1 20:15:02 2023 +0200
+
+    tx: update resources
+
+ marco.pot | 478 ++++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 244 insertions(+), 234 deletions(-)
+
+commit 645c83a4755db32d68a4b0ec27fe9dddd9f92e07
+Author: Mihai Moldovan <ionic@ionic.de>
+Date:   Fri Jul 28 20:27:28 2023 +0200
+
+    ui/tabpopup: likewise only enable compositing code if available.
+
+ src/core/screen.c      | 2 ++
+ src/include/tabpopup.h | 2 ++
+ src/ui/tabpopup.c      | 9 +++++++--
+ 3 files changed, 11 insertions(+), 2 deletions(-)
+
+commit dc4a2863dd402b052edce27e441503751619b024
+Author: Mihai Moldovan <ionic@ionic.de>
+Date:   Fri Jul 28 20:24:57 2023 +0200
+
+    ui/frames: check that compositing is not only requested, but also available.
+    
+    Enabling code that is supposed to be used in compositing conditions is
+    harmful if compositing is not actually available. Just checking the
+    preference is not enough to make sure that compositing is available -
+    the X server might be missing crucial extensions for compositing to
+    work, which in turn correctly disables the internal compositor.
+    
+    The end result is graphical issues like black borders around windows in
+    such situations.
+    
+    Make sure that compositing is both requested AND available to fix this
+    bug.
+
+ src/core/frame.c |  2 ++
+ src/include/ui.h | 12 +++++++-----
+ src/ui/frames.c  | 16 ++++++++++------
+ src/ui/frames.h  | 12 +++++++-----
+ src/ui/ui.c      | 13 +++++++------
+ 5 files changed, 33 insertions(+), 22 deletions(-)
+
+commit 32bfada2fbbd0f6db140557addab977e4447c598
+Author: Colomban Wendling <cwendling@hypra.fr>
+Date:   Tue Jul 18 13:04:54 2023 +0200
+
+    Fix losing title of windows with a 3 or 4 bytes first character
+    
+    Fixes #757.
+
+ src/core/window-props.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 2ee900546fd733374c99b4df3b9206655ab70ae0
+Author: Colomban Wendling <cwendling@hypra.fr>
+Date:   Tue Jan 31 12:08:27 2023 +0100
+
+    meson: Enable verbose mode support by default in line with Autoconf
+    
+    Verbose mode is not active by default when running Marco, but can be
+    toggled dynamically to help debug issues, possibly as they happen.
+    
+    This should only be disabled for very performance-sensitive or
+    size-sensitive builds, but not for the regular case where it can be
+    very useful to debug a user issue.
+
+ meson_options.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit a7a1ca6da3b56e063210c834c1da10e86f02d8c6
+Author: Colomban Wendling <cwendling@hypra.fr>
+Date:   Tue Jan 31 12:04:53 2023 +0100
+
+    Revert "build: by default disable also the verbose mode for autoconf"
+    
+    Verbose logging shouldn't require a rebuild, as it can help debugging
+    user problems.
+    
+    This reverts commit 397e31879bf79861a1a21ec4e2a75017e243d34b.
+
+ configure.ac | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit fb7950e0a03dc72afa2fed82bf96e0fcac53afde
+Author: rbuj <robert.buj@gmail.com>
+Date:   Mon Jul 25 15:18:54 2022 +0200
+
+    configure.ac: The macro 'AC_HELP_STRING' is obsolete
+
+ configure.ac | 18 +++++++++---------
+ 1 file changed, 9 insertions(+), 9 deletions(-)
+
+commit 319ee4ffaae7bec3289a1a65ce9774982564cd61
+Author: insaner <insaner@users.noreply.github.com>
+Date:   Wed Jan 25 21:35:07 2023 -0500
+
+    Show correct window title when owned by superuser. Issue #749
+
+ src/core/window-props.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d83cb24a27b1864be035868354a806287dbfaa92
+Author: sparkida <nick@sparkida.com>
+Date:   Sat Jan 15 23:14:19 2022 +0000
+
+    Add setting to raise windows on alt+tab popup
+
+ src/core/keybindings.c         | 19 ++++++++++++++++---
+ src/core/prefs.c               | 17 +++++++++++++++++
+ src/include/common.h           |  1 +
+ src/include/prefs.h            |  2 ++
+ src/org.mate.marco.gschema.xml |  5 +++++
+ 5 files changed, 41 insertions(+), 3 deletions(-)
+
+commit dcd5d21e4c53f1670b33cec78c96bdd3da87037d
+Author: Joakim Tjernlund <joakim.tjernlund@infinera.com>
+Date:   Thu Dec 29 14:51:57 2022 +0100
+
+    Test if XResQueryClientIds() is available before using it.
+    
+    Needed for X2Go as it does not have XRES 1.2 extension.
+
+ src/core/window-props.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 81ca7129c159bdae1d9ae9a0cd4e196a8354e7ce
+Author: Joakim Tjernlund <joakim.tjernlund@infinera.com>
+Date:   Mon Dec 19 16:59:06 2022 +0100
+
+    Test Xres 1.2 is present
+    
+    Before using any Xres extension one must call XResQueryExtension()
+    Also make sure Xres 1.2 is available as marco need XResQueryClientIds()
+
+ src/core/display-private.h |  1 +
+ src/core/display.c         | 14 ++++++++++++--
+ 2 files changed, 13 insertions(+), 2 deletions(-)
+
+commit 0f7a8c6d19874336040a11cf62a7ecb3c1dd9849
+Author: Joakim Tjernlund <joakim.tjernlund@infinera.com>
+Date:   Mon Dec 19 16:58:10 2022 +0100
+
+    test return value from XResQueryClientIds()
+
+ src/core/window-props.c | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+commit 14ca155db113b4c359a270460585ba03c0ccc5c5
+Author: mbkma <johannes.unruh@fau.de>
+Date:   Fri Nov 11 20:37:53 2022 +0100
+
+    release 1.27.0
+
+ NEWS         | 28 ++++++++++++++++++++++++++++
+ configure.ac |  2 +-
+ meson.build  |  2 +-
+ 3 files changed, 30 insertions(+), 2 deletions(-)
+
+commit ec34b925b4a3fa3659a7b595d8fd0ca627aa762a
+Author: mbkma <johannes.unruh@fau.de>
+Date:   Wed Nov 9 22:22:16 2022 +0100
+
+    tx: sync with transifex
+
+ po/af.po          |   96 ++--
+ po/am.po          |   96 ++--
+ po/ar.po          |   96 ++--
+ po/as.po          |  101 ++--
+ po/ast.po         |   96 ++--
+ po/az.po          |   96 ++--
+ po/be.po          |   96 ++--
+ po/bg.po          |   96 ++--
+ po/bn.po          |   96 ++--
+ po/bn_IN.po       |  101 ++--
+ po/br.po          |   96 ++--
+ po/bs.po          |   96 ++--
+ po/ca.po          |   96 ++--
+ po/ca@valencia.po |   96 ++--
+ po/cmn.po         |   96 ++--
+ po/crh.po         |   96 ++--
+ po/cs.po          |  102 ++--
+ po/cy.po          |   96 ++--
+ po/da.po          |  102 ++--
+ po/de.po          |   96 ++--
+ po/dz.po          |   96 ++--
+ po/el.po          |   98 ++--
+ po/en_AU.po       |   96 ++--
+ po/en_CA.po       |   96 ++--
+ po/en_GB.po       |  158 +++---
+ po/eo.po          |   96 ++--
+ po/es.po          |  106 ++--
+ po/es_AR.po       |   98 ++--
+ po/es_CO.po       |   98 ++--
+ po/es_MX.po       | 1386 +++++++++++++++++++++++++++------------------------
+ po/es_PR.po       | 1386 +++++++++++++++++++++++++++------------------------
+ po/et.po          |   96 ++--
+ po/eu.po          |  105 ++--
+ po/fa.po          |   96 ++--
+ po/fi.po          |   96 ++--
+ po/fr.po          |  146 +++---
+ po/frp.po         | 1414 ++++++++++++++++++++++++++++++-----------------------
+ po/fur.po         | 1383 +++++++++++++++++++++++++++------------------------
+ po/ga.po          |   96 ++--
+ po/gl.po          |   96 ++--
+ po/gu.po          |   96 ++--
+ po/ha.po          |   96 ++--
+ po/he.po          |   96 ++--
+ po/hi.po          |   96 ++--
+ po/hr.po          |   96 ++--
+ po/hu.po          |   96 ++--
+ po/hy.po          |   96 ++--
+ po/id.po          |   96 ++--
+ po/ie.po          |   96 ++--
+ po/ig.po          |   96 ++--
+ po/is.po          |   96 ++--
+ po/it.po          |  836 +++++++++++++++----------------
+ po/ja.po          |  116 ++---
+ po/jv.po          | 1411 +++++++++++++++++++++++++++++-----------------------
+ po/ka.po          |   96 ++--
+ po/kk.po          |   96 ++--
+ po/kn.po          |  106 ++--
+ po/ko.po          |   98 ++--
+ po/ku.po          |   96 ++--
+ po/ku_IQ.po       |   96 ++--
+ po/ky.po          |   96 ++--
+ po/la.po          |   96 ++--
+ po/li.po          |   96 ++--
+ po/lt.po          |  104 ++--
+ po/lv.po          |   96 ++--
+ po/mai.po         |   96 ++--
+ po/mg.po          |   96 ++--
+ po/mk.po          |   96 ++--
+ po/ml.po          |   96 ++--
+ po/mn.po          |   96 ++--
+ po/mr.po          |   96 ++--
+ po/ms.po          |   96 ++--
+ po/nb.po          |  187 +++----
+ po/nds.po         |   96 ++--
+ po/ne.po          |   96 ++--
+ po/nl.po          |   96 ++--
+ po/nn.po          |   96 ++--
+ po/nso.po         | 1386 +++++++++++++++++++++++++++------------------------
+ po/oc.po          |  198 ++++----
+ po/or.po          |   98 ++--
+ po/pa.po          |   96 ++--
+ po/pl.po          |  104 ++--
+ po/ps.po          |   98 ++--
+ po/pt.po          |  114 ++---
+ po/pt_BR.po       |  143 ++++--
+ po/ro.po          |  103 ++--
+ po/ru.po          |  104 ++--
+ po/rw.po          |   96 ++--
+ po/si.po          |   96 ++--
+ po/sk.po          |   96 ++--
+ po/sl.po          |  160 +++---
+ po/sq.po          |   96 ++--
+ po/sr.po          |   96 ++--
+ po/sr@latin.po    |   96 ++--
+ po/sv.po          |   96 ++--
+ po/ta.po          |  100 ++--
+ po/te.po          |   96 ++--
+ po/th.po          |   96 ++--
+ po/tk.po          |   96 ++--
+ po/tr.po          | 1071 ++++++++++++++++++++--------------------
+ po/ug.po          |   96 ++--
+ po/uk.po          |  142 ++++--
+ po/ur.po          |   96 ++--
+ po/uz.po          |   96 ++--
+ po/vi.po          |   96 ++--
+ po/wa.po          |   96 ++--
+ po/xh.po          |   96 ++--
+ po/yo.po          |   96 ++--
+ po/zh_CN.po       |  453 ++++++++---------
+ po/zh_HK.po       |   96 ++--
+ po/zh_TW.po       |  116 +++--
+ po/zu.po          | 1383 +++++++++++++++++++++++++++------------------------
+ 112 files changed, 11952 insertions(+), 10567 deletions(-)
+
+commit 2540175e5a5b15e65aecaf94a29f208e6a3836c9
+Author: Jan Novotný <59669705+CuBeRJAN@users.noreply.github.com>
+Date:   Mon Nov 7 15:32:33 2022 +0100
+
+    replace _NET_WM_PID with XResGetClientPid (#741)
+    
+    window-props: use XResQueryClientIds to get pid
+    
+    _NET_WM_PID is unreliable! It can be faked or pid might be from
+    different namespace. Ignore _NET_WM_PID and use XResQueryClientIds
+    to get pid.
+    
+    https://gitlab.gnome.org/GNOME/metacity/-/commit/bcbe966511362a8eb8c8c64035ab160086c931f8
+
+ .build.yml              |  4 ++++
+ configure.ac            |  2 +-
+ meson.build             |  3 +++
+ src/core/window-props.c | 46 ++++++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 54 insertions(+), 1 deletion(-)
+
+commit db228e276fd4e7e7b33957d96cba73aaa4166a8d
+Author: Balazs Endresz <balazs.endresz@gmail.com>
+Date:   Tue Nov 1 18:15:22 2022 +0100
+
+    Always bring into foreground the previous window after closing one
+    
+    When opening and then closing certain applications
+    the focus was correctly regained by the previous window
+    but it wasn't brought into the foreground.
+    
+    To fix this we call meta_workspace_focus_default_window() for both NotifyDetailNone and NotifyPointerRoot.
+    
+    These two are always mentioned together in the X docs:
+    https://tronche.com/gui/x/xlib/events/input-focus/normal-and-grabbed.html
+    
+    Some programs will have NotifyDetailNone when closed, while others end up with NotifyPointerRoot.
+
+ src/core/display.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit af731228414c8413dd2666eb5e9e369544dd2886
+Author: mbkma <johannes.unruh@fau.de>
+Date:   Sat Oct 29 15:39:07 2022 +0200
+
+    tx: update resource
+
+ marco.pot | 100 ++++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 52 insertions(+), 48 deletions(-)
+
+commit 5fb335120b570dfb36bebb50ab0fd623d659dc7e
+Author: mbkma <johannes.unruh@fau.de>
+Date:   Fri Oct 28 21:55:15 2022 +0200
+
+    tx: migrate config file
+
+ .tx/config                    | 13 +++++++------
+ .tx/config_20221028214814.bak |  9 +++++++++
+ 2 files changed, 16 insertions(+), 6 deletions(-)
+
+commit 4bd4942da80bf73320993eb1dd3c9aedf8123b11
+Author: Alberts Muktupāvels <alberts.muktupavels@gmail.com>
+Date:   Mon Oct 3 02:44:54 2022 +0300
+
+    window: do not disable fullscreen for dialogs
+    
+    fixes https://github.com/mate-desktop/marco/issues/735
+
+ src/core/window.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit b0c94c09881af61634011a61c10b947e37de3030
+Author: rbuj <robert.buj@gmail.com>
+Date:   Sat Jul 30 12:14:36 2022 +0200
+
+    ui: avoid 'g_object_unref (NULL)'
+
+ src/ui/ui.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+commit b4a6c7c87674a36daba7bc158f884037fa5c3f7d
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+Date:   Mon Mar 28 08:07:49 2022 +0200
+
+    marco: Add cmdline option --no-keybindings for disabling all key bindings directly on WM startup.
+    
+     The marco WM is used in Arctica Greeter [1]. There recently
+     has a security issue been detected where people could open
+     applications via marco keybindings inside the greeter (display
+     manager) session.
+     .
+     A work-around could be evoking marco-message after marco startup
+     and disable all keybindings then. However, a more preferred fix
+     is provided by this patch: start-up marco with keybindings disabled
+     from the beginning.
+
+ doc/man/marco.1 |  3 +++
+ src/core/main.c | 11 +++++++++++
+ 2 files changed, 14 insertions(+)
+
+commit 0e517d0fe102296e4b44253c1673cb767b5f444c
+Author: rbuj <robert.buj@gmail.com>
+Date:   Tue Feb 1 11:07:36 2022 +0100
+
+    boxes: fix build warning -Wstring-conversion
+
+ src/core/boxes.c | 55 +++++++++++++++++++++++++++----------------------------
+ 1 file changed, 27 insertions(+), 28 deletions(-)
+
+commit 5e8097475ba237bc0bc71ad78a7cbdf2d71f7b87
+Author: rbuj <robert.buj@gmail.com>
+Date:   Sun Dec 12 11:39:14 2021 +0100
+
+    Fix some -Wfloat-conversion warnings
+
+ src/core/constraints.c       | 21 ++++++++++-----------
+ src/core/effects.c           |  8 ++++----
+ src/core/place.c             |  8 ++++----
+ src/core/screen.c            |  9 +++++----
+ src/core/window.c            | 14 +++++++-------
+ src/ui/draw-workspace.c      |  8 ++++----
+ src/ui/gradient.c            | 43 ++++++++++++++++++++++++-------------------
+ src/ui/theme.c               | 24 +++++++++++++-----------
+ src/wm-tester/test-gravity.c |  4 ++--
+ 9 files changed, 73 insertions(+), 66 deletions(-)
+
+commit 480cc60e3b3596a7fa8e196a08974b6086217bf0
+Author: rbuj <robert.buj@gmail.com>
+Date:   Tue Feb 1 10:00:24 2022 +0100
+
+    keybindings: fix build warning -Wbad-function-cast
+
+ src/core/keybindings.c | 18 +++++++-----------
+ 1 file changed, 7 insertions(+), 11 deletions(-)
+
+commit 936a0bdea9b651ad705552600779502dfec91127
+Author: rbuj <robert.buj@gmail.com>
+Date:   Fri Jan 28 21:07:41 2022 +0100
+
+    Remove TRUE, FALSE from if statement
+
+ src/compositor/compositor-xrender.c | 10 +++++-----
+ src/core/display.c                  |  2 +-
+ src/core/testboxes.c                | 16 ++++++++--------
+ src/core/window.c                   | 13 +++++--------
+ src/ui/theme.c                      |  9 +++------
+ 5 files changed, 22 insertions(+), 28 deletions(-)
+
+commit 4f73014773f194331b441c6879fe7d8744d9d9b8
+Author: raveit65 <mate@raveit.de>
+Date:   Sun Feb 13 18:20:30 2022 +0100
+
+    ci: drop -Wunused-parameter compiler cflag from debian build
+
+ .build.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 35ce261e7de613029461f1082b8c44c397316e37
+Author: rbuj <robert.buj@gmail.com>
+Date:   Sun Jan 16 10:48:32 2022 +0100
+
+    theme-viewer: use GTK_STYLE_PROPERTY_FONT
+
+ src/ui/theme-viewer.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+commit a21b7c9050b09167ef70d2dc5686d2dbdeef232e
+Author: rbuj <robert.buj@gmail.com>
+Date:   Sun Jan 16 10:26:02 2022 +0100
+
+    theme: fix memory leak
+
+ src/ui/theme.c | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 81375be326a1a2ca9198bdb119d5ba8bfabdaa1f
+Author: rbuj <robert.buj@gmail.com>
+Date:   Wed Dec 22 09:28:01 2021 +0100
+
+    Fix implicit conversion changes signedness: 'gboolean' to 'guint'
+
+ src/core/constraints.c     | 12 ++++++------
+ src/core/display-private.h |  5 +++--
+ src/core/display.c         | 10 +++++-----
+ src/core/edge-resistance.c |  4 ++--
+ src/core/window-props.c    | 14 +++++++-------
+ src/core/window.c          | 10 +++++-----
+ src/ui/theme-parser.c      |  4 ++--
+ 7 files changed, 30 insertions(+), 29 deletions(-)
+
+commit 89686c62f46565ae828112ae148f7f785fe5fcca
+Author: rbuj <robert.buj@gmail.com>
+Date:   Tue Dec 21 18:15:15 2021 +0100
+
+    compositor-xrender: remove unrequired g_free because of g_new0
+
+ src/compositor/compositor-xrender.c | 5 -----
+ 1 file changed, 5 deletions(-)
+
+commit 771b7ae6931dffc46288364ad1363a07225862e7
+Author: rbuj <robert.buj@gmail.com>
+Date:   Tue Dec 21 17:53:29 2021 +0100
+
+    compositor-xrender: fix memory leak
+
+ src/compositor/compositor-xrender.c | 52 +++++++++++++++++++++++--------------
+ 1 file changed, 33 insertions(+), 19 deletions(-)
+
+commit cb274b4b3fe7dad642fe27a58a1f4955bcb21e1d
+Author: rbuj <robert.buj@gmail.com>
+Date:   Wed Jan 26 23:01:48 2022 +0100
+
+    build: fix meson build
+
+ src/meson.build | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 4b437e916ec159f4083d864cf44532ddf1d8c01f
+Author: rbuj <robert.buj@gmail.com>
+Date:   Sat Oct 23 13:35:56 2021 +0200
+
+    prefs: fix memory leak
+
+ src/core/prefs.c | 48 +++++++++++++++++++++++++++---------------------
+ 1 file changed, 27 insertions(+), 21 deletions(-)
+
+commit f0ddbff61110789200bede05aef7931fee060944
+Author: rbuj <robert.buj@gmail.com>
+Date:   Sun Dec 12 09:38:08 2021 +0100
+
+    main: Add short name for version option
+
+ src/core/main.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f246ed277d447df829dd3e29a816db472c954f54
+Author: rbuj <robert.buj@gmail.com>
+Date:   Tue Oct 26 17:26:51 2021 +0200
+
+    Remove whitespaces before #define, #ifdef, and #endif
+
+ src/compositor/compositor.c | 4 ++--
+ src/core/testboxes.c        | 4 ++--
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+commit a905a4d11aa25be55bbe3b22d9c7b23b46a50e0c
+Author: raveit65 <mate@raveit.de>
+Date:   Tue Oct 26 12:07:51 2021 +0200
+
+    fix code-formatting issue of previous commit
+    
+    - drop white spaces
+
+ src/core/display.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e4c1352520fa7b3c05ba6f6c59f6203fb63de6fe
+Author: rcaridade145 <rcaridade145@gmail.com>
+Date:   Fri Oct 15 21:28:44 2021 +0100
+
+    Safeguard against calling gdk_x11_window_get_xid with a NULL GdkWindow
+
+ src/core/display.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+commit 8a922da08440a3f560ab047479f73a2f8ab90065
+Author: Tormod Volden <debian.tormod@gmail.com>
+Date:   Fri Oct 15 11:34:32 2021 +0200
+
+    README: Update gtk requirement and patch submission
+    
+    Also update HACKING
+    
+    Signed-off-by: Tormod Volden <debian.tormod@gmail.com>
+
+ HACKING   | 5 ++---
+ README    | 5 +++--
+ README.md | 5 +++--
+ 3 files changed, 8 insertions(+), 7 deletions(-)
+
+commit 845ef8291ed7b5af808192a91bdee10b67011864
+Author: raveit65 <mate@raveit.de>
+Date:   Wed Aug 4 09:11:34 2021 +0200
+
+    release 1.26.0
+
+ .build.yml                                       |  182 +
+ .github/FUNDING.yml                              |    9 +
+ .github/issue_template.md                        |   19 +
+ .travis.yml                                      |   75 +
+ .tx/config                                       |    9 +
+ AUTHORS                                          |    7 +
+ COPYING                                          |  340 +
+ ChangeLog                                        |    2 +
+ HACKING                                          |  288 +
+ Makefile.am                                      |   31 +
+ NEWS                                             |  425 +
+ README                                           |  447 ++
+ README.md                                        |  455 ++
+ autogen.sh                                       |   29 +
+ configure.ac                                     |  476 ++
+ doc/Makefile.am                                  |   11 +
+ doc/code-overview.txt                            |  185 +
+ doc/creating_themes/C/index.docbook              |  286 +
+ doc/creating_themes/Makefile.am                  |   23 +
+ doc/creating_themes/meson.build                  |    3 +
+ doc/dialogs.txt                                  |   32 +
+ doc/how-to-get-focus-right.txt                   |  253 +
+ doc/man/Makefile.am                              |    8 +
+ doc/man/marco-message.1                          |   43 +
+ doc/man/marco-theme-viewer.1                     |   53 +
+ doc/man/marco-window-demo.1                      |   28 +
+ doc/man/marco.1                                  |   68 +
+ doc/man/meson.build                              |    6 +
+ doc/marco-theme.dtd                              |  273 +
+ doc/meson.build                                  |    2 +
+ doc/theme-format.txt                             |  402 +
+ git.mk                                           |  400 +
+ its/marco-keybindings.its                        |   15 +
+ its/marco-keybindings.loc                        |    6 +
+ makepot                                          |    7 +
+ marco.pot                                        | 2338 ++++++
+ meson.build                                      |  336 +
+ meson_options.txt                                |   31 +
+ meson_post_install.py                            |   22 +
+ po/ChangeLog                                     | 4964 ++++++++++++
+ po/LINGUAS                                       |  114 +
+ po/Makevars                                      |   79 +
+ po/POTFILES.in                                   |   29 +
+ po/POTFILES.skip                                 |    0
+ po/af.po                                         | 2327 ++++++
+ po/am.po                                         | 2338 ++++++
+ po/ar.po                                         | 2446 ++++++
+ po/as.po                                         | 2498 ++++++
+ po/ast.po                                        | 2532 ++++++
+ po/az.po                                         | 2403 ++++++
+ po/be.po                                         | 2465 ++++++
+ po/bg.po                                         | 2607 +++++++
+ po/bn.po                                         | 2503 ++++++
+ po/bn_IN.po                                      | 2560 ++++++
+ po/br.po                                         | 2362 ++++++
+ po/bs.po                                         | 2420 ++++++
+ po/ca.po                                         | 2647 +++++++
+ po/ca@valencia.po                                | 2627 +++++++
+ po/cmn.po                                        | 2346 ++++++
+ po/crh.po                                        | 2510 ++++++
+ po/cs.po                                         | 2600 +++++++
+ po/cy.po                                         | 2477 ++++++
+ po/da.po                                         | 2596 +++++++
+ po/de.po                                         | 2604 +++++++
+ po/dz.po                                         | 2529 ++++++
+ po/el.po                                         | 2624 +++++++
+ po/en_AU.po                                      | 2523 ++++++
+ po/en_CA.po                                      | 2447 ++++++
+ po/en_GB.po                                      | 2534 ++++++
+ po/eo.po                                         | 2341 ++++++
+ po/es.po                                         | 2681 +++++++
+ po/es_AR.po                                      | 2327 ++++++
+ po/es_CO.po                                      | 2329 ++++++
+ po/es_MX.po                                      | 2240 ++++++
+ po/es_PR.po                                      | 2241 ++++++
+ po/et.po                                         | 2487 ++++++
+ po/eu.po                                         | 2529 ++++++
+ po/fa.po                                         | 2406 ++++++
+ po/fi.po                                         | 2502 ++++++
+ po/fr.po                                         | 2721 +++++++
+ po/frp.po                                        | 2179 ++++++
+ po/fur.po                                        | 2248 ++++++
+ po/ga.po                                         | 2330 ++++++
+ po/gl.po                                         | 2656 +++++++
+ po/gnome-copyrights.txt                          | 1133 +++
+ po/gu.po                                         | 2481 ++++++
+ po/ha.po                                         | 2434 ++++++
+ po/he.po                                         | 2508 ++++++
+ po/hi.po                                         | 2492 ++++++
+ po/hr.po                                         | 2448 ++++++
+ po/hu.po                                         | 2595 +++++++
+ po/hy.po                                         | 2583 +++++++
+ po/id.po                                         | 2619 +++++++
+ po/ie.po                                         | 2351 ++++++
+ po/ig.po                                         | 2422 ++++++
+ po/is.po                                         | 2337 ++++++
+ po/it.po                                         | 2687 +++++++
+ po/ja.po                                         | 2470 ++++++
+ po/jv.po                                         | 2178 ++++++
+ po/ka.po                                         | 2325 ++++++
+ po/kk.po                                         | 2327 ++++++
+ po/kn.po                                         | 2566 ++++++
+ po/ko.po                                         | 2437 ++++++
+ po/ku.po                                         | 2345 ++++++
+ po/ku_IQ.po                                      | 2325 ++++++
+ po/ky.po                                         | 2327 ++++++
+ po/la.po                                         | 2326 ++++++
+ po/li.po                                         | 2325 ++++++
+ po/lt.po                                         | 2610 +++++++
+ po/lv.po                                         | 2490 ++++++
+ po/mai.po                                        | 2448 ++++++
+ po/meson.build                                   |    2 +
+ po/mg.po                                         | 2502 ++++++
+ po/mk.po                                         | 2460 ++++++
+ po/ml.po                                         | 2559 ++++++
+ po/mn.po                                         | 2429 ++++++
+ po/mr.po                                         | 2492 ++++++
+ po/ms.po                                         | 2608 +++++++
+ po/nb.po                                         | 2595 +++++++
+ po/nds.po                                        | 2327 ++++++
+ po/ne.po                                         | 2455 ++++++
+ po/nl.po                                         | 2659 +++++++
+ po/nn.po                                         | 2480 ++++++
+ po/nso.po                                        | 2248 ++++++
+ po/oc.po                                         | 2576 ++++++
+ po/or.po                                         | 2512 ++++++
+ po/pa.po                                         | 2470 ++++++
+ po/pl.po                                         | 2667 +++++++
+ po/ps.po                                         | 2325 ++++++
+ po/pt.po                                         | 2596 +++++++
+ po/pt_BR.po                                      | 2618 +++++++
+ po/ro.po                                         | 2538 ++++++
+ po/ru.po                                         | 2632 +++++++
+ po/rw.po                                         | 2325 ++++++
+ po/si.po                                         | 2326 ++++++
+ po/sk.po                                         | 2547 ++++++
+ po/sl.po                                         | 2506 ++++++
+ po/sq.po                                         | 2547 ++++++
+ po/sr.po                                         | 2577 ++++++
+ po/sr@latin.po                                   | 2494 ++++++
+ po/sv.po                                         | 2574 ++++++
+ po/ta.po                                         | 2495 ++++++
+ po/te.po                                         | 2507 ++++++
+ po/th.po                                         | 2486 ++++++
+ po/tk.po                                         | 2325 ++++++
+ po/tr.po                                         | 2561 ++++++
+ po/ug.po                                         | 2325 ++++++
+ po/uk.po                                         | 2578 ++++++
+ po/ur.po                                         | 2326 ++++++
+ po/uz.po                                         | 2326 ++++++
+ po/vi.po                                         | 2513 ++++++
+ po/wa.po                                         | 2330 ++++++
+ po/xh.po                                         | 2434 ++++++
+ po/yo.po                                         | 2462 ++++++
+ po/zh_CN.po                                      | 2397 ++++++
+ po/zh_HK.po                                      | 2377 ++++++
+ po/zh_TW.po                                      | 2395 ++++++
+ po/zu.po                                         | 2248 ++++++
+ src/50-marco-desktop-key.xml.in                  |   17 +
+ src/50-marco-global-key.xml.in                   |  134 +
+ src/50-marco-window-key.xml.in                   |  277 +
+ src/Makefile.am                                  |  202 +
+ src/compositor/compositor-private.h              |   62 +
+ src/compositor/compositor-xrender.c              | 3558 +++++++++
+ src/compositor/compositor-xrender.h              |   31 +
+ src/compositor/compositor.c                      |  183 +
+ src/core/async-getprop.c                         |  680 ++
+ src/core/async-getprop.h                         |   64 +
+ src/core/atomnames.h                             |  172 +
+ src/core/bell.c                                  |  437 ++
+ src/core/bell.h                                  |  113 +
+ src/core/boxes.c                                 | 1874 +++++
+ src/core/constraints.c                           | 1640 ++++
+ src/core/constraints.h                           |   48 +
+ src/core/core.c                                  |  840 ++
+ src/core/delete.c                                |  239 +
+ src/core/display-private.h                       |  525 ++
+ src/core/display.c                               | 5548 +++++++++++++
+ src/core/edge-resistance.c                       | 1281 +++
+ src/core/edge-resistance.h                       |   48 +
+ src/core/effects.c                               |  712 ++
+ src/core/effects.h                               |  170 +
+ src/core/errors.c                                |   52 +
+ src/core/eventqueue.c                            |  185 +
+ src/core/eventqueue.h                            |   40 +
+ src/core/frame-private.h                         |   79 +
+ src/core/frame.c                                 |  448 ++
+ src/core/group-private.h                         |   40 +
+ src/core/group-props.c                           |  232 +
+ src/core/group-props.h                           |   37 +
+ src/core/group.c                                 |  274 +
+ src/core/group.h                                 |   50 +
+ src/core/iconcache.c                             |  884 +++
+ src/core/iconcache.h                             |   82 +
+ src/core/keybindings.c                           | 3773 +++++++++
+ src/core/keybindings.h                           |   69 +
+ src/core/main.c                                  |  647 ++
+ src/core/marco-Xatomtype.h                       |  133 +
+ src/core/place.c                                 |  996 +++
+ src/core/place.h                                 |   37 +
+ src/core/prefs.c                                 | 2466 ++++++
+ src/core/schema-bindings.c                       |  195 +
+ src/core/screen-private.h                        |  236 +
+ src/core/screen.c                                | 2983 +++++++
+ src/core/session.c                               | 1820 +++++
+ src/core/session.h                               |   87 +
+ src/core/stack.c                                 | 1696 ++++
+ src/core/stack.h                                 |  402 +
+ src/core/testasyncgetprop.c                      |  496 ++
+ src/core/testboxes.c                             | 1428 ++++
+ src/core/util.c                                  |  719 ++
+ src/core/window-private.h                        |  709 ++
+ src/core/window-props.c                          | 1655 ++++
+ src/core/window-props.h                          |  128 +
+ src/core/window.c                                | 9038 ++++++++++++++++++++++
+ src/core/workspace.c                             | 1095 +++
+ src/core/workspace.h                             |  119 +
+ src/core/xprops.c                                | 1281 +++
+ src/include/all-keybindings.h                    |  306 +
+ src/include/boxes.h                              |  284 +
+ src/include/common.h                             |  356 +
+ src/include/compositor.h                         |   75 +
+ src/include/core.h                               |  211 +
+ src/include/display.h                            |   45 +
+ src/include/errors.h                             |   48 +
+ src/include/frame.h                              |   34 +
+ src/include/main.h                               |   43 +
+ src/include/prefs.h                              |  267 +
+ src/include/resizepopup.h                        |   47 +
+ src/include/screen.h                             |   49 +
+ src/include/tabpopup.h                           |   81 +
+ src/include/tile-preview.h                       |   38 +
+ src/include/types.h                              |   31 +
+ src/include/ui.h                                 |  190 +
+ src/include/util.h                               |  138 +
+ src/include/window.h                             |   53 +
+ src/include/xprops.h                             |  224 +
+ src/libmarco-private.pc.in                       |   12 +
+ src/marco-wm.desktop.in                          |   20 +
+ src/marco.desktop.in                             |   17 +
+ src/meson.build                                  |  243 +
+ src/org.mate.marco.gschema.xml                   |  995 +++
+ src/themes/Atlanta/meson.build                   |    4 +
+ src/themes/Atlanta/metacity-theme-1.xml          |  256 +
+ src/themes/ClearlooksRe/meson.build              |    4 +
+ src/themes/ClearlooksRe/metacity-theme-1.xml     | 1013 +++
+ src/themes/Dopple-Left/meson.build               |    4 +
+ src/themes/Dopple-Left/metacity-theme-1.xml      | 1135 +++
+ src/themes/Dopple/meson.build                    |    4 +
+ src/themes/Dopple/metacity-theme-1.xml           | 1135 +++
+ src/themes/DustBlue/button_close_normal.png      |  Bin 0 -> 1131 bytes
+ src/themes/DustBlue/button_close_prelight.png    |  Bin 0 -> 1322 bytes
+ src/themes/DustBlue/button_close_pressed.png     |  Bin 0 -> 1378 bytes
+ src/themes/DustBlue/button_max_normal.png        |  Bin 0 -> 375 bytes
+ src/themes/DustBlue/button_max_prelight.png      |  Bin 0 -> 1255 bytes
+ src/themes/DustBlue/button_max_pressed.png       |  Bin 0 -> 1320 bytes
+ src/themes/DustBlue/button_menu_normal.png       |  Bin 0 -> 548 bytes
+ src/themes/DustBlue/button_menu_prelight.png     |  Bin 0 -> 1332 bytes
+ src/themes/DustBlue/button_menu_pressed.png      |  Bin 0 -> 1356 bytes
+ src/themes/DustBlue/button_min_normal.png        |  Bin 0 -> 328 bytes
+ src/themes/DustBlue/button_min_prelight.png      |  Bin 0 -> 1342 bytes
+ src/themes/DustBlue/button_min_pressed.png       |  Bin 0 -> 1384 bytes
+ src/themes/DustBlue/menu.png                     |  Bin 0 -> 84 bytes
+ src/themes/DustBlue/meson.build                  |   17 +
+ src/themes/DustBlue/metacity-theme-1.xml         |  409 +
+ src/themes/Esco/meson.build                      |    4 +
+ src/themes/Esco/metacity-theme-1.xml             |  990 +++
+ src/themes/Gorilla/active-button.png             |  Bin 0 -> 844 bytes
+ src/themes/Gorilla/active-close-button.png       |  Bin 0 -> 896 bytes
+ src/themes/Gorilla/active-close-menu-icon.png    |  Bin 0 -> 258 bytes
+ src/themes/Gorilla/active-maximize-button.png    |  Bin 0 -> 886 bytes
+ src/themes/Gorilla/active-maximize-menu-icon.png |  Bin 0 -> 284 bytes
+ src/themes/Gorilla/active-menu-button.png        |  Bin 0 -> 873 bytes
+ src/themes/Gorilla/active-minimize-button.png    |  Bin 0 -> 914 bytes
+ src/themes/Gorilla/active-minimize-menu-icon.png |  Bin 0 -> 332 bytes
+ src/themes/Gorilla/inactive-close-button.png     |  Bin 0 -> 919 bytes
+ src/themes/Gorilla/inactive-maximize-button.png  |  Bin 0 -> 903 bytes
+ src/themes/Gorilla/inactive-menu-button.png      |  Bin 0 -> 900 bytes
+ src/themes/Gorilla/inactive-minimize-button.png  |  Bin 0 -> 927 bytes
+ src/themes/Gorilla/meson.build                   |   16 +
+ src/themes/Gorilla/metacity-theme-1.xml          |  260 +
+ src/themes/Makefile.am                           |   78 +
+ src/themes/Motif/meson.build                     |    4 +
+ src/themes/Motif/metacity-theme-1.xml            |  765 ++
+ src/themes/Raleigh/close_normal.png              |  Bin 0 -> 226 bytes
+ src/themes/Raleigh/close_normal_small.png        |  Bin 0 -> 193 bytes
+ src/themes/Raleigh/close_pressed.png             |  Bin 0 -> 225 bytes
+ src/themes/Raleigh/close_pressed_small.png       |  Bin 0 -> 193 bytes
+ src/themes/Raleigh/maximize_normal.png           |  Bin 0 -> 205 bytes
+ src/themes/Raleigh/maximize_pressed.png          |  Bin 0 -> 215 bytes
+ src/themes/Raleigh/meson.build                   |   14 +
+ src/themes/Raleigh/metacity-theme-1.xml          |  321 +
+ src/themes/Raleigh/minimize_normal.png           |  Bin 0 -> 194 bytes
+ src/themes/Raleigh/minimize_pressed.png          |  Bin 0 -> 198 bytes
+ src/themes/Raleigh/restore_normal.png            |  Bin 0 -> 217 bytes
+ src/themes/Raleigh/restore_pressed.png           |  Bin 0 -> 217 bytes
+ src/themes/Spidey-Left/meson.build               |    4 +
+ src/themes/Spidey-Left/metacity-theme-1.xml      | 1086 +++
+ src/themes/Spidey/meson.build                    |    4 +
+ src/themes/Spidey/metacity-theme-1.xml           | 1086 +++
+ src/themes/Splint-Left/meson.build               |    4 +
+ src/themes/Splint-Left/metacity-theme-1.xml      |  802 ++
+ src/themes/Splint/meson.build                    |    4 +
+ src/themes/Splint/metacity-theme-1.xml           |  802 ++
+ src/themes/WinMe/close_normal.png                |  Bin 0 -> 159 bytes
+ src/themes/WinMe/close_normal_small.png          |  Bin 0 -> 131 bytes
+ src/themes/WinMe/close_pressed.png               |  Bin 0 -> 163 bytes
+ src/themes/WinMe/close_pressed_small.png         |  Bin 0 -> 130 bytes
+ src/themes/WinMe/maximize_normal.png             |  Bin 0 -> 149 bytes
+ src/themes/WinMe/maximize_pressed.png            |  Bin 0 -> 158 bytes
+ src/themes/WinMe/meson.build                     |   14 +
+ src/themes/WinMe/metacity-theme-1.xml            |  375 +
+ src/themes/WinMe/minimize_normal.png             |  Bin 0 -> 142 bytes
+ src/themes/WinMe/minimize_pressed.png            |  Bin 0 -> 143 bytes
+ src/themes/WinMe/restore_normal.png              |  Bin 0 -> 166 bytes
+ src/themes/WinMe/restore_pressed.png             |  Bin 0 -> 168 bytes
+ src/themes/eOS/close.png                         |  Bin 0 -> 750 bytes
+ src/themes/eOS/close_unfocused.png               |  Bin 0 -> 522 bytes
+ src/themes/eOS/close_unfocused_over.png          |  Bin 0 -> 750 bytes
+ src/themes/eOS/maximize.png                      |  Bin 0 -> 552 bytes
+ src/themes/eOS/maximize_unfocused.png            |  Bin 0 -> 522 bytes
+ src/themes/eOS/maximize_unfocused_over.png       |  Bin 0 -> 552 bytes
+ src/themes/eOS/menu.png                          |  Bin 0 -> 522 bytes
+ src/themes/eOS/menu_prelight.png                 |  Bin 0 -> 522 bytes
+ src/themes/eOS/meson.build                       |   25 +
+ src/themes/eOS/metacity-theme-1.xml              |  537 ++
+ src/themes/eOS/metacity-theme-3.xml              |  599 ++
+ src/themes/eOS/minimize.png                      |  Bin 0 -> 531 bytes
+ src/themes/eOS/minimize_unfocused.png            |  Bin 0 -> 522 bytes
+ src/themes/eOS/minimize_unfocused_over.png       |  Bin 0 -> 531 bytes
+ src/themes/eOS/trough_left.png                   |  Bin 0 -> 311 bytes
+ src/themes/eOS/trough_left.xcf                   |  Bin 0 -> 1722 bytes
+ src/themes/eOS/trough_left_unfocused.png         |  Bin 0 -> 308 bytes
+ src/themes/eOS/trough_left_unfocused.xcf         |  Bin 0 -> 2024 bytes
+ src/themes/eOS/trough_middle.png                 |  Bin 0 -> 177 bytes
+ src/themes/eOS/trough_middle_unfocused.png       |  Bin 0 -> 177 bytes
+ src/themes/eOS/trough_right.png                  |  Bin 0 -> 310 bytes
+ src/themes/eOS/trough_right.xcf                  |  Bin 0 -> 1983 bytes
+ src/themes/eOS/trough_right_unfocused.png        |  Bin 0 -> 288 bytes
+ src/themes/eOS/trough_right_unfocused.xcf        |  Bin 0 -> 2008 bytes
+ src/themes/eOS/trough_single.png                 |  Bin 0 -> 372 bytes
+ src/themes/eOS/trough_single.xcf                 |  Bin 0 -> 1869 bytes
+ src/themes/eOS/trough_single_unfocused.png       |  Bin 0 -> 361 bytes
+ src/themes/eOS/trough_single_unfocused.xcf       |  Bin 0 -> 1899 bytes
+ src/themes/eOS/unmaximize.png                    |  Bin 0 -> 552 bytes
+ src/themes/eOS/unmaximize_unfocused.png          |  Bin 0 -> 522 bytes
+ src/themes/eOS/unmaximize_unfocused_over.png     |  Bin 0 -> 552 bytes
+ src/themes/meson.build                           |   15 +
+ src/tools/Makefile.am                            |   27 +
+ src/tools/marco-message.c                        |  183 +
+ src/tools/marco-window-demo.c                    | 1092 +++
+ src/tools/marco-window-demo.png                  |  Bin 0 -> 3453 bytes
+ src/tools/meson.build                            |   33 +
+ src/ui/draw-workspace.c                          |  248 +
+ src/ui/draw-workspace.h                          |   61 +
+ src/ui/fixedtip.c                                |  136 +
+ src/ui/fixedtip.h                                |   63 +
+ src/ui/frames.c                                  | 3013 ++++++++
+ src/ui/frames.h                                  |  171 +
+ src/ui/gradient.c                                |  885 +++
+ src/ui/gradient.h                                |   71 +
+ src/ui/menu.c                                    |  513 ++
+ src/ui/menu.h                                    |   48 +
+ src/ui/metaaccellabel.c                          |  461 ++
+ src/ui/metaaccellabel.h                          |  102 +
+ src/ui/preview-widget.c                          |  600 ++
+ src/ui/preview-widget.h                          |   84 +
+ src/ui/resizepopup.c                             |  229 +
+ src/ui/tabpopup.c                                | 1148 +++
+ src/ui/testgradient.c                            |  334 +
+ src/ui/theme-parser.c                            | 4435 +++++++++++
+ src/ui/theme-parser.h                            |   32 +
+ src/ui/theme-viewer.c                            | 1123 +++
+ src/ui/theme.c                                   | 7325 ++++++++++++++++++
+ src/ui/theme.h                                   | 1176 +++
+ src/ui/tile-preview.c                            |  247 +
+ src/ui/ui.c                                      | 1028 +++
+ src/wm-tester/Makefile.am                        |   32 +
+ src/wm-tester/focus-window.c                     |   37 +
+ src/wm-tester/main.c                             |  239 +
+ src/wm-tester/meson.build                        |   65 +
+ src/wm-tester/test-gravity.c                     |  308 +
+ src/wm-tester/test-resizing.c                    |  257 +
+ src/wm-tester/test-size-hints.c                  |  136 +
+ 384 files changed, 384878 insertions(+)

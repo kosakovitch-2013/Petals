@@ -1,0 +1,5 @@
+name=libXi
+version=1.8.2
+arch=x86_64
+desc="X11 Input extension library"
+deps=libx11 libxext libxfixes

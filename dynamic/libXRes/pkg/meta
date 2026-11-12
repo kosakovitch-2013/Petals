@@ -1,0 +1,5 @@
+name=libXRes
+version=1.2.2
+arch=x86_64
+desc="X-Resource extension library"
+deps=libx11

@@ -1,0 +1,5 @@
+name=libSM
+version=1.2.4
+arch=x86_64
+desc="X11 Session Management library"
+deps=libICE libx11

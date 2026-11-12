@@ -1,0 +1,513 @@
+commit 932f37e39de227c365607dbbd21169e92c043237
+Author: raveit65 <mate@raveit.de>
+Date:   Mon Feb 12 23:08:28 2024 +0100
+
+    release 1.28.0
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ meson.build  | 2 +-
+ 3 files changed, 6 insertions(+), 2 deletions(-)
+
+commit 099bfafa7f835c361b03fc9fc9907cabcd624480
+Author: raveit65 <mate@raveit.de>
+Date:   Tue Jan 23 17:13:13 2024 +0100
+
+    ci: use ubuntu jammy as docker
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f4302bb1479bd5c38274a2453273d33d1e494e5b
+Author: raveit65 <mate@raveit.de>
+Date:   Wed Aug 30 15:36:40 2023 +0200
+
+    release 1.27.1
+
+ NEWS         | 8 ++++++--
+ configure.ac | 2 +-
+ meson.build  | 2 +-
+ 3 files changed, 8 insertions(+), 4 deletions(-)
+
+commit d1f6f9ba2ca0209a817faaa1b86e8064fad3fe39
+Author: mouse <15132211195@163.com>
+Date:   Fri May 26 00:13:22 2023 +0800
+
+    Add meson compilation support (#36)
+
+ doc-build/meson.build | 24 ++++++++++++++++++++++++
+ doc/meson.build       |  9 +++++++++
+ macros/meson.build    | 16 ++++++++++++++++
+ meson.build           | 16 ++++++++++++++++
+ 4 files changed, 65 insertions(+)
+
+commit 14a52bc0ef62373c576421ae9bc59e77089d4dfa
+Author: raveit65 <mate@raveit.de>
+Date:   Tue Apr 4 09:38:32 2023 +0200
+
+    release 1.27.0
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit aa57109bc472ea9340020d819b26d511fb3e002c
+Author: raveit65 <mate@raveit.de>
+Date:   Tue Aug 3 02:06:31 2021 +0200
+
+    release 1.26
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit 3fa18729f0a8092c0e8517ad0c8e5ad5d1c52368
+Author: raveit65 <mate@raveit.de>
+Date:   Sun May 30 12:14:23 2021 +0200
+
+    travis-ci: use ubuntu focal as host system
+    
+    fixes build issues with fedora:latest (f34) tag.
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 5f2e2b7a306de589e92bddc4ab5df6020beb1068
+Author: raveit65 <mate@raveit.de>
+Date:   Sun Apr 25 11:31:47 2021 +0200
+
+    travis: disable travis builds for ubuntu
+    
+    Sadly, there is a limit for free builds at docker.com
+    See discussion
+    https://github.com/orgs/mate-desktop/teams/core-team/discussions/25
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 42679c774cdb2666bbc6602a380ae68e5f3f1c94
+Author: raveit65 <mate@raveit.de>
+Date:   Mon Feb 22 22:04:49 2021 +0100
+
+    tx: use rolling tag for ubuntu
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit ff46e255f41e618c43e2d32be6e337d09ef4d9aa
+Author: raveit65 <mate@raveit.de>
+Date:   Mon Feb 22 19:58:44 2021 +0100
+
+    tx: temporarily disable build for ArchLinux
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1122833a36fe0dda36b036b0d5cedc8ebbac6946
+Author: raveit65 <mate@raveit.de>
+Date:   Tue Dec 8 13:36:13 2020 +0100
+
+    update issue template
+
+ .github/issue_template.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b504cb62d52e932d9bc659dfbabd6cf263e8fd6e
+Author: raveit65 <mate@raveit.de>
+Date:   Tue Dec 8 13:25:11 2020 +0100
+
+    update issue template
+
+ .github/issue_template.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 17d7c48aa4f19e3e824ebb5d6d65b0e69dfbe3a4
+Author: Pablo Barciela <scow@riseup.net>
+Date:   Fri Aug 7 21:58:45 2020 +0200
+
+    mate-compiler-flags: add -Wno-unused-parameter to maximum c++ warnings
+
+ macros/mate-compiler-flags.m4 | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit bf34caf8f3bb6716acccc64fc25513dc4203aaff
+Author: Pablo Barciela <scow@riseup.net>
+Date:   Wed Apr 8 21:06:48 2020 +0200
+
+    mate-compiler-flags: disable '-Wno-unused' and '-Wno-sign-compare'
+
+ macros/mate-compiler-flags.m4 | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit c6b8d2378bb2d97a2f515d8b97b8527251b1288e
+Author: Pablo Barciela <scow@riseup.net>
+Date:   Thu Jul 2 17:16:37 2020 +0200
+
+    Travis CI: enable irc notifications with tagged commits
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 27c919ec63be2d4af5490972d961355966a36f44
+Author: Wu Xiaotian <yetist@gmail.com>
+Date:   Mon Jun 22 21:59:22 2020 +0000
+
+    [ci] fix release tarball on travis CI failed
+
+ .travis.yml | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 8002a5d49432a01b30a402e09591b7416662ce68
+Author: Pablo Barciela <scow@riseup.net>
+Date:   Sun Apr 19 20:05:16 2020 +0200
+
+    Travis CI: enable irc notifications with broken builds
+
+ .travis.yml | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+commit 36fb1b59ef79aafc810e1790cfc513cdf3633d0b
+Author: raveit65 <mate@raveit.de>
+Date:   Sun Apr 5 12:52:46 2020 +0200
+
+    ci: opt in to dpl pre-release with edge= True
+
+ .travis.yml | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 33cc3e9d6adb284445c4330f94538fa9d818ff4e
+Author: Wu Xiaotian <yetist@gmail.com>
+Date:   Fri Apr 3 00:47:56 2020 +0800
+
+    [ci]: change archlinux docker image name
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f12c562854a7f2cc71f6822386b9f96b85bcd07c
+Author: Wu Xiaotian <yetist@gmail.com>
+Date:   Fri Apr 3 00:47:16 2020 +0800
+
+    [ci] Avoid warning for build config validation
+
+ .travis.yml | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+commit 91db9cca2fe7f80eae459a2d652dd759e29a6a1b
+Author: Wu Xiaotian <yetist@gmail.com>
+Date:   Thu Apr 2 23:34:58 2020 +0800
+
+    [ci] fix build error with archlinux on Travis CI
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 9997bceed0da48087c460368047fb163f595b38f
+Author: raveit65 <mate@raveit.de>
+Date:   Thu Apr 2 12:25:05 2020 +0200
+
+    release 1.25.0
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit 2f5ddbbca624f5be80e5463a85616f18df26c643
+Author: raveit65 <mate@raveit.de>
+Date:   Tue Mar 31 17:03:05 2020 +0200
+
+    silent -Wunused-parameter for maximum warning level
+
+ macros/mate-compiler-flags.m4 | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f26640ed3b18e6b6423eb911a0396a030be3db74
+Author: Pablo Barciela <scow@riseup.net>
+Date:   Mon Mar 16 02:18:32 2020 +0100
+
+    Travis CI: use Ubuntu devel instead 19.10
+
+ .travis.yml | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+commit 42ea6aae0e8f93f8b4a1af13915d7f0c72e18a89
+Author: raveit65 <mate@raveit.de>
+Date:   Sat Feb 22 12:16:32 2020 +0100
+
+    travis: update config for new travis validation
+
+ .build.yml  | 55 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ .travis.yml | 60 +++---------------------------------------------------------
+ 2 files changed, 58 insertions(+), 57 deletions(-)
+
+commit 95f31a9e59af4d8a99c5662ac96f7c9dc6c6a4cf
+Author: raveit65 <mate@raveit.de>
+Date:   Fri Feb 7 15:55:15 2020 +0100
+
+    release 1.24.0
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit d9392e3b544905009dbb19283a4c853419ff250d
+Author: raveit65 <mate@raveit.de>
+Date:   Sat Nov 23 23:19:22 2019 +0100
+
+    travis ci: use fedora:latest
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 57951628f1a4fc34865fcd59e6340b733f606be9
+Author: Pablo Barciela <scow@riseup.net>
+Date:   Thu Oct 10 15:24:13 2019 +0200
+
+    Travis CI: use Debian "testing" instead "sid"
+
+ .travis.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 6d794e158da533458403446a179cd3a1c1de2f41
+Author: raveit65 <mate@raveit.de>
+Date:   Sat Oct 5 20:39:38 2019 +0200
+
+    travis(ci): enable notify_servers
+
+ .travis.yml | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit a369c982db549210a6b664db58f6af1fe1d8b558
+Author: raveit65 <mate@raveit.de>
+Date:   Mon Sep 30 18:51:30 2019 +0200
+
+    release 1.23.3
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit 357c8b673cc8e910470c96225391f874252c5be6
+Author: rbuj <robert.buj@gmail.com>
+Date:   Sat Sep 28 11:28:18 2019 +0200
+
+    update MATE_CXX_WARNINGS macro
+    - add more compiler flags
+    - remove this constraint: "Only use compiler warnings for gcc"
+    - remove the ansi flag (c++98 iso standard)
+    - Use autoconf archive macros (AX_)
+
+ macros/mate-compiler-flags.m4 | 108 ++++++++++++++++++++++--------------------
+ 1 file changed, 57 insertions(+), 51 deletions(-)
+
+commit aeaf55dd03ce5e1751bd2c1722ac76e8564364f7
+Author: raveit65 <mate@raveit.de>
+Date:   Sat Sep 28 09:54:00 2019 +0200
+
+    release 1.23.2
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit 95d8bca1eb7ac8c846d826afa3dfa5589b729287
+Author: rbuj <robert.buj@gmail.com>
+Date:   Fri Sep 27 17:16:50 2019 +0200
+
+    Set compiler debug flags in MATE_DEBUG_CHECK
+
+ macros/mate-common.m4 | 15 ++++++---------
+ 1 file changed, 6 insertions(+), 9 deletions(-)
+
+commit 3e9287e6c4f720de9ef9cc1789d19419e6311145
+Author: raveit65 <mate@raveit.de>
+Date:   Thu Sep 26 21:56:46 2019 +0200
+
+    release 1.23.1
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit 422eccd6634b4ce6d3b44ae1786c1b8b074142dc
+Author: rbuj <robert.buj@gmail.com>
+Date:   Thu Sep 26 21:05:41 2019 +0200
+
+    Check if AX_APPEND_FLAG and AX_CHECK_COMPILE_FLAG are available
+    
+    Print the error message "You need to install the autoconf-archive
+    package." if autoconf archive macros are not available on the
+    system.
+
+ macros/mate-compiler-flags.m4 | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+commit 9e9184b8264f68c19796ee991e5e393979e6d80e
+Author: raveit65 <mate@raveit.de>
+Date:   Thu Sep 26 15:13:12 2019 +0200
+
+    release 1.23.0
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit d404d8b45c48c912ce80d683d4406018779b52d3
+Author: raveit65 <mate@raveit.de>
+Date:   Sun Sep 15 12:01:43 2019 +0200
+
+    update mate-compiler-flags macro
+    
+    - add more compiler flags
+    - remove this constraint: "Only use compiler warnings for gcc"
+    - remove the ansi flag (c89 iso standard)
+    - Use autoconf archive macros (AX_)
+
+ macros/mate-compiler-flags.m4 | 71 +++++++++++++------------------------------
+ 1 file changed, 21 insertions(+), 50 deletions(-)
+
+commit e0dbf11e1b5793263bb36a92985dc8ca0e8688e1
+Author: Martin Wimpress <martin@mate-desktop.org>
+Date:   Fri May 31 13:49:02 2019 +0100
+
+    Create FUNDING.yml
+
+ .github/FUNDING.yml | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 8a7c22dee7d9878443446e9c00392d4b63b9ac65
+Author: raveit65 <mate@raveit.de>
+Date:   Mon May 20 17:52:53 2019 +0200
+
+    travis: use fedora 30 and ubuntu-19.10
+
+ .travis.yml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit d30af12f6cf7a1d3f65987c84bcc07a89c54444c
+Author: Wu Xiaotian <yetist@gmail.com>
+Date:   Mon Feb 18 16:38:06 2019 +0800
+
+    auto release when push tag to github
+
+ .travis.yml | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+
+commit b7c1fc69e285f0a6c6a9b496cb5a9cae7c79cf66
+Author: raveit65 <mate@raveit.de>
+Date:   Fri Mar 8 11:56:10 2019 +0100
+
+    travis: fix distcheck for fedora
+
+ .travis.yml | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit a264d823d0e7d1a9088c8c054e9018d6f0c28ccf
+Author: raveit65 <mate@raveit.de>
+Date:   Sat Feb 23 10:46:53 2019 +0100
+
+    release 1.22.0
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit a89eceeb07eae9d4e261b1b70146109b26239c09
+Author: Wu Xiaotian <yetist@gmail.com>
+Date:   Sat Feb 16 23:39:54 2019 +0800
+
+    initial travis ci
+
+ .travis.yml | 66 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 66 insertions(+)
+
+commit 712ee5909cd71deec6784fe376643616e9ddb80b
+Author: raveit65 <mate@raveit.de>
+Date:   Sat Feb 9 21:27:37 2019 +0100
+
+    release 1.21.0
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit 9ba6fa2b88c60fe3526d1149fb8b03bb8337afdc
+Author: raveit65 <mate@raveit.de>
+Date:   Fri Jan 26 14:45:56 2018 +0100
+
+    release 1.20
+
+ NEWS         | 4 ++++
+ configure.ac | 2 +-
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+
+commit 1c47565c246188959b3e6d258bf0915636bd885b
+Author: raveit65 <mate@raveit.de>
+Date:   Sat Oct 14 07:37:58 2017 +0200
+
+    release 1.19.0
+
+ NEWS | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit afe649c30f9fe953654c042235d50da0b4126a01
+Author: raveit65 <mate@raveit.de>
+Date:   Tue Jul 18 15:06:47 2017 +0200
+
+    update issue_template
+
+ .github/issue_template.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 7cbe5d247b02db07031ec16b04ba4565395a4752
+Author: raveit65 <mate@raveit.de>
+Date:   Thu Jun 8 18:54:44 2017 +0200
+
+    create issue_template.md
+
+ .github/issue_template.md | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+commit 07b32132b379d7a8db7e30a665e8bc335d939e26
+Author: raveit65 <mate@raveit.de>
+Date:   Thu Mar 30 17:11:51 2017 +0200
+
+    pre-bump version
+
+ NEWS         | 2 ++
+ configure.ac | 2 +-
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+
+commit a3b042ab8a340ef8e1a9741ccf7e26d5873e274a
+Author: raveit65 <mate@raveit.de>
+Date:   Sun Mar 12 12:11:08 2017 +0100
+
+    release 1.18
+
+ AUTHORS                       |   3 +
+ COPYING                       | 674 ++++++++++++++++++++++++++++++++++++++++++
+ ChangeLog                     |   2 +
+ Makefile.am                   |  17 ++
+ NEWS                          |  31 ++
+ README                        |  36 +++
+ autogen.sh                    |  18 ++
+ configure.ac                  |  24 ++
+ doc-build/Makefile.am         |  12 +
+ doc-build/README              |   9 +
+ doc-build/mate-doc-common.in  |  49 +++
+ doc-build/omf.make            |  65 ++++
+ doc-build/xmldocs.make        | 101 +++++++
+ doc/Makefile.am               |   6 +
+ doc/autogen.sh.example        |  19 ++
+ doc/mate-autogen.1            |  22 ++
+ doc/mate-autogen.txt          |  14 +
+ doc/mate-doc-common.1         |  41 +++
+ doc/mate-doc-common.txt       |  24 ++
+ doc/update-manpages.sh        |  23 ++
+ doc/usage.txt                 |  25 ++
+ macros/Makefile.am            |  13 +
+ macros/mate-autogen           | 442 +++++++++++++++++++++++++++
+ macros/mate-code-coverage.m4  | 165 +++++++++++
+ macros/mate-common.m4         |  64 ++++
+ macros/mate-compiler-flags.m4 | 158 ++++++++++
+ 26 files changed, 2057 insertions(+)

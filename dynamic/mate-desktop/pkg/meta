@@ -1,0 +1,5 @@
+name=mate-desktop
+version=1.28.2
+arch=x86_64
+desc="MATE desktop library"
+deps=gtk3 glib startup-notification libx11 libgtop
