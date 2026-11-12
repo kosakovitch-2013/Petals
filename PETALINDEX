@@ -101,3 +101,5 @@ garcon 4.18.2 dynamic/garcon-4.18.2-x86_64.petal
 exo 4.18.0 dynamic/exo-4.18.0-x86_64.petal
 libnotify 0.8.3 dynamic/libnotify-0.8.3-x86_64.petal
 xfwm4 4.18.0 dynamic/xfwm4-4.18.0-x86_64.petal
+startup-notification 0.12 dynamic/startup-notification-0.12-x86_64.petal
+libXpresent 1.0.2 dynamic/libXpresent-1.0.2-x86_64.petal

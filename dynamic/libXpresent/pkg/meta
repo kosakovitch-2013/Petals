@@ -1,0 +1,5 @@
+name=libXpresent
+version=1.0.2
+arch=x86_64
+desc="X Present Extension library"
+deps=libx11 libxext libxrandr

@@ -2,4 +2,4 @@ name=libthai
 version=0.1.29
 arch=x86_64
 desc="Thai language support library"
-deps=libdatrie libconv
+deps=libdatrie libiconv

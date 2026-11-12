@@ -1,0 +1,5 @@
+name=startup-notification
+version=0.12
+arch=x86_64
+desc="Library for tracking application startup"
+deps=libx11 libxcb
