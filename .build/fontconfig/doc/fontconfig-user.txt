@@ -6,9 +6,12 @@ Name
 
 Synopsis
 
-   /etc/fonts/fonts.conf
-   /etc/fonts/fonts.dtd
-   /etc/fonts/conf.d
+   /etc/fonts
+/fonts.conf
+   /etc/fonts
+/fonts.dtd
+   /etc/fonts
+/conf.d
    $XDG_CONFIG_HOME/fontconfig/conf.d
    $XDG_CONFIG_HOME/fontconfig/fonts.conf
    ~/.fonts.conf.d
@@ -73,15 +76,15 @@ fullname        String  Font full names (often includes style)
 fullnamelang    String  Languages corresponding to each fullname
 slant           Int     Italic, oblique or roman
 weight          Int     Light, medium, demibold, bold or black
-size            Double  Point size
 width           Int     Condensed, normal or expanded
+size            Double  Point size
 aspect          Double  Stretches glyphs horizontally before hinting
 pixelsize       Double  Pixel size
 spacing         Int     Proportional, dual-width, monospace or charcell
 foundry         String  Font foundry name
 antialias       Bool    Whether glyphs can be antialiased
-hinting         Bool    Whether the rasterizer should use hinting
 hintstyle       Int     Automatic hinting style
+hinting         Bool    Whether the rasterizer should use hinting
 verticallayout  Bool    Use vertical layout
 autohint        Bool    Use autohinter instead of normal hinter
 globaladvance   Bool    Use font global advance data (deprecated)
@@ -90,14 +93,12 @@ index           Int     The index of the font within the file
 ftface          FT_Face Use the specified FreeType face object
 rasterizer      String  Which rasterizer is in use (deprecated)
 outline         Bool    Whether the glyphs are outlines
-scalable        Bool    Whether glyphs can be scaled
-color           Bool    Whether any glyphs have color
-scale           Double  Scale factor for point->pixel conversions
-                        (deprecated)
+scalable        Bool    Whether the glyphs are outlines or have color
 dpi             Double  Target dots per inch
 rgba            Int     unknown, rgb, bgr, vrgb, vbgr,
                         none - subpixel geometry
-lcdfilter       Int     Type of LCD filter
+scale           Double  Scale factor for point->pixel conversions
+                        (deprecated)
 minspace        Bool    Eliminate leading from line spacing
 charset         CharSet Unicode chars encoded by the font
 lang            String  List of RFC-3066-style languages this
@@ -109,15 +110,28 @@ embolden        Bool    Rasterizer should synthetically embolden the fon
 t
 embeddedbitmap  Bool    Use the embedded bitmap instead of the outline
 decorative      Bool    Whether the style is a decorative variant
-fontfeatures    String  List of the feature tags in OpenType to be enabl
-ed
+lcdfilter       Int     Type of LCD filter
 namelang        String  Language name to be used for the default value o
 f
                         familylang, stylelang, and fullnamelang
+fontfeatures    String  List of the feature tags in OpenType to be enabl
+ed
 prgname         String  String  Name of the running program
 postscriptname  String  Font family name in PostScript
+color           Bool    Whether any glyphs have color
+symbol          Bool    Whether font uses MS symbol-font encoding
+fontvariations  String  comma-separated string of axes in variable font
+variable        Bool    Wheter font is Variable Font
 fonthashint     Bool    Whether the font has hinting
 order           Int     Order number of the font
+desktop         String  Current desktop name
+namedinstance   Bool    Whether font is a named instance
+fontwrapper     String  The font wrapper format, current values are WOFF
+, WOFF2,
+                        SFNT for any other SFNT font, and CFF for standa
+lone
+                        CFF fonts.
+genericfamily   Int     Type of Generic Family
 
 Font Matching
 
@@ -273,7 +287,7 @@ Configuration File Format
 
    The fontconfig document type definition resides in the external
    entity "fonts.dtd"; this is normally stored in the default font
-   configuration directory (/etc/fonts). Each configuration file
+   configuration directory (/etc/fonts ). Each configuration file
    should contain the following structure:
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
@@ -319,7 +333,7 @@ Configuration File Format
    ``$XDG_CACHE_HOME/fontconfig'' and it contains the cache files
    named ``<hash value>-<architecture>.cache-<version>'', where
    <version> is the fontconfig cache file version number
-   (currently 8).
+   (currently 11 ).
 
 <include ignore_missing="no" prefix="default">
 
@@ -387,22 +401,25 @@ Configuration File Format
 
 <selectfont>
 
-   This element is used to black/white list fonts from being
-   listed or matched against. It holds acceptfont and rejectfont
-   elements.
+   This element is used to deny/allow list fonts from being listed
+   or matched against. It holds acceptfont and rejectfont
+   elements. This list is applied only once when caches is loaded.
+   So if you want to filter out by some patterns, patterns is
+   evaluated with something in cache only. In other words, target
+   patterns except "scan" won't takes any effects.
 
 <acceptfont>
 
-   Fonts matched by an acceptfont element are "whitelisted"; such
+   Fonts matched by an acceptfont element are "allowlisted"; such
    fonts are explicitly included in the set of fonts used to
    resolve list and match requests; including them in this list
-   protects them from being "blacklisted" by a rejectfont element.
+   protects them from being "denylisted" by a rejectfont element.
    Acceptfont elements include glob and pattern elements which are
    used to match fonts.
 
 <rejectfont>
 
-   Fonts matched by an rejectfont element are "blacklisted"; such
+   Fonts matched by an rejectfont element are "denylisted"; such
    fonts are excluded from the set of fonts used to resolve list
    and match requests as if they didn't exist in the system.
    Rejectfont elements include glob and pattern elements which are
@@ -497,6 +514,8 @@ Mode                    With Match              Without Match
    fontconfig requires that the mantissa start with a digit, not a
    decimal point, so insert a leading zero for purely fractional
    values (e.g. use 0.5 instead of .5 and -0.5 instead of -.5).
+   also xsi:nil attribute is supported to indicate an empty
+   element.
 
 <matrix>
 
@@ -512,12 +531,14 @@ Mode                    With Match              Without Match
 <charset>
 
    This element holds at least one <int> element of an Unicode
-   code point or more.
+   code point or more. also xsi:nil attribute is supported to
+   indicate an empty element.
 
 <langset>
 
    This element holds at least one <string> element of a
-   RFC-3066-style languages or more.
+   RFC-3066-style languages or more. also xsi:nil attribute is
+   supported to indicate an empty element.
 
 <name>
 
@@ -533,8 +554,9 @@ Mode                    With Match              Without Match
 
 <const>
 
-   Holds the name of a constant; these are always integers and
-   serve as symbolic names for common font values:
+   Holds the name of a constant. also xsi:nil attribute is
+   supported to indicate an empty element; these are always
+   integers and serve as symbolic names for common font values:
 Constant        Property        Value
 -------------------------------------
 thin            weight          0
@@ -586,6 +608,19 @@ hintnone        hintstyle       0
 hintslight      hintstyle       1
 hintmedium      hintstyle       2
 hintfull        hintstyle       3
+serif           genericfamily   1
+sans-serif      genericfamily   2
+monospace       genericfamily   3
+cursive         genericfamily   4
+fantasy         genericfamily   5
+system-ui       genericfamily   6
+ui-serif        genericfamily   7
+ui-sans-serif   genericfamily   8
+ui-monospace    genericfamily   9
+ui-rounded      genericfamily   10
+emoji           genericfamily   11
+math            genericfamily   12
+fangsong        genericfamily   13
 
 <or>, <and>, <plus>, <minus>, <times>, <divide>
 
@@ -634,7 +669,8 @@ System configuration file
    This is an example of a system-wide configuration file
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
-<!-- /etc/fonts/fonts.conf file to configure system font access -->
+<!-- /etc/fonts
+/fonts.conf file to configure system font access -->
 <fontconfig>
   <!--
     Find fonts in these directories
@@ -707,7 +743,7 @@ System configuration file
       <family>Arial</family>
     </prefer>
     <default>
-      <family>sans</family>
+      <family>sans-serif</family>
     </default>
   </alias>
   <alias>
@@ -732,7 +768,7 @@ System configuration file
     </prefer>
   </alias>
   <alias>
-    <family>sans</family>
+    <family>sans-serif</family>
     <prefer>
       <family>Arial</family>
     </prefer>
@@ -915,4 +951,4 @@ See Also
 
 Version
 
-   Fontconfig version 2.15.0
+   Fontconfig version 2.18.0

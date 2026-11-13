@@ -1,8 +1,8 @@
-# 
+#
 #  test/Makefile.am
-# 
+#
 #  Copyright © 2003 Keith Packard
-# 
+#
 #  Permission to use, copy, modify, distribute, and sell this software and its
 #  documentation for any purpose is hereby granted without fee, provided that
 #  the above copyright notice appear in all copies and that both that
@@ -12,7 +12,7 @@
 #  specific, written prior permission.  The authors make no
 #  representations about the suitability of this software for any purpose.  It
 #  is provided "as is" without express or implied warranty.
-# 
+#
 #  THE AUTHOR(S) DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
 #  INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
 #  EVENT SHALL THE AUTHOR(S) BE LIABLE FOR ANY SPECIAL, INDIRECT OR
@@ -21,7 +21,6 @@
 #  TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
 #  PERFORMANCE OF THIS SOFTWARE.
 
-check_SCRIPTS=run-test.sh
 TEST_EXTENSIONS = \
 	.sh \
 	$(NULL)
@@ -38,7 +37,7 @@ SH_LOG_COMPILER = sh
 if OS_WIN32
 LOG_COMPILER = ${srcdir}/wrapper-script.sh
 endif
-TESTS=run-test.sh
+TESTS=
 
 TESTDATA =			\
 	4x6.pcf			\
@@ -46,7 +45,10 @@ TESTDATA =			\
 	fonts.conf.in		\
 	test-45-generic.json	\
 	test-60-generic.json	\
+	test-70-no-bitmaps-and-emoji.json	\
+	test-70-no-bitmaps-except-emoji.json	\
 	test-90-synthetic.json	\
+	test-filter.json	\
 	test-issue-286.json	\
 	test-style-match.json	\
 	$(NULL)
@@ -105,7 +107,6 @@ check_PROGRAMS += test-conf
 test_conf_CFLAGS = $(JSONC_CFLAGS)
 test_conf_LDADD = $(top_builddir)/src/libfontconfig.la $(JSONC_LIBS)
 endif
-TESTS += run-test-conf.sh
 
 check_PROGRAMS += test-bz106618
 test_bz106618_LDADD = $(top_builddir)/src/libfontconfig.la
@@ -174,7 +175,10 @@ check_PROGRAMS += test-family-matching
 test_family_matching_LDADD = $(top_builddir)/src/libfontconfig.la
 TESTS += test-family-matching
 
-EXTRA_DIST=run-test.sh run-test-conf.sh wrapper-script.sh $(TESTDATA) out.expected-long-family-names out.expected-no-long-family-names
+check_PROGRAMS += test-filter
+test_filter_LDADD = $(top_builddir)/src/libfontconfig.la
+
+EXTRA_DIST=wrapper-script.sh $(TESTDATA) out.expected-long-family-names out.expected-no-long-family-names
 
 CLEANFILES =		\
 	fonts.conf	\
