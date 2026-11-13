@@ -1,1 +1,0 @@
-glycin/sandbox: Pass XDG_RUNTIME_DIR env var to flatpak-spawn. This fixes flatpak-spawn not working.

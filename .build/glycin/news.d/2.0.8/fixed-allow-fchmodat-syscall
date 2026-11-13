@@ -1,1 +1,0 @@
-Allow fchmodat since it seems to be needed on aarch64/apple silicon at times.

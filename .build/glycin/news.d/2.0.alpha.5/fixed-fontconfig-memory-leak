@@ -1,1 +1,0 @@
-glycin: Fixed a memory leak in retriving fontconfigs cache dirs.

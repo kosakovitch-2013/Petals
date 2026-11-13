@@ -1,1 +1,0 @@
-tests: Update to test image which uses an explicit font name in SVG, not depending on the correct default font setting on the system for the test to pass.

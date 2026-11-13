@@ -1,1 +1,0 @@
-Apply rotation to the dimension in `Image` as well. They were correct in `Frame`s already.

@@ -1,1 +1,0 @@
-jpeg: Handle pure rotation or mirror operations correct for non-sparse output. Also, properly combine multiple operations of this type into a single Exif change.

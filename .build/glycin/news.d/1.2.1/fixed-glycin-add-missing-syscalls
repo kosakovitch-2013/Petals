@@ -1,1 +1,0 @@
-glycin: Allow additional syscalls needed for armv7 and on Alpine Linux in sandbox.

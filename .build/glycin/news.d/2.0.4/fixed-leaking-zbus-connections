@@ -1,1 +1,0 @@
-D-Bus connections were never completely closed, causing a memory and FD leak.

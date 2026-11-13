@@ -1,1 +1,0 @@
-Require zvariant 5.9.2 to fix SIGPIPE emissions #250
