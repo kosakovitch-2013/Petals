@@ -1,0 +1,71 @@
+[package]
+authors = ["Inflation <me@shimotsuki.ink>"]
+categories = ["api-bindings", "encoding", "multimedia::images"]
+description = "Safe Rust wrapper for JPEG XL reference implementation"
+edition = "2021"
+keywords = ["jpeg-xl", "jxl"]
+license = "GPL-3.0-or-later"
+name = "jpegxl-rs"
+readme = "README.md"
+repository = "https://github.com/inflation/jpegxl-rs"
+version = "0.11.2+libjxl-0.11.1"
+rust-version.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lints.rust]
+missing_docs = "warn"
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(coverage_nightly)'] }
+
+[lints.clippy]
+pedantic = "warn"
+
+[features]
+default = ["image"]
+image = ["dep:image"]
+vendored = ["jpegxl-sys/vendored"]
+docs = ["jpegxl-sys/docs"]
+bench = []
+
+[dependencies]
+derive_builder = "0.20.2"
+image = { version = "0.25.5", optional = true, default-features = false }
+thiserror = "2.0.3"
+half = "2.4.1"
+byteorder = "1.5.0"
+
+[dependencies.jpegxl-sys]
+version = "0.11.2"
+path = "../jpegxl-sys"
+default-features = false
+
+[dev-dependencies]
+image = { version = "0.25.5", default-features = false, features = [
+    "jpeg",
+    "png",
+] }
+lcms2 = "6.1.0"
+pretty_assertions = "1.4.1"
+testresult = "0.4.1"
+
+[target.'cfg(not(target_family = "wasm"))'.dev-dependencies]
+criterion = "0.5.1"
+
+
+[package.metadata.docs.rs]
+rustdoc-args = ["--cfg", "docsrs"]
+features = ["docs"]
+
+[lib]
+bench = false
+path = "src/lib.rs"
+
+[[bench]]
+harness = false
+name = "decode"
+required-features = ["bench"]
+
+[[bench]]
+harness = false
+name = "encode"
+required-features = ["bench"]

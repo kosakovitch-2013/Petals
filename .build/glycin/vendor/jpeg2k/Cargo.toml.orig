@@ -1,0 +1,48 @@
+[package]
+name = "jpeg2k"
+version = "0.10.1"
+authors = ["Robert G. Jakabosky <rjakabosky+neopallium@neoawareness.com>"]
+edition = "2021"
+license = "MIT/Apache-2.0"
+description = "JPEG 2000 image loader."
+keywords = ["j2k", "jp2", "jpeg2000", "image"]
+repository = "https://github.com/Neopallium/jpeg2k"
+homepage = "https://github.com/Neopallium/jpeg2k"
+
+exclude = [
+  "examples/*",
+  "samples/*",
+]
+
+[features]
+default = ["image", "threads", "file-io", "openjpeg-sys"]
+
+strict-mode = []
+
+# Enable file IO APIs.
+file-io = ["openjp2?/file-io"]
+
+threads = ["openjpeg-sys?/threads"]
+
+[dependencies]
+log = "0.4"
+
+thiserror = "1.0.30"
+anyhow = "1.0"
+
+image = { version = "0.25", default_features = false, features = ["jpeg", "png"], optional = true }
+
+openjpeg-sys = { version = ">=1.0.8", default-features = false, optional = true }
+openjp2 = { version = "0.6.1", default-features = false, features = ["std"], optional = true }
+
+serde = { version = "1.0", features = ["derive"], optional = true }
+
+[dev-dependencies]
+dotenv = "0.15"
+env_logger = "0.9"
+criterion = "0.3"
+rayon = "1.7"
+
+[[bench]]
+name = "components"
+harness = false

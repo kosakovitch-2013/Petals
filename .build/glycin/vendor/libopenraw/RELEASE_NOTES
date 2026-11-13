@@ -1,0 +1,186 @@
+What's (visibly) new in 0.4.0-alpha.11
+======================================
+
+- Complete rewrite in Rust.
+- Various API improvements.
+  - Added MIME API.
+  - Old Panasonic raw files have a separate type.
+- Extract White Balance coefficients.
+- Extract Exif GPSInfo.
+- Extract user crop.
+- DNG: decompress the tiles.
+- DNG: support JPEGXL thumbnails.
+- Fujifilm RAF: get black and white levels.
+  - Fix decoding for non X-Trans X-series.
+  - Decompress the raw data.
+  - Support user crops and aspect ratio.
+  - Fix maker note on SPro2 and others.
+  - Demosaic of X-Trans.
+- Leica: Support Leica D-Lux MakerNote in DNG (D-Lux 8).
+- Olympus ORF:
+  - Get active area, black levels.
+  - Fix decompression for XZ-2 XZ-10, SH-2, SP565UZ, SP500UZ,
+    SP510, SP550 and SP350
+- Panasonic:
+  - Decompress the raw data.
+  - Fix the colour matrices for GX80/GX85 and GX7MK2.
+  - Added matrices for DC-FZ45.
+- Pentax: decompress the raw data.
+- Sony ARW:
+  - Improved parsing of A100 files.
+  - Fix colour matrices for Sony A6400 and Sony RX100M7.
+- Properly set black & white values for DNG, ERF, PEF, CR2, CRW, RAF,
+  RAW, RW2.
+- Support rendering to sRGB with proper colours, with white balance
+  applied.
+- 70 new cameras listed.
+- 1 camera properly identified.
+
+What's (visibly) new in 0.3.7
+=============================
+
+- Fixed various bugs rendering monochrome DNG files.
+
+What's (visibly) new in 0.3.6
+=============================
+
+- Fixed Pentax decoding of unpacked raw data. Issue #2.
+- Fixed the offline build from tarball.
+- Fixed Rust 1.70 compatibility.
+- 2 new camera listed.
+
+What's (visibly) new in 0.3.5
+=============================
+
+- Added coefficients for 3 cameras.
+- 3 new cameras listed.
+- The tarball contain the Rust crates and can be built offline.
+- Fix a build issue with recent compilers. Issue #12.
+
+What's (visibly) new in 0.3.4
+=============================
+
+- Fixed a crash when using libopenraw in a multithreaded context.
+- 4 new cameras listed.
+
+What's (visibly) new in 0.3.3
+=============================
+
+- Some fixes to the build system related to autotools. Issue #11.
+- 40 new cameras listed.
+- Improvements to the testsuite.
+
+What's (visibly) new in 0.3.2
+=============================
+
+- Fix detection of compression for Panasonic Rw2.
+- Some linking issues with the libtool `.la` files should be solved.
+- Fixed some minor decoding bug in Olympus where the last pixel would
+  be incorrect.
+- Properly unpack Olympus files.
+- Some Panasonic files will have a lower but accurate raw data
+  size (compressed) than previously.
+- 15 new cameras listed.
+
+What's (visibly) new in 0.3.1
+=============================
+
+For more details see the NEWS file.
+
+- Fixes to the release notes for 0.3.0.
+- Fix gnome/libopenraw-gnome-0.3.pc so that it depends on the right
+  version.
+- Generated documentation with Doxygen is much more usable.
+- Fix correct endian header on BSD.
+- Fix build on gcc 11.
+- Updated Exif tags list.
+- 34 new cameras listed.
+
+Contributors to this release:
+
+- Trevor Beckerson
+- Jason E. Hale
+
+What's (visibly) new in 0.3.0
+=============================
+
+For more details see the NEWS file.
+
+- Now requires a C++14 capable compiler to build.
+- Largely improved metadata extraction on various format.
+- More thumbnails are available on Panasonic RAW.
+- Fix MakerNote on Pentax and Panasonic.
+- 24 new cameras listed.
+
+API changes:
+
+- ORCfaPatternRef has been renamed to ORMosaicInfoRef.
+  In consequence, or_cfapattern_*() is renamed to or_mosaicinfo_*().
+  or_rawdata_get_mosaicinfo() replaces or_rawdata_get_cfa_pattern().
+- NEW or_ifd_release() to release ORIfdDirRef.
+- NEW or_ifd_get_name() and or_ifd_get_type() to get the name if an
+  entry in the IFD and the type if the IFD repectively
+- or_rawfile_get_ifd() support more types
+- NEW or_ifd_dir_type is the new type IFD types and enum values have
+  been rename.
+- NEW or_iterator_*() to iterate through the metadata tags.
+  NEW or_metavalue_get_count() to get the count in the metadata.
+
+New tool:
+
+- `exifdump` allow dumping EXIF from RAW files to assist development.
+
+What's (visibly) new in 0.2.3
+=============================
+
+- Added a few more cameras.
+- Fixed previews for CR3.
+
+What's (visibly) new in 0.2.2
+=============================
+
+- ordiag now accept the flag `-D` to turn on a developer mode for the
+  output.
+
+What's (visibly) new in 0.2.1
+=============================
+
+- Added a few more cameras.
+
+What's (visibly) new in 0.2.0
+=============================
+
+Contributors to this project agree to the Freedesktop.org Code of
+Conduct:
+
+  https://www.freedesktop.org/wiki/CodeOfConduct/
+
+This release break ABI. Recompiling your code should be enough.
+
+- The new pkgconfig package name is libopenraw-0.2.
+
+- libopenraw now requires Rust to build.
+
+It adds or change the following API:
+
+- NEW or_rawfile_get_vendorid(): Use this to get the vendor ID for the
+  RAW file. While this is the same as the vendor part of the type ID
+  that you'd obtain with the macro OR_GET_FILE_TYPEID_VENDOR(), it is
+  obtained differently, and might be much slower. `ordiag` will check
+  the consistency. The testsuite will fail if inconsistent.
+
+- Some camera IDs have been changed. Name and value.
+
+- or_rawdata_get_rendered_image() will not downscale to RGB8. Check
+  the format returned.
+
+It adds support for a certain number of cameras:
+
+(list in the NEWS file)
+
+- libopenraw now support parsing Canon new CR3 files.
+
+- libopenraw now support parsing GoPro GPR files.
+
+or_raw_file_new() will now detect content if it can't guess the type
+from the extension.

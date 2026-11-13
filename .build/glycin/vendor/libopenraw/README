@@ -1,0 +1,202 @@
+Copyright
+=========
+
+libopenraw is Copyright (c) 2005-2025 Hubert Figuière and
+other contributors. See the respective files.
+It is licensed under LGPLv3 or later. See files COPYING
+and COPYING.LESSER
+
+Code below src/mp4/parse is released under MPL-2.0 license. See the
+MPL-2.0 file.  It is a modified version of
+https://github.com/mozilla/mp4parse-rust
+
+Some files may be individually licensed under LGPL-2.1-or-later. See
+the SPDX license info built-in.
+
+Code of Conduct:
+================
+
+Contributors to this project agree to the Freedesktop.org Code of
+Conduct:
+
+  https://www.freedesktop.org/wiki/CodeOfConduct/
+
+Prerequistes to build:
+======================
+
+    - a C++ 17 compiler (tested on gcc 4.7 and up)
+    - libboost 1.33.1 (Boost.String, Boost.Test, Boost.Variant)
+    - libjpeg
+    - libxml > 2.5.0 (for the test suite)
+    - libcurl (option for the test suite bootstrap)
+    - Rust 1.70
+
+If building from the git tree you also need:
+
+    - automake/autoconf
+    - autoconf-archive
+    - pkg-config for the associated m4 macros
+
+Optional Gnome support
+
+    - gdkpixbuf
+
+## Rust crate
+
+Starting with 0.4.0, libopenraw is developed as a Rust native crate
+with a C API. There the standard layout for a Rust crate applies, and
+`lib/` contains the crate part to build the dynamic library for the C
+API.
+
+Supported file formats
+======================
+
+Here are the supported file formats. For details per-camera, see
+below:
+
+    - Canon CR2
+    - Canon CR3
+    - Canon CRW (not those coming from CHDK firmware like A610)
+    - Nikon NEF and NRW
+    - Olympus ORF
+    - Pentax PEF
+    - Epson ERF
+    - DNG
+    - GoPro GPR
+    - Sony ARW and SR2
+    - Minolta MRW
+    - Panasonic RAW and RW2
+    - Fujifilm RAF
+
+How to build:
+=============
+
+  Using automake/autoconf:
+
+    $ ./autogen.sh
+    $ ./configure --prefix=...
+    $ make
+    $ make install DESTDIR=...
+
+
+Supported formats:
+==================
+
+  Y  Yes, it is there. (Untested as I do not have a sample but the format
+     is known to be similar) Yes, it is for the whole format.
+  N  Not supported.
+  B  Known to be Broken on some models. (Needs to be fixed. Further work
+     is required)
+  X  Not needed.
+  #  Sample file needed.
+```
+                          Thumbnail
+                         /  Raw bitstream
+                         | /  Raw decompression
+                         | | /  Orientation Tag
+                         | | | /  Bayer Type
+                         | | | | /  Type ID
+                         | | | | | /  Active Area (ROI)
+                         | | | | | | /  Color Matrices
+                         | | | | | | | /  Exif and MakerNotes
+                         | | | | | | | | /  Rendering
+                         | | | | | | | | | /  White Balance
+                         | | | | | | | | | | /  User crop
+                         | | | | | | | | | | | /
+Canon CR2                Y Y Y Y Y Y Y Y Y Y Y Y
+Canon CR3                Y Y N Y Y Y Y Y Y N N Y
+Canon CRW                Y Y Y Y Y Y Y Y Y B Y X
+Canon CRW CHDK           N N N N N N N N N N N N
+(unofficial firmware)
+Nikon NEF                Y B B Y Y Y N Y Y B B Y
+Nikon NRW                Y     Y   Y N Y Y B B Y
+Olympus ORF              Y Y Y Y Y Y N Y Y Y Y Y
+Adobe DNG                Y Y Y Y Y Y Y Y Y Y Y Y
+GoPro GPR                Y Y N Y Y Y Y Y X N Y Y
+Sony SR2                 Y Y X Y N Y N Y Y Y   X
+Sony ARW                 Y Y N Y N Y N Y Y     Y
+Pentax PEF               Y Y Y Y Y Y N Y Y Y Y Y
+Epson ERF                Y Y X Y Y Y N Y Y Y Y X
+Minolta MRW              Y Y X N Y Y N Y Y Y Y X
+Panasonic RAW            Y Y X Y Y Y Y Y Y B Y Y
+Panasonic RW2            Y Y B Y Y Y Y Y Y Y Y Y
+FujiFilm RAF             Y Y Y Y Y Y Y Y Y Y Y Y
+```
+
+Unsupported
+-----------
+```
+Sony SRF                 N N N N N N N N
+Kodak DCR                N N N N N N N N
+Kodak KDC                N N N N N N N N
+Foveon X3F               N N N N N N N N
+Mamiya MEF               N N N N N N N N
+Samsung SRW              N N N N N N N N
+```
+
+Test suite
+==========
+
+There is a test suite driven by an XML file. It require you to provide
+your own RAW files and configure it.  testsuite/testsuite.xml is an
+example of valid XML configuration file that works on my local
+machine.
+
+TODO2: provide a better description of the test file.
+
+TODO3: fix ordiag to allow outputting a test case in XML.
+
+Running the testsuite
+---------------------
+
+$ make check
+
+This will run it automatically.
+
+If you need to bootstrap the testsuite, you can go as follow:
+
+WARNING: The bootstrap will download "random" files from the
+internet. They currently aren't validated.
+
+$ make
+$ cd testsuite
+$ ./testsuite -b -d directory
+
+Here directory is the existing directory where files will be
+downloded.  If you build in a different directory than the source
+directory, you need to set the `srcdir` environment to the path where
+the testsuite binary is build.
+
+
+References
+==========
+
+Many online resources, including open source software were used (list
+non exhaustive):
+
+dcraw was the first open source effort out there. We all owe its
+authors and contributor a lot.
+
+CR3
+---
+Mozilla MP4 Rust parser, that is being used:
+  https://github.com/mozilla/mp4parse-rust/
+Laurent Clevy CR3 documentation, provided lot of information:
+  https://github.com/lclevy/canon_cr3
+
+Exif & MakerNote
+----------------
+ExifTool is used to provide documentation and the tag table:
+  https://exiftool.org/
+  https://exiftool.org/makernote_types.html
+Exiv2 knowledge:
+  https://www.exiv2.org/makernote.html
+libexif:
+  https://libexif.github.io/
+exifprobe:
+  https://github.com/hfiguiere/exifprobe/
+
+Contributors
+============
+
+- DorotaC

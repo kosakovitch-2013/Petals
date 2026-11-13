@@ -1,0 +1,1680 @@
+<testsuite>
+  <test>
+    <name>CR2-test 20D</name>
+    <file>/home/hub/samples/cr2/20D/img_0620.cr2</file>
+    <source>https://libopenraw.freedesktop.org/samples/cr2/20D/img_0620.cr2</source>
+    <results>
+      <rawType>CR2</rawType>
+      <rawTypeId>65537</rawTypeId>
+      <makerNoteCount>24</makerNoteCount>
+      <makerNoteId>Exif.Canon</makerNoteId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon EOS 20D</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>1536 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>377981 7239</thumbDataSizes>
+      <thumbMd5>32808 59392</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>16973120</rawDataSize>
+      <rawDataDimensions>3596 2360</rawDataDimensions>
+      <rawDataActiveArea>84 19 3504 2336</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>126 126 126 126</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.48939247830279653 1 0.684885290148448 NaN</rawAsShotNeutral>
+      <rawMd5>51638</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CR2-test 450D</name>
+    <file>/home/hub/samples/cr2/450D/RAW_CANON_450D.CR2</file>
+    <source>http://www.rawsamples.ch/raws/canon/450d/RAW_CANON_450D.CR2</source>
+    <results>
+      <rawType>CR2</rawType>
+      <rawTypeId>65542</rawTypeId>
+      <makerNoteCount>34</makerNoteCount>
+      <makerNoteId>Exif.Canon</makerNoteId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon EOS 450D</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>2256 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>892728 11024</thumbDataSizes>
+      <thumbMd5>35586 60486</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>24802624</rawDataSize>
+      <rawDataDimensions>4312 2876</rawDataDimensions>
+      <rawDataActiveArea>32 23 4272 2848</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>1023 1023 1024 1024</rawMinValue>
+      <rawMaxValue>14605 14605 14605 14605</rawMaxValue>
+      <rawAsShotNeutral>0.5495495495495496 1 0.5148957298907646 NaN</rawAsShotNeutral>
+      <rawMd5>36420</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CR2-test 7D</name>
+    <file>/home/hub/samples/cr2/7D/canon7d_iso100.CR2</file>
+    <source compress="zip" disabled="1">http://movies.dpreview.com.s3.amazonaws.com/canoneos7d/studio_iso100.zip</source>
+    <results>
+      <rawType>CR2</rawType>
+      <rawTypeId>65564</rawTypeId>
+      <makerNoteCount>41</makerNoteCount>
+      <makerNoteId>Exif.Canon</makerNoteId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon EOS 7D</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>5184 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>2263285 17704</thumbDataSizes>
+      <thumbMd5>49192 14358</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>37691520</rawDataSize>
+      <rawDataDimensions>5360 3516</rawDataDimensions>
+      <rawDataActiveArea>168 56 5184 3456</rawDataActiveArea>
+      <rawDataUserCrop>168 56 5184 3456</rawDataUserCrop>
+      <rawDataUserAspectRatio>3 2</rawDataUserAspectRatio>
+      <rawCfaPattern>GBRG</rawCfaPattern>
+      <rawMinValue>2047 2046 2048 2047</rawMinValue>
+      <rawMaxValue>13584 13584 13584 13584</rawMaxValue>
+      <rawAsShotNeutral>0.5029469548133595 1 0.45309734513274336 NaN</rawAsShotNeutral>
+      <rawMd5>21909</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CR2-test 7D - 2</name>
+    <file>/home/hub/samples/cr2/7D/Canon%20-%20EOS%207D%20-%20RAW%20(3:2).CR2</file>
+    <source>https://raw.pixls.us/getfile.php/131/nice/Canon%20-%20EOS%207D%20-%20RAW%20(3:2).CR2</source>
+    <results>
+      <rawType>CR2</rawType>
+      <rawTypeId>65564</rawTypeId>
+      <makerNoteCount>41</makerNoteCount>
+      <makerNoteId>Exif.Canon</makerNoteId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon EOS 7D</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>5184 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>2344660 16860</thumbDataSizes>
+      <thumbMd5>29050 25386</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>37691520</rawDataSize>
+      <rawDataDimensions>5360 3516</rawDataDimensions>
+      <rawDataActiveArea>168 56 5184 3456</rawDataActiveArea>
+      <rawDataUserCrop>168 56 5184 3456</rawDataUserCrop>
+      <rawDataUserAspectRatio>3 2</rawDataUserAspectRatio>
+      <rawCfaPattern>GBRG</rawCfaPattern>
+      <rawMinValue>2046 2046 2049 2049</rawMinValue>
+      <rawMaxValue>13584 13584 13584 13584</rawMaxValue>
+      <rawAsShotNeutral>0.4727608494921514 1 0.6719160104986877 NaN</rawAsShotNeutral>
+      <rawMd5>9987</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CR2-test 5DMkII</name>
+    <file>/home/hub/samples/cr2/5DMkII/IMG_0001.CR2</file>
+    <source>https://libopenraw.freedesktop.org/samples/cr2/5DMkII/IMG_0001.CR2</source>
+    <results>
+      <rawType>CR2</rawType>
+      <rawTypeId>65568</rawTypeId>
+      <makerNoteCount>39</makerNoteCount>
+      <makerNoteId>Exif.Canon</makerNoteId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon EOS 5D Mark II</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>5616 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>3384601 17024</thumbDataSizes>
+      <thumbMd5>5961 62355</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>44065536</rawDataSize>
+      <rawDataDimensions>5792 3804</rawDataDimensions>
+      <rawDataActiveArea>168 56 5616 3744</rawDataActiveArea>
+      <rawDataUserCrop>168 56 5616 3744</rawDataUserCrop>
+      <rawDataUserAspectRatio>3 2</rawDataUserAspectRatio>
+      <rawCfaPattern>GBRG</rawCfaPattern>
+      <rawMinValue>1021 1021 1020 1020</rawMinValue>
+      <rawMaxValue>15600 15600 15600 15600</rawMaxValue>
+      <rawAsShotNeutral>0.5301786576533076 1 0.401609363569861 NaN</rawAsShotNeutral>
+      <rawMd5>38395</rawMd5>
+      <metaOrientation>8</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CR2 - Canon EOS 200D - IMG_0100.CR2</name>
+    <file>/home/hub/samples/cr2/200D/IMG_0100.CR2</file>
+    <source>https://gitlab.freedesktop.org/libopenraw/libopenraw/uploads/dd063309426621784220d376d3773488/IMG_0100.CR2</source>
+    <results>
+      <rawType>CR2</rawType>
+      <rawTypeId>65617</rawTypeId>
+      <makerNoteCount>45</makerNoteCount>
+      <makerNoteId>Exif.Canon</makerNoteId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon EOS 200D</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>6000 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>2380150 12546</thumbDataSizes>
+      <thumbMd5>44392 54296</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>51008256</rawDataSize>
+      <rawDataDimensions>6288 4056</rawDataDimensions>
+      <rawDataActiveArea>276 48 6000 4000</rawDataActiveArea>
+      <rawDataUserCrop>276 48 6000 4000</rawDataUserCrop>
+      <rawDataUserAspectRatio>3 2</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>2048 2048 2048 2048</rawMinValue>
+      <rawMaxValue>13583 13583 13583 13583</rawMaxValue>
+      <rawAsShotNeutral>0.7792998477929984 1 0.4208795725441841 NaN</rawAsShotNeutral>
+      <rawMd5>45712</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CR2 - Canon PowerShot G5 X - IMG_2240.CR2</name>
+    <file>/home/hub/samples/raw-pixls-us-data/Canon/PowerShot G5 X/IMG_2240.CR2</file>
+    <source>https://raw.pixls.us/getfile.php/4257/nice/Canon%20-%20PowerShot%20G5%20X%20-%20RAW%20(3:2).CR2</source>
+    <results>
+      <rawType>CR2</rawType>
+      <rawTypeId>65603</rawTypeId>
+      <makerNoteCount>35</makerNoteCount>
+      <makerNoteId>Exif.Canon</makerNoteId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon PowerShot G5 X</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>2304 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>1832851 16258</thumbDataSizes>
+      <thumbMd5>43717 4927</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>41789440</rawDataSize>
+      <rawDataDimensions>5632 3710</rawDataDimensions>
+      <rawDataActiveArea>132 40 5472 3648</rawDataActiveArea>
+      <rawDataUserCrop>132 40 5472 3648</rawDataUserCrop>
+      <rawDataUserAspectRatio>3 2</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>2048 2048 2048 2048</rawMinValue>
+      <rawMaxValue>16383 16383 16383 16383</rawMaxValue>
+      <rawAsShotNeutral>0.4847702632937532 1 0.551056338028169 NaN</rawAsShotNeutral>
+      <rawMd5>53429</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CR2 - Canon PowerShot G7 X Mark II - IMG_0166.CR2</name>
+    <file>/home/hub/samples/raw-pixls-us-data/Canon/PowerShot G7 X Mark II/IMG_0166.CR2</file>
+    <source>https://raw.pixls.us/getfile.php/1682/nice/Canon%20-%20PowerShot%20G7%20X%20Mark%20II%20-%20RAW%20(3:2).CR2</source>
+    <results>
+      <rawType>CR2</rawType>
+      <rawTypeId>65604</rawTypeId>
+      <makerNoteCount>52</makerNoteCount>
+      <makerNoteId>Exif.Canon</makerNoteId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon PowerShot G7 X Mark II</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>5472 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>4819487 12463</thumbDataSizes>
+      <thumbMd5>50989 16664</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>41789440</rawDataSize>
+      <rawDataDimensions>5632 3710</rawDataDimensions>
+      <rawDataActiveArea>132 40 5472 3648</rawDataActiveArea>
+      <rawDataUserCrop>132 40 5472 3648</rawDataUserCrop>
+      <rawDataUserAspectRatio>3 2</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>2048 2048 2048 2048</rawMinValue>
+      <rawMaxValue>16383 16383 16383 16383</rawMaxValue>
+      <rawAsShotNeutral>0.4695093993580926 1 0.5967365967365967 NaN</rawAsShotNeutral>
+      <rawMd5>33165</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CR2-test G11</name>
+    <file>/home/hub/samples/cr2/G11/canong11_studio_ISO80.CR2</file>
+    <source compress="zip" disabled="1">http://movies.dpreview.com.s3.amazonaws.com/canong11/studio_ISO80.zip</source>
+    <results>
+      <rawType>CR2</rawType>
+      <rawTypeId>65565</rawTypeId>
+      <makerNoteCount>28</makerNoteCount>
+      <makerNoteId>Exif.Canon</makerNoteId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon PowerShot G11</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>1600 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>632111 7297</thumbDataSizes>
+      <thumbMd5>17948 39087</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>20846592</rawDataSize>
+      <rawDataDimensions>3744 2784</rawDataDimensions>
+      <rawDataActiveArea>24 28 3648 2736</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>128 128 128 128</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5986895986895987 1 0.30008210180623973 NaN</rawAsShotNeutral>
+      <rawMd5>37727</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CR2-test G11 - 2</name>
+    <file>/home/hub/samples/cr2/G11/Canon%20-%20PowerShot%20G11%20-%20RAW%20(4:3).CR2</file>
+    <source>https://raw.pixls.us/getfile.php/188/nice/Canon%20-%20PowerShot%20G11%20-%20RAW%20(4:3).CR2</source>
+    <results>
+      <rawType>CR2</rawType>
+      <rawTypeId>65565</rawTypeId>
+      <makerNoteCount>28</makerNoteCount>
+      <makerNoteId>Exif.Canon</makerNoteId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon PowerShot G11</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>1600 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>1116470 7334</thumbDataSizes>
+      <thumbMd5>65444 45566</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>20846592</rawDataSize>
+      <rawDataDimensions>3744 2784</rawDataDimensions>
+      <rawDataActiveArea>24 28 3648 2736</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>128 128 128 128</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5808580858085809 1 0.47670639219934996 NaN</rawAsShotNeutral>
+      <rawMd5>41705</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CR3-test EOS M50</name>
+    <file>/home/hub/samples/cr3/EOS_M50/Canon - EOS M50 - 3:2.cr3</file>
+    <source>https://raw.pixls.us/getfile.php/2543/nice/Canon%20-%20EOS%20M50%20-%203:2.cr3</source>
+    <results>
+      <rawType>CR3</rawType>
+      <rawTypeId>65620</rawTypeId>
+      <makerNoteCount>47</makerNoteCount>
+      <makerNoteId>Exif.Canon</makerNoteId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon EOS M50</exifModel>
+      <thumbNum>3</thumbNum>
+      <thumbSizes>160 6000 1620</thumbSizes>
+      <thumbFormats>JPEG JPEG JPEG</thumbFormats>
+      <thumbDataSizes>17687 1999953 376690</thumbDataSizes>
+      <thumbMd5>2148 1575 41470</thumbMd5>
+      <rawDataType>COMP_RAW</rawDataType>
+      <rawDataSize>25238720</rawDataSize>
+      <rawDataDimensions>6288 4056</rawDataDimensions>
+      <rawDataActiveArea>276 48 6000 4000</rawDataActiveArea>
+      <rawDataUserCrop>276 48 6000 4000</rawDataUserCrop>
+      <rawDataUserAspectRatio>3 2</rawDataUserAspectRatio>
+      <rawCfaPattern>NONE</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>0 0 0 0</rawMaxValue>
+      <rawAsShotNeutral>NONE</rawAsShotNeutral>
+      <rawMd5>1969</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CRW-test 300D</name>
+    <file>/home/hub/samples/crw/300D/crw_1852.crw</file>
+    <source>http://launchpadlibrarian.net/4704665/CRW_1852.CRW</source>
+    <results>
+      <rawType>CRW</rawType>
+      <rawTypeId>65550</rawTypeId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon EOS 300D DIGITAL</exifModel>
+      <thumbNum>1</thumbNum>
+      <thumbSizes>2048</thumbSizes>
+      <thumbFormats>JPEG</thumbFormats>
+      <thumbDataSizes>1359526</thumbDataSizes>
+      <thumbMd5>42124</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>13036672</rawDataSize>
+      <rawDataDimensions>3152 2068</rawDataDimensions>
+      <rawDataActiveArea>72 16 3072 2048</rawDataActiveArea>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4000 4000 4000 4000</rawMaxValue>
+      <rawAsShotNeutral>0.509840098400984 1 0.7310405643738977 NaN</rawAsShotNeutral>
+      <rawMd5>22551</rawMd5>
+      <metaOrientation>8</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>CRW-test 10D</name>
+    <file>/home/hub/samples/crw/10D/canon-eos10.crw</file>
+    <source>http://digikam3rdparty.free.fr/TEST_IMAGES/RAW/HORIZONTAL/CANON-EOS10.CRW</source>
+    <results>
+      <rawType>CRW</rawType>
+      <rawTypeId>65553</rawTypeId>
+      <exifMake>Canon</exifMake>
+      <exifModel>Canon EOS 10D</exifModel>
+      <thumbNum>1</thumbNum>
+      <thumbSizes>1536</thumbSizes>
+      <thumbFormats>JPEG</thumbFormats>
+      <thumbDataSizes>233232</thumbDataSizes>
+      <thumbMd5>43759</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>13036672</rawDataSize>
+      <rawDataDimensions>3152 2068</rawDataDimensions>
+      <rawDataActiveArea>72 16 3072 2048</rawDataActiveArea>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4000 4000 4000 4000</rawMaxValue>
+      <rawAsShotNeutral>0.6275614754098361 1 0.6664853101196954 NaN</rawAsShotNeutral>
+      <rawMd5>52226</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>NEF-test D100</name>
+    <file>/home/hub/samples/nef/D100/dsc_0007.nef</file>
+    <source>https://libopenraw.freedesktop.org/samples/nef/D100/dsc_0007.nef</source>
+    <results>
+      <rawType>NEF</rawType>
+      <rawTypeId>131076</rawTypeId>
+      <makerNoteCount>32</makerNoteCount>
+      <makerNoteId>Exif.Nikon</makerNoteId>
+      <exifMake>NIKON CORPORATION</exifMake>
+      <exifModel>NIKON D100 </exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 570</thumbSizes>
+      <thumbFormats>8RGB JPEG</thumbFormats>
+      <thumbDataSizes>57600 125988</thumbDataSizes>
+      <thumbMd5>49492 8889</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>12305920</rawDataSize>
+      <rawDataDimensions>3034 2024</rawDataDimensions>
+      <rawDataActiveArea>0 0 3034 2024</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>GRBG</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5224489795918368 1 0.4980544747081712 NaN</rawAsShotNeutral>
+      <rawMd5>16091</rawMd5>
+      <metaOrientation>0</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>NEF-test D70</name>
+    <file>/home/hub/samples/nef/D70/dsc_0113.nef</file>
+    <results>
+      <rawType>NEF</rawType>
+      <rawTypeId>131085</rawTypeId>
+      <makerNoteCount>43</makerNoteCount>
+      <makerNoteId>Exif.Nikon</makerNoteId>
+      <exifMake>NIKON CORPORATION</exifMake>
+      <exifModel>NIKON D70</exifModel>
+      <thumbNum>3</thumbNum>
+      <thumbSizes>160 3008 564</thumbSizes>
+      <thumbFormats>8RGB JPEG JPEG</thumbFormats>
+      <thumbDataSizes>57600 578350 27641</thumbDataSizes>
+      <thumbMd5>37211 45287 6693</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>12241092</rawDataSize>
+      <rawDataDimensions>3039 2014</rawDataDimensions>
+      <rawDataActiveArea>0 0 3039 2014</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>BGGR</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.504930966469428 1 0.5981308411214953 NaN</rawAsShotNeutral>
+      <rawMd5>7945</rawMd5>
+      <metaOrientation>8</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>NEF-test D70 vertical</name>
+    <file>/home/hub/samples/fromdikigam/VERTICAL/DSC_2162.NEF</file>
+    <source>http://digikam3rdparty.free.fr/TEST_IMAGES/RAW/VERTICAL/DSC_2162.NEF</source>
+    <results>
+      <rawType>NEF</rawType>
+      <rawTypeId>131085</rawTypeId>
+      <makerNoteCount>43</makerNoteCount>
+      <makerNoteId>Exif.Nikon</makerNoteId>
+      <exifMake>NIKON CORPORATION</exifMake>
+      <exifModel>NIKON D70</exifModel>
+      <thumbNum>3</thumbNum>
+      <thumbSizes>160 3008 564</thumbSizes>
+      <thumbFormats>8RGB JPEG JPEG</thumbFormats>
+      <thumbDataSizes>57600 820445 26582</thumbDataSizes>
+      <thumbMd5>64842 45385 31187</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>12241092</rawDataSize>
+      <rawDataDimensions>3039 2014</rawDataDimensions>
+      <rawDataActiveArea>0 0 3039 2014</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>BGGR</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.4087193460490463 1 0.6651884700665188 NaN</rawAsShotNeutral>
+      <rawMd5>861</rawMd5>
+      <metaOrientation>8</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>NEF - NIKON D810 - DSC_1884.NEF Uncompressed 14 bits</name>
+    <file>/home/hub/samples/raw-pixls-us-data/Nikon/D810/DSC_1884.NEF</file>
+    <source>https://raw.pixls.us/getfile.php/2032/nice/Nikon%20-%20D810%20-%2014bit%20uncompressed%20(3:2).NEF</source>
+    <results>
+      <rawType>NEF</rawType>
+      <rawTypeId>131129</rawTypeId>
+      <makerNoteCount>63</makerNoteCount>
+      <makerNoteId>Exif.Nikon</makerNoteId>
+      <exifMake>NIKON CORPORATION</exifMake>
+      <exifModel>NIKON D810</exifModel>
+      <thumbNum>4</thumbNum>
+      <thumbSizes>160 7360 1620 640</thumbSizes>
+      <thumbFormats>8RGB JPEG JPEG JPEG</thumbFormats>
+      <thumbDataSizes>57600 2302373 818246 156082</thumbDataSizes>
+      <thumbMd5>4047 27780 35492 40296</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>72737280</rawDataSize>
+      <rawDataDimensions>7380 4928</rawDataDimensions>
+      <rawDataActiveArea>0 0 7380 4928</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>600 600 600 600</rawMinValue>
+      <rawMaxValue>16383 16383 16383 16383</rawMaxValue>
+      <rawAsShotNeutral>0.4629294755877034 1 0.8448844884488449 NaN</rawAsShotNeutral>
+      <rawMd5>43097</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>NEF-test D90</name>
+    <file>/home/hub/samples/nef/D90/D90hMULTII0100.NEF</file>
+    <source disabled="1">http://216.18.212.226/PRODS/D90/FULLRES/D90hMULTII0100.NEF</source>
+    <results>
+      <rawType>NEF</rawType>
+      <rawTypeId>131106</rawTypeId>
+      <makerNoteCount>54</makerNoteCount>
+      <makerNoteId>Exif.Nikon</makerNoteId>
+      <exifMake>NIKON CORPORATION</exifMake>
+      <exifModel>NIKON D90</exifModel>
+      <thumbNum>3</thumbNum>
+      <thumbSizes>160 4288 570</thumbSizes>
+      <thumbFormats>8RGB JPEG JPEG</thumbFormats>
+      <thumbDataSizes>57600 905419 120118</thumbDataSizes>
+      <thumbMd5>13475 4145 724</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>24957336</rawDataSize>
+      <rawDataDimensions>4351 2868</rawDataDimensions>
+      <rawDataActiveArea>0 0 4351 2868</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>GBRG</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5765765765765766 1 0.8590604026845637 NaN</rawAsShotNeutral>
+      <rawMd5>9593</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>NEF-test D90 - 12 bits lossy compressed</name>
+    <file>/home/hub/samples/nef/D90/Nikon%20-%20D90%20-%2012bit%20compressed%20(Lossy%20(type%202))%20(3:2).NEF</file>
+    <source>https://raw.pixls.us/getfile.php/1325/nice/Nikon%20-%20D90%20-%2012bit%20compressed%20(Lossy%20(type%202))%20(3:2).NEF</source>
+    <results>
+      <rawType>NEF</rawType>
+      <rawTypeId>131106</rawTypeId>
+      <makerNoteCount>54</makerNoteCount>
+      <makerNoteId>Exif.Nikon</makerNoteId>
+      <exifMake>NIKON CORPORATION</exifMake>
+      <exifModel>NIKON D90</exifModel>
+      <thumbNum>3</thumbNum>
+      <thumbSizes>160 4288 570</thumbSizes>
+      <thumbFormats>8RGB JPEG JPEG</thumbFormats>
+      <thumbDataSizes>57600 1647803 112282</thumbDataSizes>
+      <thumbMd5>59338 49015 26926</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>24957336</rawDataSize>
+      <rawDataDimensions>4351 2868</rawDataDimensions>
+      <rawDataActiveArea>0 0 4351 2868</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>GBRG</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5059288537549407 1 0.8737201365187713 NaN</rawAsShotNeutral>
+      <rawMd5>23283</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>NEF-test D1</name>
+    <file>/home/hub/samples/nef/D1/DSC_0489.nef</file>
+    <source disabled="1">http://www.steves-digicams.com/sdc-classic/nikond1/samples/dsc_0489.nef</source>
+    <results>
+      <rawType>NEF</rawType>
+      <rawTypeId>131074</rawTypeId>
+      <makerNoteCount>21</makerNoteCount>
+      <makerNoteId>Exif.NikonHeaderless</makerNoteId>
+      <exifMake>NIKON CORPORATION</exifMake>
+      <exifModel>NIKON D1 </exifModel>
+      <thumbNum>1</thumbNum>
+      <thumbSizes>160</thumbSizes>
+      <thumbFormats>8RGB</thumbFormats>
+      <thumbDataSizes>57600</thumbDataSizes>
+      <thumbMd5>49938</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>5327776</rawDataSize>
+      <rawDataDimensions>2012 1324</rawDataDimensions>
+      <rawDataActiveArea>0 0 2012 1324</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>BGGR</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.4857685009487666 1 0.807570977917981 NaN</rawAsShotNeutral>
+      <rawMd5>5531</rawMd5>
+      <metaOrientation>0</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>NEF-test D2H</name>
+    <file>/home/hub/samples/nef/D2H/ca-on-anime_north-2007-05-cf05-0100.nef</file>
+    <results>
+      <rawType>NEF</rawType>
+      <rawTypeId>131077</rawTypeId>
+      <makerNoteCount>40</makerNoteCount>
+      <makerNoteId>Exif.Nikon</makerNoteId>
+      <exifMake>NIKON CORPORATION</exifMake>
+      <exifModel>NIKON D2H</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 570</thumbSizes>
+      <thumbFormats>8RGB JPEG</thumbFormats>
+      <thumbDataSizes>57600 105452</thumbDataSizes>
+      <thumbMd5>20180 68</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>8223520</rawDataSize>
+      <rawDataDimensions>2495 1648</rawDataDimensions>
+      <rawDataActiveArea>0 0 2495 1648</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>GBRG</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>NONE</rawAsShotNeutral>
+      <rawMd5>54892</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>NEF-test D300</name>
+    <file>/home/hub/samples/nef/D300/RAW_NIKON_D300.NEF</file>
+    <source>http://www.rawsamples.ch/raws/nikon/d300/RAW_NIKON_D300.NEF</source>
+    <results>
+      <rawType>NEF</rawType>
+      <rawTypeId>131081</rawTypeId>
+      <makerNoteCount>53</makerNoteCount>
+      <makerNoteId>Exif.Nikon</makerNoteId>
+      <exifMake>NIKON CORPORATION</exifMake>
+      <exifModel>NIKON D300</exifModel>
+      <thumbNum>3</thumbNum>
+      <thumbSizes>160 4288 570</thumbSizes>
+      <thumbFormats>8RGB JPEG JPEG</thumbFormats>
+      <thumbDataSizes>57600 1092124 107382</thumbDataSizes>
+      <thumbMd5>47314 48693 47371</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>24957336</rawDataSize>
+      <rawDataDimensions>4351 2868</rawDataDimensions>
+      <rawDataActiveArea>0 0 4351 2868</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>16383 16383 16383 16383</rawMaxValue>
+      <rawAsShotNeutral>0.735632183908046 1 0.7052341597796143 NaN</rawAsShotNeutral>
+      <rawMd5>44049</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>NRW - COOLPIX A1000 - nikon_coolpix_a1000_01.nrw</name>
+    <file>/home/hub/samples/nrw/Coolpix_A1000/nikon_coolpix_a1000_01.nrw</file>
+    <results>
+      <rawType>NEF</rawType>
+      <rawTypeId>131147</rawTypeId>
+      <makerNoteCount>46</makerNoteCount>
+      <makerNoteId>Exif.Nikon</makerNoteId>
+      <exifMake>NIKON CORPORATION</exifMake>
+      <exifModel>COOLPIX A1000</exifModel>
+      <thumbNum>4</thumbNum>
+      <thumbSizes>160 4608 1440 640</thumbSizes>
+      <thumbFormats>JPEG JPEG JPEG JPEG</thumbFormats>
+      <thumbDataSizes>5173 2040248 317483 49389</thumbDataSizes>
+      <thumbMd5>46036 42210 13611 13558</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>31850496</rawDataSize>
+      <rawDataDimensions>4608 3456</rawDataDimensions>
+      <rawDataActiveArea>0 0 4608 3456</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5565217391304348 1 0.5752808988764045 NaN</rawAsShotNeutral>
+      <rawMd5>14720</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ERF-test R-D1</name>
+    <file>/home/hub/samples/erf/Epson_RD1/_eps8447.erf</file>
+    <source>https://libopenraw.freedesktop.org/samples/erf/_eps8447.erf</source>
+    <results>
+      <rawType>ERF</rawType>
+      <rawTypeId>327681</rawTypeId>
+      <makerNoteCount>14</makerNoteCount>
+      <makerNoteId>Exif.Epson</makerNoteId>
+      <exifMake>SEIKO EPSON CORP.</exifMake>
+      <exifModel>R-D1</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 640</thumbSizes>
+      <thumbFormats>8RGB JPEG</thumbFormats>
+      <thumbDataSizes>57600 173093</thumbDataSizes>
+      <thumbMd5>51254 18422</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>12305920</rawDataSize>
+      <rawDataDimensions>3040 2024</rawDataDimensions>
+      <rawDataActiveArea>0 0 3040 2024</rawDataActiveArea>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>65 64 64 60</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.46028212507402605 1 0.5668900699329347 NaN</rawAsShotNeutral>
+      <rawMd5>30938</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>PEF-test K10D</name>
+    <file>/home/hub/samples/pef/K10D/k10d.pef</file>
+    <source>http://digikam3rdparty.free.fr/TEST_IMAGES/RAW/VERTICAL/k10d.pef</source>
+    <results>
+      <rawType>PEF</rawType>
+      <rawTypeId>262145</rawTypeId>
+      <exifMake>PENTAX Corporation </exifMake>
+      <exifModel>PENTAX K10D        </exifModel>
+      <makerNoteCount>91</makerNoteCount>
+      <makerNoteId>Exif.Pentax</makerNoteId>
+      <thumbNum>3</thumbNum>
+      <thumbSizes>160 3872 640</thumbSizes>
+      <thumbFormats>JPEG JPEG JPEG</thumbFormats>
+      <thumbDataSizes>6696 1254388 25279</thumbDataSizes>
+      <thumbMd5>47529 63340 11625</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>20656128</rawDataSize>
+      <rawDataDimensions>3936 2624</rawDataDimensions>
+      <rawDataActiveArea>0 0 3936 2624</rawDataActiveArea>
+      <rawDataUserCrop>8 8 3872 2592</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMd5>49129</rawMd5>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.6772486772486772 1 0.7398843930635838 NaN</rawAsShotNeutral>
+      <metaOrientation>8</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>PEF-test *-ist D</name>
+    <file>/home/hub/samples/pef/star-ist-D/PENTAX-ISD.PEF</file>
+    <source>http://digikam3rdparty.free.fr/TEST_IMAGES/RAW/HORIZONTAL/PENTAX-ISD.PEF</source>
+    <results>
+      <rawType>PEF</rawType>
+      <rawTypeId>262147</rawTypeId>
+      <exifMake>PENTAX Corporation </exifMake>
+      <exifModel>PENTAX *ist D      </exifModel>
+      <makerNoteCount>78</makerNoteCount>
+      <makerNoteId>Exif.Pentax</makerNoteId>
+      <thumbNum>3</thumbNum>
+      <thumbSizes>160 3008 640</thumbSizes>
+      <thumbFormats>JPEG JPEG JPEG</thumbFormats>
+      <thumbDataSizes>5308 1343392 39507</thumbDataSizes>
+      <thumbMd5>2932 57924 4760</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>12305920</rawDataSize>
+      <rawDataDimensions>3040 2024</rawDataDimensions>
+      <rawDataActiveArea>0 0 3040 2024</rawDataActiveArea>
+      <rawDataUserCrop>19 11 3008 2008</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMd5>52932</rawMd5>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.7170868347338936 1 0.9846153846153847 NaN</rawAsShotNeutral>
+      <metaOrientation>0</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>DNG-test K10D</name>
+    <file>/home/hub/samples/dng/K10D/k10d.dng</file>
+    <source>http://digikam3rdparty.free.fr/TEST_IMAGES/RAW/VERTICAL/k10d.dng</source>
+    <results>
+      <rawType>DNG</rawType>
+      <rawTypeId>262146</rawTypeId>
+      <exifMake>PENTAX Corporation </exifMake>
+      <exifModel>PENTAX K10D        </exifModel>
+      <makerNoteCount>90</makerNoteCount>
+      <makerNoteId>Exif.Pentax</makerNoteId>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 3872</thumbSizes>
+      <thumbFormats>8RGB JPEG</thumbFormats>
+      <thumbDataSizes>57600 1265761</thumbDataSizes>
+      <thumbMd5>59356 17244</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>20656128</rawDataSize>
+      <rawDataDimensions>3936 2624</rawDataDimensions>
+      <rawDataActiveArea>0 0 3936 2624</rawDataActiveArea>
+      <rawDataUserCrop>8 8 3872 2592</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.6736842105263158 1 0.7441860465116279 NaN</rawAsShotNeutral>
+      <rawMd5>35926</rawMd5>
+      <metaOrientation>8</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>DNG-test Leica DMR</name>
+    <file>/home/hub/samples/dng/leica_DMR/Dragonfly_L2110015.dng</file>
+    <source></source>
+    <results>
+      <rawType>DNG</rawType>
+      <rawTypeId>196609</rawTypeId>
+      <exifMake>Leica Camera AG</exifMake>
+      <exifModel>R9 - Digital Back DMR</exifModel>
+      <makerNoteCount>15</makerNoteCount>
+      <makerNoteId>Exif.Leica3</makerNoteId>
+      <thumbNum>1</thumbNum>
+      <thumbSizes>310</thumbSizes>
+      <thumbFormats>8RGB</thumbFormats>
+      <thumbDataSizes>191580</thumbDataSizes>
+      <thumbMd5>32570</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>20134656</rawDataSize>
+      <rawDataDimensions>3884 2592</rawDataDimensions>
+      <rawDataActiveArea>0 0 3884 2592</rawDataActiveArea>
+      <rawDataUserCrop>4 4 3876 2584</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>65535 65535 65535 65535</rawMaxValue>
+      <rawAsShotNeutral>0.96569609807851 1 0.4807229622674726 NaN</rawAsShotNeutral>
+      <rawMd5>13997</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>DNG-test Leica M8</name>
+    <file>/home/hub/samples/dng/Leica_M8/RAW_LEICA_M8.DNG</file>
+    <source>http://www.rawsamples.ch/raws/leica/m8/RAW_LEICA_M8.DNG</source>
+    <results>
+      <rawType>DNG</rawType>
+      <rawTypeId>196610</rawTypeId>
+      <exifMake>Leica Camera AG</exifMake>
+      <exifModel>M8 Digital Camera</exifModel>
+      <makerNoteCount>15</makerNoteCount>
+      <makerNoteId>Exif.Leica2</makerNoteId>
+      <thumbNum>1</thumbNum>
+      <thumbSizes>320</thumbSizes>
+      <thumbFormats>8RGB</thumbFormats>
+      <thumbDataSizes>65280</thumbDataSizes>
+      <thumbMd5>57401</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>20681920</rawDataSize>
+      <rawDataDimensions>3920 2638</rawDataDimensions>
+      <rawDataActiveArea>0 0 3920 2638</rawDataActiveArea>
+      <rawDataUserCrop>2 2 3916 2634</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>16383 16383 16383 16383</rawMaxValue>
+      <rawAsShotNeutral>0.4750637903038738 1 0.7966159381533524 NaN</rawAsShotNeutral>
+      <metaOrientation>1</metaOrientation>
+      <rawMd5>28095</rawMd5>
+    </results>
+  </test>
+  <test>
+    <name>DNG-BlackMagic Cinema Pocket</name>
+    <file>/home/hub/samples/cinemadng/Black_Magic_Pocket/bmpcc-giles_1_2013-11-26_2337_C0000_000000.dng</file>
+    <results>
+      <rawType>DNG</rawType>
+      <rawTypeId>983041</rawTypeId>
+      <thumbNum>0</thumbNum>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>4341248</rawDataSize>
+      <rawDataDimensions>1952 1112</rawDataDimensions>
+      <rawCfaPattern>GBRG</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <metaOrientation>1</metaOrientation>
+      <rawMd5>38734</rawMd5>
+    </results>
+  </test>
+  <test>
+    <name>DNG-test Ricoh GR</name>
+    <file>/home/hub/samples/dng/Ricoh_GR/Ricoh - GR - 12bit (4:3).DNG</file>
+    <source>https://raw.pixls.us/getfile.php/996/nice/Ricoh%20-%20GR%20-%2012bit%20(4:3).DNG</source>
+    <results>
+      <rawType>DNG</rawType>
+      <rawTypeId>655364</rawTypeId>
+      <exifMake>RICOH IMAGING COMPANY, LTD.</exifMake>
+      <exifModel>GR                                                             </exifModel>
+      <makerNoteCount>69</makerNoteCount>
+      <makerNoteId>Exif.Ricoh</makerNoteId>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 640</thumbSizes>
+      <thumbFormats>8RGB JPEG</thumbFormats>
+      <thumbDataSizes>57600 71191</thumbDataSizes>
+      <thumbMd5>30292 60115</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>32537600</rawDataSize>
+      <rawDataDimensions>4960 3280</rawDataDimensions>
+      <rawDataActiveArea>0 0 4944 3280</rawDataActiveArea>
+      <rawDataUserCrop>8 8 4928 3264</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.36101083032490977 1 0.5988023952095808 NaN</rawAsShotNeutral>
+      <rawMd5>44094</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ORF-test E3</name>
+    <file>/home/hub/samples/orf/Olympus_E3/PB020085.ORF</file>
+    <source disabled="1">http://raw.fotosite.pl/download-Olympus_E-3_ZD_12-60_f2.8-4/PB020085.ORF</source>
+    <results>
+      <rawType>ORF</rawType>
+      <rawTypeId>458755</rawTypeId>
+      <makerNoteCount>8</makerNoteCount>
+      <makerNoteId>Exif.Olympus2</makerNoteId>
+      <exifMake>OLYMPUS IMAGING CORP.  </exifMake>
+      <exifModel>E-3             </exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 1600</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>7020 420545</thumbDataSizes>
+      <thumbMd5>59979 60872</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>20832000</rawDataSize>
+      <rawDataDimensions>3720 2800</rawDataDimensions>
+      <rawDataActiveArea>28 28 3648 2736</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>60 61 61 60</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.540084388185654 1 0.6736842105263158 NaN</rawAsShotNeutral>
+      <rawMd5>25902</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ORF-test E300</name>
+    <file>/home/hub/samples/orf/Olympus_E300/P7080133.ORF</file>
+    <results>
+      <rawType>ORF</rawType>
+      <rawTypeId>458756</rawTypeId>
+      <makerNoteCount>27</makerNoteCount>
+      <makerNoteId>Exif.Olympus</makerNoteId>
+      <exifMake>OLYMPUS IMAGING CORP.  </exifMake>
+      <exifModel>E-300           </exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 1600</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>10614 441309</thumbDataSizes>
+      <thumbMd5>55376 54826</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>16826880</rawDataSize>
+      <rawDataDimensions>3360 2504</rawDataDimensions>
+      <rawDataActiveArea>32 5 3264 2448</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>63 63 63 63</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5638766519823789 1 0.757396449704142 NaN</rawAsShotNeutral>
+      <rawMd5>9674</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ORF-test E300 - 2</name>
+    <file>/home/hub/samples/orf/Olympus_E300/Olympus%20-%20E-300.ORF</file>
+    <source>https://raw.pixls.us/getfile.php/263/nice/Olympus%20-%20E-300.ORF</source>
+    <results>
+      <rawType>ORF</rawType>
+      <rawTypeId>458756</rawTypeId>
+      <makerNoteCount>27</makerNoteCount>
+      <makerNoteId>Exif.Olympus</makerNoteId>
+      <exifMake>OLYMPUS IMAGING CORP.  </exifMake>
+      <exifModel>E-300           </exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 1600</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>10689 394468</thumbDataSizes>
+      <thumbMd5>64692 29983</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>16826880</rawDataSize>
+      <rawDataDimensions>3360 2504</rawDataDimensions>
+      <rawDataActiveArea>33 30 3264 2448</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>63 63 63 63</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5565217391304348 1 0.7619047619047619 NaN</rawAsShotNeutral>
+      <rawMd5>37667</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ORF-test E330</name>
+    <file>/home/hub/samples/orf/Olympus_E330/300mm_f5.6.ORF</file>
+    <source disabled="1">http://raw.fotosite.pl/download-Olympus_E-330_Sigma_135-400_f4.5-5.6/300mm_f5.6.ORF</source>
+    <results>
+      <rawType>ORF</rawType>
+      <rawTypeId>458757</rawTypeId>
+      <makerNoteCount>27</makerNoteCount>
+      <makerNoteId>Exif.Olympus</makerNoteId>
+      <exifMake>OLYMPUS IMAGING CORP.  </exifMake>
+      <exifModel>E-330           </exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 1600</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>11074 430123</thumbDataSizes>
+      <thumbMd5>64168 40301</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>16072000</rawDataSize>
+      <rawDataDimensions>3280 2450</rawDataDimensions>
+      <rawDataActiveArea>59 63 3136 2352</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>82 87 82 86</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5871559633027523 1 0.7398843930635838 NaN</rawAsShotNeutral>
+      <rawMd5>28724</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ORF-test E330 - 2</name>
+    <file>/home/hub/samples/orf/Olympus_E330/Olympus%20-%20E-330.ORF</file>
+    <source>https://raw.pixls.us/getfile.php/257/nice/Olympus%20-%20E-330.ORF</source>
+    <results>
+      <rawType>ORF</rawType>
+      <rawTypeId>458757</rawTypeId>
+      <makerNoteCount>27</makerNoteCount>
+      <makerNoteId>Exif.Olympus</makerNoteId>
+      <exifMake>OLYMPUS IMAGING CORP.  </exifMake>
+      <exifModel>E-330           </exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 1600</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>10176 419949</thumbDataSizes>
+      <thumbMd5>750 14262</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>16072000</rawDataSize>
+      <rawDataDimensions>3280 2450</rawDataDimensions>
+      <rawDataActiveArea>54 49 3136 2352</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>70 70 70 70</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.6037735849056604 1 0.7191011235955056 NaN</rawAsShotNeutral>
+      <rawMd5>27298</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ORF-test E-P1</name>
+    <file>/home/hub/samples/orf/Olympus_E-P1/PB060003.ORF</file>
+    <results>
+      <rawType>ORF</rawType>
+      <rawTypeId>458766</rawTypeId>
+      <makerNoteCount>8</makerNoteCount>
+      <makerNoteId>Exif.Olympus2</makerNoteId>
+      <exifMake>OLYMPUS IMAGING CORP.  </exifMake>
+      <exifModel>E-P1            </exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 3200</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>6312 1040786</thumbDataSizes>
+      <thumbMd5>10303 42519</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>25288800</rawDataSize>
+      <rawDataDimensions>4100 3084</rawDataDimensions>
+      <rawDataActiveArea>28 28 4032 3024</rawDataActiveArea>
+      <rawDataUserCrop>28 28 4032 3024</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>64 64 64 64</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.7619047619047619 1 0.5565217391304348 NaN</rawAsShotNeutral>
+      <rawMd5>55379</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ORF-test E-P1 - 2</name>
+    <file>/home/hub/samples/orf/Olympus_E-P1/Olympus%20-%20E-P1.ORF</file>
+    <source>https://raw.pixls.us/getfile.php/261/nice/Olympus%20-%20E-P1.ORF</source>
+    <results>
+      <rawType>ORF</rawType>
+      <rawTypeId>458766</rawTypeId>
+      <makerNoteCount>8</makerNoteCount>
+      <makerNoteId>Exif.Olympus2</makerNoteId>
+      <exifMake>OLYMPUS IMAGING CORP.  </exifMake>
+      <exifModel>E-P1            </exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 3200</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>5047 969676</thumbDataSizes>
+      <thumbMd5>39027 22396</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>25288800</rawDataSize>
+      <rawDataDimensions>4100 3084</rawDataDimensions>
+      <rawDataActiveArea>28 30 4032 3024</rawDataActiveArea>
+      <rawDataUserCrop>28 30 4032 3024</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>64 64 64 64</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.540084388185654 1 0.7032967032967034 NaN</rawAsShotNeutral>
+      <rawMd5>1062</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ORF-test E-410</name>
+    <file>/home/hub/samples/orf/Olympus_E410/p1013308.orf</file>
+    <results>
+      <rawType>ORF</rawType>
+      <rawTypeId>458759</rawTypeId>
+      <makerNoteCount>8</makerNoteCount>
+      <makerNoteId>Exif.Olympus2</makerNoteId>
+      <exifMake>OLYMPUS IMAGING CORP.  </exifMake>
+      <exifModel>E-410           </exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 1600</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>3003 360861</thumbDataSizes>
+      <thumbMd5>63133 48427</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>20832000</rawDataSize>
+      <rawDataDimensions>3720 2800</rawDataDimensions>
+      <rawDataActiveArea>50 26 3648 2736</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5019607843137255 1 0.7441860465116279 NaN</rawAsShotNeutral>
+      <rawMd5>9783</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ORF-test E-410 - 2</name>
+    <file>/home/hub/samples/orf/Olympus_E410/Olympus%20-%20E-410%20-%2016bit%20(4:3).ORF</file>
+    <source>https://raw.pixls.us/getfile.php/1173/nice/Olympus%20-%20E-410%20-%2016bit%20(4:3).ORF</source>
+    <results>
+      <rawType>ORF</rawType>
+      <rawTypeId>458759</rawTypeId>
+      <makerNoteCount>8</makerNoteCount>
+      <makerNoteId>Exif.Olympus2</makerNoteId>
+      <exifMake>OLYMPUS IMAGING CORP.  </exifMake>
+      <exifModel>E-410           </exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 1600</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>6217 388113</thumbDataSizes>
+      <thumbMd5>16699 3410</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>20832000</rawDataSize>
+      <rawDataDimensions>3720 2800</rawDataDimensions>
+      <rawDataActiveArea>52 44 3648 2736</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>73 73 73 73</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5203252032520326 1 0.7032967032967034 NaN</rawAsShotNeutral>
+      <rawMd5>19233</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ORF - XZ-10 - Olympus - XZ-10 - 12bit (4:3).ORF</name>
+    <file>/home/hub/samples/orf/xz-10/Olympus - XZ-10 - 12bit (4:3).ORF</file>
+    <source>https://raw.pixls.us/getfile.php/2431/nice/Olympus%20-%20XZ-10%20-%2012bit%20(4:3).ORF</source>
+    <results>
+      <rawType>ORF</rawType>
+      <rawTypeId>458791</rawTypeId>
+      <makerNoteCount>7</makerNoteCount>
+      <makerNoteId>Exif.Olympus2</makerNoteId>
+      <exifMake>OLYMPUS IMAGING CORP.  </exifMake>
+      <exifModel>XZ-10           </exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 3200</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>10316 1074882</thumbDataSizes>
+      <thumbMd5>7700 41281</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>23824320</rawDataSize>
+      <rawDataDimensions>3984 2990</rawDataDimensions>
+      <rawDataActiveArea>8 14 3968 2976</rawDataActiveArea>
+      <rawDataUserCrop>8 179 3968 2646</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>200 200 200 200</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.504930966469428 1 0.5844748858447488 NaN</rawAsShotNeutral>
+      <rawMd5>15043</rawMd5>
+      <metaOrientation>6</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ORF - SP565UZ - Olympus - SP565UZ - 12bit (4_3).ORF</name>
+    <file>/home/hub/samples/orf/Olympus_SP565UZ/Olympus - SP565UZ - 12bit (4_3).ORF</file>
+    <source>https://raw.pixls.us/getfile.php/3438/nice/Olympus%20-%20SP565UZ%20-%2012bit%20(4:3).ORF</source>
+    <results>
+      <rawType>ORF</rawType>
+      <rawTypeId>458800</rawTypeId>
+      <makerNoteCount>46</makerNoteCount>
+      <makerNoteId>Exif.Olympus</makerNoteId>
+      <exifMake>OLYMPUS IMAGING CORP.  </exifMake>
+      <exifModel>SP565UZ                </exifModel>
+      <thumbNum>1</thumbNum>
+      <thumbSizes>160</thumbSizes>
+      <thumbFormats>JPEG</thumbFormats>
+      <thumbDataSizes>11264</thumbDataSizes>
+      <thumbMd5>26767</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>20086048</rawDataSize>
+      <rawDataDimensions>3664 2741</rawDataDimensions>
+      <rawDataActiveArea>0 0 3664 2741</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>BGGR</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5446808510638298 1 0.565121412803532 NaN</rawAsShotNeutral>
+      <rawMd5>6098</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>MRW-test Dimage5</name>
+    <file>/home/hub/samples/mrw/Dimage5/dimage5.mrw</file>
+    <source>https://libopenraw.freedesktop.org/samples/mrw/dimage5.mrw</source>
+    <results>
+      <rawType>MRW</rawType>
+      <rawTypeId>393219</rawTypeId>
+      <makerNoteCount>7</makerNoteCount>
+      <makerNoteId>Exif.Minolta</makerNoteId>
+      <exifMake>Minolta Co., Ltd.</exifMake>
+      <exifModel>DiMAGE 5</exifModel>
+      <thumbNum>1</thumbNum>
+      <thumbSizes>640</thumbSizes>
+      <thumbFormats>JPEG</thumbFormats>
+      <thumbDataSizes>34222</thumbDataSizes>
+      <thumbMd5>9587</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>6348928</rawDataSize>
+      <rawDataDimensions>2056 1544</rawDataDimensions>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>3965 3965 3965 3965</rawMaxValue>
+      <rawAsShotNeutral>0.41223832528180354 1 0.8888888888888888 NaN</rawAsShotNeutral>
+      <rawMd5>53847</rawMd5>
+      <metaOrientation>0</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>MRW-test Dimage7i</name>
+    <file>/home/hub/samples/mrw/Dimage7i/RAW_MINOLTA_DIMAGE_7I.MRW</file>
+    <source>http://www.rawsamples.ch/raws/minolta/7i/RAW_MINOLTA_DIMAGE_7I.MRW</source>
+    <results>
+      <rawType>MRW</rawType>
+      <rawTypeId>393221</rawTypeId>
+      <makerNoteCount>8</makerNoteCount>
+      <makerNoteId>Exif.Minolta</makerNoteId>
+      <exifMake>Minolta Co., Ltd.</exifMake>
+      <exifModel>DiMAGE 7i</exifModel>
+      <thumbNum>1</thumbNum>
+      <thumbSizes>640</thumbSizes>
+      <thumbFormats>JPEG</thumbFormats>
+      <thumbDataSizes>56306</thumbDataSizes>
+      <thumbMd5>6159</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>9902208</rawDataSize>
+      <rawDataDimensions>2568 1928</rawDataDimensions>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>3965 3965 3965 3965</rawMaxValue>
+      <rawAsShotNeutral>0.6956521739130435 1 0.6956521739130435 NaN</rawAsShotNeutral>
+      <rawMd5>43147</rawMd5>
+      <metaOrientation>0</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>MRW-test Dimage7hi</name>
+    <file>/home/hub/samples/mrw/Dimage7HI/minolta-dimage7hi.mrw</file>
+    <source>http://digikam3rdparty.free.fr/TEST_IMAGES/RAW/HORIZONTAL/MINOLTA-DIMAGE7HI.MRW</source>
+    <results>
+      <rawType>MRW</rawType>
+      <rawTypeId>393222</rawTypeId>
+      <makerNoteCount>11</makerNoteCount>
+      <makerNoteId>Exif.Minolta</makerNoteId>
+      <exifMake>Minolta Co., Ltd.</exifMake>
+      <exifModel>DiMAGE 7Hi</exifModel>
+      <thumbNum>1</thumbNum>
+      <thumbSizes>640</thumbSizes>
+      <thumbFormats>JPEG</thumbFormats>
+      <thumbDataSizes>67497</thumbDataSizes>
+      <thumbMd5>42646</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>9902208</rawDataSize>
+      <rawDataDimensions>2568 1928</rawDataDimensions>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>3965 3965 3965 3965</rawMaxValue>
+      <rawAsShotNeutral>0.6826666666666666 1 0.6666666666666666 NaN</rawAsShotNeutral>
+      <rawMd5>16068</rawMd5>
+      <metaOrientation>0</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ARW-test Sony A100</name>
+    <file>/home/hub/samples/arw/Sony-A100/DSC00028.ARW</file>
+    <source disabled="1">http://digikam3rdparty.free.fr/TEST_IMAGES/RAW/VERTICAL/DSC00028.ARW</source>
+    <results>
+      <rawType>ARW</rawType>
+      <rawTypeId>524289</rawTypeId>
+      <makerNoteCount>28</makerNoteCount>
+      <makerNoteId>Exif.Sony5</makerNoteId>
+      <thumbNum>1</thumbNum>
+      <thumbSizes>3872</thumbSizes>
+      <thumbFormats>JPEG</thumbFormats>
+      <thumbDataSizes>15915</thumbDataSizes>
+      <thumbMd5>63133</thumbMd5>
+      <rawDataType>COMP_RAW</rawDataType>
+      <rawDataSize>12193048</rawDataSize>
+      <rawDataDimensions>3880 2608</rawDataDimensions>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>0 0 0 0</rawMaxValue>
+      <rawAsShotNeutral>0.5663716814159292 1 0.5 NaN</rawAsShotNeutral>
+      <rawMd5>51881</rawMd5>
+      <metaOrientation>8</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>ARW-test Sony A100 - 2</name>
+    <file>/home/hub/samples/arw/Sony-A100/Sony%20-%20DSLR-A100%20-%20compressed%20(3:2).ARW</file>
+    <source>https://raw.pixls.us/getfile.php/2346/nice/Sony%20-%20DSLR-A100%20-%20compressed%20(3:2).ARW</source>
+    <results>
+      <rawType>ARW</rawType>
+      <rawTypeId>524289</rawTypeId>
+      <makerNoteCount>28</makerNoteCount>
+      <makerNoteId>Exif.Sony5</makerNoteId>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>3872 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>42850 4071</thumbDataSizes>
+      <thumbMd5>34033 14547</thumbMd5>
+      <rawDataType>COMP_RAW</rawDataType>
+      <rawDataSize>10039268</rawDataSize>
+      <rawDataDimensions>3880 2608</rawDataDimensions>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>0 0 0 0</rawMaxValue>
+      <rawAsShotNeutral>0.6384039900249376 1 0.445993031358885 NaN</rawAsShotNeutral>
+      <rawMd5>50944</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>SR2-test Sony R1</name>
+    <file>/home/hub/samples/sr2/Sony_DSC-R1/Sony - DSC-R1 - 14bit uncompressed (3:2).SR2</file>
+    <source>https://raw.pixls.us/getfile.php/3221/nice/Sony%20-%20DSC-R1%20-%2014bit%20uncompressed%20(3:2).SR2</source>
+    <results>
+      <rawType>ARW</rawType>
+      <rawTypeId>524366</rawTypeId>
+      <makerNoteCount>19</makerNoteCount>
+      <makerNoteId>Exif.Sony5</makerNoteId>
+      <exifMake>SONY</exifMake>
+      <exifModel>DSC-R1</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>640 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>145173 28372</thumbDataSizes>
+      <thumbMd5>15444 18470</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>20780544</rawDataSize>
+      <rawDataDimensions>3984 2608</rawDataDimensions>
+      <rawCfaPattern>GRBG</rawCfaPattern>
+      <rawMinValue>511 511 511 511</rawMinValue>
+      <rawMaxValue>16383 16383 16383 16383</rawMaxValue>
+      <rawAsShotNeutral>NONE</rawAsShotNeutral>
+      <rawMd5>20839</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>RAF-test X100</name>
+    <file>/home/hub/samples/raf/Finepix-X100/fujifilm_finepix_x100_02.raf</file>
+    <source referer="http://www.photographyblog.com/reviews/fujifilm_finepix_x100_review/sample_images/">http://img.photographyblog.com/reviews/fujifilm_finepix_x100/sample_images/fujifilm_finepix_x100_02.raf</source>
+    <results>
+      <rawType>RAF</rawType>
+      <rawTypeId>917518</rawTypeId>
+      <makerNoteCount>42</makerNoteCount>
+      <makerNoteId>Exif.Fujifilm</makerNoteId>
+      <exifMake>FUJIFILM</exifMake>
+      <exifModel>FinePix X100</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>2176 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>757744 8890</thumbDataSizes>
+      <thumbMd5>18245 48222</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>24739400</rawDataSize>
+      <rawDataDimensions>4310 2870</rawDataDimensions>
+      <rawDataActiveArea>79 11 4288 2848</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>255 254 254 255</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.6508620689655172 1 0.6608315098468271 NaN</rawAsShotNeutral>
+      <rawMd5>37022</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>RAF - X-A1 - XA1.RAF</name>
+    <file>/home/hub/samples/raf/X-A1/XA1.RAF</file>
+    <results>
+      <rawType>RAF</rawType>
+      <rawTypeId>917541</rawTypeId>
+      <makerNoteCount>53</makerNoteCount>
+      <makerNoteId>Exif.Fujifilm</makerNoteId>
+      <exifMake>FUJIFILM</exifMake>
+      <exifModel>X-A1</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>1920 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>851376 8857</thumbDataSizes>
+      <thumbMd5>14811 64712</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>32564352</rawDataSize>
+      <rawDataDimensions>4952 3288</rawDataDimensions>
+      <rawDataActiveArea>28 12 4896 3264</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>RGGB</rawCfaPattern>
+      <rawMinValue>255 255 255 255</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.4748427672955975 1 0.705607476635514 NaN</rawAsShotNeutral>
+      <rawMd5>20071</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>RAF - X10 - S0011035.RAF</name>
+    <file>/var/home/hub/samples/raf/X-10/S0011035.RAF</file>
+    <results>
+      <rawType>RAF</rawType>
+      <rawTypeId>917522</rawTypeId>
+      <makerNoteCount>53</makerNoteCount>
+      <makerNoteId>Exif.Fujifilm</makerNoteId>
+      <exifMake>FUJIFILM</exifMake>
+      <exifModel>X10</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>2048 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>788085 9187</thumbDataSizes>
+      <thumbMd5>47829 64807</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>12212224</rawDataSize>
+      <rawDataDimensions>2848 2144</rawDataDimensions>
+      <rawDataActiveArea>64 14 2816 2116</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>BGGR</rawCfaPattern>
+      <rawMinValue>256 256 256 256</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5468483816013628 1 0.5477815699658704 NaN</rawAsShotNeutral>
+      <rawMd5>39612</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>RAF-test X-Pro1</name>
+    <file>/home/hub/samples/raf/X-Pro1/66002-raw-original.RAF</file>
+    <source>http://prophotos.ru/private/tests/fujifilm/fujifilm-x-pro1/66002-raw-original.RAF</source>
+    <results>
+      <rawType>RAF</rawType>
+      <rawTypeId>917526</rawTypeId>
+      <makerNoteCount>46</makerNoteCount>
+      <makerNoteId>Exif.Fujifilm</makerNoteId>
+      <exifMake>FUJIFILM</exifMake>
+      <exifModel>X-Pro1</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>1920 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>400511 10211</thumbDataSizes>
+      <thumbMd5>38886 27133</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>32564352</rawDataSize>
+      <rawDataDimensions>4952 3288</rawDataDimensions>
+      <rawDataActiveArea>28 12 4896 3264</rawDataActiveArea>
+      <rawDataUserCrop>NONE</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>NON_RGB22</rawCfaPattern>
+      <rawMinValue>255 255 255 255</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.578544061302682 1 0.4575757575757576 NaN</rawAsShotNeutral>
+      <rawMd5>21279</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>RAF - X-T3 Compressed - DSCF1100.RAF</name>
+    <file>/var/home/hub/samples/raf/X-T3/DSCF1100.RAF</file>
+    <results>
+      <rawType>RAF</rawType>
+      <rawTypeId>917540</rawTypeId>
+      <makerNoteCount>66</makerNoteCount>
+      <makerNoteId>Exif.Fujifilm</makerNoteId>
+      <exifMake>FUJIFILM</exifMake>
+      <exifModel>X-T3</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>4416 160</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>4535565 9243</thumbDataSizes>
+      <thumbMd5>17175 50644</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>37470816</rawDataSize>
+      <rawDataDimensions>5596 3348</rawDataDimensions>
+      <rawDataActiveArea>630 9 4992 3328</rawDataActiveArea>
+      <rawDataUserCrop>630 9 4992 3328</rawDataUserCrop>
+      <rawDataUserAspectRatio>3 2</rawDataUserAspectRatio>
+      <rawCfaPattern>NON_RGB22</rawCfaPattern>
+      <rawMinValue>1020 1020 1020 1020</rawMinValue>
+      <rawMaxValue>16383 16383 16383 16383</rawMaxValue>
+      <rawAsShotNeutral>0.5224913494809689 1 0.5752380952380952 NaN</rawAsShotNeutral>
+      <rawMd5>5626</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>RAW-test Panasonic L1</name>
+    <file>/home/hub/samples/raw/Panasonic-L1/Panasonic - DMC-L1 - 4:3.RAW</file>
+    <source>https://raw.pixls.us/getfile.php/706/nice/Panasonic%20-%20DMC-L1%20-%204:3.RAW</source>
+    <results>
+      <rawType>RW2</rawType>
+      <rawTypeId>720909</rawTypeId>
+      <makerNoteCount>-1</makerNoteCount>
+      <exifMake>Panasonic</exifMake>
+      <exifModel>DMC-L1</exifModel>
+      <thumbNum>0</thumbNum>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>15039918</rawDataSize>
+      <rawDataDimensions>3177 2367</rawDataDimensions>
+      <rawDataActiveArea>0 0 3177 2367</rawDataActiveArea>
+      <rawDataUserCrop>16 7 3136 2352</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>GBRG</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5177165354330708 1 0.6760925449871465 NaN</rawAsShotNeutral>
+      <rawMd5>37730</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>RAW-test Panasonic L10</name>
+    <file>/home/hub/samples/raw/Panasonic-L10/Panasonic - DMC-L10 - 4:3.RAW</file>
+    <source>https://raw.pixls.us/getfile.php/628/nice/Panasonic%20-%20DMC-L10%20-%204:3.RAW</source>
+    <results>
+      <rawType>RW2</rawType>
+      <rawTypeId>720912</rawTypeId>
+      <makerNoteCount>69</makerNoteCount>
+      <makerNoteId>Exif.Panasonic</makerNoteId>
+      <exifMake>Panasonic</exifMake>
+      <exifModel>DMC-L10</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 1920</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>8210 720384</thumbDataSizes>
+      <thumbMd5>6490 9520</thumbMd5>
+      <rawDataType>COMP_RAW</rawDataType>
+      <rawDataSize>11664384</rawDataSize>
+      <rawDataDimensions>3710 2751</rawDataDimensions>
+      <rawDataActiveArea>0 0 3710 2751</rawDataActiveArea>
+      <rawDataUserCrop>16 7 3648 2736</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>GBRG</rawCfaPattern>
+      <rawMinValue>0 0 0 0</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.5077220077220077 1 0.6477832512315271 NaN</rawAsShotNeutral>
+      <rawMd5>36847</rawMd5>
+      <metaOrientation>8</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>RW2-test GH4</name>
+    <file>/home/hub/samples/rw2/Panasonic_GH4/P9490010.RW2</file>
+    <source disabled="1">https://www.dpreview.com/reviews/image-comparison/download-image?s3Key=ec839aaa3c8544f1a8b8190d6008881c.rw2</source>
+    <results>
+      <rawType>RW2</rawType>
+      <rawTypeId>720926</rawTypeId>
+      <makerNoteCount>143</makerNoteCount>
+      <makerNoteId>Exif.Panasonic</makerNoteId>
+      <exifMake>Panasonic</exifMake>
+      <exifModel>DMC-GH4</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 1920</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>9480 764928</thumbDataSizes>
+      <thumbMd5>28863 51492</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>33460224</rawDataSize>
+      <rawDataDimensions>4816 3472</rawDataDimensions>
+      <rawDataActiveArea>0 0 4816 3472</rawDataActiveArea>
+      <rawDataUserCrop>8 8 4608 3456</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>BGGR</rawCfaPattern>
+      <rawMinValue>128 128 127 128</rawMinValue>
+      <rawMaxValue>2111 2111 2111 2111</rawMaxValue>
+      <rawAsShotNeutral>0.378698224852071 1 0.6564102564102564 NaN</rawAsShotNeutral>
+      <rawMd5>13085</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>RW2-test GH4 - 2</name>
+    <file>/home/hub/samples/rw2/Panasonic_GH4/Panasonic%20-%20DMC-GH4%20-%204:3.RW2</file>
+    <source>https://raw.pixls.us/getfile.php/2571/nice/Panasonic%20-%20DMC-GH4%20-%204:3.RW2</source>
+    <results>
+      <rawType>RW2</rawType>
+      <rawTypeId>720926</rawTypeId>
+      <makerNoteCount>146</makerNoteCount>
+      <makerNoteId>Exif.Panasonic</makerNoteId>
+      <exifMake>Panasonic</exifMake>
+      <exifModel>DMC-GH4</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 1920</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>5203 462848</thumbDataSizes>
+      <thumbMd5>1722 37053</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>33460224</rawDataSize>
+      <rawDataDimensions>4816 3472</rawDataDimensions>
+      <rawDataActiveArea>0 0 4816 3472</rawDataActiveArea>
+      <rawDataUserCrop>8 8 4608 3456</rawDataUserCrop>
+      <rawDataUserAspectRatio>NONE</rawDataUserAspectRatio>
+      <rawCfaPattern>BGGR</rawCfaPattern>
+      <rawMinValue>128 128 128 128</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.39813374805598756 1 0.5446808510638298 NaN</rawAsShotNeutral>
+      <rawMd5>49472</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+  <test>
+    <name>RW2 - DC-G97 - _JOS3760.RW2</name>
+    <file>/home/hub/samples/raw-pixls-us-data/Panasonic/DC-G97/_JOS3760.RW2</file>
+    <source>https://raw.pixls.us/data/Panasonic/DC-G97/_JOS3760.RW2</source>
+    <results>
+      <rawType>RW2</rawType>
+      <rawTypeId>720965</rawTypeId>
+      <makerNoteCount>166</makerNoteCount>
+      <makerNoteId>Exif.Panasonic</makerNoteId>
+      <exifMake>Panasonic</exifMake>
+      <exifModel>DC-G97</exifModel>
+      <thumbNum>2</thumbNum>
+      <thumbSizes>160 1920</thumbSizes>
+      <thumbFormats>JPEG JPEG</thumbFormats>
+      <thumbDataSizes>4682 709934</thumbDataSizes>
+      <thumbMd5>21836 24488</thumbMd5>
+      <rawDataType>RAW</rawDataType>
+      <rawDataSize>41115648</rawDataSize>
+      <rawDataDimensions>5264 3904</rawDataDimensions>
+      <rawDataActiveArea>0 0 5264 3904</rawDataActiveArea>
+      <rawDataUserCrop>8 8 5184 3888</rawDataUserCrop>
+      <rawCfaPattern>BGGR</rawCfaPattern>
+      <rawMinValue>128 128 128 128</rawMinValue>
+      <rawMaxValue>4095 4095 4095 4095</rawMaxValue>
+      <rawAsShotNeutral>0.463768115942029 1 0.4839319470699433 NaN</rawAsShotNeutral>
+      <rawMd5>7312</rawMd5>
+      <metaOrientation>1</metaOrientation>
+    </results>
+  </test>
+</testsuite>

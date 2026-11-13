@@ -1,0 +1,5 @@
+name=gtk3
+version=3.24.43
+arch=x86_64
+desc="GIMP Toolkit version 3"
+deps=glib pcre2 libffi libx11 libxcb libXinerama xorg-headers dbus cairo pango harfbuzz freetype2 fontconfig gdk-pixbuf libepoxy libxkbcommon shared-mime-info at-spi2-core libjpeg-turbo libtiff libwebp pixman fribidi graphite2 libpng zlib libxml2 libcloudproviders tinysparql glycin

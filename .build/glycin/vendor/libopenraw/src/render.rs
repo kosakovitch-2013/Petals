@@ -1,0 +1,108 @@
+// SPDX-License-Identifier: LGPL-3.0-or-later
+/*
+ * libopenraw - render.rs
+ *
+ * Copyright (C) 2023-2025 Hubert Figuière
+ *
+ * This library is free software: you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public License
+ * as published by the Free Software Foundation, either version 3 of
+ * the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library.  If not, see
+ * <http://www.gnu.org/licenses/>.
+ */
+
+pub(crate) mod demosaic;
+pub(crate) mod grayscale;
+pub(crate) mod xtrans;
+
+use num_enum::TryFromPrimitive;
+
+use crate::colour::ColourSpace;
+use crate::FloatPixel;
+
+#[repr(u32)]
+#[derive(Copy, Clone, Debug, Default, Eq, PartialEq, PartialOrd, TryFromPrimitive)]
+/// Rendering stage. The values are also the order in the pipeline.
+pub enum RenderingStage {
+    /// The raw data from the file
+    Raw = 0,
+    /// The linearize raw data
+    Linearization = 1,
+    #[default]
+    /// Interpolated (demosaic)
+    Interpolation = 2,
+    /// Colour corrected (from camera to target `ColourSpace`)
+    Colour = 3,
+}
+
+#[derive(Clone, Debug)]
+/// RenderingOptions
+///
+/// ```rust
+/// use libopenraw::{ColourSpace, RenderingOptions, RenderingStage};
+///
+/// let options = RenderingOptions::default()
+///     .with_stage(RenderingStage::Interpolation)
+///     .with_target(ColourSpace::SRgb);
+/// ```
+pub struct RenderingOptions {
+    /// The stage of rendering requested.
+    pub stage: RenderingStage,
+    /// The colour space target for `RenderingStage::Colour`
+    pub target: ColourSpace,
+    /// Whether to apply white balance during `RenderingStage::Colour`.
+    pub apply_wb: bool,
+}
+
+impl Default for RenderingOptions {
+    fn default() -> Self {
+        RenderingOptions {
+            stage: RenderingStage::Colour,
+            target: ColourSpace::SRgb,
+            apply_wb: true,
+        }
+    }
+}
+
+impl RenderingOptions {
+    /// Set the target colour space.
+    pub fn with_target(mut self, colour_space: ColourSpace) -> Self {
+        self.target = colour_space;
+        self
+    }
+
+    /// Set the rendering stage.
+    pub fn with_stage(mut self, stage: RenderingStage) -> Self {
+        self.stage = stage;
+        self
+    }
+
+    /// Set whether to apply white balance.
+    pub fn with_apply_wb(mut self, apply: bool) -> Self {
+        self.apply_wb = apply;
+        self
+    }
+}
+
+/// Gamma correct sRGB values
+///
+/// Source <https://en.wikipedia.org/wiki/SRGB#From_CIE_XYZ_to_sRGB>
+pub fn gamma_correct_srgb(value: FloatPixel) -> FloatPixel {
+    if value <= 0.0031308 {
+        return value * 12.92;
+    }
+    1.055 * value.powf(1.0 / 2.4) - 0.055
+}
+
+/// Gamma correct pixel values. G is the gamma x10.
+pub fn gamma_correct_f<const G: u32>(value: FloatPixel) -> FloatPixel {
+    value.powf(10.0 / G as FloatPixel)
+}

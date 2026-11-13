@@ -1,0 +1,5 @@
+name=tinysparql
+version=3.8.2
+arch=x86_64
+desc="Metadata database and search tool"
+deps=glib libxml2

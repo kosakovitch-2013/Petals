@@ -1,0 +1,31 @@
+[package]
+name = "gufo-exif"
+description = "Exif loading and editing"
+version.workspace = true
+authors = ["Sophie Herold"]
+license.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+repository.workspace = true
+
+exclude = ["tests"]
+
+[lints]
+workspace = true
+
+[features]
+default = []
+chrono = ["dep:chrono", "gufo-common/chrono"]
+
+[dependencies]
+chrono = { workspace = true, optional = true }
+gufo-common.workspace = true
+tracing.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+gufo-jpeg.workspace = true
+
+[[test]]
+name = "high_level"
+required-features = ["chrono"]

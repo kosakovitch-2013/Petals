@@ -1,0 +1,69 @@
+[package]
+name = "libheif-rs"
+version = "2.3.0"
+authors = ["Kirill Kuzminykh <cykooz@gmail.com>"]
+edition = "2021"
+description = "Safe wrapper around the libheif-sys crate for parsing heif/heic files"
+readme = "README.md"
+keywords = ["heic", "heif", "libheif"]
+license = "MIT"
+repository = "https://github.com/cykooz/libheif-rs"
+documentation = "https://docs.rs/crate/libheif-rs"
+
+
+[dependencies]
+cfg-if = "1.0"
+enumn = "0.1.14"
+four-cc = "0.4"
+libc = "0.2.174"
+libheif-sys = "5.0"
+
+
+[features]
+default = ["latest"]
+v1_17 = ["libheif-sys/v1_17"]
+v1_18 = ["v1_17", "libheif-sys/v1_18"]
+v1_19 = ["v1_18", "libheif-sys/v1_19"]
+v1_20 = ["v1_19", "libheif-sys/v1_20"]
+latest = ["v1_20"]
+embedded-libheif = ["libheif-sys/embedded-libheif"]
+
+
+[dev-dependencies]
+kamadak-exif = "0.6.1"
+tempfile = "3.20"
+
+
+[package.metadata.docs.rs]
+# document all features
+all-features = true
+
+
+[profile.release]
+lto = true
+opt-level = 3
+
+
+[profile.release.package.libheif-rs]
+codegen-units = 1
+
+
+[package.metadata.vcpkg]
+git = "https://github.com/microsoft/vcpkg"
+tag = "2025.07.25"
+dependencies = ["libheif[aom]"]
+
+
+[package.metadata.vcpkg.target]
+x86_64-pc-windows-msvc = { triplet = "x64-windows-static-md", dependencies = ["libheif[aom]"] }
+
+
+[package.metadata.release]
+enable-features = ["latest", "embedded-libheif"]
+pre-release-replacements = [
+    { file = "CHANGELOG.md", search = "Unreleased", replace = "{{version}}" },
+    { file = "CHANGELOG.md", search = "ReleaseDate", replace = "{{date}}" }
+]
+
+# Header of next release in CHANGELOG.md:
+#   ## [Unreleased] - ReleaseDate

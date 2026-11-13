@@ -1,0 +1,1 @@
+subdir('libtracker-sparql')

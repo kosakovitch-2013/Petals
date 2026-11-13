@@ -1,0 +1,5 @@
+name=libseccomp
+version=2.6.0
+arch=x86_64
+desc="Seccomp BPF library"
+deps=glibc

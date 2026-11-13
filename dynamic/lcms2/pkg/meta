@@ -1,0 +1,5 @@
+name=lcms2
+version=2.16
+arch=x86_64
+desc="Color management library"
+deps=glibc
