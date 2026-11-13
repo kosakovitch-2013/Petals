@@ -132,3 +132,4 @@ icu 78.3 dynamic/icu-78.3-x86_64.petal
 brotli 1.1.0 dynamic/brotli-1.1.0-x86_64.petal
 libstdc++ 15.2.0 dynamic/libstdc++-15.2.0-x86_64.petal
 fontconfig 2.18.0 dynamic/fontconfig-2.18.0-x86_64.petal
+glib 2.82 dynamic/glib-2.82-x86_64.petal
