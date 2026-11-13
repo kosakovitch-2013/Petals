@@ -1,0 +1,10 @@
+/home/kot/Petals/.build/brotli/_b/CMakeFiles/brotlicommon.dir
+/home/kot/Petals/.build/brotli/_b/CMakeFiles/brotlidec.dir
+/home/kot/Petals/.build/brotli/_b/CMakeFiles/brotlienc.dir
+/home/kot/Petals/.build/brotli/_b/CMakeFiles/brotli.dir
+/home/kot/Petals/.build/brotli/_b/CMakeFiles/edit_cache.dir
+/home/kot/Petals/.build/brotli/_b/CMakeFiles/rebuild_cache.dir
+/home/kot/Petals/.build/brotli/_b/CMakeFiles/list_install_components.dir
+/home/kot/Petals/.build/brotli/_b/CMakeFiles/install.dir
+/home/kot/Petals/.build/brotli/_b/CMakeFiles/install/local.dir
+/home/kot/Petals/.build/brotli/_b/CMakeFiles/install/strip.dir

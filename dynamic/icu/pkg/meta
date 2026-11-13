@@ -1,0 +1,5 @@
+name=icu
+version=78.3
+arch=x86_64
+desc="International Components for Unicode"
+deps=glibc

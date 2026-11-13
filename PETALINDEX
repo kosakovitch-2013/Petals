@@ -129,3 +129,6 @@ tinysparql 3.8.2 dynamic/tinysparql-3.8.2-x86_64.petal
 libseccomp 2.6.0 dynamic/libseccomp-2.6.0-x86_64.petal
 lcms2 2.16 dynamic/lcms2-2.16-x86_64.petal
 glycin 2.0.8 dynamic/glycin-2.0.8-x86_64.petal
+icu 78.3 dynamic/icu-78.3-x86_64.petal
+brotli 1.1.0 dynamic/brotli-1.1.0-x86_64.petal
+libstdc++ 15.2.0 dynamic/libstdc++-15.2.0-x86_64.petal

@@ -1,0 +1,5 @@
+name=libstdc++
+version=15.2.0
+arch=x86_64
+desc="GNU C++ standard library"
+deps=glibc

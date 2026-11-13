@@ -1,0 +1,83 @@
+CMakeFiles/brotlienc.dir/c/enc/encode.c.o: \
+ /home/kot/Petals/.build/brotli/c/enc/encode.c /usr/include/stdc-predef.h \
+ /home/kot/Petals/.build/brotli/c/include/brotli/encode.h \
+ /home/kot/Petals/.build/brotli/c/include/brotli/port.h \
+ /home/kot/Petals/.build/brotli/c/include/brotli/shared_dictionary.h \
+ /home/kot/Petals/.build/brotli/c/include/brotli/types.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stddef.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/16/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
+ /usr/include/features.h /usr/include/features-time64.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/bits/types.h /usr/include/bits/typesizes.h \
+ /usr/include/bits/time64.h /usr/include/bits/wchar.h \
+ /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
+ /usr/include/bits/stdint-least.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
+ /usr/include/sys/types.h /usr/include/bits/types/clock_t.h \
+ /usr/include/bits/types/clockid_t.h /usr/include/bits/types/time_t.h \
+ /usr/include/bits/types/timer_t.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/bits/endianness.h \
+ /usr/include/bits/byteswap.h /usr/include/bits/uintn-identity.h \
+ /usr/include/sys/select.h /usr/include/bits/select.h \
+ /usr/include/bits/types/sigset_t.h /usr/include/bits/types/__sigset_t.h \
+ /usr/include/bits/types/struct_timeval.h \
+ /usr/include/bits/types/struct_timespec.h \
+ /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
+ /usr/include/bits/pthreadtypes-arch.h \
+ /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
+ /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
+ /usr/include/bits/stdlib-bsearch.h /usr/include/bits/types/once_flag.h \
+ /usr/include/bits/stdlib-float.h /usr/include/string.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/strings.h \
+ /home/kot/Petals/.build/brotli/c/enc/../common/constants.h \
+ /home/kot/Petals/.build/brotli/c/enc/../common/platform.h \
+ /home/kot/Petals/.build/brotli/c/enc/../common/context.h \
+ /home/kot/Petals/.build/brotli/c/enc/../common/platform.h \
+ /home/kot/Petals/.build/brotli/c/enc/../common/version.h \
+ /home/kot/Petals/.build/brotli/c/enc/backward_references.h \
+ /home/kot/Petals/.build/brotli/c/enc/../common/dictionary.h \
+ /home/kot/Petals/.build/brotli/c/enc/command.h \
+ /home/kot/Petals/.build/brotli/c/enc/fast_log.h /usr/include/math.h \
+ /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
+ /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
+ /usr/include/bits/mathcalls-helper-functions.h \
+ /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
+ /usr/include/bits/iscanonical.h \
+ /home/kot/Petals/.build/brotli/c/enc/params.h \
+ /home/kot/Petals/.build/brotli/c/enc/encoder_dict.h \
+ /home/kot/Petals/.build/brotli/c/enc/compound_dictionary.h \
+ /home/kot/Petals/.build/brotli/c/enc/memory.h \
+ /home/kot/Petals/.build/brotli/c/enc/static_dict_lut.h \
+ /home/kot/Petals/.build/brotli/c/enc/prefix.h \
+ /home/kot/Petals/.build/brotli/c/enc/hash.h \
+ /home/kot/Petals/.build/brotli/c/enc/find_match_length.h \
+ /home/kot/Petals/.build/brotli/c/enc/quality.h \
+ /home/kot/Petals/.build/brotli/c/enc/static_dict.h \
+ /home/kot/Petals/.build/brotli/c/enc/hash_to_binary_tree_inc.h \
+ /home/kot/Petals/.build/brotli/c/enc/hash_longest_match_quickly_inc.h \
+ /home/kot/Petals/.build/brotli/c/enc/hash_longest_match_inc.h \
+ /home/kot/Petals/.build/brotli/c/enc/hash_longest_match64_inc.h \
+ /home/kot/Petals/.build/brotli/c/enc/hash_forgetful_chain_inc.h \
+ /home/kot/Petals/.build/brotli/c/enc/hash_rolling_inc.h \
+ /home/kot/Petals/.build/brotli/c/enc/hash_composite_inc.h \
+ /home/kot/Petals/.build/brotli/c/enc/backward_references_hq.h \
+ /home/kot/Petals/.build/brotli/c/enc/bit_cost.h \
+ /home/kot/Petals/.build/brotli/c/enc/histogram.h \
+ /home/kot/Petals/.build/brotli/c/enc/block_splitter.h \
+ /home/kot/Petals/.build/brotli/c/enc/histogram_inc.h \
+ /home/kot/Petals/.build/brotli/c/enc/brotli_bit_stream.h \
+ /home/kot/Petals/.build/brotli/c/enc/entropy_encode.h \
+ /home/kot/Petals/.build/brotli/c/enc/metablock.h \
+ /home/kot/Petals/.build/brotli/c/enc/compress_fragment.h \
+ /home/kot/Petals/.build/brotli/c/enc/compress_fragment_two_pass.h \
+ /home/kot/Petals/.build/brotli/c/enc/dictionary_hash.h \
+ /home/kot/Petals/.build/brotli/c/enc/state.h \
+ /home/kot/Petals/.build/brotli/c/enc/ringbuffer.h \
+ /home/kot/Petals/.build/brotli/c/enc/utf8_util.h \
+ /home/kot/Petals/.build/brotli/c/enc/write_bits.h
