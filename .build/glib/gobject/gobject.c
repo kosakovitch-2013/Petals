@@ -233,6 +233,13 @@ static gulong	            gobject_signals[LAST_SIGNAL] = { 0, };
 static guint (*floating_flag_handler) (GObject*, gint) = object_floating_flag_handler;
 static GQuark	            quark_weak_locations = 0;
 
+static gpointer (*_local_g_datalist_id_update_atomic) (GData **datalist,
+                                                       GQuark key_id,
+                                                       GDataListUpdateAtomicFunc callback,
+                                                       gpointer user_data) = NULL;
+#undef _g_datalist_id_update_atomic
+#define _g_datalist_id_update_atomic(...) ((_local_g_datalist_id_update_atomic) (__VA_ARGS__))
+
 #if HAVE_PRIVATE
 G_ALWAYS_INLINE static inline GObjectPrivate *
 g_object_get_instance_private (GObject *object)
@@ -367,8 +374,7 @@ weak_ref_data_unlock (WeakRefData *wrdata)
 }
 
 static gpointer
-weak_ref_data_get_or_create_cb (GQuark key_id,
-                                gpointer *data,
+weak_ref_data_get_or_create_cb (gpointer *data,
                                 GDestroyNotify *destroy_notify,
                                 gpointer user_data)
 {
@@ -980,6 +986,8 @@ g_object_do_class_init (GObjectClass *class)
   quark_weak_locations = g_quark_from_static_string ("GObject-weak-locations");
   quark_toggle_refs = g_quark_from_static_string ("GObject-toggle-references");
   quark_notify_queue = g_quark_from_static_string ("GObject-notify-queue");
+
+  g_atomic_pointer_set (&_local_g_datalist_id_update_atomic, GLIB_PRIVATE_CALL (g_datalist_id_update_atomic));
 
   g_object_init_pspec_pool ();
 
@@ -5155,6 +5163,14 @@ g_value_dup_object (const GValue *value)
  * emitting a signal while @gobject is being destroyed in another thread
  * is not safe).
  *
+ * This function cannot fail. If the given signal name doesn’t exist,
+ * a critical warning is emitted. No validation is performed on the
+ * "detail" string when specified in @detailed_signal, other than a
+ * non-empty check.
+ *
+ * Refer to the [signals documentation](signals.html) for more
+ * details.
+ *
  * Returns: the handler id.
  */
 gulong
@@ -5632,8 +5648,7 @@ _weak_ref_set (GWeakRef *weak_ref,
 
 /**
  * g_weak_ref_init: (skip)
- * @weak_ref: (inout): uninitialized or empty location for a weak
- *    reference
+ * @weak_ref: uninitialized or empty location for a weak reference
  * @object: (type GObject.Object) (nullable): a #GObject or %NULL
  *
  * Initialise a non-statically-allocated #GWeakRef.
@@ -5667,7 +5682,7 @@ g_weak_ref_init (GWeakRef *weak_ref,
 
 /**
  * g_weak_ref_clear: (skip)
- * @weak_ref: (inout): location of a weak reference, which
+ * @weak_ref: location of a weak reference, which
  *  may be empty
  *
  * Frees resources associated with a non-statically-allocated #GWeakRef.
@@ -5689,7 +5704,7 @@ g_weak_ref_clear (GWeakRef *weak_ref)
 
 /**
  * g_weak_ref_get: (skip)
- * @weak_ref: (inout): location of a weak reference to a #GObject
+ * @weak_ref: location of a weak reference to a #GObject
  *
  * If @weak_ref is not empty, atomically acquire a strong
  * reference to the object it points to, and return that reference.

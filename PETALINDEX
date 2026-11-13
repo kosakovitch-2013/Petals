@@ -28,7 +28,6 @@ make 4.4.1 dynamic/make-4.4.1-x86_64.petal
 petals-wrapper 0.1 dynamic/petals-wrapper-0.1-any.petal
 doas 6.8.2 dynamic/doas-6.8.2-x86_64.petal
 mate 1.28 dynamic/mate-1.28-x86_64.petal
-glib 2.82 dynamic/glib-2.82-x86_64.petal
 pcre2 10.44 dynamic/pcre2-10.44-x86_64.petal
 libffi 3.4 dynamic/libffi-3.4-x86_64.petal
 openbox 3.6.1 dynamic/openbox-3.6.1-x86_64.petal
@@ -132,4 +131,4 @@ icu 78.3 dynamic/icu-78.3-x86_64.petal
 brotli 1.1.0 dynamic/brotli-1.1.0-x86_64.petal
 libstdc++ 15.2.0 dynamic/libstdc++-15.2.0-x86_64.petal
 fontconfig 2.18.0 dynamic/fontconfig-2.18.0-x86_64.petal
-glib 2.82 dynamic/glib-2.82-x86_64.petal
+glib 2.84.0 dynamic/glib-2.84.0-x86_64.petal

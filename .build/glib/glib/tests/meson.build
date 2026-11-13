@@ -159,6 +159,9 @@ glib_tests = {
     'extra_programs' : ['testing-helper'],
     'c_args' : cc.get_id() == 'gcc' ? ['-Werror=sign-conversion'] : [],
   },
+  'testing-nonfatal' : {
+    'protocol' : 'exitcode'
+  },
   'test-printf' : {},
   'thread' : {},
   'thread-deprecated' : {},
@@ -206,6 +209,7 @@ if have_cxx
     'cxx' : {
       'source' : ['cxx.cpp'],
       'suite': ['cpp'],
+      'dependencies' : [wincodecs],
     }
   }
 
@@ -215,6 +219,7 @@ if have_cxx
         'source' : ['cxx.cpp'],
         'suite' : ['cpp'],
         'cpp_args' : [arg, '-D_G_EXPECTED_CXX_STANDARD="@0@"'.format(std)],
+        'dependencies' : [wincodecs],
       },
     }
   endforeach
@@ -243,7 +248,9 @@ if host_machine.system() == 'windows'
     }
   endif
   glib_tests += {
-    'win32' : {},
+    'win32' : {
+      'dependencies' : [wincodecs],
+    },
   }
 else
   glib_tests += {
@@ -254,7 +261,7 @@ else
     getpwuid_preload = shared_library('getpwuid-preload',
                                       'getpwuid-preload.c',
                                       name_prefix : '',
-                                      dependencies: libdl_dep,
+                                      dependencies: [libdl_dep, libglib_dep],
                                       install_dir : installed_tests_execdir,
                                       install_tag : 'tests',
                                       install: installed_tests_enabled)
@@ -505,6 +512,10 @@ if 'messages-low-memory' in test_extra_programs
   }
 endif
 
+python_test_env = test_env
+python_test_env.prepend('PYTHONPATH', python_test_libraries_path)
+python_test_env.prepend('PYTHONPATH', python_test_libraries_built)
+
 foreach test_name, extra_args : python_tests
   depends = [extra_args.get('depends', [])]
   suite = ['glib', 'core', 'no-valgrind']
@@ -513,7 +524,7 @@ foreach test_name, extra_args : python_tests
     suite += 'failing'
   endif
 
-  local_test_env = test_env
+  local_test_env = python_test_env
   foreach var, value : extra_args.get('env', {})
     local_test_env.append(var, value)
   endforeach

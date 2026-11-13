@@ -261,11 +261,6 @@ threaded_dispose_thread_cb (gpointer user_data)
 static void
 test_cancellable_source_threaded_dispose (void)
 {
-#ifdef _GLIB_ADDRESS_SANITIZER
-  g_test_incomplete ("FIXME: Leaks lots of GCancellableSource objects, see glib#2309");
-  (void) cancelled_cb;
-  (void) threaded_dispose_thread_cb;
-#else
   ThreadedDisposeData data;
   GThread *thread = NULL;
   guint i;
@@ -275,6 +270,10 @@ test_cancellable_source_threaded_dispose (void)
                   "(in one thread) and cancelling the GCancellable it refers "
                   "to (in another thread)");
   g_test_bug ("https://gitlab.gnome.org/GNOME/glib/issues/1841");
+#ifdef _GLIB_ADDRESS_SANITIZER
+  g_test_message ("We also ensure that no GCancellableSource are leaked");
+  g_test_bug ("https://gitlab.gnome.org/GNOME/glib/issues/2309");
+#endif
 
   /* Create a new thread and wait until it’s ready to execute. Each iteration of
    * the test will pass it a new #GCancellableSource. */
@@ -335,7 +334,6 @@ test_cancellable_source_threaded_dispose (void)
   g_cond_clear (&data.cond);
 
   g_ptr_array_unref (cancellables_pending_unref);
-#endif
 }
 
 static void
@@ -533,7 +531,7 @@ test_cancellable_disconnect_on_cancelled_callback_hangs (void)
     }
 
   /* Run the test in a subprocess. While we can get away with deadlocking a
-   * specific thread on Linux, the glibc on FreeBSD manages to detect the
+   * specific thread on Linux, the libc on FreeBSD manages to detect the
    * deadlock and aborts the whole test process. */
   if (!g_test_subprocess ())
     {
@@ -628,7 +626,7 @@ test_cancellable_reset_on_cancelled_callback_hangs (void)
     }
 
   /* Run the test in a subprocess. While we can get away with deadlocking a
-   * specific thread on Linux, the glibc on FreeBSD manages to detect the
+   * specific thread on Linux, the libc on FreeBSD manages to detect the
    * deadlock and aborts the whole test process. */
   if (!g_test_subprocess ())
     {
@@ -712,7 +710,7 @@ static void
 on_racy_cancellable_cancelled (GCancellable *cancellable,
                                gpointer data)
 {
-  gboolean *callback_called = data;
+  gboolean *callback_called = data;  /* (atomic) */
 
   g_assert_true (g_cancellable_is_cancelled (cancellable));
   g_atomic_int_set (callback_called, TRUE);
@@ -724,7 +722,7 @@ test_cancellable_cancel_reset_races (void)
   GCancellable *cancellable;
   GThread *resetting_thread = NULL;
   GThread *cancelling_thread = NULL;
-  gboolean callback_called = FALSE;
+  gboolean callback_called = FALSE;  /* (atomic) */
 
   g_test_summary ("Tests threads racing for cancelling and resetting a GCancellable");
 
@@ -732,7 +730,7 @@ test_cancellable_cancel_reset_races (void)
 
   g_cancellable_connect (cancellable, G_CALLBACK (on_racy_cancellable_cancelled),
                          &callback_called, NULL);
-  g_assert_false (callback_called);
+  g_assert_false (g_atomic_int_get (&callback_called));
 
   resetting_thread = g_thread_new ("/cancellable/cancel-reset-races/resetting",
                                    repeatedly_resetting_thread,
@@ -743,7 +741,7 @@ test_cancellable_cancel_reset_races (void)
   g_thread_join (g_steal_pointer (&cancelling_thread));
   g_thread_join (g_steal_pointer (&resetting_thread));
 
-  g_assert_true (callback_called);
+  g_assert_true (g_atomic_int_get (&callback_called));
 
   g_object_unref (cancellable);
 }
@@ -757,8 +755,11 @@ repeatedly_connecting_thread (gpointer data)
 
   for (guint i = 0; i < iterations; ++i)
     {
-      gboolean callback_called = FALSE;
+      gboolean callback_called; /* (atomic) */
       gboolean called;
+
+      g_atomic_int_set (&callback_called, FALSE);
+
       gulong id = g_cancellable_connect (cancellable,
                                          G_CALLBACK (on_racy_cancellable_cancelled),
                                          &callback_called, NULL);
@@ -782,16 +783,17 @@ test_cancellable_cancel_reset_connect_races (void)
   GThread *resetting_thread = NULL;
   GThread *cancelling_thread = NULL;
   GThread *connecting_thread = NULL;
-  gboolean callback_called = FALSE;
+  gboolean callback_called;  /* (atomic) */
 
   g_test_summary ("Tests threads racing for cancelling, connecting and disconnecting "
                   " and resetting a GCancellable");
 
   cancellable = g_cancellable_new ();
 
+  g_atomic_int_set (&callback_called, FALSE);
   g_cancellable_connect (cancellable, G_CALLBACK (on_racy_cancellable_cancelled),
                          &callback_called, NULL);
-  g_assert_false (callback_called);
+  g_assert_false (g_atomic_int_get (&callback_called));
 
   resetting_thread = g_thread_new ("/cancel-reset-connect-races/resetting",
                                    repeatedly_resetting_thread,
@@ -805,8 +807,71 @@ test_cancellable_cancel_reset_connect_races (void)
   g_thread_join (g_steal_pointer (&resetting_thread));
   g_thread_join (g_steal_pointer (&connecting_thread));
 
-  g_assert_true (callback_called);
+  g_assert_true (g_atomic_int_get (&callback_called));
 
+  g_object_unref (cancellable);
+}
+
+static gboolean
+source_cancelled_counter_cb (GCancellable *cancellable,
+                             gpointer      user_data)
+{
+  guint *n_calls = user_data;
+
+  *n_calls = *n_calls + 1;
+
+  return G_SOURCE_CONTINUE;
+}
+
+static void
+do_nothing (G_GNUC_UNUSED void *user_data)
+{
+  /* An empty timeout/idle once callback function */
+}
+
+static void
+test_cancellable_source_can_be_fired_multiple_times (void)
+{
+  GCancellable *cancellable;
+  GSource *source;
+  guint n_calls = 0;
+
+  g_test_summary ("Test a cancellable source callback can be called multiple times");
+  g_test_bug ("https://gitlab.gnome.org/GNOME/glib/issues/774");
+
+  cancellable = g_cancellable_new ();
+  source = g_cancellable_source_new (cancellable);
+
+  g_source_set_callback (source, G_SOURCE_FUNC (source_cancelled_counter_cb),
+                         &n_calls, NULL);
+  g_source_attach (source, NULL);
+
+  g_cancellable_cancel (cancellable);
+  g_assert_cmpuint (n_calls, ==, 0);
+
+  while (g_main_context_pending (NULL))
+    g_main_context_iteration (NULL, TRUE);
+
+  g_assert_cmpuint (n_calls, ==, 1);
+
+  g_cancellable_cancel (cancellable);
+
+  g_timeout_add_once (100, do_nothing, NULL);
+  while (g_main_context_pending (NULL))
+    g_main_context_iteration (NULL, TRUE);
+
+  g_assert_cmpuint (n_calls, ==, 1);
+
+  g_cancellable_reset (cancellable);
+  g_cancellable_cancel (cancellable);
+  g_assert_cmpuint (n_calls, ==, 1);
+
+  while (g_main_context_pending (NULL))
+    g_main_context_iteration (NULL, TRUE);
+
+  g_assert_cmpuint (n_calls, ==, 2);
+
+  g_source_unref (source);
   g_object_unref (cancellable);
 }
 
@@ -825,6 +890,7 @@ main (int argc, char *argv[])
   g_test_add_func ("/cancellable/cancel-reset-races", test_cancellable_cancel_reset_races);
   g_test_add_func ("/cancellable/cancel-reset-connect-races", test_cancellable_cancel_reset_connect_races);
   g_test_add_func ("/cancellable-source/threaded-dispose", test_cancellable_source_threaded_dispose);
+  g_test_add_func ("/cancellable-source/can-be-fired-multiple-times", test_cancellable_source_can_be_fired_multiple_times);
 
   return g_test_run ();
 }

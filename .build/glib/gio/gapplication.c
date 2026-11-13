@@ -459,7 +459,7 @@ g_application_pack_option_entries (GApplication *application,
           break;
 
         case G_OPTION_ARG_DOUBLE:
-          if (*(gdouble *) entry->arg_data)
+          if (*(gdouble *) entry->arg_data != 0.0)
             value = g_variant_new_double (*(gdouble *) entry->arg_data);
           break;
 
@@ -2066,10 +2066,10 @@ g_application_get_resource_base_path (GApplication *application)
  *
  * Sets (or unsets) the base resource path of @application.
  *
- * The path is used to automatically load various [application
- * resources][gresource] such as menu layouts and action descriptions.
- * The various types of resources will be found at fixed names relative
- * to the given base path.
+ * The path is used to automatically load various
+ * [application resources][struct@Gio.Resource] such as menu layouts and
+ * action descriptions. The various types of resources will be found at
+ * fixed names relative to the given base path.
  *
  * By default, the resource base path is determined from the application
  * ID by prefixing '/' and replacing each '.' with '/'.  This is done at

@@ -148,4 +148,11 @@ option('gir_dir_prefix',
 option('introspection',
        type: 'feature',
        value: 'auto',
+       yield: true,
        description: 'Enable generating introspection data (requires gobject-introspection)')
+
+option('file_monitor_backend',
+       type : 'combo',
+       choices : ['auto', 'inotify', 'kqueue', 'libinotify-kqueue', 'win32'],
+       value : 'auto',
+       description : 'The name of the system API to use as a GFileMonitor backend')

@@ -13,8 +13,6 @@ gversionmacros_h = custom_target(
   command: [gen_visibility_macros, meson.project_version(), 'versions-macros', '@INPUT@', '@OUTPUT@'],
   install: true,
   install_dir: glib_sub_includedir,
-  # FIXME: Not needed with Meson >= 0.64.0
-  install_tag: 'devel',
 )
 
 glib_visibility_h = custom_target(
@@ -22,8 +20,6 @@ glib_visibility_h = custom_target(
   command: [gen_visibility_macros, meson.project_version(), 'visibility-macros', 'GLIB', '@OUTPUT@'],
   install: true,
   install_dir: glib_sub_includedir,
-  # FIXME: Not needed with Meson >= 0.64.0
-  install_tag: 'devel',
 )
 
 glib_built_headers = [gversionmacros_h, glib_visibility_h]
@@ -454,6 +450,12 @@ pkg.generate(libglib,
       valgrind_suppression_file_install_subdir /
       fs.name(valgrind_suppression_file),
   ],
+  uninstalled_variables : [
+    'glib_genmarshal=${prefix}/gobject/glib-genmarshal',
+    'gobject_query=${prefix}/gobject/gobject-query',
+    'glib_mkenums=${prefix}/gobject/glib-mkenums',
+    'glib_valgrind_suppressions=' + valgrind_suppression_file.full_path(),
+  ],
   version : glib_version,
   install_dir : glib_pkgconfigreldir,
   filebase : 'glib-2.0',
@@ -505,7 +507,7 @@ endif
 
 report_conf = configuration_data()
 report_conf.set('GLIB_VERSION', glib_version)
-report_conf.set('PYTHON', python.full_path())
+report_conf.set('PYTHON', python_shebang)
 configure_file(
   input: 'gtester-report.in',
   output: 'gtester-report',

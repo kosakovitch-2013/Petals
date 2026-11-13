@@ -89,9 +89,9 @@ client_unref (Client *client)
           if (client->disconnected_signal_handler_id > 0)
             g_signal_handler_disconnect (client->connection, client->disconnected_signal_handler_id);
           if (client->name_acquired_subscription_id > 0)
-            g_dbus_connection_signal_unsubscribe (client->connection, client->name_acquired_subscription_id);
+            g_dbus_connection_signal_unsubscribe (client->connection, g_steal_handle_id (&client->name_acquired_subscription_id));
           if (client->name_lost_subscription_id > 0)
-            g_dbus_connection_signal_unsubscribe (client->connection, client->name_lost_subscription_id);
+            g_dbus_connection_signal_unsubscribe (client->connection, g_steal_handle_id (&client->name_lost_subscription_id));
           g_object_unref (client->connection);
         }
       g_main_context_unref (client->main_context);
@@ -357,11 +357,9 @@ request_name_cb (GObject      *source_object,
       if (connection != NULL)
         {
           if (client->name_acquired_subscription_id > 0)
-            g_dbus_connection_signal_unsubscribe (client->connection, client->name_acquired_subscription_id);
+            g_dbus_connection_signal_unsubscribe (client->connection, g_steal_handle_id (&client->name_acquired_subscription_id));
           if (client->name_lost_subscription_id > 0)
-            g_dbus_connection_signal_unsubscribe (client->connection, client->name_lost_subscription_id);
-          client->name_acquired_subscription_id = 0;
-          client->name_lost_subscription_id = 0;
+            g_dbus_connection_signal_unsubscribe (client->connection, g_steal_handle_id (&client->name_lost_subscription_id));
 
           g_object_unref (connection);
         }
@@ -383,13 +381,11 @@ on_connection_disconnected (GDBusConnection *connection,
   if (client->disconnected_signal_handler_id > 0)
     g_signal_handler_disconnect (client->connection, client->disconnected_signal_handler_id);
   if (client->name_acquired_subscription_id > 0)
-    g_dbus_connection_signal_unsubscribe (client->connection, client->name_acquired_subscription_id);
+    g_dbus_connection_signal_unsubscribe (client->connection, g_steal_handle_id (&client->name_acquired_subscription_id));
   if (client->name_lost_subscription_id > 0)
-    g_dbus_connection_signal_unsubscribe (client->connection, client->name_lost_subscription_id);
+    g_dbus_connection_signal_unsubscribe (client->connection, g_steal_handle_id (&client->name_lost_subscription_id));
   g_object_unref (client->connection);
   client->disconnected_signal_handler_id = 0;
-  client->name_acquired_subscription_id = 0;
-  client->name_lost_subscription_id = 0;
   client->connection = NULL;
 
   call_lost_handler (client);
@@ -584,8 +580,8 @@ g_bus_own_name_on_connection (GDBusConnection          *connection,
  *
  * Starts acquiring @name on the bus specified by @bus_type and calls
  * @name_acquired_handler and @name_lost_handler when the name is
- * acquired respectively lost. Callbacks will be invoked in the 
- * [thread-default main context][g-main-context-push-thread-default]
+ * acquired respectively lost. Callbacks will be invoked in the thread-default
+ * main context (see [method@GLib.MainContext.push_thread_default])
  * of the thread you are calling this function from.
  *
  * You are guaranteed that one of the @name_acquired_handler and @name_lost_handler
@@ -628,7 +624,7 @@ g_bus_own_name_on_connection (GDBusConnection          *connection,
  * before @name is requested from the bus.
  *
  * This behavior makes it very simple to write applications that wants
- * to [own names][gdbus-owning-names] and export objects.
+ * to [own names](dbus-name-owning.html#d-bus-name-owning) and export objects.
  * Simply register objects to be exported in @bus_acquired_handler and
  * unregister the objects (if any) in @name_lost_handler.
  *
@@ -969,12 +965,10 @@ g_bus_unown_name (guint owner_id)
       if (client->disconnected_signal_handler_id > 0)
         g_signal_handler_disconnect (client->connection, client->disconnected_signal_handler_id);
       if (client->name_acquired_subscription_id > 0)
-        g_dbus_connection_signal_unsubscribe (client->connection, client->name_acquired_subscription_id);
+        g_dbus_connection_signal_unsubscribe (client->connection, g_steal_handle_id (&client->name_acquired_subscription_id));
       if (client->name_lost_subscription_id > 0)
-        g_dbus_connection_signal_unsubscribe (client->connection, client->name_lost_subscription_id);
+        g_dbus_connection_signal_unsubscribe (client->connection, g_steal_handle_id (&client->name_lost_subscription_id));
       client->disconnected_signal_handler_id = 0;
-      client->name_acquired_subscription_id = 0;
-      client->name_lost_subscription_id = 0;
       if (client->connection != NULL)
         {
           g_object_unref (client->connection);

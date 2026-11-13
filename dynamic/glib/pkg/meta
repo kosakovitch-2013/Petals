@@ -1,5 +1,5 @@
 name=glib
-version=2.82
+version=2.84.0
 arch=x86_64
 desc="GLib utility library"
 deps=pcre2 libffi

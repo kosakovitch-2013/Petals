@@ -7,7 +7,7 @@ common_gio_tests_deps = [
 
 test_c_args = [
   '-DG_LOG_DOMAIN="GLib-GIO"',
-  '-DGLIB_MKENUMS="@0@"'.format(glib_mkenums),
+  '-DGLIB_MKENUMS="@0@"'.format(glib_mkenums.full_path()),
   '-DGLIB_COMPILE_SCHEMAS="@0@"'.format(glib_compile_schemas.full_path()),
   '-UG_DISABLE_ASSERT',
 ]
@@ -60,10 +60,7 @@ gio_tests = {
   'buffered-output-stream' : {},
   'cancellable' : {},
   'contexts' : {},
-  'contenttype' : {
-    # FIXME: https://gitlab.gnome.org/GNOME/glib/-/issues/1392 / https://gitlab.gnome.org/GNOME/glib/-/issues/1251
-    'can_fail' : host_system == 'darwin',
-  },
+  'contenttype' : {},
   'converter-stream' : {
     # musl: charset tests fail due to missing collation support in musl libc
     # From https://wiki.musl-libc.org/roadmap#Open_future_goals
@@ -137,7 +134,11 @@ gio_tests = {
   'vfs' : {},
   'volumemonitor' : {},
   'glistmodel' : {},
-  'testfilemonitor' : {'suite' : ['slow', 'flaky']},
+  'testfilemonitor' : {
+    'suite' : ['slow'],
+    # FIXME: https://gitlab.gnome.org/GNOME/glib/-/issues/1392
+    'can_fail' : host_system in ['darwin'],
+  },
   'thumbnail-verification' : {},
   'tls-certificate' : {'extra_sources' : ['gtesttlsbackend.c']},
   'tls-interaction' : {'extra_sources' : ['gtesttlsbackend.c']},
@@ -189,12 +190,14 @@ test_extra_programs = {
 python_tests = {
   # FIXME: https://gitlab.gnome.org/GNOME/glib/-/issues/2764
   'codegen.py' : {
+    'env': {'_G_TEST_PROGRAM_RUNNER_PATH': fs.parent(gdbus_codegen.full_path())},
     'can_fail' : host_system == 'freebsd',
     'suite': ['gdbus-codegen', 'slow'],
     'timeout': 90,
   },
   'gio-tool.py' : {
     'depends' : gio_tool,
+    'env': {'_G_TEST_PROGRAM_RUNNER_PATH': fs.parent(gio_tool.full_path())},
     'can_fail' : host_system == 'windows',
   },
 }
@@ -544,15 +547,6 @@ if host_machine.system() != 'windows'
       },
     }
 
-    if not glib_have_cocoa
-      gio_tests += {
-        'dbus-appinfo' : {
-          'extra_sources' : extra_sources,
-          'extra_programs' : ['fake-document-portal'],
-        },
-      }
-    endif
-
     fake_document_portal_generated = custom_target('fake-document-portal-generated',
         input :   ['../org.freedesktop.portal.Documents.xml'],
         output :  ['fake-document-portal-generated.h',
@@ -566,10 +560,46 @@ if host_machine.system() != 'windows'
                    '--c-namespace', 'Fake',
                    '@INPUT@'])
 
+    fake_openuri_portal_generated = custom_target('fake-openuri-portal-generated',
+        input :   ['../org.freedesktop.portal.OpenURI.xml'],
+        output :  ['fake-openuri-portal-generated.h',
+                   'fake-openuri-portal-generated.c'],
+        depend_files : gdbus_codegen_built_files,
+        depends : gdbus_codegen_built_targets,
+        command : [python, gdbus_codegen,
+                   '--interface-prefix', 'org.freedesktop.portal.',
+                   '--output-directory', '@OUTDIR@',
+                   '--generate-c-code', 'fake-openuri-portal-generated',
+                   '--c-namespace', 'Fake',
+                   '@INPUT@'])
+
+    fake_request_portal_generated = custom_target('fake-request-portal-generated',
+        input :   ['../org.freedesktop.portal.Request.xml'],
+        output :  ['fake-request-portal-generated.h',
+                   'fake-request-portal-generated.c'],
+        depend_files : gdbus_codegen_built_files,
+        depends : gdbus_codegen_built_targets,
+        command : [python, gdbus_codegen,
+                   '--interface-prefix', 'org.freedesktop.portal.',
+                   '--output-directory', '@OUTDIR@',
+                   '--generate-c-code', 'fake-request-portal-generated',
+                   '--c-namespace', 'Fake',
+                   '@INPUT@'])
+
+    if not glib_have_cocoa
+      gio_tests += {
+        'dbus-appinfo' : {
+          'extra_sources' : [extra_sources,
+                             'fake-document-portal.c',
+                             fake_document_portal_generated,
+                             'fake-desktop-portal.c',
+                             fake_openuri_portal_generated,
+                             fake_request_portal_generated],
+        },
+      }
+    endif
+
     test_extra_programs += {
-      'fake-document-portal' : {
-        'extra_sources': fake_document_portal_generated,
-      },
       'fake-service-name' : {}
     }
   endif # have_dbus_daemon
@@ -859,6 +889,21 @@ if not meson.is_cross_build()
     install_tag : 'tests',
     install : installed_tests_enabled)
 
+  test6_gresource = custom_target('test6.gresource',
+    input : 'test6.gresource.xml',
+    depends : [gspawn_helpers],
+    output : 'test6.gresource',
+    command : [glib_compile_resources,
+               compiler_type,
+               '--target=@OUTPUT@',
+               '--sourcedir=' + meson.current_source_dir(),
+               '--sourcedir=' + meson.current_build_dir(),
+               '--internal',
+               '@INPUT@'],
+    install_dir : installed_tests_execdir,
+    install_tag : 'tests',
+    install : installed_tests_enabled)
+
   test_resources2_c = custom_target('test_resources2.c',
     input : 'test3.gresource.xml',
     depends : [gspawn_helpers],
@@ -930,6 +975,7 @@ if not meson.is_cross_build()
 
   resources_extra_sources = [
     test_gresource,
+    test6_gresource,
     test_resources_c,
     test_resources2_c,
     test_resources2_h,
@@ -1127,6 +1173,10 @@ foreach test_name, extra_args : gio_tests
   )
 endforeach
 
+python_test_env = test_env
+python_test_env.prepend('PYTHONPATH', python_test_libraries_path)
+python_test_env.prepend('PYTHONPATH', python_test_libraries_built)
+
 foreach test_name, extra_args : python_tests
   depends = [extra_args.get('depends', [])]
   suite = ['gio', 'no-valgrind'] + extra_args.get('suite', [])
@@ -1140,13 +1190,18 @@ foreach test_name, extra_args : python_tests
     depends += test_extra_programs_targets[program]
   endforeach
 
+  local_test_env = python_test_env
+  foreach var, value : extra_args.get('env', {})
+    local_test_env.append(var, value)
+  endforeach
+
   test(
     test_name,
     python,
     protocol : extra_args.get('protocol', test_protocol),
     depends: depends,
     args: ['-B', files(test_name)],
-    env: test_env,
+    env: local_test_env,
     timeout: timeout,
     suite: suite,
   )
@@ -1172,15 +1227,6 @@ foreach test_name, extra_args : python_tests
     )
   endif
 endforeach
-
-# TAP test runner for Python tests
-if installed_tests_enabled
-  install_data(
-    files('taptestrunner.py'),
-    install_dir: installed_tests_execdir,
-    install_tag: 'tests',
-  )
-endif
 
 if have_bash and have_pkg_config
   prefix = get_option('prefix')
