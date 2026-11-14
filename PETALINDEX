@@ -58,7 +58,6 @@ dbus-glib 0.114 dynamic/dbus-glib-0.114-x86_64.petal
 marco 1.28.1 dynamic/marco-1.28.1-x86_64.petal
 git 2.46.0 dynamic/git-2.46.0-x86_64.petal
 gsettings-desktop-schemas 48.0 dynamic/gsettings-desktop-schemas-48.0-any.petal
-adwaita-icon-theme 48.0 dynamic/adwaita-icon-theme-48.0-any.petal
 cantarell-fonts 0.303.1 dynamic/cantarell-fonts-0.303.1-any.petal
 gtk3 3.24.43 dynamic/gtk3-3.24.43-x86_64.petal
 alacritty 0.15.1 dynamic/alacritty-0.15.1-x86_64.petal
@@ -132,3 +131,5 @@ brotli 1.1.0 dynamic/brotli-1.1.0-x86_64.petal
 libstdc++ 15.2.0 dynamic/libstdc++-15.2.0-x86_64.petal
 fontconfig 2.18.0 dynamic/fontconfig-2.18.0-x86_64.petal
 glib 2.84.0 dynamic/glib-2.84.0-x86_64.petal
+adwaita-icon-theme 50.0 dynamic/adwaita-icon-theme-50.0-any.petal
+adwaita-fonts 51.0 dynamic/adwaita-fonts-51.0-any.petal

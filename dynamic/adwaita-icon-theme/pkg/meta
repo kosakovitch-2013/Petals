@@ -1,0 +1,5 @@
+name=adwaita-icon-theme
+version=50.0
+arch=any
+desc="GNOME standard icons"
+deps=
