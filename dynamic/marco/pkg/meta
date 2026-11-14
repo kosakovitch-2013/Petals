@@ -1,5 +1,5 @@
 name=marco
 version=1.28.1
 arch=x86_64
-desc="MATE window manager"
-deps=gtk3 mate-desktop startup-notification libXpresent libx11 libICE libSM libXRes libXcursor libXi libXrandr libxcb-util libcanberra xfconf dconf libcloudproviders
+desc="MATE window manager (NULL-safe default_icon)"
+deps=gtk3 mate-desktop startup-notification libXpresent libx11 libICE libSM libXres libXcursor libXi libXrandr xcb-util libcanberra xfconf

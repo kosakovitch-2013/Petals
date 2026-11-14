@@ -1,0 +1,128 @@
+### mate-icon-theme 1.28.0
+
+  * Translations update
+
+### mate-icon-theme 1.27.0
+
+  * Translations update
+  * Bump AC_PREREQ to 2.59 as needed for AS_HELP_STRING
+  * configure.ac: The macro 'AC_HELP_STRING' is obsolete (#58)
+  * tx: update resource
+  * tx: migrate config file
+
+### mate-icon-theme 1.26.0
+
+  * Translations update
+  * Remove the execution bit from some png files
+  * Remove USE_MATE2_MACROS from autogen.sh (legacy)
+
+### mate-icon-theme 1.24.0
+
+  * bump version
+
+### mate-icon-theme 1.23.3
+
+  * Translations update
+  * add status icons for mobile network connections
+  * rework volume-status icons
+  * add vpn network status icons
+  * update network status icons
+  * add network svg icons
+  * add dropbox-status icons
+  * re-generate network-wired icons from new SVGs
+  * add 2 svg sources for nm-applet
+  * migrate from intltool to gettext
+
+### mate-icon-theme 1.23.2
+
+  * Translations update
+  * Add mate/256x256/actions/mail-send.png
+  * Fix mate/22x22/devices/printer.png
+  * Upscale 22x22px icons to 24x24px adding 1px to the edges
+  * Gen png mimetypes icons from paper-sheets.svg - Mate theme
+  * preferences-system-time.png files are not generated from sources
+  * Use radial gradient (Blur 13.9%, Opacity 73.4%) for MATE logo shadow
+
+### mate-icon-theme 1.23.1
+
+  * Translations update
+  * add missing preferences-system-time icon
+  * Change url project's website
+  * use folder icon as example
+  * rename mate logo
+
+### mate-icon-theme 1.23.0
+
+  * Translations update
+  * Display the volume status with a better contrast in panels
+  * Upgrade svg source files to Inkscape 0.92.4
+  * Gen png icons from source - Mate theme
+  * Gen png icons from source. Mate: apps, categories & devices
+  * Update terminal icons for mate theme
+
+### mate-icon-theme 1.22.0
+
+  * Translations update
+  * Initialize Travis CI support
+
+### mate-icon-theme 1.21.1
+
+  * Translations update
+  * Add video single and joined display symbolic svg icons
+  * symlink input-touchpad.svg icon
+  * add a symlink for bluetooth icon
+  * add icons for touchpad
+
+### mate-icon-theme 1.21.0
+
+  * Translations update
+  * mate: add audio-volume-off
+
+### mate-icon-theme 1.20.0
+
+  * fixed Translations update
+
+### mate-icon-theme 1.19.0
+
+  * Translations update
+  * Restore Polish translation credits from GNOME
+  * replace same broken flags
+
+### mate-icon-theme 1.18.1
+
+  * add svg iso flags
+
+### mate-icon-theme 1.18.0
+
+  * Translations update
+
+### mate-icon-theme 1.17.0
+
+  * Translations update
+
+### mate-icon-theme 1.16.0
+
+  * Translations update
+  * add missing mate.svg
+
+### mate-icon-theme 1.14.0
+
+  * add system-config-keyboard icons
+
+### mate-icon-theme 1.12.0
+
+  * don't build a pkgconfig file
+
+### mate-icon-theme 1.10.1
+
+  * add more regular icons
+  * update symbolic icons
+
+### mate-icon-theme 1.10.0
+
+  * Add symbolic icons
+
+### mate-icon-theme 1.8.0
+
+  * Menta: Add avatar default icons for new lightdm
+  * Add bluetooth icons for bluedevil

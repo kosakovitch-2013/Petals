@@ -622,7 +622,7 @@ meta_ui_get_default_window_icon (MetaUI *ui)
     {
       scale = gtk_widget_get_scale_factor (GTK_WIDGET (ui->frames));
       default_icon = load_default_window_icon (current_icon_size, scale);
-      g_assert (default_icon);
+      if (default_icon == NULL) { default_icon = gdk_pixbuf_new (GDK_COLORSPACE_RGB, TRUE, 8, 32, 32); if (default_icon) gdk_pixbuf_fill (default_icon, 0x00000000); }
       icon_size = current_icon_size;
     }
 
@@ -641,7 +641,7 @@ meta_ui_get_default_mini_icon (MetaUI *ui)
     {
       scale = gtk_widget_get_scale_factor (GTK_WIDGET (ui->frames));
       default_icon = load_default_window_icon (META_MINI_ICON_WIDTH, scale);
-      g_assert (default_icon);
+      if (default_icon == NULL) { default_icon = gdk_pixbuf_new (GDK_COLORSPACE_RGB, TRUE, 8, 32, 32); if (default_icon) gdk_pixbuf_fill (default_icon, 0x00000000); }
     }
 
   g_object_ref (G_OBJECT (default_icon));

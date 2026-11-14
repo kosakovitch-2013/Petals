@@ -1,0 +1,158 @@
+# translation of mate-icon-theme to Kinyarwanda.
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the mate-icon-theme package.
+# Steve Murphy <murf@e-tools.com>, 2005
+# Steve performed initial rough translation from compendium built from translations provided by the following translators:
+# Philibert Ndandali  <ndandali@yahoo.fr>, 2005.
+# Viateur MUGENZI <muvia1@yahoo.fr>, 2005.
+# Noëlla Mupole <s24211045@tuks.co.za>, 2005.
+# Carole Karema <karemacarole@hotmail.com>, 2005.
+# JEAN BAPTISTE NGENDAHAYO <ngenda_denis@yahoo.co.uk>, 2005.
+# Augustin KIBERWA  <akiberwa@yahoo.co.uk>, 2005.
+# Donatien NSENGIYUMVA <ndonatienuk@yahoo.co.uk>, 2005..
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mate-icon-theme HEAD\n"
+"Report-Msgid-Bugs-To: https://mate-desktop.org\n"
+"POT-Creation-Date: 2024-02-15 15:38+0000\n"
+"PO-Revision-Date: 2005-03-31 20:55-0700\n"
+"Last-Translator: Steve Murphy <murf@e-tools.com>\n"
+"Language-Team: Kinyarwanda <translation-team-rw@lists.sourceforge.net>\n"
+"Language: rw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"ULL NAME <EMAIL@ADDRESS>\n"
+
+#: index.theme.in.in:3
+msgid "MATE"
+msgstr ""
+
+#: index.theme.in.in:4
+msgid "Default MATE Theme"
+msgstr ""
+
+# crashrep/source\all\crashrep.lng:%OK_BUTTON%.text
+#~ msgid "OK"
+#~ msgstr "YEGO"
+
+# #-#-#-#-#  officecfg.pot (MATE Desktop Environment)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Common.xcs:....Filter.Graphic.Export.PBM.FileFormat..0.text
+# #-#-#-#-#  officecfg.pot (MATE Desktop Environment)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Common.xcs:....Filter.Graphic.Export.PGM.FileFormat..0.text
+# #-#-#-#-#  officecfg.pot (MATE Desktop Environment)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Common.xcs:....Filter.Graphic.Export.PPM.FileFormat..0.text
+#~ msgid "Binary"
+#~ msgstr "Nyabibiri"
+
+# svx/source\engine3d\float3d.src:RID_SVXFLOAT_3D.FL_CAMERA.text
+#~ msgid "Camera"
+#~ msgstr "Kamera"
+
+#, fuzzy
+#~ msgid "Cool"
+#~ msgstr "Kumera neza"
+
+#, fuzzy
+#~ msgid "cvs-added"
+#~ msgstr "Kyongewe"
+
+#, fuzzy
+#~ msgid "cvs-modified"
+#~ msgstr "Byahinduwe"
+
+#, fuzzy
+#~ msgid "cvs-new-file"
+#~ msgstr "Gishya IDOSIYE"
+
+#, fuzzy
+#~ msgid "cvs-removed"
+#~ msgstr "Cyavanyweho"
+
+#, fuzzy
+#~ msgid "cvs-sticky-tag"
+#~ msgstr "Itagi:"
+
+# sfx2/source\explorer\explorer.src:STR_SFX_DESKTOP.text
+#~ msgid "Desktop"
+#~ msgstr "Ibiro"
+
+#~ msgid "Documents"
+#~ msgstr "Inyandiko"
+
+#, fuzzy
+#~ msgid "Draft"
+#~ msgstr "Inyandiko y'agateganyo"
+
+#~ msgid "Generic"
+#~ msgstr "Gifitanye isano"
+
+# sfx2/source\dialog\mailwindow.src:RID_MAIL_WINDOW.LB_MAILWIN_PRIO.2.text
+#~ msgid "Important"
+#~ msgstr "By'ingirakamaro"
+
+# basctl/source\basicide\brkdlg.src:RID_BASICIDE_BREAKPOINTDLG.RID_PB_NEW.text
+#~ msgid "New"
+#~ msgstr "Gishya"
+
+#, fuzzy
+#~ msgid "No read"
+#~ msgstr "Gusoma"
+
+# sc/source\ui\pagedlg\hfedtdlg.src:RID_HFBASE.FL_INFO.text
+#~ msgid "Note"
+#~ msgstr "Igisobanuro"
+
+#, fuzzy
+#~ msgid "No write"
+#~ msgstr "Kwandika"
+
+#, fuzzy
+#~ msgid "Oh no!"
+#~ msgstr "Oya"
+
+# svx/source\gallery2\galtheme.src:RID_GALLERYSTR_THEME_PEOPLE.text
+#~ msgid "People"
+#~ msgstr "Abantu"
+
+# WalletMisc.xul
+#~ msgid "Personal"
+#~ msgstr "Bwite"
+
+# svx/source\gallery2\galtheme.src:RID_GALLERYSTR_THEME_PHOTOS.text
+#~ msgid "Pictures"
+#~ msgstr "Amashusho"
+
+# #-#-#-#-#  officecfg.pot (MATE Desktop Environment)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Impress.xcs:....Print.Content.Presentation.text
+# #-#-#-#-#  officecfg.pot (MATE Desktop Environment)  #-#-#-#-#
+# officecfg/registry\schema\org\openoffice\Office\Writer.xcs:....Insert.Caption.OfficeObject.Impress.Enable.text
+#~ msgid "Presentation"
+#~ msgstr "Iyerekana"
+
+#~ msgid "Sound"
+#~ msgstr "Ijwi"
+
+#, fuzzy
+#~ msgid "Symbolic link"
+#~ msgstr "Ihuza"
+
+#~ msgid "Special"
+#~ msgstr "Bidasanzwe"
+
+#, fuzzy
+#~ msgid "Web"
+#~ msgstr "Urubuga"
+
+# svx/source\engine3d\float3d.src:RID_SVXFLOAT3D_FAVORITE.text
+#~ msgid "Favorite"
+#~ msgstr "Icyatoranijwe"
+
+# sfx2/source\appl\app.src:STR_MAIL.text
+#~ msgid "Mail"
+#~ msgstr "Ubutumwa"
+
+# sfx2/source\dialog\mailwindow.src:RID_MAIL_WINDOW.LB_MAILWIN_PRIO.1.text
+#~ msgid "Urgent"
+#~ msgstr "Byihutirwa"

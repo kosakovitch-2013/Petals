@@ -1,0 +1,5 @@
+name=mate-icon-theme
+version=1.28.0
+arch=any
+desc="MATE default icon theme"
+deps=

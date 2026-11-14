@@ -133,3 +133,5 @@ fontconfig 2.18.0 dynamic/fontconfig-2.18.0-x86_64.petal
 glib 2.84.0 dynamic/glib-2.84.0-x86_64.petal
 adwaita-icon-theme 50.0 dynamic/adwaita-icon-theme-50.0-any.petal
 adwaita-fonts 51.0 dynamic/adwaita-fonts-51.0-any.petal
+mate-icon-theme 1.28.0 dynamic/mate-icon-theme-1.28.0-any.petal
+mate-themes 3.22.26 dynamic/mate-themes-3.22.26-any.petal

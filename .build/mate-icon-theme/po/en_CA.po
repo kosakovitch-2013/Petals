@@ -1,0 +1,30 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR MATE Desktop Environment team
+# This file is distributed under the same license as the mate-icon-theme package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Stefano Karapetsas <stefano@karapetsas.com>, 2018
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mate-icon-theme 1.26.0\n"
+"Report-Msgid-Bugs-To: https://mate-desktop.org\n"
+"POT-Creation-Date: 2024-02-15 15:38+0000\n"
+"PO-Revision-Date: 2018-03-11 18:32+0000\n"
+"Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2018\n"
+"Language-Team: English (Canada) (https://app.transifex.com/mate/teams/13566/"
+"en_CA/)\n"
+"Language: en_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: index.theme.in.in:3
+msgid "MATE"
+msgstr "MATE"
+
+#: index.theme.in.in:4
+msgid "Default MATE Theme"
+msgstr "Default MATE Theme"
